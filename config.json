@@ -1,0 +1,17 @@
+{
+    "name":"cosmo-subject-2015",
+    "directory":true,
+    "xml_parser":false,
+    "server":{
+        "port":80,
+        "htmlMapping":{
+        },
+        "services":[
+        ]
+    },
+    "projects":[
+    ],
+
+    "publish":{
+    }
+}

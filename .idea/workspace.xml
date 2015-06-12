@@ -2,13 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/cosmo-subject-2015.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0210-prox_beauty/index.html" afterPath="$PROJECT_DIR$/0210-prox_beauty/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subjects/demo_weimi_game/js-subject/imports.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subjects/demo_weimi_game/index.html" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\css-subject\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\arrow1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\arrow_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\m-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\opacity_black_70.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\opacity_black_90.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\opt_white_70.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\bg_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\cloud.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\cloud\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\cloud\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\cloud\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\prox.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\word.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p10\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p10\data.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p10\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p10\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p11\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p11\data.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p11\pop.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p11\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\bg_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\link.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\word.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\word1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\bg_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\no.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\ok.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\data.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p4\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p4\data.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p4\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p4\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data\26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data\32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data\41.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\data.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\pro.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p8\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p8\data.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p8\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\jd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\small_tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\pop_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\share\main.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\share\pop_main.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\share\share_pop.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\weixin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\js-subject\fliza.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\js-subject\index.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cosmo-subject-2015.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,26 +116,45 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0210-prox_beauty/index.html">
+        <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state vertical-scroll-proportion="-15.692307">
+              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/0210-prox_beauty/css-subject/style.css">
+        <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7545692">
-              <caret line="248" column="8" selection-start-line="248" selection-start-column="8" selection-end-line="248" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.67979455">
+              <caret line="78" column="3" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,6 +164,21 @@
       <list>
         <option value="$PROJECT_DIR$/0210-prox_beauty/css-subject/style.css" />
         <option value="$PROJECT_DIR$/0210-prox_beauty/index.html" />
+        <option value="$PROJECT_DIR$/subjects/demo_weimi_game/index.html" />
+        <option value="$PROJECT_DIR$/subjects/demo_weimi_game/js-subject/imports.js" />
+        <option value="$PROJECT_DIR$/subjects/demo_weimi_game/js-subject/index.js" />
+        <option value="$PROJECT_DIR$/subjects/20150612-baifumei/css-subject/style.css" />
+        <option value="$PROJECT_DIR$/subjects/20150612-baifumei/css-subject/style.less" />
+        <option value="$PROJECT_DIR$/subjects/20150612-baifumei/js-subject/device.js" />
+        <option value="$PROJECT_DIR$/subjects/20150612-baifumei/js-subject/index.js" />
+        <option value="$PROJECT_DIR$/subjects/20150612-baifumei/index.html" />
+        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.less" />
+        <option value="D:/program/nodeJs/node_modules/fliza/fliza_modules/fliza-ui/css/style.css" />
+        <option value="D:/program/nodeJs/node_modules/fliza/fliza_modules/PageSlider/less/index.less" />
+        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/device.js" />
+        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js" />
+        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" />
+        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css" />
       </list>
     </option>
   </component>
@@ -98,6 +218,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -115,8 +237,18 @@
               <option name="myItemId" value="cosmo-subject-2015" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="0210-prox_beauty" />
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -130,7 +262,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="0210-prox_beauty" />
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20150612_baifumei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20150612_baifumei" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -138,19 +292,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20150612_baifumei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css-subject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="D:/program/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="D:/program/nodeJs/node_modules/fliza/fliza_modules" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -213,27 +389,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15997024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29692832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29692832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.72525597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -256,54 +432,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/css-subject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1852" column="26" selection-start-line="1852" selection-start-column="26" selection-end-line="1852" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/css-subject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1852" column="26" selection-start-line="1852" selection-start-column="26" selection-end-line="1852" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/css-subject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1852" column="26" selection-start-line="1852" selection-start-column="26" selection-end-line="1852" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/tools/fliza/first-page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.79533213">
@@ -311,15 +439,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/index.html">
+    <entry file="file://$PROJECT_DIR$/subjects/demo_weimi_game/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
+        <state vertical-scroll-proportion="-12.461538">
+          <caret line="214" column="7" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/js-subject/index.min.js">
+    <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -327,10 +462,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0210-prox_beauty/css-subject/style.css">
+    <entry file="file://$PROJECT_DIR$/subjects/demo_weimi_game/js-subject/imports.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7545692">
-          <caret line="248" column="8" selection-start-line="248" selection-start-column="8" selection-end-line="248" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo_weimi_game/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5561358">
+          <caret line="142" column="34" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87242025">
+          <caret line="65" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/nodeJs/node_modules/fliza/fliza_modules/PageSlider/less/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33222592">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/device.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40052357">
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/nodeJs/node_modules/fliza/fliza_modules/fliza-ui/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5412844">
+          <caret line="3218" column="17" selection-start-line="3218" selection-start-column="17" selection-end-line="3218" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67979455">
+          <caret line="78" column="3" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
           <folding />
         </state>
       </provider>
