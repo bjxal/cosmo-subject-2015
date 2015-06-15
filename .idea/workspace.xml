@@ -2,98 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subjects/demo_weimi_game/js-subject/imports.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subjects/demo_weimi_game/index.html" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\css-subject\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\arrow1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\arrow_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\m-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\opacity_black_70.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\opacity_black_90.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\opt_white_70.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\bg_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\cloud.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\cloud\1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\cloud\2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\cloud\3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\prox.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p0\word.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p10\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p10\data.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p10\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p10\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p11\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p11\data.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p11\pop.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p11\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\bg_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\link.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\word.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p12\word1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p1\tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\bg_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\no.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\ok.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p2\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\data.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p3\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p4\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p4\data.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p4\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p4\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data\2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data\26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data\32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\data\41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p5\tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data\1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data\2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data\3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\data\4.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p6\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\data.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\pro.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p7\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p8\bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p8\data.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p8\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\jd.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\p9\small_tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\pop_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\share\main.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\share\pop_main.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\share\share_pop.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\img-subject\weixin.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\js-subject\fliza.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\0210-prox_beauty\js-subject\index.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p2/tit/2.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p2/tit/2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p2/tit/3.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p2/tit/3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cosmo-subject-2015.iws" />
@@ -118,29 +31,71 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307">
-              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            <state vertical-scroll-proportion="-3.0535715">
+              <caret line="159" column="36" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67979455">
-              <caret line="78" column="3" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+              <folding>
+                <element signature="e#1777#1874#0" expanded="false" />
+                <element signature="e#1883#2021#0" expanded="false" />
+                <element signature="e#2037#2095#0" expanded="false" />
+                <element signature="e#2100#2240#0" expanded="false" />
+                <element signature="e#2249#2268#0" expanded="false" />
+                <element signature="e#2290#2349#0" expanded="false" />
+                <element signature="e#2393#2449#0" expanded="false" />
+                <element signature="e#2517#2574#0" expanded="false" />
+                <element signature="e#2579#2689#0" expanded="false" />
+                <element signature="e#2698#2716#0" expanded="false" />
+                <element signature="e#2734#2810#0" expanded="false" />
+                <element signature="e#2819#2846#0" expanded="false" />
+                <element signature="e#2882#2911#0" expanded="false" />
+                <element signature="e#2938#2985#0" expanded="false" />
+                <element signature="e#3013#3061#0" expanded="false" />
+                <element signature="e#3082#3154#0" expanded="false" />
+                <element signature="e#3173#3195#0" expanded="false" />
+                <element signature="e#3222#3269#0" expanded="false" />
+                <element signature="e#3297#3345#0" expanded="false" />
+                <element signature="e#3366#3438#0" expanded="false" />
+                <element signature="e#3457#3479#0" expanded="false" />
+                <element signature="e#3506#3553#0" expanded="false" />
+                <element signature="e#3581#3629#0" expanded="false" />
+                <element signature="e#3650#3722#0" expanded="false" />
+                <element signature="e#3737#3764#0" expanded="false" />
+                <element signature="e#3793#3844#0" expanded="false" />
+                <element signature="e#3853#3877#0" expanded="false" />
+                <element signature="e#3891#4153#0" expanded="false" />
+                <element signature="e#4163#4186#0" expanded="false" />
+                <element signature="e#4201#4375#0" expanded="false" />
+                <element signature="e#4397#4457#0" expanded="false" />
+                <element signature="e#4479#4539#0" expanded="false" />
+                <element signature="e#4561#4621#0" expanded="false" />
+                <element signature="e#4643#4703#0" expanded="false" />
+                <element signature="e#4725#4785#0" expanded="false" />
+                <element signature="e#4796#4823#0" expanded="false" />
+                <element signature="e#4851#4950#0" expanded="false" />
+                <element signature="e#4960#5139#0" expanded="false" />
+                <element signature="e#5153#5250#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="0.4469178">
+              <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,9 +131,10 @@
         <option value="D:/program/nodeJs/node_modules/fliza/fliza_modules/fliza-ui/css/style.css" />
         <option value="D:/program/nodeJs/node_modules/fliza/fliza_modules/PageSlider/less/index.less" />
         <option value="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/device.js" />
-        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js" />
+        <option value="D:/program/nodeJs/node_modules/fliza/fliza_modules/PageSlider/src/page-slider.js" />
         <option value="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css" />
+        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js" />
       </list>
     </option>
   </component>
@@ -249,6 +205,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo1_weimi_game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo1_weimi_game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js-subject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -396,11 +392,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29692832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29641694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -409,6 +404,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -432,6 +428,72 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1777#1874#0" expanded="false" />
+            <element signature="e#1883#2021#0" expanded="false" />
+            <element signature="e#2037#2095#0" expanded="false" />
+            <element signature="e#2100#2240#0" expanded="false" />
+            <element signature="e#2249#2268#0" expanded="false" />
+            <element signature="e#2290#2349#0" expanded="false" />
+            <element signature="e#2393#2449#0" expanded="false" />
+            <element signature="e#2517#2574#0" expanded="false" />
+            <element signature="e#2579#2689#0" expanded="false" />
+            <element signature="e#2698#2716#0" expanded="false" />
+            <element signature="e#2734#2810#0" expanded="false" />
+            <element signature="e#2819#2846#0" expanded="false" />
+            <element signature="e#2882#2911#0" expanded="false" />
+            <element signature="e#2938#2985#0" expanded="false" />
+            <element signature="e#3013#3061#0" expanded="false" />
+            <element signature="e#3082#3154#0" expanded="false" />
+            <element signature="e#3173#3195#0" expanded="false" />
+            <element signature="e#3222#3269#0" expanded="false" />
+            <element signature="e#3297#3345#0" expanded="false" />
+            <element signature="e#3366#3438#0" expanded="false" />
+            <element signature="e#3457#3479#0" expanded="false" />
+            <element signature="e#3506#3553#0" expanded="false" />
+            <element signature="e#3581#3629#0" expanded="false" />
+            <element signature="e#3650#3722#0" expanded="false" />
+            <element signature="e#3737#3764#0" expanded="false" />
+            <element signature="e#3793#3844#0" expanded="false" />
+            <element signature="e#3853#3877#0" expanded="false" />
+            <element signature="e#3891#4153#0" expanded="false" />
+            <element signature="e#4163#4186#0" expanded="false" />
+            <element signature="e#4201#4375#0" expanded="false" />
+            <element signature="e#4397#4457#0" expanded="false" />
+            <element signature="e#4479#4539#0" expanded="false" />
+            <element signature="e#4561#4621#0" expanded="false" />
+            <element signature="e#4643#4703#0" expanded="false" />
+            <element signature="e#4725#4785#0" expanded="false" />
+            <element signature="e#4796#4823#0" expanded="false" />
+            <element signature="e#4851#4950#0" expanded="false" />
+            <element signature="e#4960#5139#0" expanded="false" />
+            <element signature="e#5153#5250#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/tools/fliza/first-page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.79533213">
@@ -443,14 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.461538">
           <caret line="214" column="7" selection-start-line="214" selection-start-column="7" selection-end-line="214" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -458,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -466,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -482,7 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87242025">
           <caret line="65" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -490,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33222592">
           <caret line="46" column="26" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,31 +556,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5412844">
           <caret line="3218" column="17" selection-start-line="3218" selection-start-column="17" selection-end-line="3218" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
+    <entry file="file://$PROJECT_DIR$/subjects/demo1_weimi_game/js-subject/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#637#1531#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/nodeJs/node_modules/fliza/fliza_modules/PageSlider/src/page-slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="15" selection-start-line="129" selection-start-column="15" selection-end-line="129" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        <state vertical-scroll-proportion="-3.0535715">
+          <caret line="159" column="36" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67979455">
-          <caret line="78" column="3" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding>
+            <element signature="e#1777#1874#0" expanded="false" />
+            <element signature="e#1883#2021#0" expanded="false" />
+            <element signature="e#2037#2095#0" expanded="false" />
+            <element signature="e#2100#2240#0" expanded="false" />
+            <element signature="e#2249#2268#0" expanded="false" />
+            <element signature="e#2290#2349#0" expanded="false" />
+            <element signature="e#2393#2449#0" expanded="false" />
+            <element signature="e#2517#2574#0" expanded="false" />
+            <element signature="e#2579#2689#0" expanded="false" />
+            <element signature="e#2698#2716#0" expanded="false" />
+            <element signature="e#2734#2810#0" expanded="false" />
+            <element signature="e#2819#2846#0" expanded="false" />
+            <element signature="e#2882#2911#0" expanded="false" />
+            <element signature="e#2938#2985#0" expanded="false" />
+            <element signature="e#3013#3061#0" expanded="false" />
+            <element signature="e#3082#3154#0" expanded="false" />
+            <element signature="e#3173#3195#0" expanded="false" />
+            <element signature="e#3222#3269#0" expanded="false" />
+            <element signature="e#3297#3345#0" expanded="false" />
+            <element signature="e#3366#3438#0" expanded="false" />
+            <element signature="e#3457#3479#0" expanded="false" />
+            <element signature="e#3506#3553#0" expanded="false" />
+            <element signature="e#3581#3629#0" expanded="false" />
+            <element signature="e#3650#3722#0" expanded="false" />
+            <element signature="e#3737#3764#0" expanded="false" />
+            <element signature="e#3793#3844#0" expanded="false" />
+            <element signature="e#3853#3877#0" expanded="false" />
+            <element signature="e#3891#4153#0" expanded="false" />
+            <element signature="e#4163#4186#0" expanded="false" />
+            <element signature="e#4201#4375#0" expanded="false" />
+            <element signature="e#4397#4457#0" expanded="false" />
+            <element signature="e#4479#4539#0" expanded="false" />
+            <element signature="e#4561#4621#0" expanded="false" />
+            <element signature="e#4643#4703#0" expanded="false" />
+            <element signature="e#4725#4785#0" expanded="false" />
+            <element signature="e#4796#4823#0" expanded="false" />
+            <element signature="e#4851#4950#0" expanded="false" />
+            <element signature="e#4960#5139#0" expanded="false" />
+            <element signature="e#5153#5250#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4469178">
+          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
