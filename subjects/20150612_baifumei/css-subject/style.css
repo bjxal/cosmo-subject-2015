@@ -44,11 +44,11 @@ body{
     left: 0;
 }
 .cover .loading img:nth-child(1){
-    -webkit-animation: cover_kiss_ani 2s infinite alternate;
+    -webkit-animation: cover_kiss_ani 0.1s infinite alternate;
 }
 .cover .loading img:nth-child(2){
     opacity: 0;
-    -webkit-animation: cover_kiss_word_ani 2s infinite alternate;
+    -webkit-animation: cover_kiss_word_ani 0.1s infinite alternate;
 }
 /*p*/
 .p img{
@@ -84,6 +84,9 @@ body{
     -webkit-animation: p0_4_ani 0.1s infinite normal;
 }
 .p0 .p0_tit img:nth-child(5){
+    -webkit-animation: p0_5_ani 0.1s infinite normal;
+}
+.p0 .p0_tit img:nth-child(6){
     -webkit-animation: p0_5_ani 0.1s infinite normal;
 }
 /*p1*/
@@ -274,27 +277,23 @@ body{
 /*ani*/
 @-webkit-keyframes p0_2_ani{
     0%{opacity: 0.5; -webkit-transform: scale(1);}
-    /*50%{opacity: 1; -webkit-transform: scale(1);}*/
     100%{opacity: 1; -webkit-transform: scale(1);}
 }
 @-webkit-keyframes p0_3_ani{
     0%{opacity: 0.5; -webkit-transform: scale(1);}
-    /*60%{opacity: 1; -webkit-transform: scale(1);}*/
     100%{opacity: 1; -webkit-transform: scale(1);}
 }
 @-webkit-keyframes p0_4_ani{
     0%{opacity: 0.5; -webkit-transform: scale(1);}
-    /*70%{opacity: 1; -webkit-transform: scale(1);}*/
     100%{opacity: 1; -webkit-transform: scale(1);}
 }
 @-webkit-keyframes p0_5_ani{
     0%{opacity: 0.5; -webkit-transform: scale(1);}
-    /*80%{opacity: 1; -webkit-transform: scale(1);}*/
     100%{opacity: 1; -webkit-transform: scale(1);}
 }
 @-webkit-keyframes cover_kiss_ani {
     0%{opacity: 1;}
-    100%{opacity: 0;}
+    100%{opacity: 0.5;}
 }
 @-webkit-keyframes cover_kiss_word_ani {
     0%{opacity: 0;}
@@ -303,18 +302,22 @@ body{
 @-webkit-keyframes p2_tit_ani {
     0% {
         transform: none;
+        -webkit-transform: none;
         opacity: 1;
     }
     40%{
         transform: scale(1.4);
+        -webkit-transform: scale(1.4);
         opacity: 0;
     }
     80%{
         transform: none;
+        -webkit-transform: none;
         opacity: 0;
     }
     100%{
         transform: none;
+        -webkit-transform: none;
         opacity: 0;
     }
 }
