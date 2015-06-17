@@ -68,7 +68,7 @@ Fui.Template.regTpl({
 });
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:0,
+    curPage:7,
     lock:true,
     iteration:false,
     orient:'y',
