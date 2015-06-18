@@ -49,14 +49,14 @@ var PAGE0 = Fui.Template.extend({
                 gesture:"tap",
                 name:"show_tips",
                 callback:function(e,$tar){
-                    $(".p7 .tips").fadeIn();
+                    $(".p12 .tips").fadeIn();
                 }
             },
             {
                 gesture:"tap",
                 name:"hide_tips",
                 callback:function(e,$tar){
-                    $(".p7 .tips").fadeOut();
+                    $(".p12 .tips").fadeOut();
                 }
             }
 
@@ -68,7 +68,7 @@ Fui.Template.regTpl({
 });
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:7,
+    curPage:0,
     lock:true,
     iteration:false,
     orient:'y',
@@ -78,27 +78,34 @@ var slider = new Fui.PageSlider({
             var gesture = slider.event.gesture;
             $(".fui-arrow.right").hide();
             var page = this.get("curPage");
-            console.log(page)
-            if(page==7){
+            console.log(grade+"---")
+            if(page==12){
                 var index = 1;
-                if(grade>5 && grade<=19){
+                if(grade>=30 && grade<40){
                         index = 1;
                 }
-                else if(grade>20 && grade<=29) {
+                else if(grade>=40 && grade<50) {
                     index = 2;
                 }
-                else if(grade>30 && grade<=39) {
+                else if(grade>=50 && grade<60) {
                     index = 3;
                 }
-                else if(grade>40 && grade<=49) {
+                else if(grade>=60 && grade<70) {
                     index = 4;
                 }
-                else if(grade>=50) {
+                else if(grade>=70 && grade<80) {
                     index = 5;
                 }
+                else if(grade>=80 && grade<90) {
+                    index = 6;
+                }
+                else if(grade>=90 && grade<=100) {
+                    index = 7;
+                }
                 else{}
-                $(".p7 .tit").find("span").html(grade);
-                $(".p7 .word").find("span").attr("class","").addClass("word_"+index);
+                console.log(grade+"-----------"+index)
+                $(".p12 .tit").find("span").html(grade);
+                $(".p12 .word").find("span").attr("class","").addClass("word_"+index);
             }
         },
         gesture:function(){
@@ -139,6 +146,26 @@ var slider = new Fui.PageSlider({
         ,{
             template:'PAGE0',
             xtpl:'p7'
+        }
+        ,{
+            template:'PAGE0',
+            xtpl:'p8'
+        }
+        ,{
+            template:'PAGE0',
+            xtpl:'p9'
+        }
+        ,{
+            template:'PAGE0',
+            xtpl:'p10'
+        }
+        ,{
+            template:'PAGE0',
+            xtpl:'p11'
+        }
+        ,{
+            template:'PAGE0',
+            xtpl:'p12'
         }
     ]
 });

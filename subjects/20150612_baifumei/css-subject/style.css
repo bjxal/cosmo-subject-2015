@@ -145,7 +145,7 @@ body{
 .p2 .opt{
     margin: 0;
 }
-.p3 .opt,.p6 .opt{
+.p3 .opt,.p7 .opt,.p8 .opt,.p10 .opt,.p11 .opt{
     padding: 0;
     left: 50%;
     -webkit-transform: translate(-50%,0);
@@ -153,7 +153,7 @@ body{
 .opt img{
     position: relative;
 }
-.p2 .opt li,.p3 .opt li,.p6 .opt li{
+.p2 .opt li,.p3 .opt li,.p7 .opt li,.p8 .opt li,.p10 .opt li,.p11 .opt li{
     padding: 16px 13.5px;
 }
 .p2 .opt li:nth-child(odd){
@@ -168,47 +168,74 @@ body{
     background:url(../img-subject/p2/selected.png) no-repeat center;
 }
 /*p4*/
-.p4 .opt li{
+.p4 .opt li,.p5 .opt li{
     padding: 16px;
 }
 .p4 .opt li:nth-child(odd){
     float: left;
-    margin: 20px 0 0 25px;
+    margin: 20px 0 0 12px;
 }
 .p4 .opt li:nth-child(even){
     float: right;
-    margin: 20px 25px 0 0;
+    margin: 20px 12px 0 0;
 }
 .p4 .opt li.selected{
     background:url(../img-subject/p4/selected.png) no-repeat center;
 }
 /*p5*/
-.p5 .opt li{
-    padding: 16px;
-}
 .p5 .opt li:nth-child(odd){
     float: left;
-    margin: 20px 0 0 12px;
+    margin: 20px 0 0 25px;
 }
 .p5 .opt li:nth-child(even){
     float: right;
-    margin: 20px 12px 0 0;
+    margin: 20px 25px 0 0;
 }
 .p5 .opt li.selected{
     background:url(../img-subject/p5/selected.png) no-repeat center;
 }
+/*p6*/
+.p6 .opt li{
+    padding: 16px;
+}
+.p6 .opt li:nth-child(odd){
+    float: left;
+    margin: 20px 0 0 12px;
+}
+.p6 .opt li:nth-child(even){
+    float: right;
+    margin: 20px 12px 0 0;
+}
+.p6 .opt li.selected{
+    background:url(../img-subject/p6/selected.png) no-repeat center;
+}
+/*p9*/
+.p9 .opt li{
+    padding: 16px;
+}
+.p9 .opt li:nth-child(odd){
+    float: left;
+    margin: 20px 0 0 12px;
+}
+.p9 .opt li:nth-child(even){
+    float: right;
+    margin: 20px 12px 0 0;
+}
+.p9 .opt li.selected{
+    background:url(../img-subject/p9/selected.png) no-repeat center;
+}
 /*p7*/
-.p7 img{
+.p12 img{
     position: relative;
 }
-.p7 .tit,.p7 .word,.p7 .logo{
+.p12 .tit,.p12 .word,.p12 .logo{
     position: relative;
     text-align: center;
 }
-.p7 .tit{
+.p12 .tit{
     margin-top: 15%;
 }
-.p7 .tit span{
+.p12 .tit span{
     display: block;
     width: 200px;
     height: 100px;
@@ -221,10 +248,10 @@ body{
     font-family: "microsoft yahei";
     line-height: 100px;
 }
-.p7 .word{
+.p12 .word{
     margin: 50px 0;
 }
-.p7 .word span{
+.p12 .word span{
     display: block;
     width: 100%;
     height: 100%;
@@ -234,32 +261,38 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-.p7 .word span.word_1{
-    background-image: url(../img-subject/p7/word/1.png);
+.p12 .word span.word_1{
+    background-image: url(../img-subject/p12/word/1.png);
 }
-.p7 .word span.word_2{
-    background-image: url(../img-subject/p7/word/2.png);
+.p12 .word span.word_2{
+    background-image: url(../img-subject/p12/word/2.png);
 }
-.p7 .word span.word_3{
-    background-image: url(../img-subject/p7/word/3.png);
+.p12 .word span.word_3{
+    background-image: url(../img-subject/p12/word/3.png);
 }
-.p7 .word span.word_4{
-    background-image: url(../img-subject/p7/word/4.png);
+.p12 .word span.word_4{
+    background-image: url(../img-subject/p12/word/4.png);
 }
-.p7 .word span.word_5{
-    background-image: url(../img-subject/p7/word/5.png);
+.p12 .word span.word_5{
+    background-image: url(../img-subject/p12/word/5.png);
 }
-.p7 .share{
+.p12 .word span.word_6{
+    background-image: url(../img-subject/p12/word/6.png);
+}
+.p12 .word span.word_7{
+    background-image: url(../img-subject/p12/word/7.png);
+}
+.p12 .share{
     position: relative;
     margin-top: 3%;
 }
-.p7 .share img:nth-child(1){
+.p12 .share img:nth-child(1){
     position: absolute;
     bottom: 0;
     left: 50%;
     -webkit-transform: translate(-50%,0);
 }
-.p7 .tips{
+.p12 .tips{
     display: none;
     width: 100%;
     height: 100%;
@@ -267,9 +300,9 @@ body{
     top: 0;
     left: 0;
     z-index: 1;
-    background: url(../img-subject/p7/opt_black_60.png);
+    background: url(../img-subject/p12/opt_black_60.png);
 }
-.p7 .tips img{
+.p12 .tips img{
     position: absolute;
     left: 50%;
     -webkit-transform: translate(-50%,0);
