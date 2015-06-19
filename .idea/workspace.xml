@@ -5,44 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p6\opts\1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p6\opts\1_sel.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p6\opts\2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p6\opts\2_sel.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p6\opts\3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p6\opts\3_sel.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p6\opts\4.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p6\opts\4_sel.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\opt_black_60.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\share.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\tips.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\tit.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\word\1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\word\2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\word\3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\word\4.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\word\5.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\20150612_baifumei\img-subject\p7\word_bg.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/opts/1.jpg" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/opts/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/opts/1.jpg" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/opts/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p2/tit/1.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p2/tit/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p3/tit/1.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p3/tit/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/tit/1.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/tit/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/tit/1.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/tit/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p6/tit/1.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p6/tit/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/opts/2.jpg" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/opts/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/opts/2.jpg" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/opts/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/opts/3.jpg" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/opts/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/opts/3.jpg" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/opts/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/opts/4.jpg" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/opts/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/opts/4.jpg" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/opts/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/selected.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p4/selected.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/selected.png" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/img-subject/p5/selected.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/demo_durex_game/index.html" afterPath="$PROJECT_DIR$/subjects/demo_durex_game/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/demo_durex_game/css-subject/pic.css" afterPath="$PROJECT_DIR$/subjects/demo_durex_game/css-subject/pic.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cosmo-subject-2015.iws" />
@@ -67,9 +34,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-              <folding />
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="93" selection-start-line="16" selection-start-column="93" selection-end-line="16" selection-end-column="93" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,31 +46,31 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.3333335">
-              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
               <folding>
-                <element signature="e#1883#1980#0" expanded="false" />
-                <element signature="e#1989#2127#0" expanded="false" />
-                <element signature="e#2143#2201#0" expanded="false" />
-                <element signature="e#2206#2346#0" expanded="false" />
-                <element signature="e#2355#2374#0" expanded="false" />
-                <element signature="e#2396#2455#0" expanded="false" />
-                <element signature="e#2499#2555#0" expanded="false" />
-                <element signature="e#2623#2680#0" expanded="false" />
-                <element signature="e#2685#2795#0" expanded="false" />
-                <element signature="e#2804#2822#0" expanded="false" />
-                <element signature="e#2954#2981#0" expanded="false" />
-                <element signature="e#3111#3158#0" expanded="false" />
-                <element signature="e#3186#3234#0" expanded="false" />
-                <element signature="e#3255#3327#0" expanded="false" />
-                <element signature="e#4457#4484#0" expanded="false" />
-                <element signature="e#4516#4567#0" expanded="false" />
-                <element signature="e#4577#4601#0" expanded="false" />
-                <element signature="e#4616#4878#0" expanded="false" />
-                <element signature="e#4889#4912#0" expanded="false" />
-                <element signature="e#4928#5102#0" expanded="false" />
-                <element signature="e#5778#5877#0" expanded="false" />
-                <element signature="e#6083#6180#0" expanded="false" />
+                <element signature="e#1879#1976#0" expanded="false" />
+                <element signature="e#1985#2123#0" expanded="false" />
+                <element signature="e#2139#2197#0" expanded="false" />
+                <element signature="e#2202#2342#0" expanded="false" />
+                <element signature="e#2351#2370#0" expanded="false" />
+                <element signature="e#2392#2451#0" expanded="false" />
+                <element signature="e#2495#2551#0" expanded="false" />
+                <element signature="e#2619#2676#0" expanded="false" />
+                <element signature="e#2681#2791#0" expanded="false" />
+                <element signature="e#2800#2818#0" expanded="false" />
+                <element signature="e#2950#2977#0" expanded="false" />
+                <element signature="e#3107#3154#0" expanded="false" />
+                <element signature="e#3182#3230#0" expanded="false" />
+                <element signature="e#3251#3323#0" expanded="false" />
+                <element signature="e#4453#4480#0" expanded="false" />
+                <element signature="e#4512#4563#0" expanded="false" />
+                <element signature="e#4573#4597#0" expanded="false" />
+                <element signature="e#4612#4874#0" expanded="false" />
+                <element signature="e#4885#4908#0" expanded="false" />
+                <element signature="e#4924#5098#0" expanded="false" />
+                <element signature="e#5774#5873#0" expanded="false" />
+                <element signature="e#6079#6176#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -122,8 +91,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7258065">
-              <caret line="331" column="3" selection-start-line="331" selection-start-column="3" selection-end-line="331" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.70071685">
+              <caret line="256" column="5" selection-start-line="256" selection-start-column="5" selection-end-line="256" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -150,11 +119,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pic.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/css-subject/pic.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#22#216003#2" expanded="true" />
+                <element signature="e#216028#330769#2" expanded="true" />
+                <element signature="e#330794#475427#2" expanded="true" />
+                <element signature="e#475452#654425#2" expanded="true" />
+                <element signature="e#654450#824583#2" expanded="true" />
+                <element signature="e#824608#1011109#2" expanded="true" />
+                <element signature="e#1011135#1055396#2" expanded="true" />
+                <element signature="e#1055422#1103683#2" expanded="true" />
+                <element signature="e#1103709#1148174#2" expanded="true" />
+                <element signature="e#1148200#1195265#2" expanded="true" />
+                <element signature="e#1195291#1242236#2" expanded="true" />
+                <element signature="e#1242262#1289207#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
+              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding>
                 <element signature="e#122#1087#2" expanded="true" />
               </folding>
@@ -196,9 +188,10 @@
         <option value="D:/program/nodeJs/node_modules/fliza/fliza_modules/PageSlider/src/page-slider.js" />
         <option value="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js" />
         <option value="$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css" />
-        <option value="$PROJECT_DIR$/subjects/demo_durex_game/index.html" />
-        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css" />
+        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" />
+        <option value="$PROJECT_DIR$/subjects/demo_durex_game/css-subject/pic.css" />
+        <option value="$PROJECT_DIR$/subjects/demo_durex_game/index.html" />
       </list>
     </option>
   </component>
@@ -254,7 +247,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,110 +319,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo1_weimi_game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo1_weimi_game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js-subject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20150612_baifumei" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20150612_baifumei" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js-subject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20150612_baifumei" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css-subject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -505,7 +396,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15997024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -515,7 +406,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29478827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29363784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -544,15 +435,109 @@
     <option name="LAST_COMMIT_MESSAGE" value="eileen" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding>
+            <element signature="e#1879#1976#0" expanded="false" />
+            <element signature="e#1985#2123#0" expanded="false" />
+            <element signature="e#2139#2197#0" expanded="false" />
+            <element signature="e#2202#2342#0" expanded="false" />
+            <element signature="e#2351#2370#0" expanded="false" />
+            <element signature="e#2392#2451#0" expanded="false" />
+            <element signature="e#2495#2551#0" expanded="false" />
+            <element signature="e#2619#2676#0" expanded="false" />
+            <element signature="e#2681#2791#0" expanded="false" />
+            <element signature="e#2800#2818#0" expanded="false" />
+            <element signature="e#2950#2977#0" expanded="false" />
+            <element signature="e#3107#3154#0" expanded="false" />
+            <element signature="e#3182#3230#0" expanded="false" />
+            <element signature="e#3251#3323#0" expanded="false" />
+            <element signature="e#4453#4480#0" expanded="false" />
+            <element signature="e#4512#4563#0" expanded="false" />
+            <element signature="e#4573#4597#0" expanded="false" />
+            <element signature="e#4612#4874#0" expanded="false" />
+            <element signature="e#4885#4908#0" expanded="false" />
+            <element signature="e#4924#5098#0" expanded="false" />
+            <element signature="e#5774#5873#0" expanded="false" />
+            <element signature="e#6079#6176#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
+          <folding>
+            <element signature="e#122#1087#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -561,28 +546,28 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
           <folding>
-            <element signature="e#1883#1980#0" expanded="false" />
-            <element signature="e#1989#2127#0" expanded="false" />
-            <element signature="e#2143#2201#0" expanded="false" />
-            <element signature="e#2206#2346#0" expanded="false" />
-            <element signature="e#2355#2374#0" expanded="false" />
-            <element signature="e#2396#2455#0" expanded="false" />
-            <element signature="e#2499#2555#0" expanded="false" />
-            <element signature="e#2623#2680#0" expanded="false" />
-            <element signature="e#2685#2795#0" expanded="false" />
-            <element signature="e#2804#2822#0" expanded="false" />
-            <element signature="e#2954#2981#0" expanded="false" />
-            <element signature="e#3111#3158#0" expanded="false" />
-            <element signature="e#3186#3234#0" expanded="false" />
-            <element signature="e#3255#3327#0" expanded="false" />
-            <element signature="e#4457#4484#0" expanded="false" />
-            <element signature="e#4516#4567#0" expanded="false" />
-            <element signature="e#4577#4601#0" expanded="false" />
-            <element signature="e#4616#4878#0" expanded="false" />
-            <element signature="e#4889#4912#0" expanded="false" />
-            <element signature="e#4928#5102#0" expanded="false" />
-            <element signature="e#5778#5877#0" expanded="false" />
-            <element signature="e#6083#6180#0" expanded="false" />
+            <element signature="e#1879#1976#0" expanded="false" />
+            <element signature="e#1985#2123#0" expanded="false" />
+            <element signature="e#2139#2197#0" expanded="false" />
+            <element signature="e#2202#2342#0" expanded="false" />
+            <element signature="e#2351#2370#0" expanded="false" />
+            <element signature="e#2392#2451#0" expanded="false" />
+            <element signature="e#2495#2551#0" expanded="false" />
+            <element signature="e#2619#2676#0" expanded="false" />
+            <element signature="e#2681#2791#0" expanded="false" />
+            <element signature="e#2800#2818#0" expanded="false" />
+            <element signature="e#2950#2977#0" expanded="false" />
+            <element signature="e#3107#3154#0" expanded="false" />
+            <element signature="e#3182#3230#0" expanded="false" />
+            <element signature="e#3251#3323#0" expanded="false" />
+            <element signature="e#4453#4480#0" expanded="false" />
+            <element signature="e#4512#4563#0" expanded="false" />
+            <element signature="e#4573#4597#0" expanded="false" />
+            <element signature="e#4612#4874#0" expanded="false" />
+            <element signature="e#4885#4908#0" expanded="false" />
+            <element signature="e#4924#5098#0" expanded="false" />
+            <element signature="e#5774#5873#0" expanded="false" />
+            <element signature="e#6079#6176#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -591,7 +576,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="159" column="36" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -600,28 +587,28 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
           <folding>
-            <element signature="e#1883#1980#0" expanded="false" />
-            <element signature="e#1989#2127#0" expanded="false" />
-            <element signature="e#2143#2201#0" expanded="false" />
-            <element signature="e#2206#2346#0" expanded="false" />
-            <element signature="e#2355#2374#0" expanded="false" />
-            <element signature="e#2396#2455#0" expanded="false" />
-            <element signature="e#2499#2555#0" expanded="false" />
-            <element signature="e#2623#2680#0" expanded="false" />
-            <element signature="e#2685#2795#0" expanded="false" />
-            <element signature="e#2804#2822#0" expanded="false" />
-            <element signature="e#2954#2981#0" expanded="false" />
-            <element signature="e#3111#3158#0" expanded="false" />
-            <element signature="e#3186#3234#0" expanded="false" />
-            <element signature="e#3255#3327#0" expanded="false" />
-            <element signature="e#4457#4484#0" expanded="false" />
-            <element signature="e#4516#4567#0" expanded="false" />
-            <element signature="e#4577#4601#0" expanded="false" />
-            <element signature="e#4616#4878#0" expanded="false" />
-            <element signature="e#4889#4912#0" expanded="false" />
-            <element signature="e#4928#5102#0" expanded="false" />
-            <element signature="e#5778#5877#0" expanded="false" />
-            <element signature="e#6083#6180#0" expanded="false" />
+            <element signature="e#1879#1976#0" expanded="false" />
+            <element signature="e#1985#2123#0" expanded="false" />
+            <element signature="e#2139#2197#0" expanded="false" />
+            <element signature="e#2202#2342#0" expanded="false" />
+            <element signature="e#2351#2370#0" expanded="false" />
+            <element signature="e#2392#2451#0" expanded="false" />
+            <element signature="e#2495#2551#0" expanded="false" />
+            <element signature="e#2619#2676#0" expanded="false" />
+            <element signature="e#2681#2791#0" expanded="false" />
+            <element signature="e#2800#2818#0" expanded="false" />
+            <element signature="e#2950#2977#0" expanded="false" />
+            <element signature="e#3107#3154#0" expanded="false" />
+            <element signature="e#3182#3230#0" expanded="false" />
+            <element signature="e#3251#3323#0" expanded="false" />
+            <element signature="e#4453#4480#0" expanded="false" />
+            <element signature="e#4512#4563#0" expanded="false" />
+            <element signature="e#4573#4597#0" expanded="false" />
+            <element signature="e#4612#4874#0" expanded="false" />
+            <element signature="e#4885#4908#0" expanded="false" />
+            <element signature="e#4924#5098#0" expanded="false" />
+            <element signature="e#5774#5873#0" expanded="false" />
+            <element signature="e#6079#6176#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -640,7 +627,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -649,28 +638,28 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding>
-            <element signature="e#1883#1980#0" expanded="false" />
-            <element signature="e#1989#2127#0" expanded="false" />
-            <element signature="e#2143#2201#0" expanded="false" />
-            <element signature="e#2206#2346#0" expanded="false" />
-            <element signature="e#2355#2374#0" expanded="false" />
-            <element signature="e#2396#2455#0" expanded="false" />
-            <element signature="e#2499#2555#0" expanded="false" />
-            <element signature="e#2623#2680#0" expanded="false" />
-            <element signature="e#2685#2795#0" expanded="false" />
-            <element signature="e#2804#2822#0" expanded="false" />
-            <element signature="e#2954#2981#0" expanded="false" />
-            <element signature="e#3111#3158#0" expanded="false" />
-            <element signature="e#3186#3234#0" expanded="false" />
-            <element signature="e#3255#3327#0" expanded="false" />
-            <element signature="e#4457#4484#0" expanded="false" />
-            <element signature="e#4516#4567#0" expanded="false" />
-            <element signature="e#4577#4601#0" expanded="false" />
-            <element signature="e#4616#4878#0" expanded="false" />
-            <element signature="e#4889#4912#0" expanded="false" />
-            <element signature="e#4928#5102#0" expanded="false" />
-            <element signature="e#5778#5877#0" expanded="false" />
-            <element signature="e#6083#6180#0" expanded="false" />
+            <element signature="e#1879#1976#0" expanded="false" />
+            <element signature="e#1985#2123#0" expanded="false" />
+            <element signature="e#2139#2197#0" expanded="false" />
+            <element signature="e#2202#2342#0" expanded="false" />
+            <element signature="e#2351#2370#0" expanded="false" />
+            <element signature="e#2392#2451#0" expanded="false" />
+            <element signature="e#2495#2551#0" expanded="false" />
+            <element signature="e#2619#2676#0" expanded="false" />
+            <element signature="e#2681#2791#0" expanded="false" />
+            <element signature="e#2800#2818#0" expanded="false" />
+            <element signature="e#2950#2977#0" expanded="false" />
+            <element signature="e#3107#3154#0" expanded="false" />
+            <element signature="e#3182#3230#0" expanded="false" />
+            <element signature="e#3251#3323#0" expanded="false" />
+            <element signature="e#4453#4480#0" expanded="false" />
+            <element signature="e#4512#4563#0" expanded="false" />
+            <element signature="e#4573#4597#0" expanded="false" />
+            <element signature="e#4612#4874#0" expanded="false" />
+            <element signature="e#4885#4908#0" expanded="false" />
+            <element signature="e#4924#5098#0" expanded="false" />
+            <element signature="e#5774#5873#0" expanded="false" />
+            <element signature="e#6079#6176#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -679,7 +668,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -688,28 +679,28 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1883#1980#0" expanded="false" />
-            <element signature="e#1989#2127#0" expanded="false" />
-            <element signature="e#2143#2201#0" expanded="false" />
-            <element signature="e#2206#2346#0" expanded="false" />
-            <element signature="e#2355#2374#0" expanded="false" />
-            <element signature="e#2396#2455#0" expanded="false" />
-            <element signature="e#2499#2555#0" expanded="false" />
-            <element signature="e#2623#2680#0" expanded="false" />
-            <element signature="e#2685#2795#0" expanded="false" />
-            <element signature="e#2804#2822#0" expanded="false" />
-            <element signature="e#2954#2981#0" expanded="false" />
-            <element signature="e#3111#3158#0" expanded="false" />
-            <element signature="e#3186#3234#0" expanded="false" />
-            <element signature="e#3255#3327#0" expanded="false" />
-            <element signature="e#4457#4484#0" expanded="false" />
-            <element signature="e#4516#4567#0" expanded="false" />
-            <element signature="e#4577#4601#0" expanded="false" />
-            <element signature="e#4616#4878#0" expanded="false" />
-            <element signature="e#4889#4912#0" expanded="false" />
-            <element signature="e#4928#5102#0" expanded="false" />
-            <element signature="e#5778#5877#0" expanded="false" />
-            <element signature="e#6083#6180#0" expanded="false" />
+            <element signature="e#1879#1976#0" expanded="false" />
+            <element signature="e#1985#2123#0" expanded="false" />
+            <element signature="e#2139#2197#0" expanded="false" />
+            <element signature="e#2202#2342#0" expanded="false" />
+            <element signature="e#2351#2370#0" expanded="false" />
+            <element signature="e#2392#2451#0" expanded="false" />
+            <element signature="e#2495#2551#0" expanded="false" />
+            <element signature="e#2619#2676#0" expanded="false" />
+            <element signature="e#2681#2791#0" expanded="false" />
+            <element signature="e#2800#2818#0" expanded="false" />
+            <element signature="e#2950#2977#0" expanded="false" />
+            <element signature="e#3107#3154#0" expanded="false" />
+            <element signature="e#3182#3230#0" expanded="false" />
+            <element signature="e#3251#3323#0" expanded="false" />
+            <element signature="e#4453#4480#0" expanded="false" />
+            <element signature="e#4512#4563#0" expanded="false" />
+            <element signature="e#4573#4597#0" expanded="false" />
+            <element signature="e#4612#4874#0" expanded="false" />
+            <element signature="e#4885#4908#0" expanded="false" />
+            <element signature="e#4924#5098#0" expanded="false" />
+            <element signature="e#5774#5873#0" expanded="false" />
+            <element signature="e#6079#6176#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,6 +795,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo1_weimi_game/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="e#122#1087#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="93" selection-start-line="16" selection-start-column="93" selection-end-line="16" selection-end-column="93" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding>
+            <element signature="e#1879#1976#0" expanded="false" />
+            <element signature="e#1985#2123#0" expanded="false" />
+            <element signature="e#2139#2197#0" expanded="false" />
+            <element signature="e#2202#2342#0" expanded="false" />
+            <element signature="e#2351#2370#0" expanded="false" />
+            <element signature="e#2392#2451#0" expanded="false" />
+            <element signature="e#2495#2551#0" expanded="false" />
+            <element signature="e#2619#2676#0" expanded="false" />
+            <element signature="e#2681#2791#0" expanded="false" />
+            <element signature="e#2800#2818#0" expanded="false" />
+            <element signature="e#2950#2977#0" expanded="false" />
+            <element signature="e#3107#3154#0" expanded="false" />
+            <element signature="e#3182#3230#0" expanded="false" />
+            <element signature="e#3251#3323#0" expanded="false" />
+            <element signature="e#4453#4480#0" expanded="false" />
+            <element signature="e#4512#4563#0" expanded="false" />
+            <element signature="e#4573#4597#0" expanded="false" />
+            <element signature="e#4612#4874#0" expanded="false" />
+            <element signature="e#4885#4908#0" expanded="false" />
+            <element signature="e#4924#5098#0" expanded="false" />
+            <element signature="e#5774#5873#0" expanded="false" />
+            <element signature="e#6079#6176#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -814,59 +864,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css">
+    <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/css-subject/pic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#122#1087#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding>
-            <element signature="e#1883#1980#0" expanded="false" />
-            <element signature="e#1989#2127#0" expanded="false" />
-            <element signature="e#2143#2201#0" expanded="false" />
-            <element signature="e#2206#2346#0" expanded="false" />
-            <element signature="e#2355#2374#0" expanded="false" />
-            <element signature="e#2396#2455#0" expanded="false" />
-            <element signature="e#2499#2555#0" expanded="false" />
-            <element signature="e#2623#2680#0" expanded="false" />
-            <element signature="e#2685#2795#0" expanded="false" />
-            <element signature="e#2804#2822#0" expanded="false" />
-            <element signature="e#2954#2981#0" expanded="false" />
-            <element signature="e#3111#3158#0" expanded="false" />
-            <element signature="e#3186#3234#0" expanded="false" />
-            <element signature="e#3255#3327#0" expanded="false" />
-            <element signature="e#4457#4484#0" expanded="false" />
-            <element signature="e#4516#4567#0" expanded="false" />
-            <element signature="e#4577#4601#0" expanded="false" />
-            <element signature="e#4616#4878#0" expanded="false" />
-            <element signature="e#4889#4912#0" expanded="false" />
-            <element signature="e#4928#5102#0" expanded="false" />
-            <element signature="e#5778#5877#0" expanded="false" />
-            <element signature="e#6083#6180#0" expanded="false" />
+            <element signature="e#22#216003#2" expanded="true" />
+            <element signature="e#216028#330769#2" expanded="true" />
+            <element signature="e#330794#475427#2" expanded="true" />
+            <element signature="e#475452#654425#2" expanded="true" />
+            <element signature="e#654450#824583#2" expanded="true" />
+            <element signature="e#824608#1011109#2" expanded="true" />
+            <element signature="e#1011135#1055396#2" expanded="true" />
+            <element signature="e#1055422#1103683#2" expanded="true" />
+            <element signature="e#1103709#1148174#2" expanded="true" />
+            <element signature="e#1148200#1195265#2" expanded="true" />
+            <element signature="e#1195291#1242236#2" expanded="true" />
+            <element signature="e#1242262#1289207#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7258065">
-          <caret line="331" column="3" selection-start-line="331" selection-start-column="3" selection-end-line="331" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.70071685">
+          <caret line="256" column="5" selection-start-line="256" selection-start-column="5" selection-end-line="256" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
