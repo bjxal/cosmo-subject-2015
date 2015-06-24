@@ -45,7 +45,7 @@ body {font-family:"Microsoft yahei", Helvetica, Arial, Verdana, sans-serif !impo
 .bgc5 { background-color: #34002A;}
 
 #GameScoreLayer-share {height: 1.3em; line-height: 1.3em;overflow: hidden;}
-.share-icon {width:1.7em; background-repeat:no-repeat; background-size: auto 100%;}
+.share-icon {width:2.2em; background-repeat:no-repeat; background-size: auto 100%;}
 
 #GameScoreLayer-btn .btn-1{background: url(../img-subject/btn/1.png) no-repeat center; background-size: auto 100%;}
 #GameScoreLayer-btn .btn-2{background: url(../img-subject/btn/2.png) no-repeat center; background-size: auto 100%;}

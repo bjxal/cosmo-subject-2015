@@ -1,0 +1,40 @@
+.wrap_404 {
+  text-align: center;
+  height: 450px;
+  overflow: hidden;
+  width: 100%;
+}
+.wrap_404 img {
+  margin: 100px auto 0 auto;
+}
+.wrap_404 p {
+  font-size: 16px;
+  color: #555555;
+  line-height: 35px;
+}
+.wrap_404 p a {
+  color: #1274b2;
+}
+.wrap_404 .load_bar {
+  height: 4px;
+  background-color: #c7c7c7;
+  position: relative;
+  width: 310px;
+  margin: 50px auto 0 auto;
+}
+.wrap_404 .load_bar .bar {
+  height: 4px;
+  background-color: #9c9c9c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 5s ease-in-out;
+  -ms-transition: width 5s ease-in-out;
+  -o-transition: width 5s ease-in-out;
+  transition: width 5s ease-in-out;
+}
+.wrap_404 .load_bar .active {
+  width: 100%;
+}
