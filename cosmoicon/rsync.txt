@@ -1,2 +1,0 @@
-/db/svn/cosmoicon
-backup@172.16.101.203::cosmoicon
