@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>chanel</title>
+    <link rel="stylesheet" href="http://new-icon.ol-img.com/subject_common/css/subject.css">
+    <link rel="stylesheet" type="text/css" href="css-subject/chanel.css">
+    <script type="text/javascript">
+
+        function browserRedirect() {
+
+            var sUserAgent= navigator.userAgent.toLowerCase();
+
+            var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+
+            var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+
+            var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+
+            var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+
+            var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+
+            var bIsAndroid= sUserAgent.match(/android/i) == "android";
+
+            var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+
+            var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+
+
+
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+
+                window.location.href= 'http://new-icon.ol-img.com//article/chanelCOCO/index.html';
+
+            }
+
+        }
+
+        browserRedirect();
+
+    </script>
+    <script src="http://new-icon.ol-img.com/jslib/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js-subject/main.js"></script>
+</head>
+
+<body>
+<!-- 头部导航STR -->
+<script type="text/javascript" src="http://new-icon.ol-img.com/subject_common/js/subject.nav.js"></script>
+<!-- 头部导航END -->
+<div class="bg">
+    <audio src="img-subject/xx.mp3" autoplay loop>
+    </audio>
+    <div class="navBg">
+        <div class="navCT">
+            <ul class="navUl">
+                <li><a href="index.html" title="Cover Stories">Cover Stories</a></li>
+                <li><a href="Products.html" title="Products">Products</a></li>
+                <li><a href="Video.html" title="Video">Video</a></li>
+                <div class="navListBar"></div>
+            </ul>
+            <div class="theOne"><a href="#" title="壹星" target="_blank"><img src="img-subject/cover/theOne.jpg" width="191" height="60"></a></div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="animateBox item1"> <img src="img-subject/cover/item1.png" width="571" height="870"> </div>
+        <div class="animateBox item2"> <img src="img-subject/cover/item2.png" width="322" height="577"> </div>
+        <div class="animateBox item4"> <img src="img-subject/cover/item4.png" width="342" height="464"></div>
+        <div class="animateBox item5"> <img src="img-subject/cover/item5.png" width="559" height="828"></div>
+        <div class="animateBox item7"> <img src="img-subject/cover/item7.png" width="459" height="246"></div>
+        <div class="animateBox item9"> <img src="img-subject/cover/item9.png" width="409" height="524"></div>
+        <div class="animateBox item11"> <img src="img-subject/cover/item11.png" width="526" height="670"></div>
+        <div class="animateBox item15"> <img src="img-subject/cover/item15.png" width="589" height="671"></div>
+        <div class="animateBox item16"> <img src="img-subject/cover/item16.png" width="338" height="415"></div>
+        <div class="animateBox item3"> <img src="img-subject/cover/item3.png" width="205" height="220"> </div>
+        <div class="animateBox item6"> <img src="img-subject/cover/item6.png" width="170" height="209"></div>
+        <div class="animateBox item8"> <img src="img-subject/cover/item8.png" width="201" height="209"></div>
+        <div class="animateBox item10"> <img src="img-subject/cover/item10.png" width="167" height="209"> </div>
+        <div class="animateBox item12"> <img src="img-subject/cover/item12.png" width="384" height="99"></div>
+        <div class="animateBox item13"> <img src="img-subject/cover/item13.png" width="117" height="209"></div>
+        <div class="animateBox item14"> <img src="img-subject/cover/item14.png" width="106" height="209"></div>
+        <div class="linkDiv"><a href="Products.html">NEXT&nbsp;>></a></div>
+        <div class="wrapFooter"></div>
+    </div>
+</div>
+<!-- 底部STR -->
+<div class="footerWraper">
+    <script type="text/javascript" src="http://new-icon.ol-img.com/subject_common/js/subject.footer.js"></script>
+</div>
+<!-- 底部END -->
+<script type="text/javascript">
+    $(".navUl li").each(function(){
+        $(this).mouseover(function(){
+            var cruuetL=$(this).offset().left-$(".navUl").offset().left;
+            $(".navListBar").css({
+                "left":	cruuetL+20
+            });
+        });
+        $(this).mouseout(function(){
+            //var cruuetL=$(this).offset().left-$(".navUl").offset().left;
+            $(".navListBar").css({
+                "left":	20
+            });
+        });
+    });
+</script>
+</body>
+</html>

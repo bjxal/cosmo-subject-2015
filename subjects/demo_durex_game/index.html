@@ -26,65 +26,9 @@
 </head>
 <body onload="init()">
 <img src="icon.png" style="opacity:0;position:absolute;top:0; left:0;width:0"/>
-
-<!--<link rel="stylesheet" type="text/css" href="banner.css">
-<div class="body">
-    <div class="li ">
-        <a href="http://8c2qya.c.admaster.com.cn/c/a18601,b200389797,c1316,i0,m101,h"><img src="img2/bg.jpg" width="100%"></a>
-        <div class="click-icon"><a href="http://8c2qya.c.admaster.com.cn/c/a18601,b200389797,c1316,i0,m101,h"></a></div>
-        <div class="contain">
-            <div class="title"></div>
-            <div class="box">
-                <div class="text"></div>
-                <div class="sel sel-a"><a href="http://8c2qxa.c.admaster.com.cn/c/a18601,b200389795,c1316,i0,m101,h"></a></div>
-                <div class="flex"></div>
-                <div class="sel sel-b"><a href="http://8c2qxu.c.admaster.com.cn/c/a18601,b200389796,c1316,i0,m101,h"></a></div>
-                <div class="flex2"></div>
-            </div>
-        </div>
-    </div>
-    <div class="li hide">
-        <a href="http://8c2qzu.c.admaster.com.cn/c/a18601,b200389800,c1316,i0,m101,h"><img src="img2/bg.jpg" width="100%"></a>
-        <div class="click-icon"><a href="http://8c2qzu.c.admaster.com.cn/c/a18601,b200389800,c1316,i0,m101,h"></a></div>
-        <div class="contain">
-            <div class="title2"></div>
-            <div class="box">
-                <div class="text"></div>
-                <div class="sel sel-a2"><a href="http://8c2qyu.c.admaster.com.cn/c/a18601,b200389798,c1316,i0,m101,h"></a></div>
-                <div class="flex"></div>
-                <div class="sel sel-b2"><a href="http://8c2qza.c.admaster.com.cn/c/a18601,b200389799,c1316,i0,m101,h"></a></div>
-                <div class="flex2"></div>
-            </div>
-        </div>
-    </div>
-    <div class="li hide">
-        <a href="http://8c2q1a.c.admaster.com.cn/c/a18601,b200389803,c1316,i0,m101,h"><img src="img2/bg.jpg" width="100%"></a>
-        <div class="click-icon"><a href="http://8c2q1a.c.admaster.com.cn/c/a18601,b200389803,c1316,i0,m101,h"></a></div>
-        <div class="contain">
-            <div class="title"></div>
-            <div class="box">
-                <div class="text"></div>
-                <div class="sel sel-a3"><a href="http://8c2q0a.c.admaster.com.cn/c/a18601,b200389801,c1316,i0,m101,h"></a></div>
-                <div class="flex"></div>
-                <div class="sel sel-b3"><a href="http://8c2q0u.c.admaster.com.cn/c/a18601,b200389802,c1316,i0,m101,h"></a></div>
-                <div class="flex2"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<script type="text/javascript" src="banner.js">
-    // var liChange = function () {
-    // 	var i,j,
-    // 		arr = document.querySelectorAll('')
-    // }
-</script>-->
-<!-- <div class="banner" style="position: fixed;z-index: 100;bottom: 0;">
-    <a href="http://8dqhsu.c.admaster.com.cn/c/a19489,b200430426,c1316,i0,m101,h"><img src="img2/banner.jpg" width="100%" style="display: block;"></a>
-</div> -->
-
 <script type="text/javascript" src="js-subject/index.js"></script>
 
-<div id="GameScoreLayer" class="BBOX SHADE bgc1" style="display:block; z-index: 10000;">
+<div id="GameScoreLayer" class="BBOX SHADE bgc1" style="display:none;">
     <div style="padding:0 5%;">
         <div id="GameScoreLayer-text"></div>
         <br/>
@@ -92,19 +36,19 @@
         <div id="GameScoreLayer-bast">最佳</div>
         <br/>
         <div id="GameScoreLayer-btn" class="BOX">
-            <div class="btn BOX-S btn-1" onclick="_smq.push(['custom','一次抢光光','游戏按钮','返回']);_gaq.push(['_trackEvent','一次抢光光','游戏按钮','返回']);backBtn()"></div>&nbsp;
-            <div class="btn BOX-S btn-2" onclick="_smq.push(['custom','一次抢光光','游戏按钮','重来']);_gaq.push(['_trackEvent','一次抢光光','游戏按钮','重来']);replayBtn()"></div>&nbsp;
-            <div id="mebtn" class="btn BOX-S btn-3" onclick="_smq.push(['custom','一次抢光光','游戏按钮','一起hi']);_gaq.push(['_trackEvent','一次抢光光','游戏按钮','一起hi']);window.open(mebtnopenurl)">&nbsp;</div>
+            <div class="btn BOX-S btn-1" onclick="backBtn()"></div>&nbsp;
+            <div class="btn BOX-S btn-2" onclick="replayBtn()"></div>&nbsp;
+            <div id="mebtn" class="btn BOX-S btn-3" onclick="window.open(mebtnopenurl)">&nbsp;</div>
         </div>
         <br/>
         <div id="GameScoreLayer-share" class="BOX">
             <div class="" style="text-align:left;">分享到：</div>
         </div>
         <div id="" class="BOX" style="height: 1.3em;line-height: 1.3em;margin-top: 15px;">
-            <div class="share-icon" style="background-image:url(img-subject/i_14.png);" onclick="_smq.push(['custom','一次抢光光','分享','微信']);_gaq.push(['_trackEvent','一次抢光光','分享','微信']);share('weixin')"></div>
-            <div class="share-icon" style="background-image:url(img-subject/i_15.png);" onclick="_smq.push(['custom','一次抢光光','分享','新浪微博']);_gaq.push(['_trackEvent','一次抢光光','分享','新浪微博']);share('sina')"></div>
-            <div class="share-icon" style="background-image:url(img-subject/i_17.png);" onclick="_smq.push(['custom','一次抢光光','分享','腾讯微博']);_gaq.push(['_trackEvent','一次抢光光','分享','腾讯微博']);share('qqwb')"></div>
-            <div class="share-icon" style="background-image:url(img-subject/i_19.png);" onclick="_smq.push(['custom','一次抢光光','分享','Qzone']);_gaq.push(['_trackEvent','一次抢光光','分享','Qzone']);share('zone')"></div>
+            <div class="share-icon" style="background-image:url(img-subject/i_14.png);" onclick="share('weixin')"></div>
+            <div class="share-icon" style="background-image:url(img-subject/i_15.png);" onclick="share('sina')"></div>
+            <div class="share-icon" style="background-image:url(img-subject/i_17.png);" onclick="share('qqwb')"></div>
+            <div class="share-icon" style="background-image:url(img-subject/i_19.png);" onclick="share('zone')"></div>
             <div class=""></div>
         </div>
         <div id="ewm" style="width: 35%;position: absolute;right: 5%;margin-top: -3.5em;">
@@ -153,7 +97,7 @@
     #weixin-shade .step {}
     #weixin-shade .step .num{display: inline-block;margin:.5em auto; font-size: 3em; width: 1.5em; height: 1.5em; line-height: 1.5em; border-radius: 1em; background-color: #aaa; color: #000; }
     #weixin-shade .step div{font-size:2em;}
-    #weixin-shade .step img{display: block; width: 70%; margin:2em auto;}
+    #weixin-shade .step img{display: block; width: 100%; margin:1em auto;}
 </style>
 <script type="text/javascript">
     function showWeixinShade(qr, step1, step2, step3){
@@ -168,13 +112,7 @@
         s.style.position = (isDesktop?'absolute':'fixed');
         var html = '<div id="weixin-shade-scroll">';
         var i = 1;
-        if( typeof(WeixinJSBridge) == 'undefined'){
-            html += '<div id="weixin-shade-qr"><div>分享到微信</div><img src="'+qr+'"/></div>';
-            html += '<div id="weixin-shade-step1" class="step"><span class="num">'+i+'</span><div>用手机摄像头扫描上方二维码</div><img src="'+step1+'"/></div>';
-            i++;
-        }
-        html += '<div id="weixin-shade-step2" class="step"><span class="num">'+i+'</span><div>手机打开分享页面后，点击右上角分享按钮</div><img src="'+step2+'"/></div>';
-        html += '<div id="weixin-shade-step3" class="step"><span class="num">'+(i+1)+'</span><div>分享给好友或者分享到朋友圈</div><img src="'+step3+'"/></div>';
+        html += '<div id="weixin-shade-step3" class="step"><img src="img-subject/wx_share.gif"/> </div>';
         html += '</div>';
         s.innerHTML += html;
         body.appendChild(s);
@@ -182,22 +120,22 @@
 </script>
 <script type="text/javascript">
     var _smq = _smq || [];
-    _smq.push(['_setAccount', 'c9930ed8', new Date()]);
-    _smq.push(['pageview']);
+//    _smq.push(['_setAccount', 'c9930ed8', new Date()]);
+//    _smq.push(['pageview']);
 
-    (function() {
-        var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
-        sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/sm.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
-    })();
+//    (function() {
+//        var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+//        sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/sm.js';
+//        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+//    })();
 </script>
 <script type="text/javascript">
     var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-29156015-1']);
-    _gaq.push(['_addOrganic', 'soso', 'w']);
-    _gaq.push(['_addOrganic', 'sogou', 'query']);
-    _gaq.push(['_addOrganic', 'yodao', 'q']);
-    _gaq.push(['_trackPageview']);
+    //    _gaq.push(['_setAccount', 'UA-29156015-1']);
+    //    _gaq.push(['_addOrganic', 'soso', 'w']);
+    //    _gaq.push(['_addOrganic', 'sogou', 'query']);
+    //    _gaq.push(['_addOrganic', 'yodao', 'q']);
+    //    _gaq.push(['_trackPageview']);
     (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';

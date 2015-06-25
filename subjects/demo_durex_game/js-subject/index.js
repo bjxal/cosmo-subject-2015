@@ -94,7 +94,7 @@ function gameInit(){
     gameRestart();
 }
 function gameRestart(){
-    console.log('gameRestart');
+    //console.log('gameRestart');
     _gameBBList = [];
     _gameBBListIndex = 0;
     _gameScore = 0;
@@ -137,8 +137,6 @@ function creatTimeText( n ){
 var _ttreg = / t{1,2}(\d+)/, _clearttClsReg = / t{1,2}\d+| bad/;
 function refreshGameLayer( box, loop, offset ){
     var i = Math.floor(Math.random()*1000)%4+(loop?0:4);
-    console.log(i)
-    console.log(box.children.length)
     for( var j=0; j<box.children.length; j++){
         var r = box.children[j],
             rstyle = r.style;
@@ -279,23 +277,11 @@ function backBtn(){
 var mebtnopenurl = '#';
 function shareText( score ){
     if( score < 60 )
-        return '<span class="score_txt">棒棒哒，抢了<span class="timer count-title" id="count-number" data-to="'+score+'" data-speed="1500"></span>件</span><br/>快把截图发到时尚COSMO微信后台<br>坐收大礼包';
+        return '<span class="score_txt">呵呵！才抢了<em class="timer count-title" id="count-number" data-to="'+score+'" data-speed="1500"></em>件</span><br/>火力不行，还不快扫码来HICOSMO<br>取取经';
     if( score >= 60 && score < 130 )
-        return '<span class="score_txt">哎呦，抢了'+score+'件</span><br/>挺能抢啊，再努力一把就能获奖';
+        return '<span class="score_txt">哎呦，抢了<em class="timer count-title" id="count-number" data-to="'+score+'" data-speed="1500"></em>件</span><br/>挺能抢啊，再努力一把就能获奖';
     if( score >= 130 )
-        return '<span class="score_txt">棒棒哒，抢了'+score+'件</span><br/>快把截图发到时尚COSMO微信后台，坐收大礼包';
-//        if( score <= 199 )
-//            return '太牛了！一夜'+score+'次郎！<br/>距离更牛，还差一盒杜蕾斯至臻肤感装！';
-//
-//        if( score >= 260 ){
-//            mebtnopenurl = 'http://active.coupon.jd.com/ilink/couponSendFront/send_index.action?key=3cc83651b073474e9d839f997c93e8b5&roleId=266683&to=durexshop.jd.com';
-//            document.getElementById('mebtn').innerHTML = '&nbsp;奖励10元！';
-//        }else{
-//            mebtnopenurl = 'http://durexchina.jd.com/m/index.html';
-//            document.getElementById('mebtn').innerHTML = '&nbsp;郎君点我！';
-//        }
-
-//        return '膜拜ing！一夜'+score+'次郎！<br/>只有杜蕾斯焕觉M-双驱双震按摩器能与你相配！';
+        return '<span class="score_txt">棒棒哒，抢了<em class="timer count-title" id="count-number" data-to="'+score+'" data-speed="1500"></em>件</span><br/>快把截图发到时尚COSMO微信后台<br>坐收大礼包';
 }
 function share( type ){
     var content = encodeURIComponent(' #一次抢光光# 我抢了'+_gameScore+'件'),
