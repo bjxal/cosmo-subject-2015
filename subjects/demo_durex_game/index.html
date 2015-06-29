@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css-subject/pic.css"/>
     <link rel="stylesheet" type="text/css" href="css-subject/style.css"/>
     <script type="text/javascript">
+
         var isDesktop = navigator['userAgent'].match(/(ipad|iphone|ipod|android|windows phone)/i) ? false : true;
         var fontunit        = isDesktop ? 20 : ((window.innerWidth>window.innerHeight?window.innerHeight:window.innerWidth)/320)*10;
         document.write('<style type="text/css">'+
@@ -32,6 +33,7 @@
     <div style="padding:0 5%;">
         <div id="GameScoreLayer-text"></div>
         <br/>
+        <br/>
         <div id="GameScoreLayer-score" style="margin-bottom:1em;">得分</div>
         <div id="GameScoreLayer-bast">最佳</div>
         <br/>
@@ -44,14 +46,14 @@
         <div id="GameScoreLayer-share" class="BOX">
             <div class="" style="text-align:left;">分享到：</div>
         </div>
-        <div id="" class="BOX" style="height: 1.3em;line-height: 1.3em;margin-top: 15px;">
+            <div id="shareBOX" class="BOX">
             <div class="share-icon" style="background-image:url(img-subject/i_14.png);" onclick="share('weixin')"></div>
             <div class="share-icon" style="background-image:url(img-subject/i_15.png);" onclick="share('sina')"></div>
             <div class="share-icon" style="background-image:url(img-subject/i_17.png);" onclick="share('qqwb')"></div>
-            <div class="share-icon" style="background-image:url(img-subject/i_19.png);" onclick="share('zone')"></div>
+            <div class="share-icon noborder" style="background-image:url(img-subject/i_19.png);" onclick="share('zone')"></div>
             <div class=""></div>
         </div>
-        <div id="ewm" style="width: 35%;position: absolute;right: 5%;margin-top: -3.5em;">
+        <div id="ewm" style="width: 35%;position: absolute;right: 5%;margin-top: -3em;">
             <img src="img-subject/ewm.jpg" style="width: 100%;"/>
         </div>
     </div>
@@ -59,12 +61,11 @@
 
 <div id="welcome" class="SHADE BOX-M">
     <div class="welcome-bg FILL"></div>
-    <div class="FILL BOX-M" style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:5;">
-        <div style="margin:0 1% 0 1%;">
-            <div style=""><img src="img-subject/cover/tit.png" style="height: 44px;"/> </div><br/>
-            <div style=""><img src="img-subject/cover/tit1.png" style="height: 54px;"/></div><br/><br/>
-            <div style="color: #fff;font-size: 1.3em;line-height: 1.5em;">从最下面礼盒开始<br>20秒钟内看你能打开多少个礼盒！<br>拆开130个礼盒以上并关注时尚cosmo微信<br>即可获得hicosmo大礼包一份<br>还不来战？</div><br/><br/>
-            <div id="ready-btn" class="btn loading" style="display:inline-block; margin:0 auto; width:7em; height:2em; line-height:2em; font-size:2.2em; color:#fff;"></div>
+    <div class="FILL BOX-M words">
+        <div class="words_1">
+            <div class="words_1_1"><img src="img-subject/cover/tit.png"/> </div><br/>
+            <div class="words_1_2">从最下面礼盒开始<br>20秒钟内看你能打开多少个礼盒！<br>拆开130个礼盒以上并关注时尚cosmo微信<br>即可获得HICOSMO大礼包一份<br>还不来战？</div><br/><br/>
+            <div id="ready-btn" class="btn loading"></div>
         </div>
     </div>
 </div>
@@ -89,15 +90,6 @@
 </script>
 
 <style type="text/css">
-    #weixin-shade {position: fixed; top: 0;left: 0;width: 100%; height: 100%; background-color: rgba(0,0,0,.8); z-index: 1000; overflow: auto;color:#fff; text-align: center; }
-    #weixin-shade-scroll {position:absolute; top: 0;left: 0;width: 100%; height: 100%; overflow-y: auto;overflow-x: hidden;}
-    #weixin-shade-qr div {font-size:2.4em; text-align: center; margin-top: 1em;}
-    #weixin-shade-qr {}
-    #weixin-shade-qr img {display: block; width: 50%; margin:2em auto;}
-    #weixin-shade .step {}
-    #weixin-shade .step .num{display: inline-block;margin:.5em auto; font-size: 3em; width: 1.5em; height: 1.5em; line-height: 1.5em; border-radius: 1em; background-color: #aaa; color: #000; }
-    #weixin-shade .step div{font-size:2em;}
-    #weixin-shade .step img{display: block; width: 100%; margin:1em auto;}
 </style>
 <script type="text/javascript">
     function showWeixinShade(qr, step1, step2, step3){
