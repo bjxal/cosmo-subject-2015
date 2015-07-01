@@ -1,0 +1,27 @@
+<div class="Q Q1  animated bounceInDown ng-scope" data-ng-controller="Q1Ctrl">
+    <div class="Q1_panel ">
+        <div class="roun1_title  animated fadeInRightBig fadein2s fadeOutLeftBig"></div>
+        <div class="roun1_eyes" style="min-width: 300px; text-align: center; display: block;">
+            <div class="1_pk_word"><img src="img/roun1/roun1_pktitle.png" class="1_pk_wimg animated wobble" style="max-width: 50%; margin-bottom: 5%;"></div>
+            <div class="1_pk_eyes">
+                <img src="img/roun1/roun1_eye_l.png" class="roun1_eye_l  pk1_eye_l animated fadeInLeftBig pulse fadein2s" data-ng-click="q1_1()" style="margin-right: 5%; float: left;">
+                <img src="img/roun1/roun1_eye_r.png" class="pk1_eye_r animated fadeInRightBig pulse fadein2s" data-ng-click="q1_2()" style="float: left;"></div>
+        </div>
+        <div class="pk_person1 animated bounceInLeft fadein2s"></div>
+        <audio id="sound-start" src="sound/Electric.mp3" preload="auto"></audio>
+        <audio id="sound-pk1_r_lauht" src="sound/pk1_r_lauht.mp3" preload="auto"></audio>
+        <audio id="sound-pk1_r_zk" src="sound/pk1_r_zk.mp3" preload="auto"></audio>
+    </div>
+    <div class="Q1_resultPanel" style="width: 320px; height: 504px;">
+        <div class="q1_yes ng-hide" data-ng-show="q1_y">
+            <div class="roun1_yes"> </div>
+            <div class="roun1_yes_gif"></div>
+            <div class="roun1_next_y" data-ng-click="next()"></div>
+        </div>
+        <div class="q1_no" data-ng-hide="q1_y">
+            <div class="roun1_no"></div>
+            <div class="roun1_no_gif"></div>
+            <div class="roun1_next_n" data-ng-click="next()"></div>
+        </div>
+    </div>
+</div>

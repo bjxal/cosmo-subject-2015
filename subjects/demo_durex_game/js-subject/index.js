@@ -274,7 +274,7 @@ function backBtn(){
     hideGameScoreLayer();
     showWelcomeLayer();
 }
-var mebtnopenurl = '#';
+var mebtnopenurl = 'http://m.cosmopolitan.com.cn';
 function shareText( score ){
     if( score < 60 )
         return '<span class="score_txt">呵呵！才抢了<em class="timer count-title" id="count-number" data-to="'+score+'" data-speed="1500"></em>件</span><br/>火力不行，还不快扫码来HICOSMO<br>取取经';
@@ -286,7 +286,7 @@ function shareText( score ){
 function share( type ){
     var content = encodeURIComponent(' #一次抢光光# 我抢了'+_gameScore+'件'),
         title  = '',
-        pic   = encodeURIComponent('http://new-icon.cosmochina.com.cn/h5/common/img-subject/logo.png'),
+        pic   = encodeURIComponent('http://new-icon.cosmochina.com.cn/h5/hicosmo-game/img/weixin.jpg'),
         url   = '';//encodeURIComponent('http://m.durex.com.cn/qr/1N'),
     back  = encodeURIComponent('http://m.cosmopolitan.com.cn/');
     var tourl = '';
