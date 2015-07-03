@@ -281,7 +281,7 @@ function shareText( score ){
     if( score >= 60 && score < 130 )
         return '<span class="score_txt">哎呦，抢了<em class="timer count-title" id="count-number" data-to="'+score+'" data-speed="1500"></em>件</span><br/>挺能抢啊，再努力一把就能获奖';
     if( score >= 130 )
-        return '<span class="score_txt">棒棒哒，抢了<em class="timer count-title" id="count-number" data-to="'+score+'" data-speed="1500"></em>件</span><br/>快把截图发到时尚COSMO微信后台<br>坐收大礼包';
+        return '<span class="score_txt">棒棒哒，抢了<em class="timer count-title" id="count-number" data-to="'+score+'" data-speed="1500"></em>件</span><br/>快把截图和姓名+电话，发到时尚COSMO微信后台<br>坐等超值大礼包！';
 }
 function share( type ){
     var content = encodeURIComponent(' #一次抢光光# 我抢了'+_gameScore+'件'),

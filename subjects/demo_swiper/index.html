@@ -39,6 +39,57 @@
         .swiper-slide1{
             background-color:red;
         }
+        .swiper-slide1 .focus-container{
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            height: 50%;
+        }
+        .focus-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            -ms-transition-property: -ms-transform;
+            transition-property: transform;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+        .focus-wrapper div{
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-flex-shrink: 0;
+            -ms-flex: 0 0 auto;
+            flex-shrink: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .focus-wrapper .focus1{
+            background-color: #ffffff;
+        }
+        .focus-wrapper .focus2{
+            background-color: #f89100;
+        }
+        .focus-wrapper .focus3{
+            background-color: #9f5fd1;
+        }
         .swiper-slide2{
             background-color:yellow;
         }
@@ -85,19 +136,26 @@
 </head>
 
 <body>
-<div class="swiper-container">
-    <div class="swiper-wrapper">
+<div class="swiper-container1">
+    <div class="swiper-wrapper1">
         <!-------------slide1----------------->
-        <section class="swiper-slide swiper-slide1">
+        <section class="swiper-slide1 swiper-slide1">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+            </div>
         </section>
         <!---------------slide2-------------->
-        <section class="swiper-slide swiper-slide2">
+        <section class="swiper-slide1 swiper-slide2">
         </section>
         <!----------------slide3-------------->
-        <section class="swiper-slide swiper-slide3">
+        <section class="swiper-slide1 swiper-slide3">
         </section>
         <!-------------slide4----------------->
-        <section class="swiper-slide swiper-slide4">
+        <section class="swiper-slide1 swiper-slide4">
         </section>
     </div>
 
@@ -117,50 +175,52 @@
         resizes[j].style.top=parseInt(resizes[j].style.top)*scaleH+'px';
         resizes[j].style.left=parseInt(resizes[j].style.left)*scaleW+'px';
     }
-
-    var mySwiper = new Swiper ('.swiper-container', {
-        direction : 'vertical',
-        speed : 0,//default 300ms
-        pagination: '.swiper-pagination',
-        //virtualTranslate : true,
-        mousewheelControl : true,
-        onInit: function(swiper){
-            swiperAnimateCache(swiper);
-            swiperAnimate(swiper);
-        },
-        onSlideChangeEnd: function(swiper){
-            swiperAnimate(swiper);
-        },
-        onTransitionEnd: function(swiper){
-            swiperAnimate(swiper);
-        },
-
-
-        watchSlidesProgress: true,
-
-        onProgress: function(swiper){
-            for (var i = 0; i < swiper.slides.length; i++){
-                var slide = swiper.slides[i];
-                var progress = slide.progress;
-                var translate = progress*swiper.height/4;
-                scale = 1 - Math.min(Math.abs(progress * 0.5), 1);
-                var opacity = 1 - Math.min(Math.abs(progress/2),0.5);
-                slide.style.opacity = opacity;
-                es = slide.style;
-                es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'translate3d(0,'+translate+'px,-'+translate+'px) scaleY(' + scale + ')';
-
-            }
-        },
-
-        onSetTransition: function(swiper, speed) {
-            console.log(speed)
-            for (var i = 0; i < swiper.slides.length; i++){
-                es = swiper.slides[i].style;
-                es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
-
-            }
-        }
-    })
+    var focusSwiper = new Swiper('.swiper-container',{
+        direction: 'horizontal'
+    });
+//    var mySwiper = new Swiper ('.swiper-container', {
+//        direction : 'vertical',
+//        speed : 0,//default 300ms
+//        pagination: '.swiper-pagination',
+//        //virtualTranslate : true,
+//        mousewheelControl : true,
+//        onInit: function(swiper){
+//            swiperAnimateCache(swiper);
+//            swiperAnimate(swiper);
+//        },
+//        onSlideChangeEnd: function(swiper){
+//            swiperAnimate(swiper);
+//        },
+//        onTransitionEnd: function(swiper){
+//            swiperAnimate(swiper);
+//        },
+//
+//
+//        watchSlidesProgress: true,
+//
+//        onProgress: function(swiper){
+////            for (var i = 0; i < swiper.slides.length; i++){
+////                var slide = swiper.slides[i];
+////                var progress = slide.progress;
+////                var translate = progress*swiper.height/4;
+////                scale = 1 - Math.min(Math.abs(progress * 0.5), 1);
+////                var opacity = 1 - Math.min(Math.abs(progress/2),0.5);
+////                slide.style.opacity = opacity;
+////                es = slide.style;
+////                es.webkitTransform = es.MsTransform = es.msTransform = es.MozTransform = es.OTransform = es.transform = 'translate3d(0,'+translate+'px,-'+translate+'px) scaleY(' + scale + ')';
+////
+////            }
+//        },
+//
+//        onSetTransition: function(swiper, speed) {
+////            console.log(speed)
+////            for (var i = 0; i < swiper.slides.length; i++){
+////                es = swiper.slides[i].style;
+////                es.webkitTransitionDuration = es.MsTransitionDuration = es.msTransitionDuration = es.MozTransitionDuration = es.OTransitionDuration = es.transitionDuration = speed + 'ms';
+////
+////            }
+//        }
+//    })
 </script>
 </body>
 </html>

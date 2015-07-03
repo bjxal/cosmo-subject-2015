@@ -5,46 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\css\mobile.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\css\pad.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\btn_icon_close.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\btn_icon_drawer.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\btn_icon_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\btn_icon_search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\gallery\barBg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\gallery\bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\gallery\bt_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\gallery\load2.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\gallery\login_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\gallery\newIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\gallery\repeat_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\img\newIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\js\common.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\js\control.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\js\iscroll.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\js\jquery-1.7.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\details\js\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\btn_icon_close.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\btn_icon_drawer.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\btn_icon_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\btn_icon_search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\newIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\newIcon1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\ui_bar_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\ui_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\ui_icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\img\wx.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\js\carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\js\common.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\js\jq.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\js\jq.mobi.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\js\jquery-1.7.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\js\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\cosmo-subject-2015\subjects\nanrenzhuang_pics\list.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/demo_swiper/index.html" afterPath="$PROJECT_DIR$/subjects/demo_swiper/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150625_durex_game/js-subject/index.js" afterPath="$PROJECT_DIR$/subjects/20150625_durex_game/js-subject/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cosmo-subject-2015.iws" />
@@ -66,14 +28,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/demo_swiper/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8821839">
-              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <state vertical-scroll-proportion="-20.153847">
+              <caret line="159" column="10" selection-start-line="159" selection-start-column="10" selection-end-line="159" selection-end-column="10" />
               <folding>
+                <element signature="e#2916#3031#0" expanded="false" />
+                <element signature="e#3073#3108#0" expanded="false" />
+                <element signature="e#3117#3355#0" expanded="false" />
+                <element signature="e#3364#3590#0" expanded="false" />
+                <element signature="e#3599#3805#0" expanded="false" />
+                <element signature="e#3818#3860#0" expanded="false" />
+                <element signature="e#3873#3915#0" expanded="false" />
+                <element signature="e#3930#4035#0" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5670#5725#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/subjects/20150625_durex_game/js-subject/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.3044554">
+              <caret line="299" column="22" selection-start-line="299" selection-start-column="22" selection-end-line="299" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/js-subject/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="316" column="32" selection-start-line="316" selection-start-column="4" selection-end-line="316" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,6 +136,7 @@
         <option value="$PROJECT_DIR$/subjects/nanrenzhuang_pics/nanrenzhuang_pics/details/index.html" />
         <option value="$PROJECT_DIR$/subjects/nanrenzhuang_pics/details/js/control.js" />
         <option value="$PROJECT_DIR$/subjects/demo_swiper/index.html" />
+        <option value="$PROJECT_DIR$/subjects/20150625_durex_game/js-subject/index.js" />
       </list>
     </option>
   </component>
@@ -200,7 +192,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -274,8 +265,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20150625_durex_game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20150625_durex_game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js-subject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,6 +426,25 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/subjects/demo_swiper/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2916#3031#0" expanded="false" />
+            <element signature="e#3073#3108#0" expanded="false" />
+            <element signature="e#3117#3355#0" expanded="false" />
+            <element signature="e#3364#3590#0" expanded="false" />
+            <element signature="e#3599#3805#0" expanded="false" />
+            <element signature="e#3818#3860#0" expanded="false" />
+            <element signature="e#3873#3915#0" expanded="false" />
+            <element signature="e#3930#4035#0" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5670#5725#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/css-subject/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -725,18 +776,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/js-subject/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33212996">
+        <state vertical-scroll-proportion="0.0">
           <caret line="316" column="32" selection-start-line="316" selection-start-column="4" selection-end-line="316" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/demo_swiper/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8821839">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        <state vertical-scroll-proportion="-20.153847">
+          <caret line="159" column="10" selection-start-line="159" selection-start-column="10" selection-end-line="159" selection-end-column="10" />
           <folding>
+            <element signature="e#2916#3031#0" expanded="false" />
+            <element signature="e#3073#3108#0" expanded="false" />
+            <element signature="e#3117#3355#0" expanded="false" />
+            <element signature="e#3364#3590#0" expanded="false" />
+            <element signature="e#3599#3805#0" expanded="false" />
+            <element signature="e#3818#3860#0" expanded="false" />
+            <element signature="e#3873#3915#0" expanded="false" />
+            <element signature="e#3930#4035#0" expanded="false" />
             <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5670#5725#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150625_durex_game/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3044554">
+          <caret line="299" column="22" selection-start-line="299" selection-start-column="22" selection-end-line="299" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
