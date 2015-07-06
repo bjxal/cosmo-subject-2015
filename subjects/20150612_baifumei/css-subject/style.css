@@ -132,7 +132,7 @@ body{
     right: 10px;
     top: 0;
 }
-.tit img:nth-child(4),.btn img:nth-child(2),.share img:nth-child(2){
+.tit img:nth-child(4),.btn img:nth-child(2),.share img:nth-child(2),.mlink img:nth-child(2){
     -webkit-animation: p2_tit_ani 1s infinite normal;
 }
 .opt{
@@ -282,15 +282,32 @@ body{
 .p12 .word span.word_7{
     background-image: url(../img-subject/p12/word/7.png);
 }
-.p12 .share{
-    position: relative;
-    margin-top: 3%;
-}
-.p12 .share img:nth-child(1){
+.p12 .share,.p12 .mlink{
     position: absolute;
+    margin-top: 3%;
+    width: 50%;
+}
+.p12 .share{
+    left: 0;
+    text-align: left;
+}
+.p12 .mlink{
+    right: 0;
+    text-align: right;
+}
+.p12 .share img,.p12 .mlink img{
+    position: relative;
     bottom: 0;
-    left: 50%;
-    -webkit-transform: translate(-50%,0);
+    left:20%;
+    /*left: 50%;*/
+    /*-webkit-transform: translate(-50%,0);*/
+}
+.p12 .mlink img{
+    left: auto;
+    right: 20%;
+}
+.p12 .share img:nth-child(1),.p12 .mlink img:nth-child(1){
+    position: absolute;
 }
 .p12 .tips{
     display: none;

@@ -58,6 +58,13 @@ var PAGE0 = Fui.Template.extend({
                 callback:function(e,$tar){
                     $(".p12 .tips").fadeOut();
                 }
+            },
+            {
+                gesture:"tap",
+                name:"link",
+                callback:function(e,$tar){
+                    window.location.href = "http://m.cosmopolitan.com.cn/";
+                }
             }
 
         ]
