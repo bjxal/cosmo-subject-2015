@@ -61,8 +61,8 @@
 		return o;
 	};
 	function changeHash(hash) {
-		//window.location.hash = hash;
-		//return this;
+		window.location.hash = hash;
+		return this;
 	};
 	pad.Gallery = function (options) {
 		var t = this;
@@ -94,7 +94,7 @@
 			}
 			var obj,photoList = document.createDocumentFragment(),oFragmeng = document.createDocumentFragment(),i=t.offsetSize;
 			while((obj =t.loadlazyQuene.shift())!=null){
-				/*ï¿½Ð±ï¿½Í¼*/
+				/*?§Ò??*/
 				var li1 = document.createElement("li");
 				var listImg = document.createElement("img");
 				listImg.src = obj.listimg;
@@ -131,7 +131,7 @@
 				li1.appendChild(a);
 				o.thumbs.push(li1);
 				oFragmeng.appendChild(li1);
-				//ï¿½ï¿½Óµï¿½ï¿½ï¿½Â¼ï¿½
+				//????????
 				(function(ele){
 					addListener(ele, 'click' , function (event) {
 						var a_link = ele.getElementsByTagName("a");
@@ -145,7 +145,7 @@
 						}
 					});
 				}(li1));
-				/*ï¿½ï¿½Í¼ï¿½Ð±ï¿½*/
+				/*????§Ò?*/
 				var li = document.createElement("li");
 				/*desc*/
 				var desc  = document.createElement("div");
@@ -164,7 +164,7 @@
 				var recommendDiv = document.createElement("div");
 				recommendDiv.className = "recommendList";
 				recommendDiv.id="recommendList";
-				//var content = '<h2>ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½:</h2><ul id="recommend">';
+				//var content = '<h2>???????:</h2><ul id="recommend">';
 				var content = '';
 				while((obj =t.loadrecommend.shift())!=null){
 					content += '<li><a href="'+obj.url+'"><img src="'+obj.img+'"><p>'+obj.title+'</p></li></a>';
@@ -175,7 +175,7 @@
 				o.photoAll.appendChild(li2);
 			}
 		}
-		//ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ð±ï¿½
+		//???????§Ò?
 		(function(){			
 			t.winWidth=t.winHeight=0;
 			if (window.innerWidth){
@@ -204,7 +204,7 @@
 			if(t.channel!="all" && t.o.goBack.href.indexOf(t.channel)<0) t.o.goBack.href=t.o.goBack.href+t.channel+"/";
 			t.defaultWidth();
 		})();
-		//ä¸‹è½½å›¾ç‰‡
+		//ÏÂÔØÍ¼Æ¬
 		//addListener(o.photoDown,'click',function(){
 		//	var test =window.open("images/a.txt","_blank","");
 		//	test.document.execCommand("SaveAs");
@@ -212,7 +212,7 @@
 		//	var cname = o.photoSave.className;
 		//	o.photoSave.className = (cname=="photo_save")?"photo_save hidden":"photo_save";
 		//});
-		//ç¿»é¡µ
+		//·­Ò³
 		t.defaultPagex = t.defaultPagey = t.currentPagex = t.currentPagey = 0;
 		addListener(o.photoAll,'touchstart',function(event){
 			t.defaultPagex = event.targetTouches[0].pageX;
@@ -291,7 +291,7 @@
 			tWidth = uWidth*t.size;
 			tCntWidth = t.o.thumb.parentNode.offsetWidth,
 			tNum = Math.floor(tCntWidth / (uWidth));
-			//ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½
+			//???¨´????????§Ò???
 			tCntWidth = uWidth * tNum;
 			O.setStyle(t.o.scroller, "width", (t.winWidth*t.size) + 'px');
 			O.setStyle(t.o.photoAll, "width", (t.winWidth*t.size) + 'px');
@@ -399,7 +399,7 @@
 				}
 			}
 		}, false);
-		//ï¿½ï¿½Ó´ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½		
+		//????????????????		
 		mb.defaultPagex = mb.defaultPagey = mb.currentPagex = mb.currentPagey = 0;
 		addListener(m.photoAll,'touchstart',function(event){
 			mb.defaultPagex = event.targetTouches[0].pageX;
@@ -518,7 +518,7 @@
 			photoList = document.createDocumentFragment();
 			var i=mb.offsetSize+1;
 			while((obj =mb.loadlazyQuene.shift())!=null){
-				/*ï¿½ï¿½Í¼ï¿½Ð±ï¿½*/
+				/*????§Ò?*/
 				var li = document.createElement("li");
 				/*desc*/
 				var desc  = document.createElement("div");
@@ -679,5 +679,5 @@ if (!_DET_mask) {
 
 	//globalnav
 	jQuery("#globalnav-pt").css("height",winHeight);
-	var iscroll_nav = new iScroll('globalnav-pt', {vScrollbar:false,hideScrollbar:true,bounce:false});
+	var¡¡iscroll_nav = new iScroll('globalnav-pt', {vScrollbar:false,hideScrollbar:true,bounce:false});
 });
