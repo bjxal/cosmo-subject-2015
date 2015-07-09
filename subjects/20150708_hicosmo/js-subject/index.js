@@ -33,7 +33,10 @@ var PAGE0 = Fui.Template.extend({
                 name:"p3_prev",
                 callback:function(e,$tar){
                     var id = 1;
-                    $(tar).parent().find(".top")//获取id值
+                    var tid = $tar.parent().find(".top img.act").data("id");//获取id值
+                    console.log(tid)
+                    var bid = $tar.parent().find(".btm img.act").data("id");//获取id值
+                    console.log(bid)
                 }
             }
         ]
