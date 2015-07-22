@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HiCOSMO上线狂送礼，一次抢光光</title>
+    <meta charset="gbk"/>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width"/>
+    <!-- target-densitydpi=device-dpi-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <script type="text/javascript" src="./js-subject/jquery.js"></script>
+    <script type="text/javascript" src="./js-subject/createjs.js"></script>
+    <script type="text/javascript" src="./js-subject/number.js"></script>
+    <link rel="apple-touch-icon-precomposed" href="img-subject/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css-subject/pic.css"/>
+    <link rel="stylesheet" type="text/css" id="css" href="css-subject/style.css"/>
+    <script type="text/javascript">
+
+        var isDesktop = navigator['userAgent'].match(/(ipad|iphone|ipod|android|windows phone)/i) ? false : true;
+        var fontunit        = isDesktop ? 20 : ((window.innerWidth>window.innerHeight?window.innerHeight:window.innerWidth)/320)*10;
+        document.write('<style type="text/css">'+
+        'html,body {font-size:'+(fontunit<30?fontunit:'30')+'px;}'+
+        (isDesktop?'#welcome,#GameTimeLayer,#GameLayerBG,#GameScoreLayer.SHADE{position: absolute;}':
+                '#welcome,#GameTimeLayer,#GameLayerBG,#GameScoreLayer.SHADE{position:fixed;}@media screen and (orientation:landscape) {#landscape {display: box; display: -webkit-box; display: -moz-box; display: -ms-flexbox;}}')+
+        '</style>');
+    </script>
+</head>
+<body onload="init()">
+<img src="img-subject/weixin.jpg" style="opacity:0;position:absolute;top:0; left:0;width:0"/>
+<script type="text/javascript" src="js-subject/index.js"></script>
+
+<div id="GameScoreLayer" class="BBOX SHADE bgc1" style="display:none;">
+    <div style="padding:0 5%;">
+        <div id="GameScoreLayer-text"></div>
+        <br/>
+        <br/>
+        <div id="GameScoreLayer-score" style="margin-bottom:1em;">得分</div>
+        <div id="GameScoreLayer-bast">最佳</div>
+        <br/>
+        <div id="GameScoreLayer-btn" class="BOX">
+            <div class="btn BOX-S btn-1" onclick="backBtn()"></div>&nbsp;
+            <div class="btn BOX-S btn-2" onclick="replayBtn()"></div>&nbsp;
+            <div id="mebtn" class="btn BOX-S btn-3" onclick="window.open(mebtnopenurl)">&nbsp;</div>
+        </div>
+        <br/>
+        <div id="GameScoreLayer-share" class="BOX">
+            <div class="" style="text-align:left;">分享到：</div>
+        </div>
+        <div id="shareBOX" class="BOX">
+            <div class="share-icon" style="background-image:url(img-subject/i_14.png);" onclick="share('weixin')"></div>
+            <div class="share-icon" style="background-image:url(img-subject/i_15.png);" onclick="share('sina')"></div>
+            <div class="share-icon" style="background-image:url(img-subject/i_17.png);" onclick="share('qqwb')"></div>
+            <div class="share-icon noborder" style="background-image:url(img-subject/i_19.png);" onclick="share('zone')"></div>
+            <div class=""></div>
+        </div>
+        <div id="ewm" style="width: 35%;position: absolute;right: 5%;margin-top: -3em;">
+            <img src="img-subject/ewm.jpg" style="width: 100%;"/>
+        </div>
+    </div>
+</div>
+
+<div id="welcome" class="SHADE BOX-M">
+    <div class="welcome-bg FILL"></div>
+    <div class="FILL BOX-M words">
+        <div class="words_1">
+            <div class="words_1_1"><img src="img-subject/cover/tit.png"/> </div><br/>
+            <div class="words_1_2">请于7月16日晚18:00，去@时尚COSMO<br>官方微博查阅获奖结果！<br>从最下面礼盒开始<br>20秒钟内看你能打开多少个礼盒！</div><br/><br/>
+            <div id="ready-btn" class="btn loading"></div>
+        </div>
+    </div>
+</div>
+
+<div id="landscape" class="SHADE BOX-M" style="background:rgba(0,0,0,.9);">
+    <div class="welcome-bg FILL"></div>
+    <div id="landscape-text" style="color:#fff;font-size:3em;">请竖屏玩耍</div>
+</div>
+<div id="z-ad" style="position: absolute;bottom:0;width: 100%;display: none;">
+    <a href="http://c.admaster.com.cn/c/a22842,b200534807,c1316,i0,m101,h" target="_blank"><img style="width: 100%;display: block;" src="img-subject/bottom.jpg" alt="bottom"></a>
+</div>
+<script type="text/javascript">
+    var wait=60;
+    var test=document.getElementById("z-ad");
+    setTimeout(function(){
+        test.style.display="none"
+    },wait*1000);
+</script>
+<script type="text/javascript">
+    if (isDesktop)
+        document.write('</div>');
+</script>
+
+<style type="text/css">
+</style>
+<script type="text/javascript">
+    function showWeixinShade(qr, step1, step2, step3){
+        var s = document.getElementById('weixin-shade');
+        if( s ){
+            s.style.display = 'block';
+            return;
+        }
+        s = document.createElement('div');
+        s.id = 'weixin-shade';
+        s.onclick = function(){this.style.display='none';}
+        s.style.position = (isDesktop?'absolute':'fixed');
+        var html = '<div id="weixin-shade-scroll">';
+        var i = 1;
+        html += '<div id="weixin-shade-step3" class="step"><img src="img-subject/wx_share.gif"/> </div>';
+        html += '</div>';
+        s.innerHTML += html;
+        body.appendChild(s);
+    }
+</script>
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+
+</script>
+<script type="text/javascript">
+    var _smq = _smq || [];
+//    _smq.push(['_setAccount', 'c9930ed8', new Date()]);
+//    _smq.push(['pageview']);
+
+//    (function() {
+//        var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+//        sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/sm.js';
+//        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+//    })();
+</script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    //    _gaq.push(['_setAccount', 'UA-29156015-1']);
+    //    _gaq.push(['_addOrganic', 'soso', 'w']);
+    //    _gaq.push(['_addOrganic', 'sogou', 'query']);
+    //    _gaq.push(['_addOrganic', 'yodao', 'q']);
+    //    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!--统计代码-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58044097-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

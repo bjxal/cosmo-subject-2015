@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>打虎新形态</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+</head>
+<body>
+<style>
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .aa{
+        width:100%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    .bb1,.bb2,.bb3,.bb4{
+        width: 100%;
+        height:50%;
+        position: absolute;
+        -webkit-transform: rotate3d(1,0,0,-180deg);
+        -webkit-transition: all ease 0.8s;
+        opacity: 0;
+    }
+    .cc{
+        width: 100%;
+        height: 50%;
+        color:#ffffff;
+        font-size: 24px;
+        position: absolute;
+        bottom: 0;
+    }
+    .bb1{
+        top: -25%;
+        left: 0;
+    }
+    .bb1 .cc{
+        background-color:#007aff;
+        background: url(./images/1.jpg) no-repeat center;
+    }
+    .bb2{
+        top: 0%;
+        left:0;
+    }
+    .bb2 .cc{
+        background-color:#669900;
+        background: url(./images/2.jpg) no-repeat center;
+    }
+    .bb3{
+        top: 25%;
+        left: 0;
+    }
+    .bb3 .cc{
+        background-color:#9f5fd1;
+        background: url(./images/3.jpg) no-repeat center;
+    }
+    .bb4{
+        top: 50%;
+        left:0;
+    }
+    .bb4 .cc{
+        background-color:#ed207b;
+        background: url(./images/4.jpg) no-repeat center;
+    }
+    .aa.focus .bb1{
+        -webkit-animation: bb1_ani 7.8s ease 1 normal;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .aa.focus .bb2{
+        -webkit-animation: bb2_ani 7.8s ease 1 normal;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .aa.focus .bb3{
+        -webkit-animation: bb3_ani 7.8s ease 1 normal;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .aa.focus .bb4{
+        -webkit-animation: bb4_ani 7.8s ease 1 normal;
+        -webkit-animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes bb1_ani{
+        0%{-webkit-transform: rotate3d(1,0,0,-180deg); opacity: 0;}
+        /*1%{-webkit-transform: rotate3d(1,0,0,-90deg); opacity: 0;}*/
+        25%{-webkit-transform: rotate3d(1,0,0,0deg); opacity: 1;}
+        100%{-webkit-transform: rotate3d(1,0,0,0deg); opacity: 1;}
+    }
+    @-webkit-keyframes bb2_ani{
+        25%{-webkit-transform: rotate3d(1,0,0,-180deg); opacity: 0;}
+        /*26%{-webkit-transform: rotate3d(1,0,0,-90deg); opacity: 0;}*/
+        50%{-webkit-transform: rotate3d(1,0,0,0deg); opacity: 1;}
+        100%{-webkit-transform: rotate3d(1,0,0,0deg); opacity: 1;}
+    }
+    @-webkit-keyframes bb3_ani{
+        50%{-webkit-transform: rotate3d(1,0,0,-180deg); opacity: 0;}
+        /*51%{-webkit-transform: rotate3d(1,0,0,-90deg); opacity: 0;}*/
+        75%{-webkit-transform: rotate3d(1,0,0,0deg); opacity: 1;}
+        100%{-webkit-transform: rotate3d(1,0,0,0deg); opacity: 1;}
+    }
+    @-webkit-keyframes bb4_ani{
+        75%{-webkit-transform: rotate3d(1,0,0,-180deg); opacity: 0;}
+        /*76%{-webkit-transform: rotate3d(1,0,0,-90deg); opacity: 0;}*/
+        100%{-webkit-transform: rotate3d(1,0,0,0deg); opacity: 1;}
+    }
+</style>
+<script>
+    setTimeout(function(){
+        document.getElementById("aa").setAttribute("class","aa focus");
+    },2000);
+</script>
+<div class="aa" id="aa">
+    <div class="bb1">
+        <div class="cc"></div>
+    </div>
+    <div class="bb2">
+        <div class="cc"></div>
+    </div>
+    <div class="bb3">
+        <div class="cc"></div>
+    </div>
+    <div class="bb4">
+        <div class="cc"></div>
+    </div>
+</div>
+</body>
+</html>

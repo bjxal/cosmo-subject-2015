@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=gbk"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="330785652@qq.com"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js-subject/device.js"></script>
+    <title>你离白富美有多远？</title>
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body>
+<img src="img-subject/weixin.jpg" style="position: absolute; z-index: -1; opacity: 0; top: 0;"/>
+<div class="cover">
+    <div class="loading">
+        <img src="img-subject/cover/kiss.png"/>
+        <img src="img-subject/cover/kiss_word.png"/>
+    </div>
+</div>
+<div id="pack" class="pack"></div>
+<script type="text/javascript" src="http://new-icon.ol-img.com/statics/common/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://new-icon.ol-img.com/statics/common/js/handlebars-1.3.0.min.js"></script>
+<!-- p0 -->
+<script type="text/x-handlebars-template" id="p0">
+    <div class="p0_tit">
+        <img data-src="{{IMG_DIR}}/p0/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/tit/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/tit/5.png"/>
+    </div>
+    <div class="btn">
+        <img data-src="{{IMG_DIR}}/p0/btn/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/btn/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/btn/2.png" data-tap="next"/>
+    </div>
+</script>
+<!-- p0 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p1">
+    <img data-src="{{IMG_DIR}}/p1/tit.png" class="p1_tit"/>
+    <div class="btn">
+        <img data-src="{{IMG_DIR}}/p1/btn/1.png"/>
+        <img data-src="{{IMG_DIR}}/p1/btn/1.png"/>
+        <img data-src="{{IMG_DIR}}/p1/btn/2.png" data-tap="next"/>
+    </div>
+</script>
+<!-- P1 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p2">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p2/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p2/opts/1.jpg" data-tap="opt_Select" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p2/opts/2.jpg" data-tap="opt_Select" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p2/opts/3.jpg" data-tap="opt_Select" data-val="5"/></li>
+            <li><img data-src="{{IMG_DIR}}/p2/opts/4.jpg" data-tap="opt_Select" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p2 -->
+<!-- p3 -->
+<script type="text/x-handlebars-template" id="p3">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p3/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p3/opts/1.png" data-tap="opt_Change" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p3/opts/2.png" data-tap="opt_Change" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p3/opts/3.png" data-tap="opt_Change" data-val="5"/></li>
+            <li><img data-src="{{IMG_DIR}}/p3/opts/4.png" data-tap="opt_Change" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p3 -->
+<!-- p4 -->
+<script type="text/x-handlebars-template" id="p4">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p4/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p4/opts/1.jpg" data-tap="opt_Select" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p4/opts/2.jpg" data-tap="opt_Select" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p4/opts/3.jpg" data-tap="opt_Select" data-val="5"/></li>
+            <li><img data-src="{{IMG_DIR}}/p4/opts/4.jpg" data-tap="opt_Select" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p4 -->
+<!-- p5 -->
+<script type="text/x-handlebars-template" id="p5">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p5/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p5/opts/1.jpg" data-tap="opt_Select" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p5/opts/2.jpg" data-tap="opt_Select" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p5/opts/3.jpg" data-tap="opt_Select" data-val="6"/></li>
+            <li><img data-src="{{IMG_DIR}}/p5/opts/4.jpg" data-tap="opt_Select" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p6">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p6/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p6/opts/1.jpg" data-tap="opt_Select" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p6/opts/2.jpg" data-tap="opt_Select" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p6/opts/3.jpg" data-tap="opt_Select" data-val="6"/></li>
+            <li><img data-src="{{IMG_DIR}}/p6/opts/4.jpg" data-tap="opt_Select" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p6 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p7">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p7/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p7/opts/1.png" data-tap="opt_Change" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p7/opts/2.png" data-tap="opt_Change" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p7/opts/3.png" data-tap="opt_Change" data-val="5"/></li>
+            <li><img data-src="{{IMG_DIR}}/p7/opts/4.png" data-tap="opt_Change" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p7 -->
+<!-- p8 -->
+<script type="text/x-handlebars-template" id="p8">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p8/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p8/opts/1.png" data-tap="opt_Change" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p8/opts/2.png" data-tap="opt_Change" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p8/opts/3.png" data-tap="opt_Change" data-val="5"/></li>
+            <li><img data-src="{{IMG_DIR}}/p8/opts/4.png" data-tap="opt_Change" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p8 -->
+<!-- p9 -->
+<script type="text/x-handlebars-template" id="p9">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p9/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p9/opts/1.jpg" data-tap="opt_Select" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p9/opts/2.jpg" data-tap="opt_Select" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p9/opts/3.jpg" data-tap="opt_Select" data-val="6"/></li>
+            <li><img data-src="{{IMG_DIR}}/p9/opts/4.jpg" data-tap="opt_Select" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p9 -->
+<!-- p10 -->
+<script type="text/x-handlebars-template" id="p10">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p10/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p10/opts/1.png" data-tap="opt_Change" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p10/opts/2.png" data-tap="opt_Change" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p10/opts/3.png" data-tap="opt_Change" data-val="5"/></li>
+            <li><img data-src="{{IMG_DIR}}/p10/opts/4.png" data-tap="opt_Change" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p10 -->
+<!-- p11 -->
+<script type="text/x-handlebars-template" id="p11">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p11/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+        <img data-src="{{IMG_DIR}}/p2/tit/3.png"/>
+    </div>
+    <div class="opt">
+        <ul>
+            <li><img data-src="{{IMG_DIR}}/p11/opts/1.png" data-tap="opt_Change" data-val="10"/></li>
+            <li><img data-src="{{IMG_DIR}}/p11/opts/2.png" data-tap="opt_Change" data-val="7"/></li>
+            <li><img data-src="{{IMG_DIR}}/p11/opts/3.png" data-tap="opt_Change" data-val="5"/></li>
+            <li><img data-src="{{IMG_DIR}}/p11/opts/4.png" data-tap="opt_Change" data-val="1"/></li>
+        </ul>
+    </div>
+</script>
+<!-- p11 -->
+<!-- p12 -->
+<script type="text/x-handlebars-template" id="p12">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p12/tit.png"/>
+        <span></span>
+    </div>
+    <div class="word">
+        <img data-src="{{IMG_DIR}}/p12/word_bg.png"/>
+        <span></span>
+    </div>
+    <div class="logo">
+        <img data-src="{{IMG_DIR}}/p12/logo.png"/>
+        <div class="share">
+            <img data-src="{{IMG_DIR}}/p12/share.png" data-tap="show_tips"/>
+            <img data-src="{{IMG_DIR}}/p12/share.png" data-tap="show_tips"/>
+        </div>
+        <div class="mlink">
+            <img data-src="{{IMG_DIR}}/p12/mlink.png" data-tap="link"/>
+            <img data-src="{{IMG_DIR}}/p12/mlink.png" data-tap="link"/>
+        </div>
+    </div>
+    <div class="tips" data-tap="hide_tips">
+        <img data-src="{{IMG_DIR}}/p12/tips.png"/>
+    </div>
+</script>
+<!-- p12 -->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"你离白富美有多远？",
+        desc:"你离白富美有多远？",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js-subject/fliza.min.js"></script>
+<script type="text/javascript" src="js-subject/index.js"></script>
+<!--统计代码-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58044097-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
