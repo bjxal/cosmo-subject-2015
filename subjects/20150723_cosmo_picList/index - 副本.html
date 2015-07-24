@@ -14,31 +14,21 @@
         var myScroll;
         var winWidth = $(window).width();
         var winHeight = $(window).height();
-        var pars = window.location.href.split("?picId=");
-        var arr = pars[1].split("&")[0] || "01";
         function loaded() {
             var len = $("#scroller").find("li").length || 5;
             $("#scroller").width(winWidth*len+"px");
-            $(".num .num_cur").html(arr);
+            $(".num .num_cur").html("01");
             $(".num .num_all").html(len);
-//            myScroll = new IScroll('#wrapper', {scrollX: true, mouseWheel: true, click: false });
-            myScroll = new IScroll('#wrapper', {
-                snap: true,
-                scrollX: true,
-                momentum: false,
-                tap: true,
-                hScrollbar: false,
-                onScrollEnd: function () {
-                    console.log("aaa")
+            myScroll = new IScroll('#wrapper', { mouseWheel: true, click: false });
+//            myScroll = new IScroll('#wrapper', {
+//                snap: true,
+//                momentum: false,
+//                hScrollbar: false,
+//                onScrollEnd: function () {
 //                    var num = (this.currPageX+1>=10)?(this.currPageX+1):("0"+(this.currPageX+1));
 //                    $(".num .num_cur").html(num);
-                }
-            });
-            console.log(myScroll)
-            myScroll.goToPage(parseInt(arr)-1,0);
-            $("#wrapper img").on("tap",function(e){
-                $(".num,.btm").toggleClass("act");
-            })
+//                }
+//            });
         }
 //        document.addEventListener('DOMContentLoaded', loaded, false);
     </script>
@@ -169,14 +159,8 @@
             background-size: 100% 100%;
             position: absolute;
             right: 0;
-            top: -120px;
-            z-index: 1;
-            opacity: 0;
-            -webkit-transition: all ease-in-out 0.3s;
-        }
-        .num.act{
             top: 0;
-            opacity: 1;
+            z-index: 1;
         }
         .num span{
             display: block;
@@ -204,12 +188,6 @@
             z-index: 1;
             color: #ffffff;
             font-size: 24px;
-            opacity: 0;
-            -webkit-transition: all ease-in-out 0.3s;
-        }
-        .btm.act{
-            bottom: 0;
-            opacity: 1;
         }
         .btm p{
             display: inline-block;
