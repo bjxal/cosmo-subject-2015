@@ -6,128 +6,148 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <meta name="author" content="330785652@qq.com"/>
+    <meta name="author" content="bjxal@139.com"/>
     <meta name="apple-touch-fullscreen" content="yes" />
     <meta name="format-detection" content="telephone=no" />
     <script src="js-subject/device.js"></script>
-    <title>我就是COSMO GIRL</title>
+    <title>美妆博物馆</title>
     <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
 </head>
 <body>
-<img src="img-subject/weixin.jpg" style="position: absolute; z-index: -1; opacity: 0; top: 0;"/>
-<div class="pop">
-    <div class="p_t">
-        <img src="img-subject/pop_tit.png"/>
-    </div>
-    <div class="close"></div>
-    <!--<div id="animation-effect1" class="iSlider-effect"></div>-->
-    <div id="wrapper" class="wrapper">
-        <div id="scroller" class="scroller">
-            <ul id="thelist" class="thelist">
-            </ul>
-        </div>
-    </div>
-</div>
-<a class="app-music">
-    <span class="icon icon-music">
-        <b></b>
-    </span>
-</a>
+<!--<img src="img-subject/weixin.jpg" style="position: absolute; z-index: -1; opacity: 0; top: 0;"/>-->
+<!--<a class="app-music">-->
+    <!--<span class="icon icon-music">-->
+        <!--<b></b>-->
+    <!--</span>-->
+<!--</a>-->
 <div id="pack" class="pack"></div>
-<script type="text/javascript" src="http://new-icon.ol-img.com/statics/common/js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="http://new-icon.ol-img.com/statics/common/js/handlebars-1.3.0.min.js"></script>
+<script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
 <!-- p0 -->
 <script type="text/x-handlebars-template" id="p0">
-    <div class="loadingC">
-        <div class="loading">
-            <div class="ld1"></div>
-            <div class="ld2"></div>
-        </div>
-    </div>
     <img data-src="{{IMG_DIR}}/p0/tit.png" class="tit"/>
-    <div class="list">
-        <img data-src="{{IMG_DIR}}/p0/list/1.png" class="peo1"/>
-        <img data-src="{{IMG_DIR}}/p0/list/2.png" class="peo2"/>
-        <img data-src="{{IMG_DIR}}/p0/list/3.png" class="peo3"/>
-        <img data-src="{{IMG_DIR}}/p0/list/4.png" class="peo4"/>
-        <img data-src="{{IMG_DIR}}/p0/list/5.png" class="peo5"/>
-        <img data-src="{{IMG_DIR}}/p0/list/6.png" class="peo6"/>
-        <img data-src="{{IMG_DIR}}/p0/list/7.png" class="peo7"/>
-    </div>
 </script>
 <!-- p0 -->
 <!-- P1 -->
 <script type="text/x-handlebars-template" id="p1">
-    <img data-src="{{IMG_DIR}}/p1/tit.png" class="tit"/>
-    <img data-src="{{IMG_DIR}}/p1/word.png" class="word"/>
-    <div class="pop_tips">
-        <div class="pop_tips1" data-tap="pop_show" data-popid="1"></div>
-        <div class="pop_tips2"></div>
+    <div class="brand" id="brand">
+        <div class="biotherm">
+            <div class="img"></div>
+            <div class="brand_logo"></div>
+        </div>
+        <div class="dior">
+            <div class="img"></div>
+            <div class="brand_logo"></div>
+        </div>
+        <div class="venchy">
+            <div class="img"></div>
+            <div class="brand_logo"></div>
+        </div>
+        <div class="skii">
+            <div class="img"></div>
+            <div class="brand_logo"></div>
+        </div>
     </div>
 </script>
 <!-- P1 -->
 <!-- p2 -->
 <script type="text/x-handlebars-template" id="p2">
-    <img data-src="{{IMG_DIR}}/p2/tit.png" class="tit"/>
-    <img data-src="{{IMG_DIR}}/p2/word.png" class="word"/>
-    <div class="pop_tips">
-        <div class="pop_tips1" data-tap="pop_show" data-popid="2"></div>
-        <div class="pop_tips2"></div>
-    </div>
+    <img data-src="{{IMG_DIR}}/p2/tit1.png" class="tit"/>
 </script>
 <!-- p2 -->
 <!-- p3 -->
 <script type="text/x-handlebars-template" id="p3">
-    <img data-src="{{IMG_DIR}}/p3/tit.png" class="tit"/>
-    <img data-src="{{IMG_DIR}}/p3/word.png" class="word"/>
-    <div class="pop_tips">
-        <div class="pop_tips1" data-tap="pop_show" data-popid="3"></div>
-        <div class="pop_tips2"></div>
+    <div class="nav">
+        <div class="nav_1 cur"></div>
+        <div class="nav_2"></div>
+        <div class="nav_3"></div>
+        <div class="nav_4"></div>
     </div>
+    <div id="p3_list"></div>
 </script>
 <!-- p3 -->
+<!-- p3_1 -->
+<script type="text/x-handlebars-template" id="p3_1">
+    <img data-src="{{IMG_DIR}}/p3/p1/words/1.png" class="words_1"/>
+    <img data-src="{{IMG_DIR}}/p3/p1/words/2.png" class="words_2"/>
+    <img data-src="{{IMG_DIR}}/p3/p1/words/3.png" class="words_3"/>
+</script>
+<!-- p3_1 -->
+<!-- p3_2 -->
+<script type="text/x-handlebars-template" id="p3_2">
+    <div class="pro_list">
+        <div class="pro pro_1">
+            <img data-src="{{IMG_DIR}}/p3/p2/prolist/1.png"/>
+            <div class="plus" data-index="1" data-tap="pop_list_show"></div>
+        </div>
+        <div class="pro pro_2">
+            <img data-src="{{IMG_DIR}}/p3/p2/prolist/2.png"/>
+            <div class="plus" data-index="2" data-tap="pop_list_show"></div>
+        </div>
+        <div class="pro pro_3">
+            <img data-src="{{IMG_DIR}}/p3/p2/prolist/3.png"/>
+            <div class="plus" data-index="3" data-tap="pop_list_show"></div>
+        </div>
+        <div class="pro pro_4">
+            <img data-src="{{IMG_DIR}}/p3/p2/prolist/4.png"/>
+            <div class="plus" data-index="4" data-tap="pop_list_show"></div>
+        </div>
+        <div class="pro pro_5">
+            <img data-src="{{IMG_DIR}}/p3/p2/prolist/5.png"/>
+            <div class="plus" data-index="5" data-tap="pop_list_show"></div>
+        </div>
+    </div>
+    <div class="pop_list">
+        <div class="list_bg" id="p3_pop_list">
+            <!--<div id="wrapper" class="wrapper">-->
+                <!--<div id="scroller" class="scroller">-->
+                    <!--<ul id="thelist" class="thelist">-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="close" data-tap="pop_list_hide"></div>
+    </div>
+</script>
+<!-- p3_2 -->
+<!-- p3_2_1 -->
+<script type="text/x-handlebars-template" id="p3_2_1">
+</script>
+<!-- p3_2_1 -->
+<!-- p3_3 -->
+<script type="text/x-handlebars-template" id="p3_3">
+</script>
+<!-- p3_3 -->
+<!-- p3_4 -->
+<script type="text/x-handlebars-template" id="p3_4">
+</script>
+<!-- p3_4 -->
 <!-- p4 -->
 <script type="text/x-handlebars-template" id="p4">
-    <img data-src="{{IMG_DIR}}/p7/tit.png" class="tit"/>
-    <img data-src="{{IMG_DIR}}/p7/word.png" class="word"/>
-    <div class="pop_tips">
-        <div class="pop_tips1" data-tap="pop_show" data-popid="7"></div>
-        <div class="pop_tips2"></div>
-    </div>
 </script>
 <!-- p4 -->
 <!-- p5 -->
 <script type="text/x-handlebars-template" id="p5">
-    <img data-src="{{IMG_DIR}}/p5/tit.png" class="tit"/>
-    <img data-src="{{IMG_DIR}}/p5/word.png" class="word"/>
-    <div class="pop_tips">
-        <div class="pop_tips1" data-tap="pop_show" data-popid="5"></div>
-        <div class="pop_tips2"></div>
-    </div>
 </script>
 <!-- p5 -->
 <!-- p6 -->
 <script type="text/x-handlebars-template" id="p6">
-    <img data-src="{{IMG_DIR}}/p4/tit.png" class="tit"/>
-    <img data-src="{{IMG_DIR}}/p4/word.png" class="word"/>
-    <div class="pop_tips">
-        <div class="pop_tips1" data-tap="pop_show" data-popid="4"></div>
-        <div class="pop_tips2"></div>
-    </div>
 </script>
 <!-- p6 -->
 <!-- p7 -->
 <script type="text/x-handlebars-template" id="p7">
-    <img data-src="{{IMG_DIR}}/p6/tit.png" class="tit"/>
-    <img data-src="{{IMG_DIR}}/p6/word.png" class="word"/>
-    <div class="pop_tips">
-        <div class="pop_tips1" data-tap="pop_show" data-popid="6"></div>
-        <div class="pop_tips2"></div>
-    </div>
 </script>
 <!-- p7 -->
 <!-- p8 -->
 <script type="text/x-handlebars-template" id="p8">
+</script>
+<!-- p8 -->
+<!-- p9 -->
+<script type="text/x-handlebars-template" id="p9">
+</script>
+<!-- p9 -->
+<!-- p10 -->
+<script type="text/x-handlebars-template" id="p10">
     <img data-src="{{IMG_DIR}}/p8/top.png" class="top"/>
     <img data-src="{{IMG_DIR}}/p8/tit.png" class="tit"/>
     <div class="share">
@@ -151,7 +171,7 @@
         <img data-src="{{IMG_DIR}}/p8/share/wx_share.gif" data-tap="share_pop_hide"/></div>
     </div>
 </script>
-<!-- p8 -->
+<!-- p10 -->
 <script type="text/javascript">
     var _dir = (function (){
         var href = $('#css').attr('href').toString();
@@ -178,7 +198,7 @@
 <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script type="text/javascript" src="js-subject/fliza.min.js"></script>
 <script type="text/javascript" src="js-subject/iscroll.js"></script>
-<script type="text/javascript" src="js-subject/index.js"></script>
+<script type="text/javascript" src="js-subject/index1.js"></script>
 <!--统计代码-->
 <script>
     var _hmt = _hmt || [];

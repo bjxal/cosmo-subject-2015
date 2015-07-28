@@ -1,19 +1,15 @@
 var p1List = [
-    ImgDir('/p1/list/1.jpg'),
-    ImgDir('/p1/list/2.jpg'),
-    ImgDir('/p1/list/3.jpg'),
-    ImgDir('/p1/list/4.jpg'),
-    ImgDir('/p1/list/5.jpg'),
-    ImgDir('/p1/list/6.jpg'),
-    ImgDir('/p1/list/7.jpg')
+    ImgDir('/p3/p2/poplist/1.png'),
+    ImgDir('/p3/p2/poplist/2.png'),
+    ImgDir('/p3/p2/poplist/3.png'),
+    ImgDir('/p3/p2/poplist/4.png'),
+    ImgDir('/p3/p2/poplist/5.png')
 ];
 var p2List = [
     ImgDir('/p2/list/1.jpg'),
     ImgDir('/p2/list/2.jpg'),
     ImgDir('/p2/list/3.jpg'),
-    ImgDir('/p2/list/4.jpg'),
-    ImgDir('/p2/list/5.jpg'),
-    ImgDir('/p2/list/6.jpg')
+    ImgDir('/p2/list/4.jpg')
 ];
 var p3List = [
     ImgDir('/p3/list/1.jpg'),
@@ -23,24 +19,7 @@ var p4List = [
     ImgDir('/p4/list/1.jpg'),
     ImgDir('/p4/list/2.jpg')
 ];
-var p5List = [
-    ImgDir('/p5/list/1.jpg'),
-    ImgDir('/p5/list/2.jpg')
-];
-var p6List = [
-    ImgDir('/p6/list/1.jpg'),
-    ImgDir('/p6/list/2.jpg'),
-    ImgDir('/p6/list/3.jpg'),
-    ImgDir('/p6/list/4.jpg'),
-    ImgDir('/p6/list/5.jpg')
-];
-var p7List = [
-    ImgDir('/p7/list/1.jpg'),
-    ImgDir('/p7/list/2.jpg'),
-    ImgDir('/p7/list/3.jpg'),
-    ImgDir('/p7/list/4.jpg')
-];
-var content = encodeURIComponent('我就是COSMO GIRL'),
+var content = encodeURIComponent('美妆博物馆'),
     title  = '',
     pic   = ImgDir('/weixin.jpg'),
     url   = '';//encodeURIComponent('http://m.durex.com.cn/qr/1N'),
@@ -65,12 +44,12 @@ var PAGE0 = Fui.Template.extend({
                     //removeImgList();
                     slider.set("lock",true);
                     var popid = $tar.data("popid");
-                    setImgList(popid);
-                    $(".pop").addClass("show");
-                    myScroll = new iScroll('wrapper',{
-                        snap: true,
-                        hScrollbar: false
-                    });
+                    //setImgList(popid);
+                    //$(".pop").addClass("show");
+                    //myScroll = new iScroll('wrapper',{
+                    //    snap: true,
+                    //    hScrollbar: false
+                    //});
                 }
             },
             {
@@ -113,14 +92,14 @@ var PAGE0 = Fui.Template.extend({
 Fui.Template.regTpl({
     PAGE0:PAGE0
 });
-var audio = Fui.Audio({
-    src:ImgDir('/music.mp3'),
-    color:"#ee257b",
-    autoplay:false
-});
+//var audio = Fui.Audio({
+//    src:ImgDir('/music.mp3'),
+//    color:"#ee257b",
+//    autoplay:false
+//});
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:0,
+    curPage:3,
     lock:false,
     iteration:false,
     orient:'y',
@@ -131,7 +110,7 @@ var slider = new Fui.PageSlider({
             $(".fui-arrow.right").hide();
             var page = this.get("curPage");
             $(".p"+page).addClass("focus");
-            if(page==9){
+            if(page==10){
                 $(".fui-arrow").css("z-index","-1");
                 $(".app-music").css("z-index","-1");
             }
@@ -150,15 +129,15 @@ var slider = new Fui.PageSlider({
             design:function(){
                 var aa = this;
                 setTimeout(function(){
-                    aa.$el.find(".loadingC").hide();
+                    //aa.$el.find(".loadingC").hide();
                     aa.$el.addClass("focus");
-                    audio.play();
-                    $(".fui-arrow").css("z-index","1");
-                    setTimeout(function(){
-                        aa.$el.find(".loading").fadeOut();
-                        aa.$el.find(".actBox").addClass("show");
-                    },3000);
-                },5000);
+                    //audio.play();
+                    //$(".fui-arrow").css("z-index","1");
+                    //setTimeout(function(){
+                    //    aa.$el.find(".loading").fadeOut();
+                    //    aa.$el.find(".actBox").addClass("show");
+                    //},3000);
+                },1000);
             }
         }
         ,{
@@ -173,8 +152,91 @@ var slider = new Fui.PageSlider({
         }
         ,{
             template:'PAGE0',
-            bg:ImgDir('/p3/bg.jpg'),
-            xtpl:'p3'
+            //bg:ImgDir('/p3/bg.jpg'),
+            xtpl:'p3',
+            design:function(){
+                var $el = this.$el;
+                var PAGE_1 = Fui.Template.extend({
+                    getGestureItems:function(){
+                        return [
+                            {
+                                gesture:"tap",
+                                name:"pop_show",
+                                callback:function(e,$tar){
+                                    //removeImgList();
+                                    imgs.set("lock",true);
+                                    var popid = $tar.data("index");
+                                    setImgList(popid);
+                                    $(".pop_list").show();
+                                    myScroll = new iScroll('wrapper',{
+                                        snap: true,
+                                        hScrollbar: false
+                                    });
+                                }
+                            },
+                            {
+                                gesture:"tap",
+                                name:"pop_list_show",
+                                callback:function(e,$tar){
+                                    imgs.set("lock",true);
+                                    var index = $tar.data("index");
+                                    $tar.parents(".p").find(".pop_list").show();
+                                    pops.slide(index-1);
+                                }
+                            },
+                            {
+                                gesture:"tap",
+                                name:"pop_list_hide",
+                                callback:function(e,$tar){
+                                    imgs.set("lock",false);
+                                    $tar.parent().hide();
+                                }
+                            }
+                        ]
+                    }
+                });
+                Fui.Template.regTpl({
+                    PAGE_1:PAGE_1
+                });
+                var imgs = this.imgs = new Fui.PageSlider({
+                    el:"#p3_list",
+                    curPage:0,
+                    lock:false,
+                    iteration:false,
+                    orient:'x',
+                    arrow:{},
+                    listeners: {
+                        slide: function () {
+                            var pagex = this.get("curPage");
+                            $(".p3").find(".nav_"+(pagex+1)).addClass("cur").siblings().removeClass("cur");
+                        }
+                    },
+                    data:[
+                        {
+                            template:'PAGE_1',
+                            xtpl: 'p3_1',
+                            bg:ImgDir('/p3/p1/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_1',
+                            xtpl: 'p3_2',
+                            bg:ImgDir('/p3/p2/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_1',
+                            xtpl: 'p3_3',
+                            bg:ImgDir('/p3/p3/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_1',
+                            xtpl: 'p3_4',
+                            bg:ImgDir('/p3/p4/bg.jpg')
+                        }
+                    ]
+                });
+                imgs.render();
+                setTimeout(function(){},1000);
+            }
         }
         ,{
             template:'PAGE0',
@@ -205,10 +267,7 @@ var slider = new Fui.PageSlider({
 });
 slider.render();
 $(".fui-arrow").css("z-index","-1");
-//cover
-$(".cover").on("touchend",function(e){
-    $(".cover").fadeOut();
-});
+
 $(".close").bind("touchend",function(e){
     var tar = e.target;
     removeImgList(myScroll);
@@ -234,15 +293,6 @@ function setImgList(id){
             break;
         case 4:
             arr = p4List;
-            break;
-        case 5:
-            arr = p5List;
-            break;
-        case 6:
-            arr = p6List;
-            break;
-        case 7:
-            arr = p7List;
             break;
     }
     $.each(arr,function(i,item){

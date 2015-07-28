@@ -5,10 +5,167 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="eileen">
-      <change type="DELETED" beforePath="D:\works\subjects\20150708_hicosmo.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\works\subjects\20150723_cosmo_picList\index1.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\works\subjects\20150723_cosmo_picList\js-subject\iscroll.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150723_cosmo_picList/index.html" afterPath="$PROJECT_DIR$/subjects/20150723_cosmo_picList/index.html" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\css-subject\fliza-style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\css-subject\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\close.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\m-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\music.mp3" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\opt_black_85.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p0\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p0\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p1\list\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p1\list\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p1\list\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p1\list\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p1\logo\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p1\logo\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p1\logo\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p1\logo\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p2\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p2\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p2\tit1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p1\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p1\words\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p1\words\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p1\words\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\close.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\plus\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\plus\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\plus\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\plus\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\plus\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\pop_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\poplist\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\poplist\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\poplist\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\poplist\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\poplist\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\prolist\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\prolist\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\prolist\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\prolist\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p2\prolist\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p3\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p3\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p4\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p4\handle.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\p4\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\titList\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\titList\1_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\titList\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\titList\2_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\titList\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\titList\3_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\titList\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\titList\4_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p3\tit_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p4\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p4\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p1\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p1\words\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p1\words\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p1\words\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\plus\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\plus\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\plus\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\plus\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\plus\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\poplist\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\poplist\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\poplist\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\poplist\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\poplist\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\prolist\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\prolist\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\prolist\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\prolist\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p2\prolist\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p3\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p3\words\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p3\words\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p4\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\p4\words.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\titList\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\titList\1_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\titList\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\titList\2_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\titList\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\titList\3_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\titList\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\titList\4_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p5\tit_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p6\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p6\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p1\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p1\words\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p1\words\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p1\words\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\plus\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\plus\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\plus\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\plus\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\plus\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\poplist\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\poplist\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\poplist\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\poplist\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\poplist\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\prolist\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\prolist\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\prolist\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\prolist\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p2\prolist\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p3\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p3\words.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p4\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\p4\words.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\titList\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\titList\1_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\titList\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\titList\2_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\titList\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\titList\3_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\titList\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\titList\4_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p7\tit_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p8\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p8\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p1\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p1\words.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\plus\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\plus\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\plus\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\plus\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\poplist\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\poplist\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\poplist\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\poplist\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\prolist\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\prolist\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\prolist\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p2\prolist\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\p3\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\titList\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\titList\1_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\titList\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\titList\2_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\titList\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\titList\3_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\titList\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\titList\4_cur.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\img-subject\p9\tit_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\js-subject\device.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\js-subject\fliza.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\js-subject\index.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\js-subject\index.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\js-subject\iscroll.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150713_cosmo_bowuguan\js-subject\islider.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cosmo-subject-2015.iws" />
@@ -31,15 +188,93 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/subjects/20150723_cosmo_picList/index.html">
+        <entry file="file://$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6159052">
-              <caret line="246" column="25" selection-start-line="246" selection-start-column="25" selection-end-line="246" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.75510204">
+              <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
               <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#16;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/js-subject/index1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/css-subject/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.966667">
+              <caret line="259" column="1" selection-start-line="219" selection-start-column="0" selection-end-line="259" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/css-subject/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="433" column="19" selection-start-line="433" selection-start-column="19" selection-end-line="433" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/js-subject/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="185" column="30" selection-start-line="176" selection-start-column="28" selection-end-line="185" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="29" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/js-subject/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="23" selection-start-line="66" selection-start-column="21" selection-end-line="72" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150708_hicosmo/js-subject/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="73" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/demo_swiper/index1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.038462">
+              <caret line="107" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="107" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,10 +296,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="D:/cosmo_works/nanrenzhuang_pics/details/index.html" />
-        <option value="D:/cosmo_works/nanrenzhuang_pics/details/css/pad.css" />
-        <option value="D:/cosmo_works/nanrenzhuang_pics/details/js/control.js" />
-        <option value="$PROJECT_DIR$/subjects/demo_durex_game/index.html" />
         <option value="$PROJECT_DIR$/subjects/demo_durex_game/css-subject/style.css" />
         <option value="D:/cosmo_works/nanrenzhuang_pics/details/css/mobile.css" />
         <option value="D:/cosmo_works/nanrenzhuang_pics/index.html" />
@@ -112,6 +343,10 @@
         <option value="$PROJECT_DIR$/subjects/20150723_cosmo_picList/js-subject/data.js" />
         <option value="$PROJECT_DIR$/subjects/20150723_cosmo_picList/index1.html" />
         <option value="$PROJECT_DIR$/subjects/20150723_cosmo_picList/index.html" />
+        <option value="$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/css-subject/style.css" />
+        <option value="$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/js-subject/index.js" />
+        <option value="$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/js-subject/index1.js" />
+        <option value="$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/index.html" />
       </list>
     </option>
   </component>
@@ -123,8 +358,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="361" />
-    <option name="y" value="311" />
+    <option name="x" value="866" />
+    <option name="y" value="302" />
     <option name="width" value="1400" />
     <option name="height" value="1019" />
   </component>
@@ -167,6 +402,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -213,7 +450,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20150723_cosmo_picList" />
+              <option name="myItemId" value="20150727_cosmo_bowuguan" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -231,7 +468,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20150723_cosmo_picList" />
+              <option name="myItemId" value="20150727_cosmo_bowuguan" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -239,16 +476,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="works" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20150713_cosmogirl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosmo-subject-2015" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="works" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20150713_cosmogirl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css-subject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/subjects/20150612_baifumei" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/subjects" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="false" />
@@ -322,8 +597,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="361" y="311" width="1400" height="1019" extended-state="0" />
-    <editor active="false" />
+    <frame x="866" y="302" width="1400" height="1019" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19823788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -333,7 +608,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2725225" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2713964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -367,41 +642,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/device.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40052357">
-          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/demo1_weimi_game/js-subject/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/demo1_weimi_game/css-subject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/demo_durex_game/js-subject/number.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5470297">
-          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150625_cy/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="14" selection-start-line="137" selection-start-column="14" selection-end-line="177" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150625_cy/page2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -611,24 +851,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150708_hicosmo/js-subject/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.609215">
-          <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150708_hicosmo/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51428574">
           <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/js-subject/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.011627907">
-          <caret line="208" column="38" selection-start-line="208" selection-start-column="38" selection-end-line="208" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -646,20 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/demo_swiper/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="94" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/demo_swiper/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49040768">
-          <caret line="110" column="26" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150625_hicosmo_game/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77577937">
@@ -671,20 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.613504">
           <caret line="297" column="20" selection-start-line="297" selection-start-column="20" selection-end-line="297" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/css-subject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="11" selection-start-line="108" selection-start-column="11" selection-end-line="108" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="9" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -706,7 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,12 +934,110 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150723_cosmo_picList/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6159052">
-          <caret line="246" column="25" selection-start-line="246" selection-start-column="25" selection-end-line="246" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.53061223">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo_swiper/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.020408163">
+          <caret line="6" column="94" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo_swiper/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="107" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="107" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo_weimi_game/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5925496">
+          <caret line="131" column="15" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150708_hicosmo/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="73" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="23" selection-start-line="66" selection-start-column="21" selection-end-line="72" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.966667">
+          <caret line="259" column="1" selection-start-line="219" selection-start-column="0" selection-end-line="259" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="433" column="19" selection-start-line="433" selection-start-column="19" selection-end-line="433" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="185" column="30" selection-start-line="176" selection-start-column="28" selection-end-line="185" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/demo_prox_beauty/js-subject/index.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="2" column="31419" selection-start-line="2" selection-start-column="31419" selection-end-line="2" selection-end-column="31419" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/js-subject/index1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75510204">
+          <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
+          <folding>
+            <element signature="n#script#16;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
