@@ -56,6 +56,24 @@ var PAGE0 = Fui.Template.extend({
                     var url = "http://m.cosmopolitan.com.cn/";
                     window.open(url,'_blank');
                 }
+            },
+            {
+                gesture:"tap",
+                name:"nav_change",
+                callback:function(e,$tar){
+                    var index = $tar.data("index") || 0;
+                    $tar.addClass("cur").siblings().removeClass("cur");
+                    imgs.slide(index);
+                }
+            },
+            {
+                gesture:"tap",
+                name:"nav_change2",
+                callback:function(e,$tar){
+                    var index = $tar.data("index") || 0;
+                    $tar.addClass("cur").siblings().removeClass("cur");
+                    imgs2.slide(index);
+                }
             }
         ]
     }
@@ -123,30 +141,37 @@ var slider = new Fui.PageSlider({
         }
         ,{
             template:'PAGE0',
-            //bg:ImgDir('/p3/bg.jpg'),
             xtpl:'p3',
-            design:function(){var PAGE_1 = Fui.Template.extend({
-                getGestureItems:function(){
-                    return [
-                        {
-                            gesture:"tap",
-                            name:"pop_list_show",
-                            callback:function(e,$tar){
-                                imgs.set("lock",true);
-                                var index = $tar.data("index");
-                                $tar.parents(".p").find(".pop_list").show();
-                                console.log(index)
-                                setTimeout(function(){pops.slide(index);$(".p3 .p2 .p1").css({"transform":'translate3d(100%, 0px, 0px) scale(1) rotate(0deg) skew(0deg, 0deg)',"z-index":"2"})},5000)
+            design:function(){
+                var PAGE_1 = Fui.Template.extend({
+                    getGestureItems:function(){
+                        return [
+                            {
+                                gesture:"tap",
+                                name:"pop_list_show",
+                                callback:function(e,$tar){
+                                    imgs.set("lock",true);
+                                    var index = $tar.data("index");
+                                    $tar.parents(".p").find(".pop_list").show();
+                                    pops.toPage(index-1);
+                                }
+                            },
+                            {
+                                gesture:"tap",
+                                name:"pop_list_hide",
+                                callback:function(e,$tar){
+                                    imgs.set("lock",false);
+                                    $tar.parent().hide();
+                                }
                             }
-                        }
-                    ]
-                }
-            });
+                        ]
+                    }
+                });
                 Fui.Template.regTpl({
                     PAGE_1:PAGE_1
                 });
                 var $el = this.$el;
-                var imgs = this.imgs = new Fui.PageSlider({
+                var imgs = window.imgs = new Fui.PageSlider({
                     el:"#p3_list",
                     curPage:0,
                     lock:false,
@@ -170,10 +195,6 @@ var slider = new Fui.PageSlider({
                             xtpl: 'p3_2',
                             bg:ImgDir('/p3/p2/bg.jpg'),
                             design:function(){
-                                var PAGE_2 = Fui.Template.extend({});
-                                Fui.Template.regTpl({
-                                    PAGE_2:PAGE_2
-                                });
                                 var $el = this.$el;
                                 var pops = window.pops = new Fui.PageSlider({
                                     el:"#p3_pop_list",
@@ -232,13 +253,119 @@ var slider = new Fui.PageSlider({
         }
         ,{
             template:'PAGE0',
-            bg:ImgDir('/p7/bg.jpg'),
+            bg:ImgDir('/p4/bg.jpg'),
             xtpl:'p4'
         }
         ,{
             template:'PAGE0',
-            bg:ImgDir('/p5/bg.jpg'),
-            xtpl:'p5'
+            xtpl:'p5',
+            design:function(){
+                var PAGE_2 = Fui.Template.extend({
+                    getGestureItems:function(){
+                        return [
+                            {
+                                gesture:"tap",
+                                name:"pop_list_show",
+                                callback:function(e,$tar){
+                                    imgs2.set("lock",true);
+                                    var index = $tar.data("index");
+                                    $tar.parents(".p").find(".pop_list").show();
+                                    pops2.toPage(index-1);
+                                }
+                            },
+                            {
+                                gesture:"tap",
+                                name:"pop_list_hide",
+                                callback:function(e,$tar){
+                                    imgs2.set("lock",false);
+                                    $tar.parent().hide();
+                                }
+                            }
+                        ]
+                    }
+                });
+                Fui.Template.regTpl({
+                    PAGE_2:PAGE_2
+                });
+                var $el = this.$el;
+                var imgs2 = window.imgs2 = new Fui.PageSlider({
+                    el:"#p5_list",
+                    curPage:0,
+                    lock:false,
+                    iteration:false,
+                    orient:'x',
+                    arrow:{},
+                    listeners: {
+                        slide: function () {
+                            var pagex = this.get("curPage");
+                            $(".p5").find(".nav_"+(pagex+1)).addClass("cur").siblings().removeClass("cur");
+                        }
+                    },
+                    data:[
+                        {
+                            template:'PAGE_2',
+                            xtpl: 'p5_1',
+                            bg:ImgDir('/p5/p1/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_2',
+                            xtpl: 'p5_2',
+                            bg:ImgDir('/p5/p2/bg.jpg'),
+                            design:function(){
+                                var $el = this.$el;
+                                var pops2 = window.pops2 = new Fui.PageSlider({
+                                    el:"#p5_pop_list",
+                                    curPage:0,
+                                    lock:false,
+                                    iteration:false,
+                                    orient:'x',
+                                    arrow:{},
+                                    listeners: {
+                                        slide: function () {
+                                            var pagex = this.get("curPage");
+                                        }
+                                    },
+                                    data:[
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p5/p2/poplist/1.png')
+                                        },
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p5/p2/poplist/2.png')
+                                        },
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p5/p2/poplist/3.png')
+                                        },
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p5/p2/poplist/4.png')
+                                        },
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p5/p2/poplist/5.png')
+                                        }
+                                    ]
+                                });
+                                setTimeout(function(){pops2.render();},1000);
+                            }
+                        },
+                        {
+                            template:'PAGE_2',
+                            xtpl: 'p5_3',
+                            bg:ImgDir('/p5/p3/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_2',
+                            xtpl: 'p5_4',
+                            bg:ImgDir('/p5/p4/bg.jpg')
+                        }
+                    ]
+                });
+                imgs2.render();
+                setTimeout(function(){},1000);
+            }
         }
         , {
             template: 'PAGE0',
@@ -259,3 +386,7 @@ var slider = new Fui.PageSlider({
 });
 slider.render();
 $(".fui-arrow").css("z-index","-1");
+/*
+* ,toPage:function(){var e = this,curPage = e.get('curPage'),pageNum = e.get('pageNum'),$ul = e.$ul,orient = e.get('orient'),$secs = $ul.children();e._dotoPage(index);if(index<0) index = pageNum - 1;if(index>pageNum-1) index = 0;if(index == curPage)  return;if(index > curPage){e._doTrans($secs.eq(index),'100%',false);setTimeout(function(){e._doTrans($secs.eq(curPage),'-100%');e._doTrans($secs.eq(index),'0px');},1);}else if(index < curPage){e._doTrans($secs.eq(index),'-100%',false);setTimeout(function(){e._doTrans($secs.eq(curPage),'100%');e._doTrans($secs.eq(index),'0px');},1);}e.set('curPage',index);e.ensureArrow();e.set('prePage',curPage);e.trigger('slide',[index]);e._transitionEnd($secs.eq(index),index);}
+* ,_dotoPage:function(index,e){var t = this;var pageNum = t.get('pageNum');for(i=0;i<pageNum-1;i++){var tpl = t.get('data')[i];if(tpl&&tpl.loadResources){tpl.loadResources();}}}
+* */

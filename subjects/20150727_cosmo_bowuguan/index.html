@@ -57,13 +57,15 @@
 <!-- p2 -->
 <!-- p3 -->
 <script type="text/x-handlebars-template" id="p3">
-    <div class="nav">
-        <div class="nav_1 cur"></div>
-        <div class="nav_2"></div>
-        <div class="nav_3"></div>
-        <div class="nav_4"></div>
+    <div class="list_round">
+        <div class="nav">
+            <div class="nav_1 cur" data-index="0" data-tap="nav_change"></div>
+            <div class="nav_2" data-index="1" data-tap="nav_change"></div>
+            <div class="nav_3" data-index="2" data-tap="nav_change"></div>
+            <div class="nav_4" data-index="3" data-tap="nav_change"></div>
+        </div>
+        <div id="p3_list"></div>
     </div>
-    <div id="p3_list"></div>
 </script>
 <!-- p3 -->
 <!-- p3_1 -->
@@ -98,38 +100,98 @@
         </div>
     </div>
     <div class="pop_list">
-        <div class="list_bg" id="p3_pop_list">
-            <!--<div id="wrapper" class="wrapper">-->
-                <!--<div id="scroller" class="scroller">-->
-                    <!--<ul id="thelist" class="thelist">-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</div>-->
-        </div>
+        <div class="list_bg" id="p3_pop_list"></div>
         <div class="close" data-tap="pop_list_hide"></div>
     </div>
 </script>
 <!-- p3_2 -->
-<!-- p3_2_1 -->
-<script type="text/x-handlebars-template" id="p3_2_1">
-</script>
-<!-- p3_2_1 -->
 <!-- p3_3 -->
 <script type="text/x-handlebars-template" id="p3_3">
+    <img data-src="{{IMG_DIR}}/p3/p3/words.png"/>
 </script>
 <!-- p3_3 -->
 <!-- p3_4 -->
 <script type="text/x-handlebars-template" id="p3_4">
+    <div class="links">
+        <img data-src="{{IMG_DIR}}/p3/p4/words.png"/>
+        <a href="#" class="link_1"></a>
+        <a href="#" class="link_2"></a>
+        <a href="#" class="link_3"></a>
+        <a href="#" class="link_4"></a>
+    </div>
 </script>
 <!-- p3_4 -->
 <!-- p4 -->
 <script type="text/x-handlebars-template" id="p4">
+    <img data-src="{{IMG_DIR}}/p4/tit.png" class="tit"/>
 </script>
 <!-- p4 -->
 <!-- p5 -->
 <script type="text/x-handlebars-template" id="p5">
+    <div class="list_round">
+        <div class="nav">
+            <div class="nav_1 cur" data-index="0" data-tap="nav_change2"></div>
+            <div class="nav_2" data-index="1" data-tap="nav_change2"></div>
+            <div class="nav_3" data-index="2" data-tap="nav_change2"></div>
+            <div class="nav_4" data-index="3" data-tap="nav_change2"></div>
+        </div>
+        <div id="p5_list"></div>
+    </div>
 </script>
 <!-- p5 -->
+<!-- p5_1 -->
+<script type="text/x-handlebars-template" id="p5_1">
+    <img data-src="{{IMG_DIR}}/p5/p1/words/1.png" class="words_1"/>
+    <img data-src="{{IMG_DIR}}/p5/p1/words/2.png" class="words_2"/>
+    <img data-src="{{IMG_DIR}}/p5/p1/words/3.png" class="words_3"/>
+</script>
+<!-- p5_1 -->
+<!-- p5_2 -->
+<script type="text/x-handlebars-template" id="p5_2">
+    <div class="pro_list">
+        <div class="pro pro_1">
+            <img data-src="{{IMG_DIR}}/p5/p2/prolist/1.png"/>
+            <div class="plus" data-index="1" data-tap="pop_list_show"></div>
+        </div>
+        <div class="pro pro_2">
+            <img data-src="{{IMG_DIR}}/p5/p2/prolist/2.png"/>
+            <div class="plus" data-index="2" data-tap="pop_list_show"></div>
+        </div>
+        <div class="pro pro_3">
+            <img data-src="{{IMG_DIR}}/p5/p2/prolist/3.png"/>
+            <div class="plus" data-index="3" data-tap="pop_list_show"></div>
+        </div>
+        <div class="pro pro_4">
+            <img data-src="{{IMG_DIR}}/p5/p2/prolist/4.png"/>
+            <div class="plus" data-index="4" data-tap="pop_list_show"></div>
+        </div>
+        <div class="pro pro_5">
+            <img data-src="{{IMG_DIR}}/p5/p2/prolist/5.png"/>
+            <div class="plus" data-index="5" data-tap="pop_list_show"></div>
+        </div>
+    </div>
+    <div class="pop_list">
+        <div class="list_bg" id="p5_pop_list"></div>
+        <div class="close" data-tap="pop_list_hide"></div>
+    </div>
+</script>
+<!-- p5_2 -->
+<!-- p5_3 -->
+<script type="text/x-handlebars-template" id="p5_3">
+    <img data-src="{{IMG_DIR}}/p5/p3/words/1.png"/>
+    <img data-src="{{IMG_DIR}}/p5/p3/words/2.png"/>
+</script>
+<!-- p5_3 -->
+<!-- p5_4 -->
+<script type="text/x-handlebars-template" id="p5_4">
+    <div class="links">
+        <img data-src="{{IMG_DIR}}/p5/p4/words.png"/>
+        <a href="#" class="link_1"></a>
+        <a href="#" class="link_2"></a>
+        <a href="#" class="link_3"></a>
+    </div>
+</script>
+<!-- p5_4 -->
 <!-- p6 -->
 <script type="text/x-handlebars-template" id="p6">
 </script>

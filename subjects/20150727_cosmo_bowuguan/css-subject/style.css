@@ -216,75 +216,81 @@ body{
     right: 0;
 }
 /*p3*/
-.p3{}
-.p3 .nav{
+.list_round{}
+.list_round .nav{
     width: 100%;
     height: 303px;
     position: absolute;
     bottom: 0;
     z-index: 1;
+}
+.p3 .list_round .nav{
     background: url(../img-subject/p3/tit_bg.png) no-repeat center;
     background-size: 100% 100%;
 }
-.p3 .nav div{
+.p5 .list_round .nav{
+    background: url(../img-subject/p5/tit_bg.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.list_round .nav div{
     width: 25%;
     height: 100%;
     position: absolute;
     top: 0;
 }
-.p3 .nav .nav_1{
+.list_round .nav .nav_1{
     left: 0;
     background-image: url(../img-subject/p3/titList/1.png);
     background-repeat: no-repeat;
     background-position: 45px 155px;
 }
-.p3 .nav .nav_1.cur{
+.list_round .nav .nav_1.cur{
     background-image: url(../img-subject/p3/titList/1_cur.png);
 }
-.p3 .nav .nav_2{
+.list_round .nav .nav_2{
     left: 25%;
     background-image: url(../img-subject/p3/titList/2.png);
     background-repeat: no-repeat;
     background-position: 50px 55px;
 }
-.p3 .nav .nav_2.cur{
+.list_round .nav .nav_2.cur{
     background-image: url(../img-subject/p3/titList/2_cur.png);
 }
-.p3 .nav .nav_3{
+.list_round .nav .nav_3{
     left: 50%;
     background-image: url(../img-subject/p3/titList/3.png);
     background-repeat: no-repeat;
     background-position: 50px 55px;
 }
-.p3 .nav .nav_3.cur{
+.list_round .nav .nav_3.cur{
     background-image: url(../img-subject/p3/titList/3_cur.png);
 }
-.p3 .nav .nav_4{
+.list_round .nav .nav_4{
     right: 0;
     background-image: url(../img-subject/p3/titList/4.png);
     background-repeat: no-repeat;
     background-position: 35px 165px;
 }
-.p3 .nav .nav_4.cur{
+.list_round .nav .nav_4.cur{
     background-image: url(../img-subject/p3/titList/4_cur.png);
 }
 /*p3-p0*/
-.p3 .p0 img{
+.list_round .p0 img{
     position: absolute;
     left: 50%;
     -webkit-transform: translate(-50%,0);
     top: -50%;
     opacity: 0;
 }
-.p3.focus .p0.focus .words_1{
+.focus .list_round .p0.focus .words_1{
     -webkit-animation: p3_p0_1_ani 2s ease-in-out 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
-.p3.focus .p0.focus .words_2{
+.focus .list_round .p0.focus .words_2{
     -webkit-animation: p3_p0_2_ani 2s ease-in-out 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
-.p3.focus .p0.focus .words_3{
+.focus .list_round .p0.focus .words_3{
     -webkit-animation: p3_p0_3_ani 2s ease-in-out 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
@@ -304,69 +310,98 @@ body{
     100%{top: 55%; opacity: 1;}
 }
 /*p3-p1*/
-.p3 .p1{}
-.p3 .p1 img{
+.list_round{
+    width: 100%;
+    height: 100%;
+}
+.list_round .p1{}
+.list_round .p1 img{
     position: relative;
 }
-.p3 .p1 .pro{
+.list_round .p1 .pro{
     position: absolute;
 }
-.p3 .p1 .pro .plus{
+.list_round .p1 .pro .plus{
     position: absolute;
     width: 140px;
     height: 200px;
     z-index: 2;
 }
-.p3 .p1 .pro_1{
+.list_round .p1 .pro_1{
     right: 95px;
     top: 50%;
     z-index: 5;
 }
-.p3 .p1 .pro_1 .plus{
+.list_round .p1 .pro_1 .plus{
     right: -115px;
     top: 50px;
+}
+.p3 .list_round .p1 .pro_1 .plus{
     background: url(../img-subject/p3/p2/plus/1.png) no-repeat;
 }
-.p3 .p1 .pro_2{
+.p5 .list_round .p1 .pro_1 .plus{
+    background: url(../img-subject/p5/p2/plus/1.png) no-repeat;
+}
+.list_round .p1 .pro_2{
     top: 50%;
     left: 80px;
     z-index: 4;
 }
-.p3 .p1 .pro_2 .plus{
+.list_round .p1 .pro_2 .plus{
     left: -75px;
     top: 150px;
+}
+.p3 .list_round .p1 .pro_2 .plus{
     background: url(../img-subject/p3/p2/plus/2.png) no-repeat;
 }
-.p3 .p1 .pro_3{
+.p5 .list_round .p1 .pro_2 .plus{
+    background: url(../img-subject/p5/p2/plus/2.png) no-repeat;
+}
+.list_round .p1 .pro_3{
     left: 105px;
     top: 255px;
 }
-.p3 .p1 .pro_3 .plus{
+.list_round .p1 .pro_3 .plus{
     left: -35px;
     top: -40px;
+}
+.p3 .list_round .p1 .pro_3 .plus{
     background: url(../img-subject/p3/p2/plus/3.png) no-repeat;
 }
-.p3 .p1 .pro_4{
+.p5 .list_round .p1 .pro_3 .plus{
+    background: url(../img-subject/p5/p2/plus/3.png) no-repeat;
+}
+.list_round .p1 .pro_4{
     left: 265px;
     top: 88px;
     z-index: 2;
 }
-.p3 .p1 .pro_4 .plus{
+.list_round .p1 .pro_4 .plus{
     top: -50px;
     left: -60px;
+}
+.p3 .list_round .p1 .pro_4 .plus{
     background: url(../img-subject/p3/p2/plus/4.png) no-repeat;
 }
-.p3 .p1 .pro_5{
+.p5 .list_round .p1 .pro_4 .plus{
+    background: url(../img-subject/p5/p2/plus/4.png) no-repeat;
+}
+.list_round .p1 .pro_5{
     right: 125px;
     top: 35px;
     z-index: 3;
 }
-.p3 .p1 .pro_5 .plus{
+.list_round .p1 .pro_5 .plus{
     top: 280px;
     right: -90px;
+}
+.p3 .list_round .p1 .pro_5 .plus{
     background: url(../img-subject/p3/p2/plus/5.png) no-repeat;
 }
-.p3 .p1 .pop_list{
+.p5 .list_round .p1 .pro_5 .plus{
+    background: url(../img-subject/p5/p2/plus/5.png) no-repeat;
+}
+.list_round .p1 .pop_list{
     display: none;
     width: 100%;
     height: 100%;
@@ -376,11 +411,11 @@ body{
     background: url(../img-subject/opt_black_50.png);
     z-index: 10;
 }
-.p3 .pop_list .fui-pageSlider > .c > section{
+.list_round .pop_list .fui-pageSlider > .c > section{
     background-size: auto;
     background-position: center 20px;
 }
-.p3 .p1 .list_bg{
+.list_round .p1 .list_bg{
     width: 100%;
     height: 647px;
     background: url(../img-subject/p3/p2/pop_bg.png) no-repeat center;
@@ -390,7 +425,7 @@ body{
     top: 50%;
     -webkit-transform: translate(-50%,-65%);
 }
-.p3 .p1 .pop_list .close{
+.list_round .p1 .pop_list .close{
     width: 61px;
     height: 60px;
     background: url(../img-subject/p3/p2/close.png) no-repeat center;
@@ -398,46 +433,90 @@ body{
     right: 60px;
     top: 15%;
 }
-.wrapper {
-    position:absolute;
-    z-index:1;
-    left: 0;
+/*p3-p2*/
+.list_round .p2{}
+.list_round .p2 img,.list_round .p3 .links{
+    position: absolute;
+    left: 50%;
+    top: -80%;
+    opacity: 0;
+    -webkit-transform: translate(-50%,0);
+    -webkit-transition: all ease-in-out 0.5s;
+}
+.p3 .list_round .p2.focus img{
+    top: 8%;
+    opacity: 1;
+}
+.p5 .list_round .p2.focus img:nth-child(1){
+    -webkit-animation: p5_img1_ani 2s ease-in-out 1 normal;
+    -webkit-animation-fill-mode: forwards;
+}
+.p5 .list_round .p2.focus img:nth-child(2){
+    -webkit-animation: p5_img2_ani 2s ease-in-out 1 normal;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes p5_img1_ani {
+    0%{top: -80%; opacity: 0;}
+    50%{top: 15%; opacity: 1;}
+    100%{top: 15%; opacity: 1;}
+}
+@-webkit-keyframes p5_img2_ani {
+    50%{top: -80%; opacity: 0;}
+    100%{top: 35%; opacity: 1;}
+}
+/*p3-p3*/
+.list_round .p3 .links img{
+    position: relative;
+}
+.list_round .p3.focus .links{
+    top: 15%;
+    opacity: 1;
+}
+.p3 .list_round .p3 .links a{
+    display: block;
     width: 100%;
-    height: 100%;
-    overflow: auto;
+    height: 25%;
+    position: absolute;
 }
-
-.scroller {
-    width:2700px;
-    height:100%;
-    float:left;
-    padding:0;
+.p3 .p3 .list_round .p3 .links a.link_1{
+    top: 0;
 }
-
-.scroller ul {
-    list-style:none;
-    display:block;
-    float:left;
-    width:100%;
-    height:100%;
-    padding:0;
-    margin:0;
-    text-align:left;
+.p3 .list_round .p3 .links a.link_2{
+    top: 25%;
 }
-
-.scroller li {
-    display:block;
-    vertical-align:middle;
-    float:left;
-    width:750px;
-    height:100%;
-    font-size:14px;
-    padding-top: 20px;
-    text-align: center;
+.p3 .list_round .p3 .links a.link_3{
+    top: 50%;
 }
-.scroller li img{
-    max-width: 100%;
-    max-height: 100%;
+.p3 .list_round .p3 .links a.link_4{
+    top: 75%;
+}
+.p5 .list_round .p3 .links a{
+    display: block;
+    width: 100%;
+    height: 33%;
+    position: absolute;
+}
+.p5 .list_round .p3 .links a.link_1{
+    top: 0;
+}
+.p5 .list_round .p3 .links a.link_2{
+    top: 33%;
+}
+.p5 .list_round .p3 .links a.link_3{
+    top: 66%;
+}
+/*p4*/
+.p4{}
+.p4 .tit{
+    top: auto;
+    bottom: 10%;
+    left: -100%;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+.p4.focus .tit{
+    left: 0;
 }
 /*p10*/
 .p10 .top{
