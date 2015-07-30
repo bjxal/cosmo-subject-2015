@@ -1,4 +1,4 @@
-//require("/fliza-ui");
+require("/fliza-ui");
 var content = encodeURIComponent('ÃÀ×±²©Îï¹Ý'),
     title  = '',
     pic   = ImgDir('/weixin.jpg'),
@@ -63,7 +63,7 @@ var PAGE0 = Fui.Template.extend({
                 callback:function(e,$tar){
                     var index = $tar.data("index") || 0;
                     $tar.addClass("cur").siblings().removeClass("cur");
-                    imgs.slide(index);
+                    imgs.toPage(index);
                 }
             },
             {
@@ -72,7 +72,25 @@ var PAGE0 = Fui.Template.extend({
                 callback:function(e,$tar){
                     var index = $tar.data("index") || 0;
                     $tar.addClass("cur").siblings().removeClass("cur");
-                    imgs2.slide(index);
+                    imgs2.toPage(index);
+                }
+            },
+            {
+                gesture:"tap",
+                name:"nav_change3",
+                callback:function(e,$tar){
+                    var index = $tar.data("index") || 0;
+                    $tar.addClass("cur").siblings().removeClass("cur");
+                    imgs3.toPage(index);
+                }
+            },
+            {
+                gesture:"tap",
+                name:"nav_change4",
+                callback:function(e,$tar){
+                    var index = $tar.data("index") || 0;
+                    $tar.addClass("cur").siblings().removeClass("cur");
+                    imgs4.toPage(index);
                 }
             }
         ]
@@ -88,7 +106,7 @@ Fui.Template.regTpl({
 //});
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:3,
+    curPage:8,
     lock:false,
     iteration:false,
     orient:'y',
@@ -182,6 +200,12 @@ var slider = new Fui.PageSlider({
                         slide: function () {
                             var pagex = this.get("curPage");
                             $(".p3").find(".nav_"+(pagex+1)).addClass("cur").siblings().removeClass("cur");
+                            if(pagex==1){
+                                $(".p3 .nav").css("height","303px");
+                            }
+                            else{
+                                $(".p3 .nav").css("height","40%");
+                            }
                         }
                     },
                     data:[
@@ -206,7 +230,7 @@ var slider = new Fui.PageSlider({
                                     listeners: {
                                         slide: function () {
                                             var pagex = this.get("curPage");
-                                            //$(".p3").find(".nav_"+(pagex+1)).addClass("cur").siblings().removeClass("cur");
+                                            $(".p3").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
                                         }
                                     },
                                     data:[
@@ -299,6 +323,12 @@ var slider = new Fui.PageSlider({
                         slide: function () {
                             var pagex = this.get("curPage");
                             $(".p5").find(".nav_"+(pagex+1)).addClass("cur").siblings().removeClass("cur");
+                            if(pagex==1){
+                                $(".p5 .nav").css("height","303px");
+                            }
+                            else{
+                                $(".p5 .nav").css("height","40%");
+                            }
                         }
                     },
                     data:[
@@ -323,6 +353,7 @@ var slider = new Fui.PageSlider({
                                     listeners: {
                                         slide: function () {
                                             var pagex = this.get("curPage");
+                                            $(".p5").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
                                         }
                                     },
                                     data:[
@@ -369,18 +400,248 @@ var slider = new Fui.PageSlider({
         }
         , {
             template: 'PAGE0',
-            bg:ImgDir('/p4/bg.jpg'),
+            bg:ImgDir('/p6/bg.jpg'),
             xtpl: 'p6'
         }
         , {
             template: 'PAGE0',
-            bg:ImgDir('/p6/bg.jpg'),
-            xtpl: 'p7'
+            xtpl: 'p7',
+            design: function(){
+                var PAGE_3 = Fui.Template.extend({
+                    getGestureItems:function(){
+                        return [
+                            {
+                                gesture:"tap",
+                                name:"pop_list_show",
+                                callback:function(e,$tar){
+                                    imgs3.set("lock",true);
+                                    var index = $tar.data("index");
+                                    $tar.parents(".p").find(".pop_list").show();
+                                    pops3.toPage(index-1);
+                                }
+                            },
+                            {
+                                gesture:"tap",
+                                name:"pop_list_hide",
+                                callback:function(e,$tar){
+                                    imgs3.set("lock",false);
+                                    $tar.parent().hide();
+                                }
+                            }
+                        ]
+                    }
+                });
+                Fui.Template.regTpl({
+                    PAGE_3:PAGE_3
+                });
+                var $el = this.$el;
+                var imgs3 = window.imgs3 = new Fui.PageSlider({
+                    el:"#p7_list",
+                    curPage:0,
+                    lock:false,
+                    iteration:false,
+                    orient:'x',
+                    arrow:{},
+                    listeners: {
+                        slide: function () {
+                            var pagex = this.get("curPage");
+                            $(".p7").find(".nav_"+(pagex+1)).addClass("cur").siblings().removeClass("cur");
+                            if(pagex==1){
+                                $(".p7 .nav").css("height","303px");
+                            }
+                            else{
+                                $(".p7 .nav").css("height","40%");
+                            }
+                        }
+                    },
+                    data:[
+                        {
+                            template:'PAGE_3',
+                            xtpl: 'p7_1',
+                            bg:ImgDir('/p7/p1/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_3',
+                            xtpl: 'p7_2',
+                            bg:ImgDir('/p7/p2/bg.jpg'),
+                            design:function(){
+                                var $el = this.$el;
+                                var pops3 = window.pops3 = new Fui.PageSlider({
+                                    el:"#p7_pop_list",
+                                    curPage:0,
+                                    lock:false,
+                                    iteration:false,
+                                    orient:'x',
+                                    arrow:{},
+                                    listeners: {
+                                        slide: function () {
+                                            var pagex = this.get("curPage");
+                                            $(".p7").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
+                                        }
+                                    },
+                                    data:[
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p7/p2/poplist/1.png')
+                                        },
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p7/p2/poplist/2.png')
+                                        },
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p7/p2/poplist/3.png')
+                                        },
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p7/p2/poplist/4.png')
+                                        },
+                                        {
+                                            template:'PAGE_2',
+                                            bg:ImgDir('/p7/p2/poplist/5.png')
+                                        }
+                                    ]
+                                });
+                                setTimeout(function(){pops3.render();},1000);
+                            }
+                        },
+                        {
+                            template:'PAGE_3',
+                            xtpl: 'p7_3',
+                            bg:ImgDir('/p7/p3/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_3',
+                            xtpl: 'p7_4',
+                            bg:ImgDir('/p7/p4/bg.jpg')
+                        }
+                    ]
+                });
+                imgs3.render();
+            }
         }
         , {
             template: 'PAGE0',
             bg:ImgDir('/p8/bg.jpg'),
             xtpl: 'p8'
+        }
+        ,{
+            template: 'PAGE0',
+            xtpl: 'p9',
+            design: function(){
+                var PAGE_4 = Fui.Template.extend({
+                    getGestureItems:function(){
+                        return [
+                            {
+                                gesture:"tap",
+                                name:"pop_list_show",
+                                callback:function(e,$tar){
+                                    imgs4.set("lock",true);
+                                    var index = $tar.data("index");
+                                    $tar.parents(".p").find(".pop_list").show();
+                                    pops4.toPage(index-1);
+                                }
+                            },
+                            {
+                                gesture:"tap",
+                                name:"pop_list_hide",
+                                callback:function(e,$tar){
+                                    imgs4.set("lock",false);
+                                    $tar.parent().hide();
+                                }
+                            }
+                        ]
+                    }
+                });
+                Fui.Template.regTpl({
+                    PAGE_4:PAGE_4
+                });
+                var $el = this.$el;
+                var imgs4 = window.imgs4 = new Fui.PageSlider({
+                    el:"#p9_list",
+                    curPage:0,
+                    lock:false,
+                    iteration:false,
+                    orient:'x',
+                    arrow:{},
+                    listeners: {
+                        slide: function () {
+                            var pagex = this.get("curPage");
+                            $(".p9").find(".nav_"+(pagex+1)).addClass("cur").siblings().removeClass("cur");
+                            if(pagex==1){
+                                $(".p9 .nav").css("height","303px");
+                            }
+                            else{
+                                $(".p9 .nav").css("height","40%");
+                            }
+                        }
+                    },
+                    data:[
+                        {
+                            template:'PAGE_4',
+                            xtpl: 'p9_1',
+                            bg:ImgDir('/p7/p1/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_4',
+                            xtpl: 'p9_2',
+                            bg:ImgDir('/p9/p2/bg.jpg'),
+                            design:function(){
+                                var $el = this.$el;
+                                var pops4 = window.pops4 = new Fui.PageSlider({
+                                    el:"#p9_pop_list",
+                                    curPage:0,
+                                    lock:false,
+                                    iteration:false,
+                                    orient:'x',
+                                    arrow:{},
+                                    listeners: {
+                                        slide: function () {
+                                            var pagex = this.get("curPage");
+                                            $(".p9").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
+                                        }
+                                    },
+                                    data:[
+                                        {
+                                            template:'PAGE_4',
+                                            bg:ImgDir('/p9/p2/poplist/1.png')
+                                        },
+                                        {
+                                            template:'PAGE_4',
+                                            bg:ImgDir('/p9/p2/poplist/2.png')
+                                        },
+                                        {
+                                            template:'PAGE_4',
+                                            bg:ImgDir('/p9/p2/poplist/3.png')
+                                        },
+                                        {
+                                            template:'PAGE_4',
+                                            bg:ImgDir('/p9/p2/poplist/4.png')
+                                        }
+                                    ]
+                                });
+                                setTimeout(function(){pops4.render();},1000);
+                            }
+                        },
+                        {
+                            template:'PAGE_4',
+                            xtpl: 'p9_3',
+                            bg:ImgDir('/p9/p3/bg.jpg')
+                        },
+                        {
+                            template:'PAGE_4',
+                            xtpl: 'p9_4',
+                            bg:ImgDir('/p9/p4/bg.jpg')
+                        }
+                    ]
+                });
+                imgs4.render();
+            }
+        }
+        ,{
+            template: 'PAGE0',
+            bg: ImgDir('/p10/bg.jpg'),
+            xtpl: 'p10'
         }
     ]
 });
