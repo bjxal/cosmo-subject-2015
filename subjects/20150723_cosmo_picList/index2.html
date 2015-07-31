@@ -8,7 +8,7 @@
     <title>iScroll demo: Carousel</title>
     <script type="text/javascript" src="./js-subject/device.js"></script>
     <script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="./js-subject/iscroll.js"></script>
+    <script type="text/javascript" src="./js-subject/iscroll5.js"></script>
 
     <script type="text/javascript">
         var myScroll;
@@ -36,7 +36,7 @@
                 }
             });
             console.log(myScroll.options.onScrollStart)
-//            myScroll.goToPage(parseInt(arr)-1,0);
+            myScroll.goToPage(parseInt(arr)-1,0);
             $("#wrapper img").on("tap",function(e){
                 $(".num,.btm").toggleClass("act");
             })
