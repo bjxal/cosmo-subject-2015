@@ -1,15 +1,17 @@
 var myScroll;
 var winWidth = $(window).width();
 var winHeight = $(window).height();
-var pars = window.location.href.split("?picId=");
-var arr = pars[1].split("&")[0] || "01";
+var pars = window.location.href.split("picId=");
+//var arr = pars[1].split("&")[0] || "01";
+var arr = parseInt(pars[1]) || "01";
 function loaded() {
 //            var len = $("#scroller").find("li").length || 5;
-	var len = _recommend.length;
+	var len = _recommend.imgs.length;
 	$("#scroller").width(winWidth*len+"px");
 	$(".num .num_cur").html(arr);
 	$(".num .num_all").html(len);
-	setLIst(_recommend);
+	$(".title").html(_recommend.title);
+	setLIst(_recommend.imgs);
 	myScroll = new iScroll('wrapper', {
 		snap: true,
 		momentum: false,
@@ -24,7 +26,7 @@ function loaded() {
 function setLIst(data){
 	$.each(data,function(i,item){
 		var li = document.createElement("li");
-		li.innerHTML = '<img src="'+item.img+'"/>';
+		li.innerHTML = '<img src="'+item+'"/>';
 		$("#thelist").append(li);
 	})
 	$("#thelist img").on("click",function(){

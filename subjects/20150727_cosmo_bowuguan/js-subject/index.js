@@ -22,7 +22,7 @@ var PAGE0 = Fui.Template.extend({
                 name:"goToPage",
                 callback:function(e,$tar){
                     var index = $tar.data("index");
-                    slider.toPage(index);
+                    slider.slide(index);
                 }
             },
             {
@@ -72,7 +72,7 @@ var PAGE0 = Fui.Template.extend({
                     var index = $tar.data("index") || 0;
                     console.log(index)
                     $tar.addClass("cur").siblings().removeClass("cur");
-                    imgs.toPage(index);
+                    imgs.slide(index);
                 }
             },
             {
@@ -225,47 +225,7 @@ var slider = new Fui.PageSlider({
                         {
                             template:'PAGE_1',
                             xtpl: 'p3_2',
-                            bg:ImgDir('/p3/p2/bg.jpg'),
-                            design:function(){
-                                var $el = this.$el;
-                                var pops = window.pops = new Fui.PageSlider({
-                                    el:"#p3_pop_list",
-                                    curPage:0,
-                                    lock:false,
-                                    iteration:false,
-                                    orient:'x',
-                                    arrow:{},
-                                    listeners: {
-                                        slide: function () {
-                                            var pagex = this.get("curPage");
-                                            $(".p3").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
-                                        }
-                                    },
-                                    data:[
-                                        {
-                                            template:'PAGE_1',
-                                            bg:ImgDir('/p3/p2/poplist/1.png')
-                                        },
-                                        {
-                                            template:'PAGE_1',
-                                            bg:ImgDir('/p3/p2/poplist/2.png')
-                                        },
-                                        {
-                                            template:'PAGE_1',
-                                            bg:ImgDir('/p3/p2/poplist/3.png')
-                                        },
-                                        {
-                                            template:'PAGE_1',
-                                            bg:ImgDir('/p3/p2/poplist/4.png')
-                                        },
-                                        {
-                                            template:'PAGE_1',
-                                            bg:ImgDir('/p3/p2/poplist/5.png')
-                                        }
-                                    ]
-                                });
-                                setTimeout(function(){pops.render();},1000);
-                            }
+                            bg:ImgDir('/p3/p2/bg.jpg')
                         },
                         {
                             template:'PAGE_1',
@@ -348,47 +308,7 @@ var slider = new Fui.PageSlider({
                         {
                             template:'PAGE_2',
                             xtpl: 'p5_2',
-                            bg:ImgDir('/p5/p2/bg.jpg'),
-                            design:function(){
-                                var $el = this.$el;
-                                var pops2 = window.pops2 = new Fui.PageSlider({
-                                    el:"#p5_pop_list",
-                                    curPage:0,
-                                    lock:false,
-                                    iteration:false,
-                                    orient:'x',
-                                    arrow:{},
-                                    listeners: {
-                                        slide: function () {
-                                            var pagex = this.get("curPage");
-                                            $(".p5").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
-                                        }
-                                    },
-                                    data:[
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p5/p2/poplist/1.png')
-                                        },
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p5/p2/poplist/2.png')
-                                        },
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p5/p2/poplist/3.png')
-                                        },
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p5/p2/poplist/4.png')
-                                        },
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p5/p2/poplist/5.png')
-                                        }
-                                    ]
-                                });
-                                setTimeout(function(){pops2.render();},1000);
-                            }
+                            bg:ImgDir('/p5/p2/bg.jpg')
                         },
                         {
                             template:'PAGE_2',
@@ -473,44 +393,44 @@ var slider = new Fui.PageSlider({
                             xtpl: 'p7_2',
                             bg:ImgDir('/p7/p2/bg.jpg'),
                             design:function(){
-                                var $el = this.$el;
-                                var pops3 = window.pops3 = new Fui.PageSlider({
-                                    el:"#p7_pop_list",
-                                    curPage:0,
-                                    lock:false,
-                                    iteration:false,
-                                    orient:'x',
-                                    arrow:{},
-                                    listeners: {
-                                        slide: function () {
-                                            var pagex = this.get("curPage");
-                                            $(".p7").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
-                                        }
-                                    },
-                                    data:[
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p7/p2/poplist/1.png')
-                                        },
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p7/p2/poplist/2.png')
-                                        },
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p7/p2/poplist/3.png')
-                                        },
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p7/p2/poplist/4.png')
-                                        },
-                                        {
-                                            template:'PAGE_2',
-                                            bg:ImgDir('/p7/p2/poplist/5.png')
-                                        }
-                                    ]
-                                });
-                                setTimeout(function(){pops3.render();},1000);
+                                //var $el = this.$el;
+                                //var pops3 = window.pops3 = new Fui.PageSlider({
+                                //    el:"#p7_pop_list",
+                                //    curPage:0,
+                                //    lock:false,
+                                //    iteration:false,
+                                //    orient:'x',
+                                //    arrow:{},
+                                //    listeners: {
+                                //        slide: function () {
+                                //            var pagex = this.get("curPage");
+                                //            $(".p7").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
+                                //        }
+                                //    },
+                                //    data:[
+                                //        {
+                                //            template:'PAGE_2',
+                                //            bg:ImgDir('/p7/p2/poplist/1.png')
+                                //        },
+                                //        {
+                                //            template:'PAGE_2',
+                                //            bg:ImgDir('/p7/p2/poplist/2.png')
+                                //        },
+                                //        {
+                                //            template:'PAGE_2',
+                                //            bg:ImgDir('/p7/p2/poplist/3.png')
+                                //        },
+                                //        {
+                                //            template:'PAGE_2',
+                                //            bg:ImgDir('/p7/p2/poplist/4.png')
+                                //        },
+                                //        {
+                                //            template:'PAGE_2',
+                                //            bg:ImgDir('/p7/p2/poplist/5.png')
+                                //        }
+                                //    ]
+                                //});
+                                //setTimeout(function(){pops3.render();},1000);
                             }
                         },
                         {
@@ -595,40 +515,40 @@ var slider = new Fui.PageSlider({
                             xtpl: 'p9_2',
                             bg:ImgDir('/p9/p2/bg.jpg'),
                             design:function(){
-                                var $el = this.$el;
-                                var pops4 = window.pops4 = new Fui.PageSlider({
-                                    el:"#p9_pop_list",
-                                    curPage:0,
-                                    lock:false,
-                                    iteration:false,
-                                    orient:'x',
-                                    arrow:{},
-                                    listeners: {
-                                        slide: function () {
-                                            var pagex = this.get("curPage");
-                                            $(".p9").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
-                                        }
-                                    },
-                                    data:[
-                                        {
-                                            template:'PAGE_4',
-                                            bg:ImgDir('/p9/p2/poplist/1.png')
-                                        },
-                                        {
-                                            template:'PAGE_4',
-                                            bg:ImgDir('/p9/p2/poplist/2.png')
-                                        },
-                                        {
-                                            template:'PAGE_4',
-                                            bg:ImgDir('/p9/p2/poplist/3.png')
-                                        },
-                                        {
-                                            template:'PAGE_4',
-                                            bg:ImgDir('/p9/p2/poplist/4.png')
-                                        }
-                                    ]
-                                });
-                                setTimeout(function(){pops4.render();},1000);
+                                //var $el = this.$el;
+                                //var pops4 = window.pops4 = new Fui.PageSlider({
+                                //    el:"#p9_pop_list",
+                                //    curPage:0,
+                                //    lock:false,
+                                //    iteration:false,
+                                //    orient:'x',
+                                //    arrow:{},
+                                //    listeners: {
+                                //        slide: function () {
+                                //            var pagex = this.get("curPage");
+                                //            $(".p9").find(".pop_list_nav span").eq(pagex).addClass("cur").siblings().removeClass("cur");
+                                //        }
+                                //    },
+                                //    data:[
+                                //        {
+                                //            template:'PAGE_4',
+                                //            bg:ImgDir('/p9/p2/poplist/1.png')
+                                //        },
+                                //        {
+                                //            template:'PAGE_4',
+                                //            bg:ImgDir('/p9/p2/poplist/2.png')
+                                //        },
+                                //        {
+                                //            template:'PAGE_4',
+                                //            bg:ImgDir('/p9/p2/poplist/3.png')
+                                //        },
+                                //        {
+                                //            template:'PAGE_4',
+                                //            bg:ImgDir('/p9/p2/poplist/4.png')
+                                //        }
+                                //    ]
+                                //});
+                                //setTimeout(function(){pops4.render();},1000);
                             }
                         },
                         {
