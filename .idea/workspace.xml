@@ -6,13 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="eileen">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan.zip" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/css-subject/fliza-style.css" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/css-subject/fliza-style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/img-subject/p3/p2/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/img-subject/p3/p2/bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/img-subject/p5/p2/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/img-subject/p5/p2/bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/img-subject/p7/p2/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/img-subject/p7/p2/bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/img-subject/p9/p2/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/img-subject/p9/p2/bg.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/index.html" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/index.html" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index.js" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/js-subject/index.min.js" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/js-subject/index.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index.min.js" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/css-subject/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index1.js" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/js-subject/index1.min.js" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/20150803_cosmo_bowuguan/js-subject/index1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index1.min.js" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index1.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/css-subject/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -38,8 +39,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.923077">
-              <caret line="411" column="42" selection-start-line="411" selection-start-column="42" selection-end-line="411" selection-end-column="42" />
+            <state vertical-scroll-proportion="-5.160714">
+              <caret line="32" column="10" selection-start-line="26" selection-start-column="50" selection-end-line="32" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#script#4;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -47,62 +48,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58391607">
-              <caret line="233" column="55" selection-start-line="233" selection-start-column="55" selection-end-line="233" selection-end-column="55" />
-              <folding>
-                <element signature="e#455#3630#0" expanded="false" />
-                <element signature="e#6713#7248#0" expanded="false" />
-                <element signature="e#8338#8374#0" expanded="false" />
-                <element signature="e#14478#14514#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fliza1.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/fliza1.min.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="22170" selection-start-line="1" selection-start-column="22167" selection-end-line="1" selection-end-column="22170" />
+              <caret line="124" column="55" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.6666665">
-              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-              <folding>
-                <element signature="e#457#3632#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan2/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.23077">
-              <caret line="394" column="0" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="control.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subjects/20150701_nanrenzhuang_pics/details/js/control.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-              <folding>
-                <marker date="1436348669002" expanded="true" signature="19485:19503" placeholder="..." />
-                <marker date="1436348669002" expanded="true" signature="20755:20759" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -110,9 +61,21 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/css-subject/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.6">
-              <caret line="1127" column="0" selection-start-line="1127" selection-start-column="0" selection-end-line="1127" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.9">
+              <caret line="347" column="67" selection-start-line="347" selection-start-column="67" selection-end-line="347" selection-end-column="67" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/subjects/20150805_nanrenzhuang_pics/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.89401495">
+              <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,8 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/subjects/nanrenzhuang_pics/details/css/pad.css" />
-        <option value="$PROJECT_DIR$/subjects/nanrenzhuang_pics/js/common.js" />
         <option value="$PROJECT_DIR$/subjects/nanrenzhuang_pics/list.html" />
         <option value="$PROJECT_DIR$/subjects/nanrenzhuang_pics/css/style.css" />
         <option value="$PROJECT_DIR$/subjects/nanrenzhuang_pics/index.html" />
@@ -168,7 +129,6 @@
         <option value="$PROJECT_DIR$/subjects/20150701_nanrenzhuang_pics/list.html" />
         <option value="$PROJECT_DIR$/subjects/20150723_cosmo_picList/js-subject/data.js" />
         <option value="$PROJECT_DIR$/subjects/20150723_cosmo_picList/index1.html" />
-        <option value="$PROJECT_DIR$/subjects/20150713_cosmogirl/css-subject/style.css" />
         <option value="$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/js-subject/index1.js" />
         <option value="$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/js-subject/fliza.min.js" />
         <option value="$PROJECT_DIR$/subjects/20150727_cosmo_bowuguan/css-subject/style.css" />
@@ -181,10 +141,13 @@
         <option value="$PROJECT_DIR$/subjects/demo_swiper_1/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/fliza1.min.js" />
         <option value="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan2/index.html" />
-        <option value="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/css-subject/style.css" />
         <option value="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index.js" />
+        <option value="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/index0805.html" />
         <option value="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/index.html" />
+        <option value="$PROJECT_DIR$/subjects/20150713_cosmogirl/css-subject/style.css" />
         <option value="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index1.js" />
+        <option value="$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/css-subject/style.css" />
+        <option value="$PROJECT_DIR$/subjects/20150805_nanrenzhuang_pics/index.html" />
       </list>
     </option>
   </component>
@@ -196,8 +159,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="423" />
-    <option name="y" value="180" />
+    <option name="x" value="714" />
+    <option name="y" value="408" />
     <option name="width" value="1400" />
     <option name="height" value="1018" />
   </component>
@@ -240,8 +203,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,122 +267,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20150803_cosmo_bowuguan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20150803_cosmo_bowuguan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js-subject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20150701_nanrenzhuang_pics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20150701_nanrenzhuang_pics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="details" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20150701_nanrenzhuang_pics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="details" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cosmo-subject-2015" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="works" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subjects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="20150701_nanrenzhuang_pics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="20150805_nanrenzhuang_pics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,14 +354,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="423" y="180" width="1400" height="1018" extended-state="0" />
+    <frame x="714" y="408" width="1400" height="1018" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19823788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2638106" sideWeight="0.50293684" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -521,6 +373,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -529,15 +382,15 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7252252" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2638106" sideWeight="0.50293684" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2668919" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2638106" sideWeight="0.49706313" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19823788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -566,27 +419,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/fliza/fliza_modules/video/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150708_hicosmo/js-subject/index.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150708_hicosmo/css-subject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150708_hicosmo/js-subject/fliza.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327338">
@@ -692,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/demo_prox_beauty/js-subject/index.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -710,13 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3153457">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/css-subject/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95843524">
-          <caret line="424" column="3" selection-start-line="424" selection-start-column="2" selection-end-line="424" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -801,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42328042">
           <caret line="265" column="5" selection-start-line="265" selection-start-column="5" selection-end-line="265" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.040865384">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24708624">
           <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22027972">
           <caret line="19" column="506" selection-start-line="19" selection-start-column="506" selection-end-line="19" selection-end-column="506" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,15 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35664335">
           <caret line="168" column="13" selection-start-line="168" selection-start-column="13" selection-end-line="168" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/fliza1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="22170" selection-start-line="1" selection-start-column="22167" selection-end-line="1" selection-end-column="22170" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,13 +689,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.23077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="394" column="0" selection-start-line="394" selection-start-column="0" selection-end-line="394" selection-end-column="0" />
           <folding />
         </state>
@@ -899,11 +702,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150701_nanrenzhuang_pics/details/js/control.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding>
-            <marker date="1436348669002" expanded="true" signature="19485:19503" placeholder="..." />
-            <marker date="1436348669002" expanded="true" signature="20755:20759" placeholder="..." />
+            <marker date="1436348669002" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1436348669002" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -916,28 +719,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/css-subject/style.css">
+    <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/fliza1.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.6">
-          <caret line="1127" column="0" selection-start-line="1127" selection-start-column="0" selection-end-line="1127" selection-end-column="0" />
+        <state vertical-scroll-proportion="8.896271">
+          <caret line="1" column="22170" selection-start-line="1" selection-start-column="22167" selection-end-line="1" selection-end-column="22170" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/index0805.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71634614">
+          <caret line="396" column="17" selection-start-line="396" selection-start-column="17" selection-end-line="396" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/css-subject/style0805.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.033334">
+          <caret line="1137" column="23" selection-start-line="1129" selection-start-column="15" selection-end-line="1137" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.6666665">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.566668">
+          <caret line="423" column="31" selection-start-line="408" selection-start-column="30" selection-end-line="423" selection-end-column="31" />
           <folding>
             <element signature="e#457#3632#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="45" column="10" selection-start-line="39" selection-start-column="50" selection-end-line="45" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150713_cosmogirl/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30471382">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.923077">
-          <caret line="411" column="42" selection-start-line="411" selection-start-column="42" selection-end-line="411" selection-end-column="42" />
+        <state vertical-scroll-proportion="-5.160714">
+          <caret line="32" column="10" selection-start-line="26" selection-start-column="50" selection-end-line="32" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#script#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -946,13 +781,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/js-subject/index1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58391607">
-          <caret line="233" column="55" selection-start-line="233" selection-start-column="55" selection-end-line="233" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="124" column="55" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150803_cosmo_bowuguan/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9">
+          <caret line="347" column="67" selection-start-line="347" selection-start-column="67" selection-end-line="347" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150805_nanrenzhuang_pics/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.89401495">
+          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
           <folding>
-            <element signature="e#455#3630#0" expanded="false" />
-            <element signature="e#6713#7248#0" expanded="false" />
-            <element signature="e#8338#8374#0" expanded="false" />
-            <element signature="e#14478#14514#0" expanded="false" />
+            <element signature="n#style#0;n#iframe#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
