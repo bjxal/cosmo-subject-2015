@@ -122,10 +122,18 @@ var slider = new Fui.PageSlider({
             var page = this.get("curPage");
             var $cur_p = $(".p"+page);
             var $pre_p = $(".p"+(page-1));
-            var cur_id = $cur_p.find(".nav .cur").data("index");
-            $cur_p.addClass("focus").find(".p"+cur_id).addClass("focus");
-            $pre_p.find(".item").removeClass("focus");
-            if(page==10){
+            var $nxt_p = $(".p"+(page+1));
+            console.log($nxt_p)
+            //var cur_id = $cur_p.find(".nav .cur").data("index");
+            $cur_p.addClass("focus").find(".p0").addClass("focus");
+            $pre_p.find(".item.p0").addClass("focus").siblings().removeClass("focus");
+            $pre_p.find(".nav_1").addClass("cur").siblings().removeClass("cur");
+            $pre_p.find(".con_list").css({"-webkit-transform":"translate(0,0)"});
+
+            $nxt_p.find(".item.p0").addClass("focus").siblings().removeClass("focus");
+            $nxt_p.find(".nav_1").addClass("cur").siblings().removeClass("cur");
+            $nxt_p.find(".con_list").css({"-webkit-transform":"translate(0,0)"});
+            if(page==6){
                 $(".fui-arrow").css("z-index","-1");
                 $(".app-music").css("z-index","-1");
             }

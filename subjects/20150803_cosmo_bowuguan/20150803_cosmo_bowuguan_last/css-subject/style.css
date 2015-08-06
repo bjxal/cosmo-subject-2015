@@ -332,11 +332,7 @@ body{
     -webkit-animation: handle_ani 1s ease-in-out infinite alternate;
     -moz-animation: handle_ani 1s ease-in-out infinite alternate;
 }
-.p4 .list_round .handle{
-    bottom: -20px;
-    right: 0;
-}
-.p3 .list_round .handle{
+.p3 .list_round .handle,.p4 .list_round .handle{
     bottom: 100px;
 }
 .p3 .list_round .handle,.p5 .list_round .handle{
@@ -421,6 +417,12 @@ body{
 .list_round .nav .nav_4.cur{
     background-image: url(../img-subject/p3/titList/4_cur.png);
 }
+.p5 .list_round .nav .nav_2{
+    background-image: url(../img-subject/p9/titList/2.png);
+}
+.p5 .list_round .nav .nav_2.cur{
+    background-image: url(../img-subject/p9/titList/2_cur.png);
+}
 /*p3-p0*/
 .list_round .p0 div.words{
     position: absolute;
@@ -446,49 +448,57 @@ body{
     letter-spacing: 0.5px;
 }
 .focus .list_round .p0.focus .words_1{
-    animation: p3_p0_1_ani 1s ease-in-out 1 normal;
-    -webkit-animation: p3_p0_1_ani 1s ease-in-out 1 normal;
-    -moz-animation: p3_p0_1_ani 1s ease-in-out 1 normal;
+    animation: p3_p0_1_ani 1s ease-in-out 2s 1 normal;
+    -webkit-animation: p3_p0_1_ani 1s ease-in-out 2s 1 normal;
+    -moz-animation: p3_p0_1_ani 1s ease-in-out 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .focus .list_round .p0.focus .words_2{
-    animation: p3_p0_2_ani 1s ease-in-out 1 normal;
-    -webkit-animation: p3_p0_2_ani 1s ease-in-out 1 normal;
-    -moz-animation: p3_p0_2_ani 1s ease-in-out 1 normal;
+    animation: p3_p0_2_ani 1s ease-in-out 2s 1 normal;
+    -webkit-animation: p3_p0_2_ani 1s ease-in-out 2s 1 normal;
+    -moz-animation: p3_p0_2_ani 1s ease-in-out 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .focus .list_round .p0.focus .words_3{
-    animation: p3_p0_3_ani 1s ease-in-out 1 normal;
-    -webkit-animation: p3_p0_3_ani 1s ease-in-out 1 normal;
-    -moz-animation: p3_p0_3_ani 1s ease-in-out 1 normal;
+    animation: p3_p0_3_ani 1s ease-in-out 2s 1 normal;
+    -webkit-animation: p3_p0_3_ani 1s ease-in-out 2s 1 normal;
+    -moz-animation: p3_p0_3_ani 1s ease-in-out 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p3.focus .list_round .p0.focus .words_1,.p4.focus .list_round .p0.focus .words_1{
-    animation: p5_p0_1_ani 1s ease-in-out 1 normal;
-    -webkit-animation: p5_p0_1_ani 1s ease-in-out 1 normal;
-    -moz-animation: p5_p0_1_ani 1s ease-in-out 1 normal;
+    animation: p5_p0_1_ani 1s ease-in-out 2s 1 normal;
+    -webkit-animation: p5_p0_1_ani 1s ease-in-out 2s 1 normal;
+    -moz-animation: p5_p0_1_ani 1s ease-in-out 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p3.focus .list_round .p0.focus .words_2,.p4.focus .list_round .p0.focus .words_2{
-    animation: p5_p0_2_ani 1s ease-in-out 1 normal;
-    -webkit-animation: p5_p0_2_ani 1s ease-in-out 1 normal;
-    -moz-animation: p5_p0_2_ani 1s ease-in-out 1 normal;
+    animation: p5_p0_2_ani 1s ease-in-out 2s 1 normal;
+    -webkit-animation: p5_p0_2_ani 1s ease-in-out 2s 1 normal;
+    -moz-animation: p5_p0_2_ani 1s ease-in-out 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p3.focus .list_round .p0.focus .words_3,.p4.focus .list_round .p0.focus .words_3{
-    animation: p5_p0_3_ani 1s ease-in-out 1 normal;
-    -webkit-animation: p5_p0_3_ani 1s ease-in-out 1 normal;
-    -moz-animation: p5_p0_3_ani 1s ease-in-out 1 normal;
+    animation: p5_p0_3_ani 1s ease-in-out 2s 1 normal;
+    -webkit-animation: p5_p0_3_ani 1s ease-in-out 2s 1 normal;
+    -moz-animation: p5_p0_3_ani 1s ease-in-out 2s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+.p5.focus .list_round .p0.focus .words_1{
+    animation: p9_p0_1_ani 1s ease-in-out 2s 1 normal;
+    -webkit-animation: p9_p0_1_ani 1s ease-in-out 2s 1 normal;
+    -moz-animation: p9_p0_1_ani 1s ease-in-out 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -497,6 +507,11 @@ body{
     0%{top: -50%; opacity: 0;}
     40%{top: 5%; opacity: 1;}
     100%{top: 5%; opacity: 1;}
+}
+@-webkit-keyframes p9_p0_1_ani{
+    0%{top: -50%; opacity: 0;}
+    40%{top: 20%; opacity: 1;}
+    100%{top: 20%; opacity: 1;}
 }
 @-webkit-keyframes p3_p0_2_ani{
     30%{top: -50%; opacity: 0;}
@@ -723,9 +738,9 @@ body{
     -moz-animation-fill-mode: forwards;
 }
 .p3 .list_round .p2.focus div.words_2{
-    animation: p5_img2_ani 2s ease-in-out 1 normal;
-    -webkit-animation: p5_img2_ani 2s ease-in-out 1 normal;
-    -moz-animation: p5_img2_ani 2s ease-in-out 1 normal;
+    animation: p5_img2_ani 1s ease-in-out 1 normal;
+    -webkit-animation: p5_img2_ani 1s ease-in-out 1 normal;
+    -moz-animation: p5_img2_ani 1s ease-in-out 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -753,11 +768,11 @@ body{
 }
 @-webkit-keyframes p5_img1_ani {
     0%{top: -80%; opacity: 0;}
-    50%{top: 15%; opacity: 1;}
+    40%{top: 15%; opacity: 1;}
     100%{top: 15%; opacity: 1;}
 }
 @-webkit-keyframes p5_img2_ani {
-    50%{top: -80%; opacity: 0;}
+    40%{top: -80%; opacity: 0;}
     100%{top: 35%; opacity: 1;}
 }
 /*p3-p3*/
@@ -768,7 +783,7 @@ body{
     top: 15%;
     opacity: 1;
 }
-.p3 .list_round .p3.focus .links{
+.p3 .list_round .p3.focus .links,.p4 .list_round .p3.focus .links{
     top: 22%;
 }
 .list_round .p3 .links a{
@@ -960,14 +975,14 @@ body{
     top: 160px;
 }
 /*p9*/
-.p5 .p0.focus .words_1{
-    transition: all ease-in-out 0.5s;
-    -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
-}
-.p5 .p0.focus .words_1 p{
-    line-height: 43px;
-}
+/*.p5 .p0.focus .words_1{*/
+    /*transition: all ease-in-out 0.5s;*/
+    /*-webkit-transition: all ease-in-out 0.5s;*/
+    /*-moz-transition: all ease-in-out 0.5s;*/
+/*}*/
+/*.p5 .p0.focus .words_1 p{*/
+    /*line-height: 43px;*/
+/*}*/
 .p5 .p2 .words p{
     color: #ffffff;
 }
@@ -980,13 +995,13 @@ body{
 .p5 .p2 .words p:nth-child(4){
     bottom: 45px;
 }
-.p5.focus .p0.focus .words_1{
-    animation: none;
-    -webkit-animation: none;
-    -moz-animation: none;
-    top: 20%;
-    opacity: 1;
-}
+/*.p5.focus .p0.focus .words_1{*/
+    /*animation: none;*/
+    /*-webkit-animation: none;*/
+    /*-moz-animation: none;*/
+    /*top: 20%;*/
+    /*opacity: 1;*/
+/*}*/
 .p5 .list_round .p1 .pro .plus{
     position: absolute;
     width: 200px;
