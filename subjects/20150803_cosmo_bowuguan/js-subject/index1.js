@@ -123,7 +123,6 @@ var slider = new Fui.PageSlider({
             var $cur_p = $(".p"+page);
             var $pre_p = $(".p"+(page-1));
             var $nxt_p = $(".p"+(page+1));
-            console.log($nxt_p)
             //var cur_id = $cur_p.find(".nav .cur").data("index");
             $cur_p.addClass("focus").find(".p0").addClass("focus");
             $pre_p.find(".item.p0").addClass("focus").siblings().removeClass("focus");
