@@ -112,7 +112,7 @@ Fui.Template.regTpl({
 var slider = new Fui.PageSlider({
     el:'#pack',
     curPage:0,
-    lock:false,
+    lock:true,
     iteration:false,
     orient:'y',
     listeners:{
@@ -132,6 +132,18 @@ var slider = new Fui.PageSlider({
             $nxt_p.find(".item.p0").addClass("focus").siblings().removeClass("focus");
             $nxt_p.find(".nav_1").addClass("cur").siblings().removeClass("cur");
             $nxt_p.find(".con_list").css({"-webkit-transform":"translate(0,0)"});
+            if(page==1){
+                var cname = $(".p1 .tips").attr("class");
+                if(cname.indexOf("hide")==-1){
+                    setTimeout(function(){
+                        $(".p1 .tips").fadeIn();
+                        setTimeout(function(){$(".p1 .tips").fadeOut().addClass("hide");},3000);
+                    },1500);
+                }
+            }
+            else{
+                $(".p4 .tips").hide();
+            }
             if(page==6){
                 $(".fui-arrow").css("z-index","-1");
                 $(".app-music").css("z-index","-1");
@@ -155,6 +167,7 @@ var slider = new Fui.PageSlider({
                     aa.$el.addClass("focus");
                     //audio.play();
                     setTimeout(function(){
+                        slider.set("lock",false);
                         aa.$el.find(".loadingC").fadeOut();
                         aa.$el.find(".tit").fadeIn().addClass("act");
                         $(".fui-arrow").css("z-index","1");
