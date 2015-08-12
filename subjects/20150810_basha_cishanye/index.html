@@ -10,7 +10,7 @@
     <meta name="apple-touch-fullscreen" content="yes" />
     <meta name="format-detection" content="telephone=no" />
     <script src="js-subject/device.js"></script>
-    <title>芭莎慈善夜</title>
+    <title>2015BAZAAR明星慈善夜,邀你来战</title>
     <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
 </head>
 <body>
@@ -24,11 +24,11 @@
         </div>
     </div>
 </div>
-<a class="app-music">
-    <span class="icon icon-music">
-        <b></b>
-    </span>
-</a>
+<!--<a class="app-music">-->
+    <!--<span class="icon icon-music">-->
+        <!--<b></b>-->
+    <!--</span>-->
+<!--</a>-->
 <div id="pack" class="pack"></div>
 <script type="text/javascript" src="http://new-icon.ol-img.com/statics/common/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="http://new-icon.ol-img.com/statics/common/js/handlebars-1.3.0.min.js"></script>
@@ -42,6 +42,10 @@
     <div class="words">
         <img data-src="{{IMG_DIR}}/p1/words.png"/>
         <div class="show_pop" data-tap="pop_show" data-popid="1"></div>
+        <div class="pop_tips">
+            <div class="pop_tips1" data-tap="pop_show" data-popid="1"></div>
+            <div class="pop_tips2"></div>
+        </div>
     </div>
 </script>
 <!-- P1 -->
@@ -54,6 +58,10 @@
         <span class="num_3" data-to="15" data-speed="4500">0</span>
         <span class="num_4" data-to="2" data-speed="1500">0</span>
         <div class="show_pop" data-tap="pop_show" data-popid="2"></div>
+        <div class="pop_tips">
+            <div class="pop_tips1" data-tap="pop_show" data-popid="2"></div>
+            <div class="pop_tips2"></div>
+        </div>
     </div>
 </script>
 <!-- p2 -->
@@ -61,8 +69,8 @@
 <script type="text/x-handlebars-template" id="p3">
     <div class="words">
         <img data-src="{{IMG_DIR}}/p3/words.png"/>
-        <div class="wing_lf"></div>
-        <div class="wing_rt"></div>
+        <!--<div class="wing_lf"></div>-->
+        <!--<div class="wing_rt"></div>-->
     </div>
 </script>
 <!-- p3 -->
@@ -99,32 +107,6 @@
     <p>2015年9月23日<br>北京<br>我们谨怀慈善之心期待您的光临</p>
 </script>
 <!-- p7 -->
-<!-- p8 -->
-<script type="text/x-handlebars-template" id="p8">
-    <img data-src="{{IMG_DIR}}/p8/top.png" class="top"/>
-    <img data-src="{{IMG_DIR}}/p8/tit.png" class="tit"/>
-    <div class="share">
-        <div class="share_link">
-            <div class="st">
-                <p>分享到：&nbsp;</p>
-                <img data-src="{{IMG_DIR}}/p8/share/wx.png" class="share-icon" data-tap="share_pop_show"/>
-                <img data-src="{{IMG_DIR}}/p8/share/sina.png" class="share-icon" data-tap="share_sina"/>
-            </div>
-            <div class="line"></div>
-            <div class="sb">
-                <p>扫一扫&nbsp;约吧</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img data-src="{{IMG_DIR}}/p8/share/hicosmo.png" data-tap="m_link"/>
-            </div>
-        </div>
-        <div class="ewm">
-            <img data-src="{{IMG_DIR}}/p8/share/ewm.jpg"/>
-        </div>
-    </div>
-    <div class="share_pop" data-tap="share_pop_hide">
-        <img data-src="{{IMG_DIR}}/p8/share/wx_share.gif" data-tap="share_pop_hide"/></div>
-    </div>
-</script>
-<!-- p8 -->
 <script type="text/javascript">
     var _dir = (function (){
         var href = $('#css').attr('href').toString();

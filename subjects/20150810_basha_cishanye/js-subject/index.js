@@ -98,7 +98,7 @@ Fui.Template.regTpl({
 //});
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:6,
+    curPage:0,
     lock:false,
     iteration:false,
     orient:'y',
@@ -109,14 +109,12 @@ var slider = new Fui.PageSlider({
             $(".fui-arrow.right").hide();
             var page = this.get("curPage");
             $(".p"+page).addClass("focus");
-            if(page==9){
+            if(page==7){
                 $(".fui-arrow").css("z-index","-1");
-                $(".app-music").css("z-index","-1");
             }
             else{
 
                 $(".fui-arrow").css("z-index","10000");
-                $(".app-music").css("z-index","101");
             }
             if(page==2){
                 $('.num_1').each(count);
@@ -191,10 +189,6 @@ var slider = new Fui.PageSlider({
             bg:ImgDir('/p0/bg.jpg'),
             xtpl: 'p7'
         }
-        , {
-            template: 'PAGE0',
-            xtpl: 'p8'
-        }
     ]
 });
 slider.render();
@@ -248,18 +242,33 @@ function setImgList(id){
 var picList = [
     {
         width: 750,
-        height: 207,
+        height: 1206,
         content: ImgDir('/p5/1.jpg')
     },
     {
         width: 750,
-        height: 207,
+        height: 1206,
         content: ImgDir('/p5/2.jpg')
     },
     {
         width: 750,
-        height: 207,
+        height: 1206,
         content: ImgDir('/p5/3.jpg')
+    },
+    {
+        width: 750,
+        height: 1206,
+        content: ImgDir('/p5/4.jpg')
+    },
+    {
+        width: 750,
+        height: 1206,
+        content: ImgDir('/p5/5.jpg')
+    },
+    {
+        width: 750,
+        height: 1206,
+        content: ImgDir('/p5/6.jpg')
     }
 ];
 var islider1 = new iSlider({
