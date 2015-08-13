@@ -15,7 +15,12 @@ var p1List = [
 var p2List = [
     {"tit":ImgDir('/p2/t1/tit.png'),"word":'',"pic":ImgDir('/p2/t1/pic.jpg')},
     {"tit":ImgDir('/p2/t2/tit.png'),"word":'',"pic":ImgDir('/p2/t2/pic.jpg')},
-    {"tit":ImgDir('/p2/t3/tit.png'),"word":'',"pic":ImgDir('/p2/t3/pic.jpg')}
+    {"tit":ImgDir('/p2/t3/tit.png'),"word":'',"pic":ImgDir('/p2/t3/pic.jpg')},
+    {"tit":ImgDir('/p2/t4/tit.png'),"word":'',"pic":ImgDir('/p2/t4/pic.jpg')},
+    {"tit":ImgDir('/p2/t5/tit.png'),"word":'',"pic":ImgDir('/p2/t5/pic.jpg')},
+    {"tit":ImgDir('/p2/t6/tit.png'),"word":'',"pic":ImgDir('/p2/t6/pic.jpg')},
+    {"tit":ImgDir('/p2/t7/tit.png'),"word":'',"pic":ImgDir('/p2/t7/pic.jpg')},
+    {"tit":ImgDir('/p2/t8/tit.png'),"word":'',"pic":ImgDir('/p2/t8/pic.jpg')}
 ];
 var content = encodeURIComponent('我就是COSMO GIRL'),
     title  = '',
@@ -91,14 +96,14 @@ var PAGE0 = Fui.Template.extend({
 Fui.Template.regTpl({
     PAGE0:PAGE0
 });
-//var audio = Fui.Audio({
-//    src:ImgDir('/music.mp3'),
-//    color:"#ee257b",
-//    autoplay:false
-//});
+var audio = Fui.Audio({
+    src:ImgDir('/music.mp3'),
+    color:"#ee257b",
+    autoplay:false
+});
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:0,
+    curPage:2,
     lock:false,
     iteration:false,
     orient:'y',
@@ -111,16 +116,19 @@ var slider = new Fui.PageSlider({
             $(".p"+page).addClass("focus");
             if(page==7){
                 $(".fui-arrow").css("z-index","-1");
+                $(".app-music").css("z-index","-1");
             }
             else{
 
                 $(".fui-arrow").css("z-index","10000");
+                $(".app-music").css("z-index","101");
             }
             if(page==2){
                 $('.num_1').each(count);
                 $('.num_2').each(count);
                 $('.num_3').each(count);
                 $('.num_4').each(count);
+                $('.num_5').each(count);
             }
             if(page==5){
                 var cname = $(".p5 .tips").attr("class");
@@ -140,23 +148,11 @@ var slider = new Fui.PageSlider({
             xtpl:'p0',
             design:function(){
                 var aa = this;
-                //setTimeout(function(){
-                //    aa.$el.find(".loadingC").hide();
-                //    aa.$el.addClass("focus");
-                //    //audio.play();
-                //    $(".fui-arrow").css("z-index","1");
-                //    setTimeout(function(){
-                //        aa.$el.find(".loading").fadeOut();
-                //        aa.$el.find(".actBox").addClass("show");
-                //        $('.timer').each(count);
-                //        // custom formatting example
-                //        $('#count-number').data('countToOptions', {
-                //            formatter: function (value, options) {
-                //                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-                //            }
-                //        });
-                //    },3000);
-                //},5000);
+                setTimeout(function(){
+                    aa.$el.addClass("focus");
+                    audio.play();
+                    $(".fui-arrow").css("z-index","1");
+                },1000);
             }
         }
         ,{
@@ -192,7 +188,7 @@ var slider = new Fui.PageSlider({
     ]
 });
 slider.render();
-//$(".fui-arrow").css("z-index","-1");
+$(".fui-arrow").css("z-index","-1");
 //cover
 $(".cover").on("touchend",function(e){
     $(".cover").fadeOut();
