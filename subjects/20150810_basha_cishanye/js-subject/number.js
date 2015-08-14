@@ -75,6 +75,9 @@ $.fn.countTo.defaults = {
 };
 
 function formatter(value, settings) {
+	if(String(settings.to).indexOf(".")!=-1){
+		settings.decimals = 1;
+	}
 	return value.toFixed(settings.decimals);
 }
 

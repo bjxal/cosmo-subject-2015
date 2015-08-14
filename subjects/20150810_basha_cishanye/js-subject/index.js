@@ -98,12 +98,12 @@ Fui.Template.regTpl({
 });
 var audio = Fui.Audio({
     src:ImgDir('/music.mp3'),
-    color:"#ee257b",
+    color:"#ffffff",
     autoplay:false
 });
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:2,
+    curPage:0,
     lock:false,
     iteration:false,
     orient:'y',
@@ -116,12 +116,10 @@ var slider = new Fui.PageSlider({
             $(".p"+page).addClass("focus");
             if(page==7){
                 $(".fui-arrow").css("z-index","-1");
-                $(".app-music").css("z-index","-1");
             }
             else{
 
                 $(".fui-arrow").css("z-index","10000");
-                $(".app-music").css("z-index","101");
             }
             if(page==2){
                 $('.num_1').each(count);
@@ -129,6 +127,24 @@ var slider = new Fui.PageSlider({
                 $('.num_3').each(count);
                 $('.num_4').each(count);
                 $('.num_5').each(count);
+            }
+            if(page==4){
+                setTimeout(function(){
+                    $(".p4 .words_1").animate({
+                        "opacity":0
+                    },800);
+                    $(".p4 .words_2").animate({
+                        "opacity":1
+                    },800);
+                },1000);
+            }else{
+                $(".p4 .words_1").animate({
+                    "opacity":1
+                },800);
+                $(".p4 .words_2").animate({
+                    "opacity":0
+                },800);
+
             }
             if(page==5){
                 var cname = $(".p5 .tips").attr("class");
@@ -152,6 +168,16 @@ var slider = new Fui.PageSlider({
                     aa.$el.addClass("focus");
                     audio.play();
                     $(".fui-arrow").css("z-index","1");
+
+                    var stars = $(".star img");
+                    console.log(stars)
+                    $.each(stars,function(i,item){
+                        if(i<5){
+                            setTimeout(function(){
+                                $(item).addClass("show");
+                            },i*200);
+                        }
+                    });
                 },1000);
             }
         }
