@@ -13,7 +13,7 @@ html,body {
 body{
     font-family: "Hiragino Sans","冬青黑体简体","Microsoft YaHei";
     background-color:#ebebeb;
-    padding-bottom: 70px;
+    padding-bottom: 110px;
 }
 label {
     cursor: pointer;
@@ -37,24 +37,24 @@ p,div,span,ul,li,header,section,footer,a{
 
 /*section*/
 section{
-    padding: 0 10px;
+    padding: 0 18px;
 }
 section img{
     max-width: 100%;
     max-height: 100%;
 }
 .audio{
-    height: 46px;
+    height: 76px;
     overflow: hidden;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 .audio .audio_avt{
     height: 100%;
     float: left;
 }
 .audio .audio_c{
-    width: 180px;
-    height: 45px;
+    width: 320px;
+    height: 75px;
     border: 1px #c9c9c9 solid;
     background-color: #ffffff;
     border-radius: 8px;
@@ -64,21 +64,6 @@ section img{
 }
 #audioPlay{
     display: none;
-}
-.audio .audio_c_1 span{
-    display: block;
-    width: 0px;
-    border-radius: 10px;
-    border-right: 1px #000000 solid;
-}
-.audio .audio_c_1 span:nth-child(1){
-    height: 1px;
-}
-.audio .audio_c_1 span:nth-child(2){
-    height: 5px;
-}
-.audio .audio_c_1 span:nth-child(3){
-    height: 10px;
 }
 .audio .audio_c .audio_arrow{
     display: block;
@@ -93,7 +78,7 @@ section img{
     z-index: -1;
 }
 .audio .audio_time{
-    width: 30px;
+    width: 50px;
     height: 100%;
     text-align: center;
     float: left;
@@ -102,12 +87,12 @@ section img{
     display: block;
 }
 .audio .audio_time span:nth-child(1){
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #ea4c4b;
     border: 1px #eb4342 solid;
-    margin: 5px auto;
+    margin: 10px auto;
 }
 .audio .audio_time span:nth-child(1).read{
     background: none;
@@ -115,20 +100,21 @@ section img{
 }
 .audio .audio_time span:nth-child(2){
     color: #666666;
+    font-size: 24px;
 }
 .date{
-    padding: 0 8px;
+    padding: 0 13px;
 }
 .date .time_c{
-    width: 175px;
-    height: 22px;
-    line-height: 22px;
-    font-size: 13px;
+    width: 290px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 21.7px;
     color: #ffffff;
     background-color: #cecece;
     text-align: center;
     margin: 33px auto;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 .date .list_c,.date .list_c_2{
     width: 100%;
@@ -140,12 +126,12 @@ section img{
 }
 /*focus*/
 .date .list_c_2{
-    padding: 13px 0;
+    padding: 21px 0;
     border: 1px #d8d8d8 solid;
     background-color: #ffffff;
 }
 .date .list_art,.date .list_focus{
-    padding: 0 10px;
+    padding: 0 18px;
 }
 .date .list_focus_t{
     position: relative;
@@ -157,8 +143,8 @@ section img{
     left: 0;
     width: 100%;
     height: auto;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 30px;
+    line-height: 40px;
     color: #ffffff;
     padding: 10px;
     background: url(../img-subject/opt_black_70.png);
@@ -167,7 +153,9 @@ section img{
 .date .list_art{
     position: relative;
     width: 100%;
-    height: 66px;
+    height: 111px;
+    font-size: 28.9px;
+    line-height: 38px;
     border-top: 1px #eff1f3 solid;
 }
 .date .list_art a{
@@ -179,19 +167,19 @@ section img{
 }
 .date .list_art a .tit{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 18px;
     width: 78%;
-    font-size: 17px;
-    line-height: 23px;
+    font-size: 29px;
+    line-height: 38px;
     overflow: hidden;
 }
 .date .list_art a .avatar{
     position: absolute;
-    right: 10px;
-    top: 5px;
-    width: 55px;
-    height: 55px;
+    right: 18px;
+    top: 9px;
+    width: 91px;
+    height: 91px;
     overflow: hidden;
 }
 
@@ -200,7 +188,7 @@ section img{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 55px;
+    height: 90px;
 }
 .footer .footer_nav_list{
     width: 100%;
@@ -210,36 +198,33 @@ section img{
     position: absolute;
     left: 0;
     bottom: -100px;
-    transition: all ease-in-out 0.5s;
     -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
 }
 .footer .footer_nav_list.show{
     bottom: 0;
 }
 .footer .nav{
     position: relative;
-    width: 134px;
+    width: 224px;
     height: 100%;
     float: left;
     border-left: 1px #bfbfbf solid;
-    font-size: 16px;
+    font-size: 27px;
     color:#4b4b4b;
     text-align: center;
-    line-height: 55px;
+    line-height: 90px;
     padding-top: 1px;
 }
 .footer .nav .nav_word{
     background-color: #ffffff;
-    background-image: url(../img-subject/footer/nav_bg.png);
+    background-image: url(../img-subject/footer/nav_bg_750.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
 }
 .footer .nav.sina{
-    width: 48px;
+    width: 78px;
     background: url(../img-subject/footer/sina_bg.png) no-repeat center;
-     background-size: auto 70%;
 }
 .footer .nav.sina .nav_word{
 }
@@ -257,20 +242,16 @@ section img{
     /*bottom: 104px;*/
     bottom: -1000%;
     left: 50%;
-    transform: translate(-50%,0);
     -webkit-transform: translate(-50%,0);
-    -moz-transform: translate(-50%,0);
     padding: 0 12px;
     background-color: #ffffff;
     border: 1px #d8d8d8 solid;
-    border-radius: 5px;
-    transition: all ease-in-out 0.5s;
+    border-radius: 8px;
     -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
     z-index: -1;
 }
 .footer .nav_list.act{
-    bottom: 70px;
+    bottom: 104px;
 }
 .footer .nav_list span.nav_arrow{
     display: block;
@@ -287,8 +268,8 @@ section img{
     list-style: none;
 }
 .footer .nav_list li{
-    min-width: 86px;
-    height: 48px;
+    width: 134px;
+    height: 78px;
     text-align: center;
     border-top: 1px #d7d7d7 solid;
 }
@@ -296,7 +277,7 @@ section img{
     display: block;
     width: 100%;
     height: 100%;
-    line-height: 48px;
+    line-height: 78px;
     color: #4a4a4a;
 }
 .footer .nav_list li:nth-child(1){
@@ -310,9 +291,7 @@ section img{
     width: 100%;
     /*height: 155px;*/
     overflow: hidden;
-    transition: all ease-in-out 0.5s;
     -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
 }
 .sina_p.show{
     bottom: 0;

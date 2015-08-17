@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="eileen">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/img-subject/footer/nav_bg.png" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/img-subject/footer/nav_bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/device.js" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/device.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150813_cosmo_fashionweek_newYork\index - 副本.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150813_cosmo_fashionweek_newYork\js-subject\device - 副本.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/img-subject/section/audio_avt.jpg" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/img-subject/section/audio_avt.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,24 +33,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.73077">
-              <caret line="159" column="51" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.9656218">
+              <caret line="163" column="20" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
               <folding>
-                <element signature="n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5192118">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_750.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index_750.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.961538">
+              <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="165" selection-end-column="20" />
+              <folding>
+                <element signature="n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +85,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state vertical-scroll-proportion="-16.033333">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style_750.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.366667">
+              <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -100,8 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/fliza.min.js" />
-        <option value="$PROJECT_DIR$/subjects/201507013-cosmogirl/js-subject/index.js" />
         <option value="$PROJECT_DIR$/subjects/201507013-cosmogirl/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150612_baifumei/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150625_durex_game/index.html" />
@@ -148,9 +175,11 @@
         <option value="$PROJECT_DIR$/subjects/20150810_basha_cishanye/js-subject/index.js" />
         <option value="$PROJECT_DIR$/subjects/demo_h5_weibo/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/device.js" />
-        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style.css" />
-        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js" />
+        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style.css" />
+        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css" />
+        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index_750.html" />
+        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" />
       </list>
     </option>
   </component>
@@ -411,7 +440,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32807216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2583732" sideWeight="0.49706313" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25766283" sideWeight="0.49706313" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14851485" sideWeight="0.50391936" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -466,13 +495,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/js-subject/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0">
-          <caret line="119" column="6" selection-start-line="119" selection-start-column="6" selection-end-line="119" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150612_baifumei/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9591837">
@@ -792,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/device - 副本.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/device.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -808,29 +822,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style.css">
+    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.033333">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.366667">
+          <caret line="102" column="20" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index_750.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.961538">
+          <caret line="126" column="20" selection-start-line="126" selection-start-column="20" selection-end-line="165" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.73077">
-          <caret line="159" column="51" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.9656218">
+          <caret line="163" column="20" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
           <folding>
-            <element signature="n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5192118">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
