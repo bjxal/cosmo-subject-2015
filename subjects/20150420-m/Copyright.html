@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>版权声明</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="applicable-device" content="mobile">
+<link type="text/css" rel="stylesheet" href="css-subject/common.css">
+<link type="text/css" rel="stylesheet" href="css-subject/contact.css">
+    <script type="text/javascript" src="js-subject/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js-subject/iscroll.js"></script>
+</head>
+<body>
+<!-- topbar -->
+<header class="topbar">
+    <div class="topbar_inner">
+        <a href="http://m.cosmopolitan.com.cn/" class="title"></a>
+        <a href="javascript:void(0);" id="nav_btn" class="bar_btn nav_btn"></a>
+        <a href="javascript:void(0);" id="search" class="bar_btn search_btn"></a>
+    </div>
+    <div class="topsearch">
+        <a href="javascript:void(0);" class="close_btn"></a>
+        <div class="search">
+            <form><input type="search" placeholder="搜索"></form>
+            <!--<a class="submit_btn" href="javascript:void(0);">搜索</a>-->
+        </div>
+        <div class="tips">
+            <a href="#" target="_blank">谈情说爱</a>
+            <a href="#" target="_blank">古董喇叭裤</a>
+            <a href="#" target="_blank">实用贴</a>
+            <a href="#" target="_blank">通勤发型</a>
+        </div>
+        <ul class="s_list">
+            <li><span></span><a href="#" target="_blank">帽女郎心机？带帽美人也要靠化妆</a></li>
+            <li><span></span><a href="#" target="_blank">旅途也要凹造型 如何让登机装舒适又起范儿</a></li>
+        </ul>
+    </div>
+</header>
+<nav class="channel" id="nav" >
+    <div id="wrapper">
+        <div id="scroller">
+            <ul id="thelist">
+                <li class="active"><a href="/m/" title="首页">首页</a></li>
+                <li><a href="#" title="时髦办">时髦办</a></li>
+                <li><a href="#" title="美人计">美人计</a></li>
+                <li><a href="#" title="测一测">测一测</a></li>
+                <li><a href="#" title="新鲜事">新鲜事</a></li>
+                <li><a href="#" title="小鲜肉">小鲜肉</a></li>
+                <li><a href="#" title="女神控">女神控</a></li>
+                <li><a href="#" title="有意思">有意思</a></li>
+            </ul>
+
+            <script>
+                (function(){
+                    var path = location.pathname;
+                    var first_slashes_pos = path.indexOf('/');
+                    var second_slashes_pos = path.indexOf('/', first_slashes_pos + 1);
+                    if (first_slashes_pos !== -1 && second_slashes_pos !== -1) {
+                        var len = second_slashes_pos-first_slashes_pos;
+                        var dir = path.substring(first_slashes_pos, len);
+                        $("#thelist li").each(function(){
+                            if ($(this).find("a").attr("href").indexOf(dir) == -1) {
+                                $(this).removeClass("active");
+                            } else {
+                                $(this).addClass("active");
+                            }
+                        });
+                    }
+                })();
+            </script>
+        </div>
+    </div>
+</nav>
+<div class="c">
+    <h1 class="bt">版权声明<br><span>COPYRIGHT STATEMENT</span></h1>
+    <section>
+        <p>
+        本网站的所有内容（包括但不限于文字、图表、商标、标识或名称、按钮图标、图像、照片、音频、视频影音资料、页面设计、编排、数据及软件等）之知识产权，均由我们及/或相关权利方单独或共同所有或被授权使用，并受著作权法和商标法等知识产权法律法规、中国签订的 国际条约和其它相关法律、法规的保护。未经我们及/或相关权利方事先书面同意，请勿以任何方式自行、与他人共同或授权/协助他人使用、转载、修改、复制、发行、出售、发表或以其它任何方式使用本网站之内容，您若需此方面的服务，请和本网站相关部门人员接洽。以上版权声明并不包含由本网站链接到的属于其他方的网站之内容。本网站不对该等其他链接网站的内容负责，任何对其他网站的链接仅为本网站用户的方便而设。
+        </p>
+    </section>
+</div>
+<footer class="footer">
+    <div class="b1">
+        <div class="b_logo"></div>
+        <div class="b_link"><a href="#">联系我们</a>|<a href="#">关于我们</a>|<a href="#">版权声明</a></div>
+    </div>
+    <p>© 2014 COSMO 京ICP备09102038号-14</p>
+</footer>
+
+<script type="text/javascript" src="js-subject/common.js"></script>
+<script type="text/javascript" src="js-subject/nav.js"></script>
+</body>
+</html>

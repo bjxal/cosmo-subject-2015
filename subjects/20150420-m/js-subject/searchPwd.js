@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $("#username,#password,#password_sure,#email").bind({
+        blur:function(){
+            if($(this).val()=="")
+                $(this).prev(".form_placeholder").show();
+        },
+        focus:function(){
+            $(this).prev(".form_placeholder").hide();
+        }
+    });
+})

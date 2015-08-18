@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="applicable-device" content="mobile">
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+	<link type="text/css" rel="stylesheet" href="css-subject/common.css">
+	<link type="text/css" rel="stylesheet" href="css-subject/contact.css">
+    <script type="text/javascript" src="js-subject/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js-subject/iscroll.js"></script>
+</head>
+<body>
+<!-- topbar -->
+<header class="topbar">
+    <div class="topbar_inner">
+        <div class="title"></div>
+        <a href="javascript:void(0);" id="nav_btn" class="bar_btn nav_btn"></a>
+        <a href="javascript:void(0);" id="search" class="bar_btn search_btn"></a>
+    </div>
+    <div class="topsearch">
+        <a href="javascript:void(0);" class="close_btn"></a>
+        <div class="search">
+            <form><input type="search" placeholder="搜索"></form>
+            <!--<a class="submit_btn" href="javascript:void(0);">搜索</a>-->
+        </div>
+        <div class="tips">
+            <a href="#" target="_blank">谈情说爱</a>
+            <a href="#" target="_blank">古董喇叭裤</a>
+            <a href="#" target="_blank">实用贴</a>
+            <a href="#" target="_blank">通勤发型</a>
+        </div>
+        <ul class="s_list">
+            <li><span></span><a href="#" target="_blank">帽女郎心机？带帽美人也要靠化妆</a></li>
+            <li><span></span><a href="#" target="_blank">旅途也要凹造型 如何让登机装舒适又起范儿</a></li>
+        </ul>
+    </div>
+</header>
+<nav class="channel" id="nav" >
+    <div id="wrapper">
+        <div id="scroller">
+            <ul id="thelist">
+                <li class="active"><a href="/m/" title="首页">首页</a></li>
+                <li><a href="#" title="时髦办">时髦办</a></li>
+                <li><a href="#" title="美人计">美人计</a></li>
+                <li><a href="#" title="测一测">测一测</a></li>
+                <li><a href="#" title="新鲜事">新鲜事</a></li>
+                <li><a href="#" title="小鲜肉">小鲜肉</a></li>
+                <li><a href="#" title="女神控">女神控</a></li>
+                <li><a href="#" title="有意思">有意思</a></li>
+            </ul>
+
+            <script>
+                (function(){
+                    var path = location.pathname;
+                    var first_slashes_pos = path.indexOf('/');
+                    var second_slashes_pos = path.indexOf('/', first_slashes_pos + 1);
+                    if (first_slashes_pos !== -1 && second_slashes_pos !== -1) {
+                        var len = second_slashes_pos-first_slashes_pos;
+                        var dir = path.substring(first_slashes_pos, len);
+                        $("#thelist li").each(function(){
+                            if ($(this).find("a").attr("href").indexOf(dir) == -1) {
+                                $(this).removeClass("active");
+                            } else {
+                                $(this).addClass("active");
+                            }
+                        });
+                    }
+                })();
+            </script>
+        </div>
+    </div>
+</nav>
+<div class="c">
+    <h1 class="bt">联系我们<br><span>CONTACT US</span></h1>
+    <section>
+        <img class="img_c" src="img-subject/contact.jpg">
+    </section>
+</div>
+<footer class="footer">
+    <div class="b1">
+        <div class="b_logo"></div>
+        <div class="b_link"><a href="#">联系我们</a>|<a href="#">关于我们</a>|<a href="#">版权声明</a></div>
+    </div>
+    <p>&copy; 2014 COSMO 京ICP备09102038号-14</p>
+</footer>
+
+<script type="text/javascript" src="js-subject/common.js"></script>
+<script type="text/javascript" src="js-subject/nav.js"></script>
+</body>
+</html>
