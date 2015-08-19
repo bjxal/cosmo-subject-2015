@@ -14,8 +14,9 @@
     <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
 </head>
 <body>
-<!--<img src="img-subject/weixin.jpg" style="position: absolute; z-index: -1; opacity: 0; top: 0;"/>-->
+<img src="img-subject/weixin.jpg" style="position: absolute; z-index: -1; opacity: 0; top: 0;"/>
 <div class="pop">
+    <p style="position: absolute; z-index:999;color:#fff;width:100%; bottom:100px; color: #999; text-align:center; ">向右滑动查看更多></p>
     <div class="close"></div>
     <div id="wrapper" class="wrapper">
         <div id="scroller" class="scroller">
@@ -82,6 +83,7 @@
 <!-- p2 -->
 <!-- p3 -->
 <script type="text/x-handlebars-template" id="p3">
+    <img src="{{IMG_DIR}}/p3/logo.png" class="p3_logo" />
     <div class="words">
         <img data-src="{{IMG_DIR}}/p3/words.png"/>
         <!--<div class="wing_lf"></div>-->
@@ -91,43 +93,69 @@
 <!-- p3 -->
 <!-- p4 -->
 <script type="text/x-handlebars-template" id="p4">
-        <div class="words words_1">
-            <img data-src="{{IMG_DIR}}/p4/1.png"/>
-            <img data-src="{{IMG_DIR}}/p4/1.jpg"/>
-        </div>
-        <div class="words words_2">
-            <img data-src="{{IMG_DIR}}/p4/2.jpg"/>
-            <p>思源·芭莎“为爱加速“贫困县救护车项目<br>为中国592个贫困县（乡）医院捐赠救护车<br>7万元捐助一辆救护车<br>共捐助403辆爱心救护车<br>受益人数72.5万</p>
-        </div>
+    <div class="words words_1">
+
+        <img data-src="{{IMG_DIR}}/p4/1.jpg"/>
+    </div>
+    <div class="words words_2">
+        <img data-src="{{IMG_DIR}}/p4/2.jpg"/>
+
+    </div>
 </script>
 <!-- p4 -->
 <!-- p5 -->
 <script type="text/x-handlebars-template" id="p5">
-    <div class="tips">
-        <p>左右滑动查看更多</p>
-        <img data-src="{{IMG_DIR}}/p5/hand.png" class="hand"/>
-    </div>
-    <div id="iSlider-effect-wrapper" style="">
-        <div id="animation-effect" class="iSlider-effect"></div>
-    </div>
+    <img data-src="{{IMG_DIR}}/p5/1_word.png" class="p5_word"/>
+    <!--<div class="tips">-->
+        <!--<p>左右滑动查看更多</p>-->
+        <!--<img data-src="{{IMG_DIR}}/p5/hand.png" class="hand"/>-->
+    <!--</div>-->
+    <!--<div id="iSlider-effect-wrapper" style="">-->
+        <!--<div id="animation-effect" class="iSlider-effect"></div>-->
+    <!--</div>-->
 </script>
 <!-- p5 -->
 <!-- p6 -->
 <script type="text/x-handlebars-template" id="p6">
-    <img data-src="{{IMG_DIR}}/p6/words.png" class="words"/>
-    </div>
+    <img data-src="{{IMG_DIR}}/p5/2_word.png" class="p6_word"/>
 </script>
 <!-- p6 -->
 <!-- p7 -->
 <script type="text/x-handlebars-template" id="p7">
+    <img data-src="{{IMG_DIR}}/p5/3_word.png" class="p7_word"/>
+</script>
+<!-- p7 -->
+<!-- p8 -->
+<script type="text/x-handlebars-template" id="p8">
+    <img data-src="{{IMG_DIR}}/p5/4_word.png" class="p8_word"/>
+</script>
+<!-- p8 -->
+<!-- p9 -->
+<script type="text/x-handlebars-template" id="p9">
+    <img data-src="{{IMG_DIR}}/p5/5_word.png" class="p9_word"/>
+</script>
+<!-- p9 -->
+<!-- p10 -->
+<script type="text/x-handlebars-template" id="p10">
+    <img data-src="{{IMG_DIR}}/p5/6_word.png" class="p10_word"/>
+</script>
+<!-- p10 -->
+<!-- p11 -->
+<script type="text/x-handlebars-template" id="p11">
+    <img data-src="{{IMG_DIR}}/p6/words.png" class="words"/>
+    </div>
+</script>
+<!-- p11 -->
+<!-- p12 -->
+<script type="text/x-handlebars-template" id="p12">
     <img data-src="{{IMG_DIR}}/p7/1.png"/>
-    <!--<p>诚邀您一起为慈善共襄盛举<br>共同见证慈善的全新姿态！</p>-->
     <p>
         <img data-src="{{IMG_DIR}}/p7/2.png"/>
     </p>
     <p>2015年9月23日<br>北京<br>我们谨怀慈善之心期待您的光临</p>
+    <p class="review"><img data-src="{{IMG_DIR}}/p7/review.png" data-tap="review"/></p>
 </script>
-<!-- p7 -->
+<!-- p12 -->
 <script type="text/javascript">
     var _dir = (function (){
         var href = $('#css').attr('href').toString();
@@ -152,32 +180,17 @@
     };
 </script>
 <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script type="text/javascript" src="js-subject/fliza.min.js"></script>
+<!--<script type="text/javascript" src="js-subject/fliza.min.js"></script>-->
 <script type="text/javascript" src="js-subject/iscroll.js"></script>
 <script type="text/javascript" src="js-subject/islider.js"></script>
 <script type="text/javascript" src="js-subject/number.js"></script>
-<script type="text/javascript" src="js-subject/index.js"></script>
-<!--统计代码-->
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-58044097-1', 'auto');
-    ga('send', 'pageview');
-
+<script type="text/javascript" src="js-subject/index@.js"></script>
+<script type="text/javascript">
+    // $('.pop').on('click',function(){
+    //     if($('.pop').hasClass('show')){
+    //         $('.pop').removeClass('show');
+    //     }
+    // })
 </script>
 </body>
 </html>

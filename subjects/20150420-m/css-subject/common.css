@@ -57,25 +57,124 @@ p {
   padding-top: 55px;
   overflow: hidden;
 }
-/***aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa***/
 .contentAll{
-  width: 150%;
+  width: 120%;
   height: 100%;
   position: relative;
+  -webkit-transform: translate(-240px,0);
+  -webkit-transition: all ease-in-out 0.3s;
+}
+.contentAll.act{
+  -webkit-transform: translate(0,0);
+}
+.contentAll.act .contentLeft{
+  display: block;
 }
 .contentAll .contentLeft{
-  width: 75%;
+  display: none;
+  width: 60%;
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0;
+  z-index: 2;
+  background: url(../img-subject/nav/opacity_black_60.png);
+}
+.contentLeft .close{
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background: url(../img-subject/nav/close.png) no-repeat center;
+  background-size: auto 100%;
+}
+.contentLeft .nav_c{
+  width: 240px;
+  height: 100%;
+  background: url(../img-subject/nav/nav_bg.jpg) no-repeat center;
+  background-size: 100%;
+}
+.contentLeft .nav_c .nav_c_1{
+  width: 100%;
+  height: 3000px;
+  padding: 5px 15px;
+  overflow: scroll;
+}
+.avt_unlogin{
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  padding: 15px 0;
+  border-bottom: 1px #dcdcdc solid;
+}
+.avt_unlogin .nav_avt{
+  width: 65px;
+  float: left;
+}
+.avt_unlogin .nav_avt_p{
+  float: left;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 23px;
+  padding-top: 10px;
+}
+.contentLeft .nav_type{
+  width: 100%;
+  padding: 0 15px;
+}
+.nav_type .type{
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+.nav_type .tit{
+  width: 100%;
+  height: 85px;
+  margin-bottom: 20px;
+  background-image: url(../img-subject/nav/tit.png);
+  background-size: 85px auto;
+  background-repeat: no-repeat;
+}
+.nav_type .type_1 .tit{
+  background-position: center 0;
+}
+.nav_type .type_2 .tit{
+  background-position: center 0;
+}
+.nav_type .type_3 .tit{
+  background-position: center 0;
+}
+.nav_type .type_4 .tit{
+  background-position: center 0;
+}
+.nav_type .type_5 .tit{
+  background-position: center 0;
+}
+.nav_type .type_6 .tit{
+  background-position: center 0;
+}
+.nav_type .type_7 .tit{
+  background-position: center 0;
+}
+.nav_type .type_8 .tit{
+  background-position: center 0;
+}
+.nav_type a{
+  display: inline-block;
+  width: 49%;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
 }
 .contentAll .contentRight{
-  width: 75%;
+  width: 60%;
   height: 100%;
   position: absolute;
   right: 0;
-  top: 0;
+  z-index: 1;
 }
 .topbar {
   left: 0;
@@ -134,7 +233,6 @@ p {
   left: 15px;
 }
 .topbar .topbar_inner .nav_btn {
-  /*background-position: 0 -75px;*/
   background-position: 0 -25px;
   left: 15px;
 }

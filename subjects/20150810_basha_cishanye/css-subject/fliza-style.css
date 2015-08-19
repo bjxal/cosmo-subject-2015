@@ -4,7 +4,7 @@ html {
   -webkit-tap-highlight: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: none;
   overflow: -moz-scrollbars-vertical;
-  /*å¼ºåˆ¶firefoxå‡ºç°æ»‘åŠ¨ï¿½?1*/
+  /*Ç¿ÖÆfirefox³öÏÖ»¬¶¯??1*/
 }
 body {
   font-size: 0.75em;
@@ -25,18 +25,18 @@ select,
 textarea {
   outline: none;
   /*-webkit-appearance:none;*/
-  /*å¼ºåˆ¶å»é™¤è¡¨å•è‡ªå¸¦çš„æ ·ï¿½?*/
+  /*Ç¿ÖÆÈ¥³ı±íµ¥×Ô´øµÄÑù??*/
   border: 0;
 }
 textarea {
   resize: none;
   /*-webkit-appearance:none;*/
-  /*å¼ºåˆ¶å»é™¤textareaè‡ªå¸¦çš„æ ·ï¿½?*/
+  /*Ç¿ÖÆÈ¥³ıtextarea×Ô´øµÄÑù??*/
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
-/*åˆ©ç”¨é˜´å½±æ¥å¡«å……æ‰inputè‡ªåŠ¨å¡«å……ï¿½?*/
+/*ÀûÓÃÒõÓ°À´Ìî³äµôinput×Ô¶¯Ìî³ä??*/
 textarea,
 input,
 select {
@@ -142,7 +142,7 @@ figure,
 figcaption {
   display: block;
 }
-/*html5è®¾ç½®*/
+/*html5ÉèÖÃ*/
 h1,
 h2,
 h3,
@@ -224,9 +224,9 @@ caption {
   height: 0;
   line-height: 0;
 }
-/* =global ç»Ÿä¸€æ ·å¼
+/* =global Í³Ò»ÑùÊ½
 --------------------------------------------------------------------------------------------------------------------------------*/
-/* æ”¹å˜åŠ¨ç”»çš„æ•ˆæœæ–¹ï¿½?*/
+/* ¸Ä±ä¶¯»­µÄĞ§¹û·½??*/
 * {
   -webkit-transition-timing-function: ease-in-out;
   -moz-transition-timing-function: ease-in-out;
@@ -239,7 +239,7 @@ html {
 }
 body {
   position: relative;
-  font-family: "å¾®è½¯é›…é»‘";
+  font-family: "Î¢ÈíÑÅºÚ";
   min-width: 320px;
   height: 100%;
   width: 100%;
@@ -254,8 +254,8 @@ body strong,
 body em {
   font-weight: normal;
 }
-/*å¾®è½¯é›…ä½“ å°†åŸæœ‰çš„boldå±æ€§å»ï¿½?*/
-/* ç»Ÿä¸€å­—ä½“å¤§å° */
+/*Î¢ÈíÑÅÌå ½«Ô­ÓĞµÄboldÊôĞÔÈ¥??*/
+/* Í³Ò»×ÖÌå´óĞ¡ */
 h3 {
   font-size: 18px;
   color: #333;
@@ -313,7 +313,7 @@ input.readonly:focus,
 input.disabled:focus {
   border: 1px solid #ccc;
 }
-/*spriteå›¾ç‰‡åˆå¹¶*/
+/*spriteÍ¼Æ¬ºÏ²¢*/
 .css_sprite {
   background-image: url(../img/global/css_sprite.png) !important;
   background-repeat: no-repeat !important;
@@ -322,7 +322,7 @@ input.disabled:focus {
   background-image: url(../img/global/css_sprite02.png) !important;
   background-repeat: no-repeat !important;
 }
-/* =function åŠŸèƒ½æ ·å¼
+/* =function ¹¦ÄÜÑùÊ½
 -----------------------*/
 .f-max1280 {
   max-width: 1280px;
@@ -557,7 +557,7 @@ input.disabled:focus {
 .f-card:hover {
   box-shadow: none;
 }
-/* =skin ç»Ÿä¸€çš®è‚¤æ ·å¼
+/* =skin Í³Ò»Æ¤·ôÑùÊ½
 -----------------------*/
 .s-col-999 {
   color: #999;
@@ -3597,11 +3597,11 @@ div {
 }
 .fui-imagecutter .box .b.face.iphone4:before {
   top: 0;
-  content: 'iphone4 ä¸æ˜¾ï¿½?';
+  content: 'iphone4 ²»ÏÔ??';
 }
 .fui-imagecutter .box .b.face.iphone4:after {
   bottom: 0;
-  content: 'iphone4 ä¸æ˜¾ï¿½?';
+  content: 'iphone4 ²»ÏÔ??';
 }
 .fui-imagecutter .box img {
   position: absolute;

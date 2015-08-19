@@ -537,7 +537,6 @@
 				imgDiv.style.cssText = "opacity:1;max-width:100%;max-height:100%";
 				addListener(li,'touchend',function(){
 					var value = mb.currentPagex-mb.defaultPagex;
-					console.log(mb.m.menu_nav_btn)
 					mb.m.menu_nav_btn.setAttribute("class","bar_btn nav_btn");
 					if(value<=10 && value>=-10){
 						var liArr = mb.m.photoAll.getElementsByTagName("li");

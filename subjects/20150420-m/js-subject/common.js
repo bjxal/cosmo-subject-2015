@@ -5,6 +5,19 @@ $(document).ready(function(){
     $(".close_btn").click(function(){
         $(".topbar").removeClass("on");
     });
+    /*nav*/
+    var winWidth = $(window).width();
+    var winHeight = $(window).height();
+    $(".contentAll").width((winWidth+240)+"px");
+    $(".contentLeft,.contentRight").width(winWidth+"px");
+
+    /*show nav*/
+    $(".nav_btn").on("touchend",function(e){
+        $(".contentAll").toggleClass("act");
+    });
+    //$(".contentLeft").on("touchend",function(e){
+    //    $(".contentAll").toggleClass("act");
+    //})
 
     //$("a").on('click',function(){
     //    window.location.href = $(this).attr('href');
