@@ -13,7 +13,7 @@ html,body {
 body{
     font-family: "Hiragino Sans","冬青黑体简体","Microsoft YaHei";
     background-color:#ebebeb;
-    padding-bottom: 110px;
+    padding-bottom: 120px;
 }
 label {
     cursor: pointer;
@@ -205,7 +205,8 @@ section img{
 }
 .footer .nav{
     position: relative;
-    width: 224px;
+    /*width: 224px;*/
+    width: 250px;
     height: 100%;
     float: left;
     border-left: 1px #bfbfbf solid;
@@ -268,10 +269,13 @@ section img{
     list-style: none;
 }
 .footer .nav_list li{
-    width: 134px;
+    width: 135px;
     height: 78px;
     text-align: center;
     border-top: 1px #d7d7d7 solid;
+}
+.footer .focus .nav_list li{
+    width: 145px;
 }
 .footer .nav_list li a{
     display: block;

@@ -13,12 +13,22 @@ $(document).ready(function(){
     $(".nav.sina").on("click",function(e){
         $(".footer_nav_list").removeClass("show");
         $(".sina_p").addClass("show");
+        $(e.target).siblings().find(".nav_list").removeClass("act");
     });
 
     /*audio*/
     var audioPlay = $("#audioPlay")[0];
     $(".audio_c").on("touchend",function(e){
-        audioPlay.play();
+        var ifPlay = $(e.target).attr("class");
+        console.log(ifPlay)
+        if(ifPlay.indexOf("play")!=-1){
+            audioPlay.pause();
+            $(e.target).removeClass("play");
+        }
+        else{
+            audioPlay.play();
+            $(e.target).addClass("play");
+        }
         $(".audio_time span").eq(0).addClass("read");
     });
 

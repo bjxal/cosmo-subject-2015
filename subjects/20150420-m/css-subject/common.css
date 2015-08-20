@@ -96,7 +96,7 @@ p {
 }
 .contentLeft .nav_c .nav_c_1{
   width: 100%;
-  height: 300%;
+  height: 1900px;
   padding: 5px 15px;
 }
 .avt_unlogin{
@@ -108,6 +108,9 @@ p {
 }
 .avt_unlogin .nav_avt{
   width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2.5px #ffffff solid;
   float: left;
 }
 .avt_unlogin .nav_avt_p{
@@ -118,16 +121,16 @@ p {
   line-height: 23px;
   padding-top: 10px;
 }
-.contentLeft .nav_type{
+.contentLeft .nav_c_1 li{
   width: 100%;
-  padding: 0 15px;
+  /*padding: 0 15px;*/
 }
-.nav_type .type{
+.nav_c_1 li .type{
   width: 100%;
   height: auto;
   margin: 30px 0;
 }
-.nav_type .tit{
+.nav_c_1 li .tit{
   width: 100%;
   height: 85px;
   margin-bottom: 20px;
@@ -135,31 +138,31 @@ p {
   background-size: 85px auto;
   background-repeat: no-repeat;
 }
-.nav_type .type_1 .tit{
+.nav_c_1 li .type_1 .tit{
   background-position: center 0;
 }
-.nav_type .type_2 .tit{
+.nav_c_1 li .type_2 .tit{
   background-position: center 0;
 }
-.nav_type .type_3 .tit{
+.nav_c_1 li .type_3 .tit{
   background-position: center 0;
 }
-.nav_type .type_4 .tit{
+.nav_c_1 li .type_4 .tit{
   background-position: center 0;
 }
-.nav_type .type_5 .tit{
+.nav_c_1 li .type_5 .tit{
   background-position: center 0;
 }
-.nav_type .type_6 .tit{
+.nav_c_1 li .type_6 .tit{
   background-position: center 0;
 }
-.nav_type .type_7 .tit{
+.nav_c_1 li .type_7 .tit{
   background-position: center 0;
 }
-.nav_type .type_8 .tit{
+.nav_c_1 li .type_8 .tit{
   background-position: center 0;
 }
-.nav_type a{
+.nav_c_1 li a{
   display: inline-block;
   width: 49%;
   height: 35px;

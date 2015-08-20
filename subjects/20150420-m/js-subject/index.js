@@ -43,6 +43,7 @@
 
         myScroll = new IScroll('#wrapper', { probeType: 3, mouseWheel: true, click: true});
         myScroll1 = new IScroll('#wrapper1', { probeType: 3, mouseWheel: true, click: true});
+        myScroll2 = new IScroll('#wrapper2', { probeType: 3, mouseWheel: true, click: true});
 
         myScroll.scrollTo(0,val);
         myScroll.on('scroll', updatePosition);
