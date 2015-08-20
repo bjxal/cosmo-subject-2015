@@ -96,9 +96,8 @@ p {
 }
 .contentLeft .nav_c .nav_c_1{
   width: 100%;
-  height: 3000px;
+  height: 300%;
   padding: 5px 15px;
-  overflow: scroll;
 }
 .avt_unlogin{
   width: 100%;
