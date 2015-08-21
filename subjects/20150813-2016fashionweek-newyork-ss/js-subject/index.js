@@ -2,32 +2,39 @@ $(document).ready(function(){
 
     var c2_list_num = $(".c2_t").find("li").length;
     /*c2-next*/
-    $("#c2_next").on("click",function(e){
+    $(".c2_next").on("click",function(e){
         var $tar = $(e.target);
         var id = $(".c2_t").find("li.act").data("id");
-        var nextId = (id<(c2_list_num-1))?(id+1):0;
-        var trans = (nextId<=4)?0:((nextId-4)*(-205));
+        c2_list_fun(id,"next");
+    });
+    $(".c2_prev").on("click",function(e){
+        var $tar = $(e.target);
+        var id = $(".c2_t").find("li.act").data("id");
+        c2_list_fun(id,"prev");
+    });
+
+    function c2_list_fun(id,type){
+        var id_v = id;
+        var trans = 0;
+        switch (type){
+            case "next":
+                id_v = (id<(c2_list_num-1))?(id+1):0;
+                trans = (id_v<=4)?0:((id_v-4)*(-205));
+                break;
+            case "prev":
+                id_v = (id>0)?(id-1):(c2_list_num-1);
+                trans = (id_v<=4)?0:((id_v-4)*(-205));
+                break;
+        }
         $(".c2_t").find("li").eq(id).removeClass("act").one("webkitTransitionEnd",function(){
-            $(".c2_t").find("li").eq(nextId).addClass("act");
-            $(".c2_b_nav").find("a").eq(nextId).addClass("active").siblings().removeClass("active");
+            $(".c2_t").find("li").eq(id_v).addClass("act");
+            $(".c2_b_nav").find("a").eq(id_v).addClass("active").siblings().removeClass("active");
         });
         $(".c2_b_nav_list").css({
             "-webkit-transform":"translate("+trans+"px,0)"
         });
-    });
-    $("#c2_pre").on("click",function(e){
-        var $tar = $(e.target);
-        var id = $(".c2_t").find("li.act").data("id");
-        var prevId = (id>0)?(id-1):(c2_list_num-1);
-        var trans = (prevId<=4)?0:((prevId-4)*(-205));
-        $(".c2_t").find("li").eq(id).removeClass("act").one("webkitTransitionEnd",function(){
-            $(".c2_t").find("li").eq(prevId).addClass("act");
-            $(".c2_b_nav").find("a").eq(prevId).addClass("active").siblings().removeClass("active");
-        });
-        $(".c2_b_nav_list").css({
-            "-webkit-transform":"translate("+trans+"px,0)"
-        });
-    });
+
+    }
 
     $(".c3_r_tab").tabs(".c3_r_con",{current:'active'});
     $(".c3_tab").tabs(".c3_tab_con",{current:'hover'});
