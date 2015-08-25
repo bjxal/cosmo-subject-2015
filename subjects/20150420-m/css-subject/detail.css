@@ -34,6 +34,23 @@
   margin-top: 15px;
   text-align: left;
 }
+.art_content .collect{
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 34px;
+  position: absolute;
+  bottom: 14px;
+  right: 16px;
+  z-index: 10000;
+}
+.art_content .collect.no{
+  background-image: url(../img-subject/collect/uncollect_icon.png);
+}
+.art_content .collect.yes{
+  background-image: url(../img-subject/collect/collect_icon.png);
+}
 .art_content p {
   clear: both;
   overflow: hidden;
@@ -55,7 +72,7 @@
 }
 .art_content img {
   width: 100%;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 .art_content .info {
   height: 30px;
@@ -140,7 +157,6 @@
   padding-left: 65px;
   background: url("../img-subject/cosmo_ask.png") 0 0 no-repeat;
   background-size: auto 55px;
-  min-height: 55px;
 }
 .toupiao .toupiao_c .btn_list {
   padding: 0 30px;
@@ -148,26 +164,6 @@
   margin-top: 10px;
   margin-left: 0;
   overflow: hidden;
-}
-.toupiao .toupiao_c .btn_list.hidden{
-  overflow: hidden;
-  width: 0px;
-  margin-left: 180px;
-  display: none;
-}
-.toupiao .toupiao_c .vote_tips{
-  display:none;
-  height: 60px;
-  background: url(../img-subject/opt_black_70.png);
-  text-align: center;
-  line-height: 60px;
-  position: absolute;
-  top: 57%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  font-size: 20px;
-  color: #fff;
-  padding: 0 20px;
 }
 .toupiao .toupiao_c .btn_list a {
   width: 100%;
@@ -181,7 +177,6 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin-top: 10px;
-  overflow:hidden;
   text-align: center;
 }
 .toupiao .toupiao_c .result_list {
@@ -189,12 +184,6 @@
   margin-top: 10px;
   overflow: hidden;
   display: none;
-}
-.toupiao .toupiao_c .result_list.show{
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  margin-left: 0px;
 }
 .toupiao .toupiao_c .result_list .result_item {
   width: 100%;

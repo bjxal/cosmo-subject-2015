@@ -27,6 +27,13 @@ body{
 .register .login_logo{
   height: 50px;
 }
+.register p.userRead{
+  width: 100%;
+  font-size: 9px;
+  text-align: center;
+  position: absolute;
+  bottom: 2%;
+}
 .container .login_logo img,.container .login_toReg img {
   margin: 0 auto;
   height: 100%;
