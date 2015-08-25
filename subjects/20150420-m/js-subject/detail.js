@@ -79,6 +79,48 @@ $(document).ready(function() {
     } catch (e) {
     }
 
+    /* ’≤ÿ*/
+    var collect_t = 0;
+    $(".collect").on("touchend",function(e){
+        var $tar = $(e.target);
+        var cname = $tar.attr("class");
+        if(collect_t==0){
+            collect_t = 1;
+            if(cname.indexOf("no")!=-1){
+                $tar.removeClass("no").addClass("yes");
+                collect_ajax({},"collect");
+            }
+            else{
+                $tar.removeClass("yes").addClass("no");
+                collect_ajax({},"cancle");
+            }
+        }
+    });
+
+    //collect
+    function collect_ajax(data,type){
+        //$.ajax({
+        //    type:"POST",
+        //    url:"",
+        //    cache:false,
+        //    async:false,
+        //    data:data,
+        //    dataType:"json",
+        //    jsonp: "jsonpCallback",
+        //    jsonpCallback:"jsonpCallback",
+        //    success:function(rep){
+        //        switch(type){
+        //            case "collect":
+        //                break;
+        //            case "cancle":
+        //                break;
+        //        }
+                setTimeout(function(){collect_t = 0;},2000);
+        //    },
+        //    error:function(){}
+        //});
+    }
+
     //∑÷œÌ share
     if(is_weixin()||is_Safari()){
         var t = null;
