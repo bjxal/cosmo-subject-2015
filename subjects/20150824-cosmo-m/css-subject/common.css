@@ -24,6 +24,12 @@ body {
   height: 100%;
   font-size: 12px;
   font-family: "microsoft yahei", ubuntu, helvetica, arial;
+  overflow-x:hidden;
+  opacity: 0;
+  -webkit-transition: all linear 0.3s;
+}
+body.hid{
+  overflow: hidden;
 }
 input[type="submit"],
 input[type="reset"],
@@ -56,6 +62,154 @@ p {
   height: auto;
   padding-top: 55px;
   overflow: hidden;
+}
+.contentAll{
+  width: 180%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translate(-240px,0);
+  -webkit-transition: all ease-in-out 0.3s;
+}
+.contentAll.act{
+  -webkit-transform: translate(0,0);
+  -webkit-transition: all ease-in-out 0.3s;
+}
+.contentAll .contentLeft{
+  /*display: none;*/
+  opacity: 0;
+  /*width: 60%;*/
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  background: url(../img-subject/nav/opacity_black_60.png);
+  -webkit-transition: all linear 0.3s;
+  overflow: hidden;
+}
+.contentAll .contentLeft.show{
+  z-index: 2;
+  opacity: 1;
+}
+.contentLeft .close{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: url(../img-subject/nav/close.png) no-repeat right top;
+  background-size: auto 20px;
+}
+.contentLeft .nav_c{
+  width: 240px;
+  height: 100%;
+  background: url(../img-subject/nav/nav_bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.contentLeft .nav_c .nav_c_1{
+  width: 100%;
+  height: 1900px;
+  padding: 5px 15px;
+}
+.avt_unlogin{
+  display: none;
+}
+.avt_unlogin,.avt_login{
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  padding: 15px 0;
+  border-bottom: 1px #dcdcdc solid;
+}
+.avt_unlogin .nav_avt,.avt_login .nav_avt{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 5px #ffffff solid;
+  float: left;
+}
+.avt_unlogin .nav_avt_p,.avt_login .nav_avt_p{
+  float: left;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 23px;
+  padding-top: 10px;
+}
+.avt_login a{
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 22px;
+  padding-left: 30px;
+}
+.avt_login a.collect{
+  background-image:url(../img-subject/nav/save.png);
+}
+.avt_login a.loginOut{
+  width: 55px;
+  padding-left: 22px;
+  background-image:url(../img-subject/nav/loginOut.png);
+}
+.contentLeft .nav_c_1 li{
+  width: 100%;
+  /*padding: 0 15px;*/
+}
+.nav_c_1 li .type{
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+.nav_c_1 li .tit{
+  width: 100%;
+  height: 86px;
+  margin-bottom: 20px;
+  background-image: url(../img-subject/nav/tit.png);
+  background-size: 85px auto;
+  background-repeat: no-repeat;
+}
+.nav_c_1 li .type_1 .tit{
+  background-position: center 0;
+}
+.nav_c_1 li .type_2 .tit{
+  background-position: center -110px;
+}
+.nav_c_1 li .type_3 .tit{
+  background-position: center -220px;
+}
+.nav_c_1 li .type_4 .tit{
+  background-position: center -331px;
+}
+.nav_c_1 li .type_5 .tit{
+  background-position: center -442px;
+}
+.nav_c_1 li .type_6 .tit{
+  background-position: center -553px;
+}
+.nav_c_1 li .type_7 .tit{
+  background-position: center -663px;
+}
+.nav_c_1 li .type_8 .tit{
+  background-position: center -773px;
+}
+.nav_c_1 li a.navLink{
+  display: inline-block;
+  width: 49%;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+}
+.contentAll .contentRight{
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 1;
 }
 .topbar {
   left: 0;
@@ -102,7 +256,7 @@ p {
 }
 .topbar .topbar_inner .rili_btn {
   background-position: 0 0;
-  left: 15px;
+  right: 15px;
   width: 26px;
 }
 .topbar .topbar_inner .search_btn {
@@ -114,7 +268,7 @@ p {
   left: 15px;
 }
 .topbar .topbar_inner .nav_btn {
-  background-position: 0 -75px;
+  background-position: 0 -25px;
   left: 15px;
 }
 .topbar .topbar_inner .nav_act {
@@ -435,6 +589,7 @@ p {
 }
 .share .jiathis_style_32x32 {
   height: 45px;
+  overflow: hidden;
 }
 .share .jiathis_style_32x32 a {
   width: 25%;
@@ -463,7 +618,20 @@ p {
   background: url("../img-subject/share_icon.png") -200px 0 no-repeat;
   background-size: 250px 44px;
 }
+.share .jiathis_style_32x32 .jiathis_button_tsina {
+  width: 42px;
+  margin: 0 9px;
+  background: url("../img-subject/share_icon.png") -50px 0 no-repeat;
+  background-size: 250px 44px;
+}
+.share .jiathis_style_32x32 .jiathis_button_tqq {
+  width: 42px;
+  margin: 0 9px;
+  background: url("../img-subject/share_icon.png") -150px 0 no-repeat;
+  background-size: 250px 44px;
+}
 .share .jiathis_style_32x32 .jiathis_txt {
+  display: none;
   float: none;
   font-size: 22px;
   text-decoration: none;
