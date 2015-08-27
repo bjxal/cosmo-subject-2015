@@ -34,6 +34,10 @@ $(document).ready(function(){
             $("body").toggleClass("hid");
         });
     });
+    //µÇÂ¼»ò×¢²á
+    $(".nav_avt_p p").eq(0).on("touchend",function(e){
+        window.location.href = "login.html";
+    });
     //ÊÕ²Ø
     $(".avt_login .loginOut").on("click",function(e){
         loginOut();

@@ -4,6 +4,7 @@ body{
   background: url("../img-subject/login_reg/login_bg.png") no-repeat;
   background-size: cover;
   overflow: hidden;
+  opacity: 1;
 }
 .login_reg{
   width: 100%;
