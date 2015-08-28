@@ -29,33 +29,34 @@ $(document).ready(function(){
     var pro = new PRO();
     var list = new LIST();
     var vote = new VOTE();
-    $(".nav a").on("click",function(e){
-        var $tar = $(e.target);
-        var pro_id = "";
-        var data_info = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:pro_id,extinfo:"info"};
-        var type_id = "";
-        var data_list = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:type_id,extinfo:"list"};
-        list.init($tar);
-        list.get_list(data_list);
-        pro.init($tar);
-        pro.get_info(data_info);
-    });
-    //change info
-    $(".slide_item").on("click",function(e){
-        var $tar = $(e.target);
-        var id = "";
-        var data = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:id,extinfo:"info"};
-        pro.init($tar);
-        pro.get_info(data);
-    });
-    //vote
-    $(".vote_btn,.vote_icon").on("click",function(e){
-        var $tar = $(e.target);
-        var id = me.$par.find(".vote_btn").data("proid");
-        var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"zan"};
-        vote.init($tar);
-        vote.set_vote(data);
-    });
+    //$(".nav a").on("click",function(e){
+    //    var $tar = $(e.target);
+    //    var pro_id = "";
+    //    var data_info = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:pro_id,extinfo:"info"};
+    //    var type_id = "";
+    //    var data_list = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:type_id,extinfo:"list"};
+    //    list.init($tar);
+    //    list.get_list(data_list);
+    //    pro.init($tar);
+    //    pro.get_info(data_info);
+    //});
+    ////change info
+    //$(".slide_item").on("click",function(e){
+    //    var $tar = $(e.target);
+    //    var id = "";
+    //    var data = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:id,extinfo:"info"};
+    //    pro.init($tar);
+    //    pro.get_info(data);
+    //});
+    ////vote
+    //$(".vote_btn,.vote_icon").on("click",function(e){
+    //    console.log(e)
+    //    var $tar = $(e.target);
+    //    var id = $tar.parents(".p").find(".vote_btn").data("proid");
+    //    var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"zan"};
+    //    vote.init($tar);
+    //    vote.set_vote(data);
+    //});
 });
 var PRO =  function(){};
 PRO.prototype = {
@@ -217,19 +218,17 @@ VOTE.prototype = {
     }
 };
 /*nav*/
-//$(function(){
-//    var $win  = $(window),$sidebars = $('.nav_right .nav_item');
-//    var sTop = 0;
-//    $(window).on('scroll',function(){
-//        sTop = $win.scrollTop();
-//        $sidebars = $('.nav_right .nav_item').each(function(index,ele){
-//            var $ele = $(ele),start = +$ele.attr('data-start'),end = +$ele.attr('data-end');
-//            console.log($ele)
-//            console.log(start+"-----"+end)
-//            if(start<=sTop&&sTop<end){
-//                $sidebars.removeClass('cur');
-//                $ele.addClass('cur');
-//            }
-//        });
-//    });
-//});
+$(function(){
+    var $win  = $(window),$sidebars = $('.nav_right .nav_item');
+    var sTop = 0;
+    $(window).on('scroll',function(){
+        sTop = $win.scrollTop();
+        $sidebars = $('.nav_right .nav_item').each(function(index,ele){
+            var $ele = $(ele),start = +$ele.attr('data-start'),end = +$ele.attr('data-end');
+            if(start<=sTop&&sTop<end){
+                $sidebars.removeClass('cur');
+                $ele.addClass('cur');
+            }
+        });
+    });
+});

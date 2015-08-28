@@ -36,7 +36,7 @@ $(document).ready(function(){
                         str += '<span>'+item.dateorder+'</span><div class="trash" data-articleid="'+item.articleid+'"><span class="trash_t"></span></div></div></div>';
                     });
                     $(".c_list").append(str);
-                    $("#nextpage").text(nextpage+1);
+                    $("#nextpage").val(nextpage+1);
                 } else {
                     $(".loading").css('display','none');
                     $(".more").text('已加载全部内容').show();
