@@ -29,25 +29,80 @@ $(document).ready(function(){
     var pro = new PRO();
     var list = new LIST();
     var vote = new VOTE();
-    //$(".nav a").on("click",function(e){
-    //    var $tar = $(e.target);
-    //    var pro_id = "";
-    //    var data_info = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:pro_id,extinfo:"info"};
-    //    var type_id = "";
-    //    var data_list = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:type_id,extinfo:"list"};
-    //    list.init($tar);
-    //    list.get_list(data_list);
-    //    pro.init($tar);
-    //    pro.get_info(data_info);
-    //});
+    $(".nav a").on("click",function(e){
+        var $tar = $(e.target);
+        $tar.addClass("cur").siblings().removeClass("cur");
+        //test
+        pro.init($tar);
+        var data = {};
+        var d_id = $tar.data("id")%3;
+        switch(d_id){
+            case 0:
+                data = product1;
+                break;
+            case 1:
+                data = product2;
+                break;
+            case 2:
+                data = product3;
+                break;
+
+        }
+        pro._set_pro_info(data);
+
+        //list
+        list.init($tar);
+        var list_d = {};
+        var aa = $tar.data("id")%2;
+        switch(aa){
+            case 1:
+                list_d = listData1;
+                break;
+            case 0:
+                list_d = listData2;
+                break;
+        }
+        list._get_type_List(list_d);
+        //test end
+
+        //getInfo
+        //var pro_id = "";
+        //var data_info = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:pro_id,extinfo:"info"};
+        //getList
+        //var type_id = "";
+        //var data_list = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:type_id,extinfo:"list"};
+        //list.init($tar);
+        //list.get_list(data_list);
+        //pro.init($tar);
+        //pro.get_info(data_info);
+    });
     ////change info
-    //$(".slide_item").on("click",function(e){
-    //    var $tar = $(e.target);
-    //    var id = "";
-    //    var data = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:id,extinfo:"info"};
-    //    pro.init($tar);
-    //    pro.get_info(data);
-    //});
+    $(".slide_item").on("click",function(e){
+        var $tar = $(e.target);
+        //test
+        pro.init($tar);
+        var data = {};
+        var d_id = $tar.data("id")%3;
+        switch(d_id){
+            case 0:
+                data = product1;
+                break;
+            case 1:
+                data = product2;
+                break;
+            case 2:
+                data = product3;
+                break;
+
+        }
+        pro._set_pro_info(data);
+        //test end
+
+        //var id = "";
+        //var data = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:id,extinfo:"info"};
+        //pro.init($tar);
+        //pro.get_info(data);
+    });
     ////vote
     //$(".vote_btn,.vote_icon").on("click",function(e){
     //    console.log(e)
@@ -79,8 +134,6 @@ PRO.prototype = {
             url:ajaxUrl,
             data:data,
             dataType:"json",
-            //jsonp:"jsonpCallback",
-            //jsonpCallback:"jsonpCallback",
             success:function(resp){
                 me._set_pro_info(resp);
             },
@@ -111,9 +164,11 @@ var LIST = function(){};
 LIST.prototype = {
     $tar:{},
     $par:{},
+    id:"",
     init:function($tar){
         var me = this;
         me.$tar = $tar;
+        me.id = $tar.data("id");
         me.$par = $tar.parents(".p");
     },
     get_list:function(data){
@@ -128,15 +183,15 @@ LIST.prototype = {
     },
     _set_type_list_dom:function(data){
         var me = this;
-        var html = '<div class="slide_con" id="customScroller'+data.typeid+'"><div class="slide_h">';
-        $.each(data.list,function(i,item){
-            html += '<a class="slide_item" href="javascript:void(0);" data-id="'+item.proId+'">'+item.proTit+'</a>';
+        var html = '<div class="slide_con" id="customScroller'+me.id+'"><div class="slide_h">';
+        $.each(data.list,function(i,item1){
+            html += '<a class="slide_item" href="javascript:void(0);" data-id="'+item1.id+'">'+item1.title+'</a>';
         });
         html += '</div></div>';
-        html += '<div id="CSscrollbar'+item.proId+'" class="scroll_bar CSscrollbar"><div id="CSscrollTrack'+item.proId+'" class="Scrollbar-Track CSscrollTrack"><div id="CSscrollHander1" class="Scrollbar-Handle CSscrollHander"></div></div></div>';
-        me.$par.append(html);
+        html += '<div id="CSscrollbar'+me.id+'" class="scroll_bar CSscrollbar"><div id="CSscrollTrack'+me.id+'" class="Scrollbar-Track CSscrollTrack"><div id="CSscrollHander'+me.id+'" class="Scrollbar-Handle CSscrollHander"></div></div></div>';
+        me.$par.find(".product_list").empty().append(html);
         me._bind_pro_event();
-        me._bind_scroll_event(data.typeid);
+        me._bind_scroll_event(me.id);
     },
     _bind_scroll_event:function(id){
         var me = this;
@@ -150,9 +205,33 @@ LIST.prototype = {
         var me = this;
         me.$par.find(".slide_item").on("click",function(e){
             var $tar = $(e.target);
-            var id = $tar.data("id");
-            var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"info"};
-            me.get_info(data);
+            /*有接口*/
+            //var id = $tar.data("id");
+            //var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"info"};
+            //var pro = new PRO();
+            //pro.get_info(data);
+
+
+            /*无接口*/
+            //test
+            var pro = new PRO();
+            pro.init($tar);
+            var data = {};
+            var d_id = $tar.data("id")%3;
+            switch(d_id){
+                case 0:
+                    data = product1;
+                    break;
+                case 1:
+                    data = product2;
+                    break;
+                case 2:
+                    data = product3;
+                    break;
+
+            }
+            pro._set_pro_info(data);
+            //test end
         });
     },
     _ajax_fun:function(data){
@@ -163,8 +242,6 @@ LIST.prototype = {
             url:ajaxUrl,
             data:data,
             dataType:"json",
-            //jsonp:"jsonpCallback",
-            //jsonpCallback:"jsonpCallback",
             success:function(resp){
                 me._get_type_List(resp);
             },
@@ -206,8 +283,6 @@ VOTE.prototype = {
             url:ajaxUrl,
             data:data,
             dataType:"json",
-            //jsonp:"jsonpCallback",
-            //jsonpCallback:"jsonpCallback",
             success:function(resp){
                 me._pro_vote(resp);
             },

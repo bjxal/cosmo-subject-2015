@@ -65,26 +65,35 @@ h1,h2,h3,h4,h5{
     padding: 0 32px;
     line-height: 50px;
     background-color: #3a3a3a;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
 }
 .content .nav a span{
     opacity: 0;
     position: absolute;
-    bottom: -9px;
+    bottom: 0;
+    left: 0;
     display: block;
-    width: 18px;
-    /*width: 100%;*/
+    width: 100%;
     height: 9px;
     z-index: 1;
     background: url(../img-subject/nav_arrow.png) no-repeat center top;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.1s;
+    -moz-transition: all linear 0.1s;
+    -o-transition: all linear 0.1s;
 }
 .content .nav a.cur{
     background-color: #f23e8c;
 }
 .content .nav a.cur span{
     opacity: 1;
+    bottom: -9px;
 }
 .p1 .content .nav a:nth-child(11){
-    padding: 0 30px;
+    padding: 0 31px;
 }
 .p2 .content .nav a,.p4 .content .nav a{
     padding: 0 121px;
@@ -488,6 +497,7 @@ h1,h2,h3,h4,h5{
     background-size: 100% auto;
 }
 .nav_right .nav_item{
+    display: block;
     width: 100%;
     height: 35px;
     margin-bottom: 26px;

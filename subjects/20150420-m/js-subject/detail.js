@@ -109,6 +109,9 @@ $(document).ready(function() {
             jsonp: "jsonpCallback",
             jsonpCallback:"jsonpCallback",
             success:function(rep){
+                if(rep.err!="1"){
+                    $(".msg_tips").html(rep.msg).fadeIn();
+                }
                 switch(type){
                     case "collect":
                         break;
