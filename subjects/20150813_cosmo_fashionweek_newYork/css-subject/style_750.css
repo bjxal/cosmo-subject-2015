@@ -185,6 +185,8 @@ section img{
     font-size: 29px;
     line-height: 38px;
     overflow: hidden;
+    height: 76px;
+    overflow: hidden;
 }
 .date .list_art a .avatar{
     position: absolute;

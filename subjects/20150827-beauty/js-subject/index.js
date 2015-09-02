@@ -1,10 +1,22 @@
+var winHeight = $(window).height();
+var ht = (winHeight-582)/2;
+if(isIE = navigator.userAgent.indexOf("MSIE")!=-1) {
+    $(".nav_right").css("top",ht+"px");
+}
 $(document).ready(function(){
-    ajaxUrl = "http://m.cosmopolitan.com.cn/files/eventapi.php";
-    //nav_right
-    var navList = $("");
-    //$(window).on("scroll",function(){
-    //    scroll();
-    //});
+    /*float nav*/
+    var $win  = $(window),$sidebars = $('.nav_right .nav_item');
+    var sTop = 0;
+    $(window).on('scroll',function(){
+        sTop = $win.scrollTop();
+        $sidebars = $('.nav_right .nav_item').each(function(index,ele){
+            var $ele = $(ele),start = +$ele.attr('data-start'),end = +$ele.attr('data-end');
+            if(start<=sTop&&sTop<end){
+                $sidebars.removeClass('cur');
+                $ele.addClass('cur');
+            }
+        });
+    });
     $(".nav_right .nav_item").on("click",function(e){
         var $tar = $(e.target);
         var areaid = $tar.data("areaid");
@@ -15,22 +27,24 @@ $(document).ready(function(){
             $tar.addClass("cur").siblings().removeClass("cur");
         });
     });
+    /*product-type list*/
+    var i=10;
+    for(var j=1;j<=i;j++){
+        $('#customScroller'+j).CSscrollbar({
+            'scrollbar': '#CSscrollbar'+j,
+            'scrollHander': '#CSscrollHander'+j
+        });
+    }
 
-    //滚动条
-    //$("body").on("click",function(){
-    //    $('#customScroller1').CSscrollbar({
-    //        'scrollbar': '#CSscrollbar1',
-    //        'scrollHander': '#CSscrollHander1',
-    //        'autoScrollSpeed' : 2000
-    //    });
-    //});
-
-    //change type
+    /*接口地址*/
+    ajaxUrl = "http://m.cosmopolitan.com.cn/files/eventapi.php";
+    /*change type*/
     var pro = new PRO();
     var list = new LIST();
     var vote = new VOTE();
     $(".nav a").on("click",function(e){
         var $tar = $(e.target);
+        var $par = $tar.parents(".p");
         $tar.addClass("cur").siblings().removeClass("cur");
         //test
         pro.init($tar);
@@ -66,17 +80,17 @@ $(document).ready(function(){
         //test end
 
         //getInfo
-        //var pro_id = "";
+        //var pro_id = $par.find(".slide_item").eq(0).data("id");
         //var data_info = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:pro_id,extinfo:"info"};
         //getList
-        //var type_id = "";
+        //var type_id = $tar.data("id");
         //var data_list = {c:"ArticleHelps",a:"AddPicExp",type:1,type_id:type_id,extinfo:"list"};
         //list.init($tar);
         //list.get_list(data_list);
         //pro.init($tar);
         //pro.get_info(data_info);
     });
-    ////change info
+    /*change product-info*/
     $(".slide_item").on("click",function(e){
         var $tar = $(e.target);
         //test
@@ -103,15 +117,18 @@ $(document).ready(function(){
         //pro.init($tar);
         //pro.get_info(data);
     });
-    ////vote
-    //$(".vote_btn,.vote_icon").on("click",function(e){
-    //    console.log(e)
-    //    var $tar = $(e.target);
-    //    var id = $tar.parents(".p").find(".vote_btn").data("proid");
-    //    var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"zan"};
-    //    vote.init($tar);
-    //    vote.set_vote(data);
-    //});
+    /*vote*/
+    $(".vote_btn,.vote_icon").on("click",function(e){
+        var $tar = $(e.target);
+        vote.init($tar);
+        //test
+        vote._pro_vote();
+        //test end
+
+        //var id = $tar.parents(".p").find(".vote_btn").data("proid");
+        //var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"zan"};
+        //vote.set_vote(data);
+    });
 });
 var PRO =  function(){};
 PRO.prototype = {
@@ -146,10 +163,18 @@ PRO.prototype = {
         var me = this;
         me._set_pro_img(data.pic);
         me._set_pro_desc(data);
+        me._set_pro_voteNum(data.num);
     },
     _set_pro_img:function(pic){
         var me = this;
         if(pic!="") me.$par.find(".img_c img").attr("src",pic);
+    },
+    _set_pro_voteNum:function(num){
+        var me = this;
+        if(num!=""){
+            me.$par.find(".vote_icon").addClass("no").find("span").html(num);
+            me.$par.find(".vote_ani").removeClass("ani");
+        }
     },
     _set_pro_desc:function(data){
         var me = this;
@@ -184,8 +209,8 @@ LIST.prototype = {
     _set_type_list_dom:function(data){
         var me = this;
         var html = '<div class="slide_con" id="customScroller'+me.id+'"><div class="slide_h">';
-        $.each(data.list,function(i,item1){
-            html += '<a class="slide_item" href="javascript:void(0);" data-id="'+item1.id+'">'+item1.title+'</a>';
+        $.each(data.list,function(i,item){
+            html += '<a class="slide_item" href="javascript:void(0);" data-id="'+item.id+'">'+item.title+'</a>';
         });
         html += '</div></div>';
         html += '<div id="CSscrollbar'+me.id+'" class="scroll_bar CSscrollbar"><div id="CSscrollTrack'+me.id+'" class="Scrollbar-Track CSscrollTrack"><div id="CSscrollHander'+me.id+'" class="Scrollbar-Handle CSscrollHander"></div></div></div>';
@@ -205,14 +230,11 @@ LIST.prototype = {
         var me = this;
         me.$par.find(".slide_item").on("click",function(e){
             var $tar = $(e.target);
-            /*有接口*/
             //var id = $tar.data("id");
             //var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"info"};
             //var pro = new PRO();
             //pro.get_info(data);
 
-
-            /*无接口*/
             //test
             var pro = new PRO();
             pro.init($tar);
@@ -270,9 +292,9 @@ VOTE.prototype = {
         var num = parseInt($tar.find("span").html())+1;
         //if(resp.tips==1){
             $tar.removeClass("no");
-            me.$par.find(".vote_ani").addClass("ani").one("webkitAnimationEnd",function(){
-                $tar.html(num+"票");
-            })
+            me.$par.find(".vote_ani").addClass("ani");//.one("webkitAnimationEnd",function(){
+            setTimeout(function(){$tar.find("span").html(num);},2000);
+            //})
         //}
     },
     _ajax_fun:function(data){
@@ -292,18 +314,3 @@ VOTE.prototype = {
         })
     }
 };
-/*nav*/
-$(function(){
-    var $win  = $(window),$sidebars = $('.nav_right .nav_item');
-    var sTop = 0;
-    $(window).on('scroll',function(){
-        sTop = $win.scrollTop();
-        $sidebars = $('.nav_right .nav_item').each(function(index,ele){
-            var $ele = $(ele),start = +$ele.attr('data-start'),end = +$ele.attr('data-end');
-            if(start<=sTop&&sTop<end){
-                $sidebars.removeClass('cur');
-                $ele.addClass('cur');
-            }
-        });
-    });
-});
