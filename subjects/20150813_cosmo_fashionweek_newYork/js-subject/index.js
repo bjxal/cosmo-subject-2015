@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("html,body").animate({
-        scrollTop: "10000px"
+        scrollTop: "100000px"
     },800);
     /*footer nav*/
     $(".nav_word").on("touchend",function(e){
@@ -18,7 +18,10 @@ $(document).ready(function(){
         $.each($(".audio_c_1"),function(i,item){
             var $par = $(item).parents(".audio");
             var audioPlay1 = $par.find("audio")[0];
-            $par.find(".audio_time span").eq(1).html(Math.floor(audioPlay1.duration)+'"');
+            var time = Math.floor(audioPlay1.duration);
+            var len = (((time/60)*450)>450)?450:((time/60)*450);
+            $par.find(".audio_time span").eq(1).html(time+'"');
+            $par.find(".audio_c").css("width",(len+"px"));
         });},1000);
     $(".audio_c_1").on("touchend",function(e){
         var $tar = $(e.target);

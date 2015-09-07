@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="eileen">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150827-beauty/css-subject/index.css" afterPath="$PROJECT_DIR$/subjects/20150827-beauty/css-subject/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150827-beauty/index.html" afterPath="$PROJECT_DIR$/subjects/20150827-beauty/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css" afterPath="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cosmo-subject-2015.iws" />
@@ -26,23 +31,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/subjects/20150827-beauty/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.95367575">
+              <caret line="603" column="41" selection-start-line="603" selection-start-column="41" selection-end-line="603" selection-end-column="41" />
               <folding>
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,21 +47,19 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150827-beauty/css-subject/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="252" column="1" selection-start-line="252" selection-start-column="1" selection-end-line="252" selection-end-column="1" />
+            <state vertical-scroll-proportion="-30.3">
+              <caret line="410" column="1" selection-start-line="403" selection-start-column="1" selection-end-line="410" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subjects/20150827-beauty/js-subject/index.js">
+      <file leaf-file-name="collect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subjects/20150420-m/js-subject/collect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
-              <folding>
-                <element signature="e#5456#8148#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-3.4">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="87" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -83,23 +77,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.076923">
-              <caret line="88" column="25" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="25" />
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
               <folding>
                 <element signature="n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://D:/cosmoicon/channel/2015-beauty-awards/js-subject/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5730111">
-              <caret line="365" column="14" selection-start-line="365" selection-start-column="14" selection-end-line="365" selection-end-column="14" />
-              <folding>
-                <element signature="e#6442#8599#0" expanded="false" />
-                <element signature="e#10628#11922#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -166,13 +147,13 @@
         <option value="$PROJECT_DIR$/subjects/20150420-m/detail.html" />
         <option value="$PROJECT_DIR$/subjects/20150420-m/css-subject/detail.css" />
         <option value="$PROJECT_DIR$/subjects/20150420-m/js-subject/detail.js" />
-        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css" />
         <option value="$PROJECT_DIR$/subjects/20150827-beauty/js-subject/index.js" />
+        <option value="D:/cosmoicon/channel/2015-beauty-awards/js-subject/index.js" />
+        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css" />
+        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js" />
+        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150827-beauty/css-subject/index.css" />
         <option value="$PROJECT_DIR$/subjects/20150827-beauty/index.html" />
-        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" />
-        <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js" />
-        <option value="D:/cosmoicon/channel/2015-beauty-awards/js-subject/index.js" />
       </list>
     </option>
   </component>
@@ -184,10 +165,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="514" />
-    <option name="y" value="213" />
+    <option name="x" value="317" />
+    <option name="y" value="210" />
     <option name="width" value="1856" />
-    <option name="height" value="1183" />
+    <option name="height" value="1179" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -228,6 +209,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -292,7 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20150813_cosmo_fashionweek_newYork" />
+              <option name="myItemId" value="20150827-beauty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,18 +293,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="20150813_cosmo_fashionweek_newYork" />
+              <option name="myItemId" value="20150827-beauty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js-subject" />
+              <option name="myItemId" value="css-subject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,7 +382,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="514" y="213" width="1856" height="1183" extended-state="0" />
+    <frame x="317" y="210" width="1856" height="1179" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.169967" sideWeight="0.49608064" order="0" side_tool="false" content_ui="combo" />
@@ -495,11 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="327" column="7" selection-start-line="327" selection-start-column="7" selection-end-line="327" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -507,7 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="112" column="57" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -523,16 +498,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#7;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -561,16 +536,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="41" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="41" />
           <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#7;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -599,16 +574,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="567" column="94" selection-start-line="567" selection-start-column="94" selection-end-line="567" selection-end-column="94" />
           <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#7;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -818,34 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6472946">
           <caret line="327" column="7" selection-start-line="327" selection-start-column="7" selection-end-line="327" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150420-m/js-subject/collect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53515625">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4874119">
-          <caret line="188" column="21" selection-start-line="188" selection-start-column="21" selection-end-line="188" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150827-beauty/css-subject/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="252" column="1" selection-start-line="252" selection-start-column="1" selection-end-line="252" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,27 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52165157">
           <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150827-beauty/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -887,31 +813,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js">
+    <entry file="file://D:/cosmoicon/channel/2015-beauty-awards/js-subject/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55131966">
+          <caret line="365" column="12" selection-start-line="365" selection-start-column="12" selection-end-line="365" selection-end-column="12" />
+          <folding>
+            <element signature="e#6442#8599#0" expanded="false" />
+            <element signature="e#10626#11920#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/css-subject/style_750.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="87" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="55" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.076923">
-          <caret line="88" column="25" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="25" />
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
           <folding>
             <element signature="n#div#3;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cosmoicon/channel/2015-beauty-awards/js-subject/index.js">
+    <entry file="file://$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/js-subject/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5730111">
-          <caret line="365" column="14" selection-start-line="365" selection-start-column="14" selection-end-line="365" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150420-m/js-subject/collect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150827-beauty/css-subject/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.3">
+          <caret line="410" column="1" selection-start-line="403" selection-start-column="1" selection-end-line="410" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subjects/20150827-beauty/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95367575">
+          <caret line="603" column="41" selection-start-line="603" selection-start-column="41" selection-end-line="603" selection-end-column="41" />
           <folding>
-            <element signature="e#6442#8599#0" expanded="false" />
-            <element signature="e#10628#11922#0" expanded="false" />
+            <element signature="n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

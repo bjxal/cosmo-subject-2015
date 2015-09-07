@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5{
     width: 1080px;
     height: 100%;
     margin: 0 auto;
+    position: relative;
 }
 .p .content h1{
     width: 100%;
@@ -63,7 +64,7 @@ h1,h2,h3,h4,h5{
     /*-moz-box-flex:1;*/
     /*-webkit-box-flex:1;*/
     /*box-flex:1;*/
-    padding: 0 32px;
+    padding: 0 34px;
     line-height: 50px;
     background-color: #3a3a3a;
     transition: all linear 0.2s;
@@ -98,10 +99,10 @@ h1,h2,h3,h4,h5{
     bottom: -9px;
 }
 .p1 .content .nav a.child_11{
-    padding: 0 31px;
+    padding: 0 32px;
 }
-.p2 .content .nav a,.p4 .content .nav a{
-    padding: 0 121px;
+.p2 .content .nav a{
+    padding: 0 114px;
 }
 .p3 .content .nav a{
     padding: 0 82px;
@@ -109,20 +110,34 @@ h1,h2,h3,h4,h5{
 .p3 .content .nav a.child_5{
     padding: 0 86px;
 }
+.p4 .content .nav a{
+    padding: 0 121px;
+}
 .p5 .content .nav a{
-    padding: 0 72px;
+    padding: 0 63px;
 }
 .p5 .content .nav a.child_6{
-    padding: 0 75px;
+    padding: 0 64px;
 }
 .p6 .content .nav a{
-    padding: 0 242px;
+    padding: 0 107px;
 }
 .p7 .content .nav a{
-    padding: 0 80px;
+    padding: 0 86px;
+}
+.p7 .content .nav a.child_5{
+    padding: 0 84px;
 }
 .p8 .content .nav a{
-    padding: 0 235px;
+    /*padding: 0 235px;*/
+    width: 100%;
+    text-align: center;
+}
+.p9 .content .nav a{
+    padding: 0 52px;
+}
+.p9 .content .nav a.child_8{
+    padding: 0 50px;
 }
 .p .product .product_list{
     position: absolute;
@@ -146,9 +161,14 @@ h1,h2,h3,h4,h5{
     height:40px;
     line-height: 40px;
     position:relative;
-    overflow:hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .slide_item:hover{
+    color:#f23e8c;
+}
+.slide_item.cur{
     color:#f23e8c;
 }
 .scroll_bar {
@@ -381,6 +401,13 @@ h1,h2,h3,h4,h5{
 }
 .p10 .product a.child_3{
     width: 305px;
+}
+.p10 .vote_tips{
+    position: absolute;
+    bottom: 50px;
+    color: #888888;
+    line-height: 40px;
+    font-size: 12px;
 }
 .p11{
     height: 302px;
