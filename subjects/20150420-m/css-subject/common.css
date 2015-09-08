@@ -110,7 +110,7 @@ p {
   height: 1900px;
   padding: 5px 15px;
 }
-.avt_unlogin{
+.avt_login{
   display: none;
 }
 .avt_unlogin,.avt_login{
@@ -119,13 +119,16 @@ p {
   overflow: hidden;
   padding: 15px 0;
   border-bottom: 1px #dcdcdc solid;
+  position: relative;
 }
 .avt_unlogin .nav_avt,.avt_login .nav_avt{
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  border: 5px #ffffff solid;
+  border: 2px #ffffff solid;
   float: left;
+  position: absolute;
+  left: 0;
 }
 .avt_unlogin .nav_avt_p,.avt_login .nav_avt_p{
   float: left;
@@ -134,6 +137,8 @@ p {
   color: #ffffff;
   line-height: 23px;
   padding-top: 10px;
+  position: absolute;
+  left: 65px;
 }
 .avt_login a{
   display: inline-block;

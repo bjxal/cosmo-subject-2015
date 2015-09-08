@@ -29,10 +29,10 @@ $(document).ready(function(){
     //    $(".contentAll").toggleClass("act");
     //})
     $(".contentLeft .close").on("click",function(e){
-        $(".contentAll").toggleClass("act").one("webkitTransitionEnd",function(){
-            $(".contentLeft").toggleClass("show");
-            $("body").toggleClass("hid");
-        });
+        e.stopPropagation();
+        $(".contentAll").toggleClass("act").one("webkitTransitionEnd",function(){});
+        $(".contentLeft").toggleClass("show");
+        $("body").toggleClass("hid");
     });
     //µÇÂ¼»ò×¢²á
     $(".nav_avt_p p").eq(0).on("touchend",function(e){

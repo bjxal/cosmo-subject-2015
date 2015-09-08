@@ -6,6 +6,9 @@ body{
   overflow: hidden;
   opacity: 1;
 }
+input[type="submit"], input[type="reset"], input[type="button"], input, button{
+  border-radius: 0px;
+}
 .login_reg{
   width: 100%;
   height: 200%;
@@ -158,7 +161,7 @@ body{
 }
 .container .login_in .platform .sina_qq {
   height: 80px;
-  width: 270px;
+  width: 190px;
   margin: 30px auto;
 }
 .container .login_in .platform .sina_qq .icon {
