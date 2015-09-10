@@ -2,6 +2,17 @@ $(document).ready(function(){
     $("html,body").animate({
         scrollTop: "100000px"
     },800);
+    /*get cur*/
+    var max_date = 1442592000*1000;
+    var cur_time = new Date().getTime();
+    if(cur_time<max_date){
+        for(var i=1;i<9;i++){
+            var html1 = $("#date"+i).html();
+            if(html1!="" && html1!=null){
+                $(".nav.date").find("li").eq(8-i).addClass("date_cur").siblings().removeClass("date_cur");
+            }
+        }
+    }
     /*footer nav*/
     $(".nav_word").on("touchend",function(e){
         var $tar = $(e.target);
@@ -47,6 +58,7 @@ $(document).ready(function(){
     $(".date li a").on("touchend",function(e){
         $(e.target).parents(".nav_list").removeClass("act");
         var id = $(e.target).data("id");
+        $(e.target).parent().addClass("cur_date").siblings().removeClass("cur_date");
         var topVal = $("#date"+id).offset().top;
         $("html,body").animate({
             scrollTop: (topVal-20)+"px"

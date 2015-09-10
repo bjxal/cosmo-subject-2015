@@ -326,6 +326,13 @@ section img{
     line-height: 78px;
     color: #4a4a4a;
 }
+.footer .nav_list li a.cur{
+    color: #ed207b;
+    font-weight: bold;
+}
+.footer .nav_list li.date_cur{
+    font-weight: bold;
+}
 .footer .nav_list li:nth-child(1){
     border:0;
 }

@@ -17,7 +17,7 @@ a,a:hover,a:visited{text-decoration:none;}
 .title_mb,.title_mb span.num {font-size:12px;line-height: 20px;}
 .title_mb span.num{position: absolute;right: 0;top: 0;}
 .desc{padding:13px;z-index:1;}
-.desc .zy{font-size:12px;padding-right: 10px; line-height:25px;}
+.desc .zy{font-size:12px;padding-right: 10px; line-height:22px; padding-top: 10px;}
 #photoimg{display: block;position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%,-50%);width: 100%;}
 #mobilenav{width:100%;height:44px;background-color:rgba(0,0,0,0.6);z-index:10;}
 #mobilenav .goBack{display:block;width:36px;height:35px;float:left;cursor:pointer;position:absolute;left:20px;top:3px;}
