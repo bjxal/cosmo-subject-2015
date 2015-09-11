@@ -366,7 +366,7 @@
                 </div>
                 <div class="list_art">
                     <a target="_blank" href="#">
-                        <p class="tit">性感自然的巴黎女人 Isabel Marant后台妆容报道</p>
+                        <p class="tit">性感自然的巴黎女人</p>
                         <div class="avatar"><img src="img-subject/section/avt.jpg"/></div>
                     </a>
                 </div>
@@ -444,6 +444,32 @@
 </footer>
 <!--底部导航 end-->
 <script type="text/javascript" src="js-subject/jquery-1.11.1.min.js"></script>
+<!--微信分享-->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+
+</script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"时装周四城记 COSMOgirl在现场_HiCOSMO",
+        desc:"关于时装周，你想看的都在这里……",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
 <script type="text/javascript" src="js-subject/index.js"></script>
 </body>
 </html>

@@ -64,5 +64,46 @@ $(document).ready(function(){
             scrollTop: (topVal-20)+"px"
         },function(){});
 
-    })
+    });
+    //weixin share
+    var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json";
+    $.ajax({
+        type:"POST",
+        ansyc:false,
+        url:wx_url,
+        data:{},
+        dataType:"json",
+        success:function(data){
+            wx.config({
+                //debug: true,
+                appId: data.appId,
+                timestamp: data.timestamp,
+                nonceStr: data.nonceStr,
+                signature: data.signature,
+                jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage']
+            });
+            wx.ready(function () {
+                wx.onMenuShareAppMessage({
+                    title: shareData.tit,
+                    desc: shareData.desc,
+                    link: shareData.link,
+                    imgUrl: shareData.imgUrl,
+                    success: function (res) {
+                    },
+                    cancel: function (res) {
+                    }
+                });
+                wx.onMenuShareTimeline({
+                    title: shareData.tit,
+                    link: shareData.link,
+                    imgUrl: shareData.imgUrl,
+                    success: function (res) {
+                    },
+                    cancel: function (res) {
+                    }
+                });
+            });
+        },
+        error:function(){}
+    });
 });

@@ -118,10 +118,10 @@ section img{
     padding: 0 13px;
 }
 .date .time_c{
-    width: 290px;
-    height: 36px;
-    line-height: 36px;
-    font-size: 21.7px;
+    width: 390px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
     color: #ffffff;
     background-color: #cecece;
     text-align: center;
@@ -155,46 +155,53 @@ section img{
     left: 0;
     width: 100%;
     height: auto;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 38px;
+    line-height: 50px;
     color: #ffffff;
     padding: 10px;
     background: url(../img-subject/opt_black_70.png);
 }
 /*article list*/
 .date .list_art{
+    display: table;
     position: relative;
     width: 100%;
-    height: 111px;
-    font-size: 28.9px;
-    line-height: 38px;
+    height: 140px;
+    font-size: 34px;
+    line-height: 50px;
     border-top: 1px #eff1f3 solid;
 }
 .date .list_art a{
     display: block;
+    display:table-cell;
+    vertical-align:middle;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 .date .list_art a .tit{
-    position: absolute;
-    top: 15px;
+    position: relative;
+    /*top: 15px;*/
     left: 18px;
-    width: 78%;
-    font-size: 29px;
-    line-height: 38px;
+    width: 75%;
+    font-size: 33px;
+    /*line-height: 58px;*/
     overflow: hidden;
-    height: 76px;
-    overflow: hidden;
+    /*height: 76px;*/
 }
 .date .list_art a .avatar{
     position: absolute;
     right: 18px;
-    top: 9px;
-    width: 91px;
-    height: 91px;
+    top: 14px;
+    width: 110px;
+    height: 110px;
     overflow: hidden;
+}
+.date .list_art a .avatar img{
+    width: 100%;
+    max-width: none;
+    max-height: none;
 }
 
 /*footer*/
@@ -202,7 +209,7 @@ section img{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 90px;
+    height: 120px;
 }
 .footer .footer_nav_list{
     width: 100%;
@@ -224,18 +231,18 @@ section img{
     height: 100%;
     float: left;
     border-left: 1px #bfbfbf solid;
-    font-size: 27px;
+    font-size: 32px;
     color:#4b4b4b;
     text-align: center;
-    line-height: 90px;
+    line-height: 120px;
     padding-top: 1px;
 }
 .footer .nav .nav_word{
     background-color: #ffffff;
-    background-image: url(../img-subject/footer/nav_bg_750.png);
+    background-image: url(../img-subject/footer/nav_bg_1000.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 110px auto;
 }
 .footer .nav.sina{
     width: 78px;
@@ -259,13 +266,13 @@ section img{
     -webkit-transition: all ease-in-out 0.5s;
 }
 .footer .nav.sina .sina_tips.act{
-    bottom: 105px;
+    bottom: 125px;
 }
 .footer .nav.sina .sina_tips p{
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 26px;
+    font-size: 32px;
     line-height: 44px;
     padding: 30px 18px;
     text-align: left;
@@ -294,7 +301,7 @@ section img{
     z-index: -1;
 }
 .footer .nav_list.act{
-    bottom: 104px;
+    bottom: 135px;
 }
 .footer .nav_list span.nav_arrow{
     display: block;
