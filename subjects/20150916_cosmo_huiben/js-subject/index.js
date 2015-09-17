@@ -18,48 +18,16 @@ Fui.Template.regTpl({
 //});
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:2,
+    curPage:0,
     lock:false,
     iteration:false,
     orient:'y',
     listeners:{
         slide:function(){
             move_t = false;
+            $(".p").find(".show").removeClass("show");
             var gesture = slider.event.gesture;
             var page = this.get("curPage");
-            if(page==1){
-                var list = $(".p1").find(".c img");
-                $.each(list,function(i,item){
-                    setTimeout(function(){
-                        $(item).addClass("show");
-                    },i*500);
-                });
-            }
-            if(page==2){
-                var list = $(".p2").find(".c img");
-                $.each(list,function(i,item){
-                    setTimeout(function(){
-                        $(item).addClass("show");
-                    },i*800);
-                });
-                setTimeout(function(){
-                    $(".p2 .line,.p2 .pen").addClass("show");
-                },7500);
-            }
-            if(page==4){
-                var list = $(".p4").find(".c img");
-                $.each(list,function(i,item){
-                    setTimeout(function(){
-                        $(item).addClass("show");
-                    },i*500);
-                });
-                setTimeout(function(){
-                    $(".p4 .line_c .line,.p4 .line_c .pen").addClass("show");
-                },5000);
-                setTimeout(function(){
-                    $(".p4 .line_c2 .line,.p4 .line_c2 .pen").addClass("show");
-                },6000);
-            }
             if(page==5){
                 $(".fui-arrow").css("z-index","-1");
                 $(".app-music").css("z-index","-1");
@@ -80,11 +48,8 @@ var slider = new Fui.PageSlider({
                 var me = this;
                 setTimeout(function(){
                     me.$el.addClass("focus");
-                    me.$el.find(".c_2").css("opacity","1");
                     setTimeout(function(){
                         slider.set("lock",false);
-                        me.$el.find(".tit").addClass("show");
-                        me.$el.find(".fl_1,.fl_2").addClass("rotate");
                         $(".fui-arrow").css("z-index","1");
                     },3000);
                 },1000);
@@ -100,9 +65,52 @@ var slider = new Fui.PageSlider({
             bg:ImgDir('/p2/bg.jpg'),
             xtpl:'p2'
         }
-        ,{
-            template:'PAGE0',
-            xtpl:'p3'
+        , {
+            template: 'PAGE0',
+            xtpl: 'p3',
+            design: function () {
+                var me = this;
+                //me.$imglist = $el.find('.imglist');
+                var imgs = me.imgs = new Fui.PageSlider({
+                    el:"#img-pack",
+                    stopPropagation:false,
+                    preventDefault:false,
+                    orient:'x',
+                    arrow:{},
+                    design:function(){},
+                    data:[
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/1.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/2.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/3.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/4.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/5.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/6.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/7.jpg')
+                        }
+                    ]
+                });
+                setTimeout(function(){imgs.render();},1000);
+            }
         }
         , {
             template: 'PAGE0',

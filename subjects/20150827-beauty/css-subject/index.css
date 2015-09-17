@@ -1,5 +1,6 @@
 body{
     width: 100%;
+	min-width: 1080px;
     overflow-x: hidden;
     font-size: 14px;
     font-family: "microsoft yahei";
