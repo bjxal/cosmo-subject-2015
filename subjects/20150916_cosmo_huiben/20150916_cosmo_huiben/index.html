@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=gbk"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="bjxal@139.com"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js-subject/device.js"></script>
+    <title>聚绘玩够新潮 COSMO时髦绘本画出闪亮人生</title>
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body>
+<div class="loadingC">
+    <div class="loadingC_1">
+        <div class="loading">
+            <div class="ld1"></div>
+            <div class="ld2"></div>
+        </div>
+    </div>
+</div>
+<div id="pack" class="pack"></div>
+<div class="slide_tip">左右滑动<br>查看更多精彩作品</div>
+<script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
+<!-- p0 -->
+<script type="text/x-handlebars-template" id="p0">
+    <!--c-->
+    <div class="c">
+        <img data-src="{{IMG_DIR}}/p0/1.jpg" class="c_1">
+        <img data-src="{{IMG_DIR}}/p0/2.jpg" class="c_2">
+    </div>
+    <!--right top flower-->
+    <img data-src="{{IMG_DIR}}/p0/flower_1.png" class="fl_1"/>
+    <!--left bottom flower-->
+    <img data-src="{{IMG_DIR}}/p0/flower_2.png" class="fl_2"/>
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p0/logo.png" class="tit"/>
+</script>
+<!-- p0 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p1">
+    <!--c-->
+    <div class="c">
+        <img data-src="{{IMG_DIR}}/p1/word/1.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/2.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/3.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/4.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/5.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/6.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/7.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/8.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/9.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/10.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/11.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/12.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word/13.png"/>
+        <img data-src="{{IMG_DIR}}/p1/word_flower.png" class="btn"/>
+    </div>
+    <!--flower bg-->
+    <div class="bg">
+        <img data-src="{{IMG_DIR}}/p1/bg_flower.png" class="fl_3"/>
+        <img data-src="{{IMG_DIR}}/p1/bg_flower.png" class="fl_4"/>
+        <img data-src="{{IMG_DIR}}/p1/bg_flower.png" class="fl_5"/>
+    </div>
+</script>
+<!-- P1 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p2">
+    <!--left image-->
+    <img src="{{IMG_DIR}}/p2/bg_lf.png" class="bg"/>
+    <!--c-->
+    <div class="c">
+        <div class="list">
+            <img data-src="{{IMG_DIR}}/p2/word/1.png"/>
+            <img data-src="{{IMG_DIR}}/p2/word/2.png"/>
+            <img data-src="{{IMG_DIR}}/p2/word/3.png"/>
+            <img data-src="{{IMG_DIR}}/p2/word/4.png" class="tit_c"/>
+            <img data-src="{{IMG_DIR}}/p2/word/5.png"/>
+            <img data-src="{{IMG_DIR}}/p2/word/6.png"/>
+            <img data-src="{{IMG_DIR}}/p2/word/7.png" class="tit_c"/>
+            <img data-src="{{IMG_DIR}}/p2/word/8.png"/>
+            <img data-src="{{IMG_DIR}}/p2/word/9.png"/>
+            <img data-src="{{IMG_DIR}}/p2/word/10.png" class="tit_c"/>
+        </div>
+        <div class="line_c">
+            <span class="line"></span>
+            <span class="pen"></span>
+        </div>
+    </div>
+    <!--tit-->
+    <img src="{{IMG_DIR}}/p2/pic.png" class="pic"/>
+</script>
+<!-- p2 -->
+<!-- p3 -->
+<script type="text/x-handlebars-template" id="p3">
+    <!--<img data-src="{{IMG_DIR}}/p3/tit.png" class="tit"/>-->
+    <!--list-->
+    <div class="img-pack" id="img-pack"></div>
+    <!--arrow-->
+    <div class="p3_arr">
+        <img data-src="{{IMG_DIR}}/p3/arrow_lf.png" class="arrow_lf"/>
+        <img data-src="{{IMG_DIR}}/p3/arrow_rt.png" class="arrow_rt"/>
+    </div>
+    <!--daren-->
+    <div class="name">
+        <img data-src="{{IMG_DIR}}/p3/name/1.png" class="show"/>
+        <img data-src="{{IMG_DIR}}/p3/name/2.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/3.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/4.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/5.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/6.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/7.png"/>
+    </div>
+    <!--tips-->
+    <img data-src="{{IMG_DIR}}/p3/tips.png" class="tips"/>
+</script>
+<!-- p3 -->
+<!-- p4 -->
+<script type="text/x-handlebars-template" id="p4">
+    <!--bg image-->
+    <img src="{{IMG_DIR}}/p4/bg.jpg" class="bg"/>
+    <!--c-->
+    <div class="c">
+        <div class="list">
+            <img data-src="{{IMG_DIR}}/p4/word/1.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/2.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/3.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/4.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/5.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/6.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/7.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/8.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/9.png"/>
+            <img data-src="{{IMG_DIR}}/p4/word/10.png"/>
+        </div>
+        <div class="line_c">
+            <span class="line"></span>
+            <span class="pen"></span>
+        </div>
+        <div class="line_c2">
+            <span class="line"></span>
+            <span class="pen"></span>
+        </div>
+    </div>
+</script>
+<!-- p4 -->
+<!-- p5 -->
+<script type="text/x-handlebars-template" id="p5">
+    <!--c-->
+    <div class="c">
+        <div class="c_1">
+            <div class="list">
+                <img data-src="{{IMG_DIR}}/p5/word/1.png"/>
+                <img data-src="{{IMG_DIR}}/p5/word/2.png"/>
+                <img data-src="{{IMG_DIR}}/p5/word/3.png"/>
+                <img data-src="{{IMG_DIR}}/p5/word/4.png"/>
+                <img data-src="{{IMG_DIR}}/p5/word/5.png"/>
+                <img data-src="{{IMG_DIR}}/p5/word/6.png"/>
+                <img data-src="{{IMG_DIR}}/p5/people.png" class="people"/>
+                <img data-src="{{IMG_DIR}}/p5/hand.png" class="hand"/>
+            </div>
+            <div class="line_c">
+                <span class="line"></span>
+                <span class="pen"></span>
+            </div>
+        </div>
+    </div>
+    <img data-src="{{IMG_DIR}}/p5/lf_pro.png" class="pro lf_pro"/>
+    <img data-src="{{IMG_DIR}}/p5/top_pro.png" class="pro top_pro"/>
+    <img data-src="{{IMG_DIR}}/p5/rt_pro.png" class="pro rt_pro"/>
+    <img data-src="{{IMG_DIR}}/p5/btm_pro.png" class="pro btm_pro"/>
+</script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p6">
+    <img data-src="{{IMG_DIR}}/p6/top.png" class="top"/>
+    <img data-src="{{IMG_DIR}}/p6/tit.png" class="tit"/>
+    <div class="share">
+        <div class="share_link">
+            <div class="st">
+                <p>分享到：&nbsp;</p>
+                <img data-src="{{IMG_DIR}}/p6/share/wx.png" class="share-icon" data-tap="share_pop_show"/>
+                <img data-src="{{IMG_DIR}}/p6/share/sina.png" class="share-icon" data-tap="share_sina"/>
+            </div>
+            <div class="line"></div>
+            <div class="sb">
+                <p>扫一扫&nbsp;约吧</p>
+                <img data-src="{{IMG_DIR}}/p6/share/hicosmo.png" data-tap="m_link"/>
+            </div>
+        </div>
+        <!--<div class="ewm">-->
+            <!--<img data-src="{{IMG_DIR}}/p6/share/ewm.jpg"/>-->
+        <!--</div>-->
+    </div>
+    <div class="share_pop" data-tap="share_pop_hide">
+        <img data-src="{{IMG_DIR}}/p6/share/wx_share.gif" data-tap="share_pop_hide"/></div>
+    </div>
+</script>
+<!-- p6 -->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"快把我带回家！COSMO时髦绘本画出闪亮人生",
+        desc:"你想成为一个时尚有趣的COSMO girl吗？跟我们一起打开这本时髦笔记吧！",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js-subject/index.min.js"></script>
+<!--统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58044097-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

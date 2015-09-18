@@ -46,6 +46,53 @@ body{
     animation-fill-mode: forwards;
 }
 /*p*/
+.loadingC{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: url(../img-subject/load/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.loadingC_1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+}
+.loading{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+}
+.loading div{
+    position: absolute;
+    bottom:0;
+    -webkit-transition: all ease-in-out 0.8s;
+}
+.ld1{
+    width: 100%;
+    height: 100%;
+    background: url(../img-subject/p0/loading1.png) no-repeat center bottom;
+    background-size: auto 150px;
+}
+.ld2{
+    width: 100%;
+    height: 0;
+    background: url(../img-subject/p0/loading2.png) no-repeat center bottom;
+    background-size: auto 150px;
+    z-index: 1;
+    -webkit-animation: p0_load_ani 3.5s linear 1 normal;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes p0_load_ani{
+    0%{height:0;}
+    100%{height:100%;}
+}
 .p img{
     max-width: none;
 }
@@ -60,7 +107,7 @@ body{
     position: absolute;
     left: 50%;
     -webkit-transform: translate(-50%,0);
-    top: 118px;
+    top: 105px;
     border-right:7px solid #000000;
     border-bottom:10px solid #000000;
     border-left:14px solid #000000;
@@ -78,7 +125,7 @@ body{
     /*-webkit-transition: all linear 2s;*/
 }
 .p0.focus .c .c_2{
-    -webkit-animation: p0_c_2_ani 2s linear 1s 1 normal;
+    -webkit-animation: p0_c_2_ani 1s linear 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p0_c_2_ani{
@@ -87,24 +134,38 @@ body{
 }
 .p0 .fl_1{
     top: 60px;
-    right: -35px;
+    right: -100px;
 }
 .p0 .fl_2{
     bottom: 168px;
-    left: -60px;
+    left: -150px;
 }
 .p0 .fl_1,.p0 .fl_2{
     opacity: 0;
+    -webkit-transform: scale(0.5);
+    -webkit-transition: all linear 0.3s;
 }
-.p0.focus .fl_1,.p0.focus .fl_2{
+.p0 .fl_1.show,.p0 .fl_2.show{
     /*opacity: 1;*/
-    -webkit-transition: all linear 1s;
-    -webkit-animation:  p0_flower_rotate 3s linear 4s infinite normal;
+    /*opacity: 1;*/
+    -webkit-transform: scale(1);
+    -webkit-animation:  p0_flower_rotate 3s linear 0.5s infinite normal;
     -webkit-animation-fill-mode: forwards;
 }
+.p0 .fl_1.show{
+    right: -35px;
+}
+.p0 .fl_2.show{
+    left: -60px;
+}
 @-webkit-keyframes p0_flower_rotate{
-    0%{opacity: 1; -webkit-transform: rotate(0deg);}
-    100%{opacity: 1; -webkit-transform: rotate(360deg);}
+    0%{opacity: 1;-webkit-transform: rotate(0deg);}
+    100%{opacity: 1;-webkit-transform: rotate(360deg);}
+}
+@-webkit-keyframes p0_flower_rotate2{
+    0%{opacity: 1;-webkit-transform: rotate(0deg) scale(1.2);}
+    50%{opacity: 0.8;-webkit-transform: rotate(360deg) scale(0.8);}
+    100%{opacity: 1;-webkit-transform: rotate(720deg) scale(1.2);}
 }
 .p0 .tit{
     left: 0;
@@ -118,7 +179,7 @@ body{
     /*left: 50%;*/
     /*bottom: 30px;*/
     /*-webkit-transform: translate(-50%,0) scale(1);*/
-    -webkit-animation:  p0_tit_ani 0.3s linear 3s 1 normal;
+    -webkit-animation:  p0_tit_ani 0.3s linear 1s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p0_tit_ani{
@@ -161,56 +222,56 @@ body{
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(2){
-    -webkit-animation: p1_img_ani 0.5s linear 0.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 0.3s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(3){
-    -webkit-animation: p1_img_ani 0.5s linear 1s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 0.6s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(4){
-    -webkit-animation: p1_img_ani 0.5s linear 1.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 0.9s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(5){
-    -webkit-animation: p1_img_ani 0.5s linear 2s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 1.2s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(6){
-    -webkit-animation: p1_img_ani 0.5s linear 2.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 1.5s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(7){
-    -webkit-animation: p1_img_ani 0.5s linear 3s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 1.8s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(8){
-    -webkit-animation: p1_img_ani 0.5s linear 3.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 2.1s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(9){
-    -webkit-animation: p1_img_ani 0.5s linear 4s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 2.4s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(10){
-    -webkit-animation: p1_img_ani 0.5s linear 4.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 2.7s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(11){
-    -webkit-animation: p1_img_ani 0.5s linear 5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 3s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(12){
-    -webkit-animation: p1_img_ani 0.5s linear 5.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 3.3s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(13){
-    -webkit-animation: p1_img_ani 0.5s linear 6s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 3.6s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(14){
     /*opacity: 1;*/
-    -webkit-animation: p0_flower_rotate 2s linear 6.5s infinite normal;
+    -webkit-animation: p0_flower_rotate 2s linear 3.9s infinite normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p1_img_ani{
@@ -239,7 +300,7 @@ body{
 }
 .p1 .fl_3,.p1 .fl_4,.p1 .fl_5{
     -webkit-transition: all linear 1s;
-    -webkit-animation:  p0_flower_rotate 2s linear infinite normal;
+    -webkit-animation:  p0_flower_rotate2 4s linear infinite normal;
 }
 /*p2*/
 .p2 .bg{
@@ -275,39 +336,39 @@ body{
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(2){
-    -webkit-animation: p2_img_ani 0.5s linear 0.5s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 0.3s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(3){
-    -webkit-animation: p2_img_ani 0.5s linear 1s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 0.6s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(4){
-    -webkit-animation: p2_img_ani 0.5s linear 1.5s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 0.9s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(5){
-    -webkit-animation: p2_img_ani 0.5s linear 2s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 1.2s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(6){
-    -webkit-animation: p2_img_ani 0.5s linear 2.5s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 1.5s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(7){
-    -webkit-animation: p2_img_ani 0.5s linear 3s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 1.8s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(8){
-    -webkit-animation: p2_img_ani 0.5s linear 3.5s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 2.1s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(9){
-    -webkit-animation: p2_img_ani 0.5s linear 4s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 2.4s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(10){
-    -webkit-animation: p2_img_ani 0.5s linear 4.5s 1 normal;
+    -webkit-animation: p2_img_ani 0.5s linear 2.7s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p2_img_ani{
@@ -334,7 +395,7 @@ body{
 }
 .p2.focus .line_c .line{
     /*width: 435px;*/
-    -webkit-animation: p2_line_ani 0.8s linear 5.6s 1 normal;
+    -webkit-animation: p2_line_ani 0.8s linear 3.6s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p2_line_ani{
@@ -354,7 +415,7 @@ body{
     -webkit-transition: all linear 0.8s;
 }
 .p2.focus .line_c .pen{
-    -webkit-animation: p2_pen_ani 0.8s linear 5.6s 1 alternate;
+    -webkit-animation: p2_pen_ani 0.8s linear 3.6s 1 alternate;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p2_pen_ani{
@@ -370,7 +431,10 @@ body{
 .p3 .img-pack{
     width: 691px;
     height: 886px;
-    margin-top: 120px;
+    padding: 7px;
+    margin-top: 30px;
+    background: url(../img-subject/p3/bg.jpg) no-repeat center;
+    background-size: cover;
 }
 .p3 .tit{
     position: absolute;
@@ -380,13 +444,76 @@ body{
 }
 .p3 .tips{
     position: absolute;
-    bottom: 80px;
+    bottom: 100px;
     left: 50%;
     -webkit-transform: translate(-50%,0);
 }
 .p3 .p3_arr{
-    width: 130px;
-    margin: 20px auto;
+    width: 691px;
+    height: 40px;
+    margin: 45px auto;
+    position: relative;
+    /*background: url(../img-subject/p5/hand.png) no-repeat center;*/
+}
+.p3 .arrow_lf,.p3 .arrow_rt{
+    opacity: 0;
+    position: absolute;
+}
+.p3 .arrow_lf{
+    left:50px;
+}
+.p3 .arrow_rt{
+    right: 50px;
+}
+.p3.focus .arrow_lf{
+    -webkit-animation: p3_arr_lf_ani 1.5s ease-in-out infinite normal;
+}
+.p3.focus .arrow_rt{
+    -webkit-animation: p3_arr_rt_ani 1.5s ease-in-out infinite normal;
+}
+@-webkit-keyframes p3_arr_lf_ani{
+    0%{opacity: 0; left: 50px;}
+    /*20%{opacity: 1; left: 50px;}*/
+    80%{opacity: 1; left: 20px;}
+    100%{opacity: 0; left: 0;}
+}
+@-webkit-keyframes p3_arr_rt_ani{
+    0%{opacity: 0; right: 50px;}
+    /*20%{opacity: 1; right: 50px;}*/
+    80%{opacity: 1; right: 20px;}
+    100%{opacity: 0; right: 0;}
+}
+.p3 .name{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: -88px;
+}
+.p3 .name img{
+    /*opacity: 0;*/
+    display: none;
+}
+.p3 .name img.show{
+    /*opacity: 1;*/
+    display: inline;
+}
+.slide_tip{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10000;
+    background: url(../img-subject/opt_black_80.png);
+    text-align: center;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 40px;
+    vertical-align: middle;
+    padding-top: 60%;
+    line-height: 80px;
 }
 /*p4*/
 .p4 .c{
@@ -414,39 +541,39 @@ body{
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(2){
-    -webkit-animation: p1_img_ani 0.5s linear 0.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 0.3s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(3){
-    -webkit-animation: p1_img_ani 0.5s linear 1s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 0.6s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(4){
-    -webkit-animation: p1_img_ani 0.5s linear 1.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 0.9s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(5){
-    -webkit-animation: p1_img_ani 0.5s linear 2s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 1.2s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(6){
-    -webkit-animation: p1_img_ani 0.5s linear 2.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 1.5s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(7){
-    -webkit-animation: p1_img_ani 0.5s linear 3s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 1.8s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(8){
-    -webkit-animation: p1_img_ani 0.5s linear 3.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 2.1s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(9){
-    -webkit-animation: p1_img_ani 0.5s linear 4s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 2.4s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(10){
-    -webkit-animation: p1_img_ani 0.5s linear 4.5s 1 normal;
+    -webkit-animation: p1_img_ani 0.5s linear 2.7s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p4_img_ani{
@@ -474,7 +601,7 @@ body{
     background: url(../img-subject/p4/line_2.png) no-repeat;
 }
 .p4.focus .line_c .line{
-    -webkit-animation: p4_line1_ani 0.8s linear 5.2s 1 normal;
+    -webkit-animation: p4_line1_ani 0.8s linear 4s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p4_line1_ani{
@@ -482,7 +609,7 @@ body{
     100%{width: 298px;}
 }
 .p4.focus .line_c2 .line{
-    -webkit-animation: p4_line2_ani 0.8s linear 6.2s 1 normal;
+    -webkit-animation: p4_line2_ani 0.8s linear 5s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p4_line2_ani{
@@ -503,12 +630,12 @@ body{
 }
 .p4.focus .line_c .pen{
     /*left: 300px;*/
-    -webkit-animation: p4_pen1_ani 0.8s linear 5.2s 1 alternate;
+    -webkit-animation: p4_pen1_ani 0.8s linear 4s 1 alternate;
     -webkit-animation-fill-mode: forwards;
 }
 .p4.focus .line_c2 .pen{
     /*left: 190px;*/
-    -webkit-animation: p4_pen2_ani 0.8s linear 6.2s alternate;
+    -webkit-animation: p4_pen2_ani 0.8s linear 5s alternate;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p4_pen1_ani{
@@ -584,31 +711,31 @@ body{
     -webkit-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(2){
-    -webkit-animation: p5_img_ani 0.5s linear 0.5s 1 normal;
+    -webkit-animation: p5_img_ani 0.5s linear 0.3s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(3){
-    -webkit-animation: p5_img_ani 0.5s linear 1s 1 normal;
+    -webkit-animation: p5_img_ani 0.5s linear 0.6s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(4){
-    -webkit-animation: p5_img_ani 0.5s linear 1.5s 1 normal;
+    -webkit-animation: p5_img_ani 0.5s linear 0.9s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(5){
-    -webkit-animation: p5_img_ani 0.5s linear 2s 1 normal;
+    -webkit-animation: p5_img_ani 0.5s linear 1.2s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(6){
-    -webkit-animation: p5_img_ani 0.5s linear 2.5s 1 normal;
+    -webkit-animation: p5_img_ani 0.5s linear 1.5s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(7){
-    -webkit-animation: p5_peo_ani 0.5s linear 3s 1 normal;
+    -webkit-animation: p5_peo_ani 0.5s linear 1.8s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(8){
-    -webkit-animation: p5_hand_ani 0.5s linear 8s infinite alternate;
+    -webkit-animation: p5_hand_ani 0.5s linear 6.8s infinite alternate;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_img_ani{
@@ -638,7 +765,7 @@ body{
 }
 .p5.focus .line_c .line{
     /*width: 298px;*/
-    -webkit-animation: p5_line_ani 0.8s linear 4s 1 normal;
+    -webkit-animation: p5_line_ani 0.8s linear 2.8s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_line_ani{
@@ -659,7 +786,7 @@ body{
 }
 .p5.focus .line_c .pen{
     /*left: 290px;*/
-    -webkit-animation: p5_pen_ani 0.8s linear 4s alternate;
+    -webkit-animation: p5_pen_ani 0.8s linear 2.8s alternate;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pen_ani{
@@ -685,7 +812,7 @@ body{
 .p5.focus .pro.lf_pro{
     /*left: -60px;*/
     /*opacity: 1;*/
-    -webkit-animation: p5_pro_1_ani 0.3s linear 4.5s 1 normal;
+    -webkit-animation: p5_pro_1_ani 0.3s linear 3.5s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pro_1_ani{
@@ -700,7 +827,7 @@ body{
 .p5.focus .pro.rt_pro{
     /*right: -55px;*/
     /*opacity: 1;*/
-    -webkit-animation: p5_pro_2_ani 0.3s linear 5s 1 normal;
+    -webkit-animation: p5_pro_2_ani 0.3s linear 4.5s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pro_2_ani{
@@ -715,7 +842,7 @@ body{
 .p5.focus .pro.top_pro{
     /*top: 20px;*/
     /*opacity: 1;*/
-    -webkit-animation: p5_pro_3_ani 0.3s linear 5.5s 1 normal;
+    -webkit-animation: p5_pro_3_ani 0.3s linear 4s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pro_3_ani{
@@ -730,10 +857,88 @@ body{
 .p5.focus .pro.btm_pro{
     /*bottom: 30px;*/
     /*opacity: 1;*/
-    -webkit-animation: p5_pro_4_ani 0.3s linear 6s 1 normal;
+    -webkit-animation: p5_pro_4_ani 0.3s linear 5s 1 normal;
     -webkit-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pro_4_ani{
     0%{bottom: -100px; opacity: 0;}
     100%{bottom: 30px; opacity: 1;}
+}
+/*p6*/
+.p6 .top{
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    opacity: 0;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+}
+.p6.focus .top{
+    top: 0;
+    opacity: 1;
+}
+.p6 .tit{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+}
+.p6 .share{
+    width: 682px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    height: 351px;
+    background: url(../img-subject/p6/bg_2.png) no-repeat center;
+}
+.p6 .share_link{
+    padding-left: 40px;
+    height: 100%;
+}
+.p6 .share_link p{
+    display: inline-block;
+    font-size: 30px;
+    color: #000000;
+    float: left;
+    padding-top: 12px;
+}
+.p6 .share_link,.p6 .ewm{
+    width: 55%;
+    position: absolute;
+}
+.p6 .share_link{
+    left: 0;
+}
+.p6 .share_link .st,.p6 .share_link .sb{
+    height: 50%;
+    padding: 15% 0;
+}
+.p6 .line{
+    width: 85%;
+    height: 0px;
+    border: 1px #a38492 solid;
+}
+.p6 .ewm{
+    right: 0;
+}
+.p6 .share-icon {
+    margin-right: 30px;
+}
+.p6 .share_pop {
+    display: none;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000;
+    overflow: auto;
+    color:#fff;
+    text-align: center;
 }

@@ -10,11 +10,20 @@
     <meta name="apple-touch-fullscreen" content="yes" />
     <meta name="format-detection" content="telephone=no" />
     <script src="js-subject/device.js"></script>
-    <title>cosmo绘本</title>
+    <title>聚绘玩够新潮 COSMO时髦绘本画出闪亮人生</title>
     <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
 </head>
 <body>
+<div class="loadingC">
+    <div class="loadingC_1">
+        <div class="loading">
+            <div class="ld1"></div>
+            <div class="ld2"></div>
+        </div>
+    </div>
+</div>
 <div id="pack" class="pack"></div>
+<div class="slide_tip">左右滑动<br>查看更多精彩作品</div>
 <script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
 <!-- p0 -->
@@ -88,13 +97,23 @@
 <!-- p2 -->
 <!-- p3 -->
 <script type="text/x-handlebars-template" id="p3">
-    <img data-src="{{IMG_DIR}}/p3/tit.png" class="tit"/>
+    <!--<img data-src="{{IMG_DIR}}/p3/tit.png" class="tit"/>-->
     <!--list-->
     <div class="img-pack" id="img-pack"></div>
     <!--arrow-->
     <div class="p3_arr">
         <img data-src="{{IMG_DIR}}/p3/arrow_lf.png" class="arrow_lf"/>
         <img data-src="{{IMG_DIR}}/p3/arrow_rt.png" class="arrow_rt"/>
+    </div>
+    <!--daren-->
+    <div class="name">
+        <img data-src="{{IMG_DIR}}/p3/name/1.png" class="show"/>
+        <img data-src="{{IMG_DIR}}/p3/name/2.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/3.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/4.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/5.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/6.png"/>
+        <img data-src="{{IMG_DIR}}/p3/name/7.png"/>
     </div>
     <!--tips-->
     <img data-src="{{IMG_DIR}}/p3/tips.png" class="tips"/>
@@ -155,6 +174,32 @@
     <img data-src="{{IMG_DIR}}/p5/rt_pro.png" class="pro rt_pro"/>
     <img data-src="{{IMG_DIR}}/p5/btm_pro.png" class="pro btm_pro"/>
 </script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p6">
+    <img data-src="{{IMG_DIR}}/p6/top.png" class="top"/>
+    <img data-src="{{IMG_DIR}}/p6/tit.png" class="tit"/>
+    <div class="share">
+        <div class="share_link">
+            <div class="st">
+                <p>分享到：&nbsp;</p>
+                <img data-src="{{IMG_DIR}}/p6/share/wx.png" class="share-icon" data-tap="share_pop_show"/>
+                <img data-src="{{IMG_DIR}}/p6/share/sina.png" class="share-icon" data-tap="share_sina"/>
+            </div>
+            <div class="line"></div>
+            <div class="sb">
+                <p>扫一扫&nbsp;约吧</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img data-src="{{IMG_DIR}}/p6/share/hicosmo.png" data-tap="m_link"/>
+            </div>
+        </div>
+        <!--<div class="ewm">-->
+            <!--<img data-src="{{IMG_DIR}}/p6/share/ewm.jpg"/>-->
+        <!--</div>-->
+    </div>
+    <div class="share_pop" data-tap="share_pop_hide">
+        <img data-src="{{IMG_DIR}}/p6/share/wx_share.gif" data-tap="share_pop_hide"/></div>
+    </div>
+</script>
 <!-- p6 -->
 <script type="text/javascript">
     var _dir = (function (){
@@ -173,16 +218,15 @@
 </script>
 <script type="text/javascript">
     var shareData = {
-        tit:"",
-        desc:"",
+        tit:"快把我带回家！COSMO时髦绘本画出闪亮人生",
+        desc:"你想成为一个时尚有趣的COSMO girl吗？跟我们一起打开这本时髦笔记吧！",
         link:String(window.location.href),
         imgUrl:ImgDir('/weixin.jpg')
     };
 </script>
 <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<!--<script type="text/javascript" src="js-subject/fliza.min.js"></script>-->
-<!--<script type="text/javascript" src="js-subject/iscroll.js"></script>-->
-<script type="text/javascript" src="js-subject/index@.js"></script>
+<!--<script type="text/javascript" src="js-subject/index@.js"></script>-->
+<script type="text/javascript" src="js-subject/index.min.js"></script>
 <!--统计代码-->
 <script>
     var _hmt = _hmt || [];
