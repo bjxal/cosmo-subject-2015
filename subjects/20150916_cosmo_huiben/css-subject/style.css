@@ -19,6 +19,7 @@ ul,li{
     padding: 0;
 }
 body{
+    font-family: "Microsoft yahei", Helvetica, Arial, Verdana, sans-serif;
 }
 .mrg{
     width: 100%;
@@ -67,12 +68,16 @@ body{
     height: 150px;
     z-index: 1;
     top: 50%;
+    transform: translate(0,-50%);
     -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
 }
 .loading div{
     position: absolute;
     bottom:0;
+    transition: all ease-in-out 0.8s;
     -webkit-transition: all ease-in-out 0.8s;
+    -moz-transition: all ease-in-out 0.8s;
 }
 .ld1{
     width: 100%;
@@ -86,10 +91,18 @@ body{
     background: url(../img-subject/p0/loading2.png) no-repeat center bottom;
     background-size: auto 150px;
     z-index: 1;
+    animation: p0_load_ani2 3.5s linear 1 normal;
     -webkit-animation: p0_load_ani 3.5s linear 1 normal;
+    -moz-animation: p0_load_ani2 3.5s linear 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p0_load_ani{
+    0%{height:0;}
+    100%{height:100%;}
+}
+@keyframes p0_load_ani2{
     0%{height:0;}
     100%{height:100%;}
 }
@@ -106,7 +119,9 @@ body{
     overflow: hidden;
     position: absolute;
     left: 50%;
+    transform: translate(-50%,0);
     -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
     top: 105px;
     border-right:7px solid #000000;
     border-bottom:10px solid #000000;
@@ -125,12 +140,20 @@ body{
     /*-webkit-transition: all linear 2s;*/
 }
 .p0.focus .c .c_2{
+    animation: p0_c_2_ani2 1s linear 1 normal;
     -webkit-animation: p0_c_2_ani 1s linear 1 normal;
+    -moz-animation: p0_c_2_ani2 1s linear 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p0_c_2_ani{
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+@keyframes p0_c_2_ani2{
+0%{opacity: 0;}
+100%{opacity: 1;}
 }
 .p0 .fl_1{
     top: 60px;
@@ -142,15 +165,25 @@ body{
 }
 .p0 .fl_1,.p0 .fl_2{
     opacity: 0;
+    transform: scale(0.5);
     -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transition: all linear 0.3s;
     -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
 }
 .p0 .fl_1.show,.p0 .fl_2.show{
     /*opacity: 1;*/
     /*opacity: 1;*/
+    transform: scale(1);
     -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    animation:  p0_flower_rotate3 3s linear 0.5s infinite normal;
     -webkit-animation:  p0_flower_rotate 3s linear 0.5s infinite normal;
+    -moz-animation:  p0_flower_rotate3 3s linear 0.5s infinite normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p0 .fl_1.show{
     right: -35px;
@@ -162,6 +195,10 @@ body{
     0%{opacity: 1;-webkit-transform: rotate(0deg);}
     100%{opacity: 1;-webkit-transform: rotate(360deg);}
 }
+@keyframes p0_flower_rotate3{
+    0%{opacity: 1;transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    100%{opacity: 1;transform: rotate(360deg);-moz-transform: rotate(360deg);}
+}
 @-webkit-keyframes p0_flower_rotate2{
     0%{opacity: 1;-webkit-transform: rotate(0deg) scale(1.2);}
     50%{opacity: 0.8;-webkit-transform: rotate(360deg) scale(0.8);}
@@ -171,20 +208,28 @@ body{
     left: 0;
     bottom: -20%;
     opacity: 0;
+    transform: translate(-50%,0) scale(0.1);
     -webkit-transform: translate(-50%,0) scale(0.1);
+    -moz-transform: translate(-50%,0) scale(0.1);
+    transition: all linear 0.3s;
     -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
 }
 .p0.focus .tit{
     /*opacity: 1;*/
     /*left: 50%;*/
     /*bottom: 30px;*/
     /*-webkit-transform: translate(-50%,0) scale(1);*/
+    animation:  p0_tit_ani 0.3s linear 1s 1 normal;
     -webkit-animation:  p0_tit_ani 0.3s linear 1s 1 normal;
+    -moz-animation:  p0_tit_ani 0.3s linear 1s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p0_tit_ani{
-    0%{opacity: 0; left: 0; bottom: -20%; -webkit-transform: translate(-50%,0) scale(0.1);}
-    100%{opacity: 1; left: 50%; bottom: 30px; -webkit-transform: translate(-50%,0) scale(1);}
+    0%{opacity: 0; left: 0; bottom: -20%;transform: translate(-50%,0) scale(0.1); -webkit-transform: translate(-50%,0) scale(0.1); -moz-transform: translate(-50%,0) scale(0.1);}
+    100%{opacity: 1; left: 50%; bottom: 30px;transform: translate(-50%,0) scale(1); -webkit-transform: translate(-50%,0) scale(1); -moz-transform: translate(-50%,0) scale(1);}
 }
 /*p1*/
 .p1 .c{
@@ -196,7 +241,9 @@ body{
     top: 50%;
     left: 50%;
     z-index: 1;
+    transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
     padding-top: 40px;
     text-align: center;
 }
@@ -204,7 +251,9 @@ body{
     opacity: 0;
     display: block;
     margin: 80px auto;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 .p1 .c img.btn{
     opacity: 0;
@@ -212,69 +261,129 @@ body{
     bottom: 32px;
     left: 50%;
     margin: 0;
-    margin-left: -21px;
+    margin-left: -35px;
     /*-webkit-animation:  p0_flower_rotate 2s linear infinite normal;*/
 }
 .p1.focus .c img:nth-child(1)/*.show*/{
     /*opacity: 1;*/
     /*margin: 32px auto;*/
+    animation: p1_img_ani 0.5s linear 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(2){
+    animation: p1_img_ani 0.5s linear 0.3s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 0.3s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 0.3s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(3){
+    animation: p1_img_ani 0.5s linear 0.6s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 0.6s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 0.6s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(4){
+    animation: p1_img_ani 0.5s linear 0.9s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 0.9s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 0.9s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(5){
+    animation: p1_img_ani 0.5s linear 1.2s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 1.2s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 1.2s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(6){
+    animation: p1_img_ani 0.5s linear 1.5s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 1.5s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 1.5s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(7){
+    animation: p1_img_ani 0.5s linear 1.8s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 1.8s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 1.8s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(8){
+    animation: p1_img_ani 0.5s linear 2.1s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 2.1s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 2.1s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(9){
+    animation: p1_img_ani 0.5s linear 2.4s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 2.4s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 2.4s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(10){
+    animation: p1_img_ani 0.5s linear 2.7s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 2.7s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 2.7s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(11){
+    animation: p1_img_ani 0.5s linear 3s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 3s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 3s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(12){
+    animation: p1_img_ani 0.5s linear 3.3s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 3.3s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 3.3s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(13){
+    animation: p1_img_ani 0.5s linear 3.6s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 3.6s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 3.6s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p1.focus .c img:nth-child(14){
     /*opacity: 1;*/
+    animation: p0_flower_rotate 2s linear 3.9s infinite normal;
     -webkit-animation: p0_flower_rotate 2s linear 3.9s infinite normal;
+    -moz-animation: p0_flower_rotate 2s linear 3.9s infinite normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p1_img_ani{
+    0%{opacity: 0;  margin: 80px auto;}
+    100%{opacity: 1; margin: 32px auto;}
+}
+@keyframes p1_img_ani{
     0%{opacity: 0;  margin: 80px auto;}
     100%{opacity: 1; margin: 32px auto;}
 }
@@ -299,8 +408,12 @@ body{
     left: 198px;
 }
 .p1 .fl_3,.p1 .fl_4,.p1 .fl_5{
+    transition: all linear 1s;
     -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    animation:  p0_flower_rotate2 4s linear infinite normal;
     -webkit-animation:  p0_flower_rotate2 4s linear infinite normal;
+    -moz-animation:  p0_flower_rotate2 4s linear infinite normal;
 }
 /*p2*/
 .p2 .bg{
@@ -332,44 +445,84 @@ body{
 .p2.focus .c img:nth-child(1)/*.show*/{
     /*opacity: 1;*/
     /*margin: 32px auto;*/
+    animation: p2_img_ani 0.5s linear 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(2){
+    animation: p2_img_ani 0.5s linear 0.3s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 0.3s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 0.3s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(3){
+    animation: p2_img_ani 0.5s linear 0.6s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 0.6s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 0.6s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(4){
+    animation: p2_img_ani 0.5s linear 0.9s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 0.9s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 0.9s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(5){
+    animation: p2_img_ani 0.5s linear 1.2s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 1.2s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 1.2s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(6){
+    animation: p2_img_ani 0.5s linear 1.5s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 1.5s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 1.5s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(7){
+    animation: p2_img_ani 0.5s linear 1.8s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 1.8s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 1.8s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(8){
+    animation: p2_img_ani 0.5s linear 2.1s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 2.1s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 2.1s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(9){
+    animation: p2_img_ani 0.5s linear 2.4s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 2.4s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 2.4s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p2.focus .c img:nth-child(10){
+    animation: p2_img_ani 0.5s linear 2.7s 1 normal;
     -webkit-animation: p2_img_ani 0.5s linear 2.7s 1 normal;
+    -moz-animation: p2_img_ani 0.5s linear 2.7s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p2_img_ani{
     0%{opacity: 0;  left: -180px;}
@@ -391,12 +544,18 @@ body{
     width: 1px;
     height: 13px;
     background: url(../img-subject/p2/line.png) no-repeat;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 .p2.focus .line_c .line{
     /*width: 435px;*/
+    animation: p2_line_ani 0.8s linear 3.6s 1 normal;
     -webkit-animation: p2_line_ani 0.8s linear 3.6s 1 normal;
+    -moz-animation: p2_line_ani 0.8s linear 3.6s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p2_line_ani{
     0%{width: 1px;}
@@ -409,23 +568,29 @@ body{
     width: 90px;
     height: 114px;
     opacity: 0;
-    margin-top: -65px;
+    margin-top: -75px;
     background: url(../img-subject/p2/pen.png) no-repeat;
     background-size: 90px auto;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 .p2.focus .line_c .pen{
+    animation: p2_pen_ani 0.8s linear 3.6s 1 alternate;
     -webkit-animation: p2_pen_ani 0.8s linear 3.6s 1 alternate;
+    -moz-animation: p2_pen_ani 0.8s linear 3.6s 1 alternate;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p2_pen_ani{
-    0%{left:0; margin-top: -70px; opacity: 1;}
-    20%{left: 87px; margin-top: -85px; opacity: 1;}
-    40%{left:174px; margin-top: -70px; opacity: 1;}
-    60%{left:261px; margin-top: -85px; opacity: 1;}
-    80%{left:348px; margin-top: -70px; opacity: 1;}
-    98%{left: 426px; margin-top: -85px; opacity: 1;}
-    100%{left: 435px; margin-top: -70px; opacity: 0;}
+    0%{left:0; margin-top: -75px; opacity: 1;}
+    20%{left: 87px; margin-top: -90px; opacity: 1;}
+    40%{left:174px; margin-top: -75px; opacity: 1;}
+    60%{left:261px; margin-top: -90px; opacity: 1;}
+    80%{left:348px; margin-top: -75px; opacity: 1;}
+    98%{left: 426px; margin-top: -90px; opacity: 1;}
+    100%{left: 435px; margin-top: -75px; opacity: 0;}
 }
 /*p3*/
 .p3 .img-pack{
@@ -440,13 +605,17 @@ body{
     position: absolute;
     top: 35px;
     left: 50%;
+    transform: translate(-50%,0);
     -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
 }
 .p3 .tips{
     position: absolute;
     bottom: 100px;
     left: 50%;
+    transform: translate(-50%,0);
     -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
 }
 .p3 .p3_arr{
     width: 691px;
@@ -466,10 +635,14 @@ body{
     right: 50px;
 }
 .p3.focus .arrow_lf{
+    animation: p3_arr_lf_ani 1.5s ease-in-out infinite normal;
     -webkit-animation: p3_arr_lf_ani 1.5s ease-in-out infinite normal;
+    -moz-animation: p3_arr_lf_ani 1.5s ease-in-out infinite normal;
 }
 .p3.focus .arrow_rt{
+    animation: p3_arr_rt_ani 1.5s ease-in-out infinite normal;
     -webkit-animation: p3_arr_rt_ani 1.5s ease-in-out infinite normal;
+    -moz-animation: p3_arr_rt_ani 1.5s ease-in-out infinite normal;
 }
 @-webkit-keyframes p3_arr_lf_ani{
     0%{opacity: 0; left: 50px;}
@@ -492,12 +665,14 @@ body{
     margin-top: -88px;
 }
 .p3 .name img{
-    /*opacity: 0;*/
-    display: none;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -webkit-transition: all linear 0.1s;
 }
 .p3 .name img.show{
-    /*opacity: 1;*/
-    display: inline;
+    opacity: 1;
 }
 .slide_tip{
     display: none;
@@ -525,7 +700,9 @@ body{
     opacity: 0;
     display: block;
     margin: 80px auto;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 /*.p4 .c img.show{*/
     /*opacity: 1;*/
@@ -537,46 +714,90 @@ body{
 .p4.focus .c img:nth-child(1)/*.show*/{
     /*opacity: 1;*/
     /*margin: 32px auto;*/
+    animation: p1_img_ani 0.5s linear 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(2){
+    animation: p1_img_ani 0.5s linear 0.3s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 0.3s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 0.3s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(3){
+    animation: p1_img_ani 0.5s linear 0.6s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 0.6s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 0.6s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(4){
+    animation: p1_img_ani 0.5s linear 0.9s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 0.9s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 0.9s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(5){
+    animation: p1_img_ani 0.5s linear 1.2s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 1.2s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 1.2s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(6){
+    animation: p1_img_ani 0.5s linear 1.5s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 1.5s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 1.5s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(7){
+    animation: p1_img_ani 0.5s linear 1.8s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 1.8s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 1.8s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(8){
+    animation: p1_img_ani 0.5s linear 2.1s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 2.1s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 2.1s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(9){
+    animation: p1_img_ani 0.5s linear 2.4s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 2.4s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 2.4s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .c img:nth-child(10){
+    animation: p1_img_ani 0.5s linear 2.7s 1 normal;
     -webkit-animation: p1_img_ani 0.5s linear 2.7s 1 normal;
+    -moz-animation: p1_img_ani 0.5s linear 2.7s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p4_img_ani{
+    0%{opacity: 0;  margin: 80px 0;}
+    100%{opacity: 1; margin: 45px auto 30px auto;}
+}
+@keyframes p4_img_ani{
     0%{opacity: 0;  margin: 80px 0;}
     100%{opacity: 1; margin: 45px auto 30px auto;}
 }
@@ -595,24 +816,42 @@ body{
     width: 1px;
     height: 13px;
     background: url(../img-subject/p4/line_1.png) no-repeat;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 .p4 .line_c2 span.line{
     background: url(../img-subject/p4/line_2.png) no-repeat;
 }
 .p4.focus .line_c .line{
+    animation: p4_line1_ani 0.8s linear 4s 1 normal;
     -webkit-animation: p4_line1_ani 0.8s linear 4s 1 normal;
+    -moz-animation: p4_line1_ani 0.8s linear 4s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p4_line1_ani{
     0%{width: 1px;}
     100%{width: 298px;}
 }
+@keyframes p4_line1_ani{
+    0%{width: 1px;}
+    100%{width: 298px;}
+}
 .p4.focus .line_c2 .line{
+    animation: p4_line2_ani 0.8s linear 5s 1 normal;
     -webkit-animation: p4_line2_ani 0.8s linear 5s 1 normal;
+    -moz-animation: p4_line2_ani 0.8s linear 5s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p4_line2_ani{
+    0%{width: 1px;}
+    100%{width: 185px;}
+}
+@keyframes p4_line2_ani{
     0%{width: 1px;}
     100%{width: 185px;}
 }
@@ -626,35 +865,63 @@ body{
     margin-top: -88px;
     background: url(../img-subject/p2/pen.png) no-repeat;
     background-size: 90px auto;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 .p4.focus .line_c .pen{
     /*left: 300px;*/
+    animation: p4_pen1_ani 0.8s linear 4s 1 alternate;
     -webkit-animation: p4_pen1_ani 0.8s linear 4s 1 alternate;
+    -moz-animation: p4_pen1_ani 0.8s linear 4s 1 alternate;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p4.focus .line_c2 .pen{
     /*left: 190px;*/
+    animation: p4_pen2_ani 0.8s linear 5s alternate;
     -webkit-animation: p4_pen2_ani 0.8s linear 5s alternate;
+    -moz-animation: p4_pen2_ani 0.8s linear 5s alternate;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p4_pen1_ani{
-    0%{left:0; margin-top: -70px; opacity: 1;}
-    20%{left: 60px; margin-top: -85px; opacity: 1;}
-    40%{left:120px; margin-top: -70px; opacity: 1;}
-    60%{left:180px; margin-top: -85px; opacity: 1;}
-    80%{left:240px; margin-top: -70px; opacity: 1;}
-    98%{left: 294px; margin-top: -85px; opacity: 1;}
-    100%{left: 300px; margin-top: -70px; opacity: 0;}
+    0%{left:0; margin-top: -75px; opacity: 1;}
+    20%{left: 60px; margin-top: -90px; opacity: 1;}
+    40%{left:120px; margin-top: -75px; opacity: 1;}
+    60%{left:180px; margin-top: -90px; opacity: 1;}
+    80%{left:240px; margin-top: -75px; opacity: 1;}
+    98%{left: 294px; margin-top: -90px; opacity: 1;}
+    100%{left: 300px; margin-top: -75px; opacity: 0;}
+}
+@keyframes p4_pen1_ani{
+    0%{left:0; margin-top: -75px; opacity: 1;}
+    20%{left: 60px; margin-top: -90px; opacity: 1;}
+    40%{left:120px; margin-top: -75px; opacity: 1;}
+    60%{left:180px; margin-top: -90px; opacity: 1;}
+    80%{left:240px; margin-top: -75px; opacity: 1;}
+    98%{left: 294px; margin-top: -90px; opacity: 1;}
+    100%{left: 300px; margin-top: -75px; opacity: 0;}
 }
 @-webkit-keyframes p4_pen2_ani{
-    0%{left:0; margin-top: -70px; opacity: 1;}
-    20%{left: 38px; margin-top: -85px; opacity: 1;}
-    40%{left:76px; margin-top: -70px; opacity: 1;}
-    60%{left:114px; margin-top: -85px; opacity: 1;}
-    80%{left:152px; margin-top: -70px; opacity: 1;}
-    98%{left: 186px; margin-top: -85px; opacity: 1;}
-    100%{left: 190px; margin-top: -70px; opacity: 0;}
+    0%{left:0; margin-top: -75px; opacity: 1;}
+    20%{left: 38px; margin-top: -90px; opacity: 1;}
+    40%{left:76px; margin-top: -75px; opacity: 1;}
+    60%{left:114px; margin-top: -90px; opacity: 1;}
+    80%{left:152px; margin-top: -75px; opacity: 1;}
+    98%{left: 186px; margin-top: -90px; opacity: 1;}
+    100%{left: 190px; margin-top: -75px; opacity: 0;}
+}
+@keyframes p4_pen2_ani{
+    0%{left:0; margin-top: -75px; opacity: 1;}
+    20%{left: 38px; margin-top: -90px; opacity: 1;}
+    40%{left:76px; margin-top: -75px; opacity: 1;}
+    60%{left:114px; margin-top: -90px; opacity: 1;}
+    80%{left:152px; margin-top: -75px; opacity: 1;}
+    98%{left: 186px; margin-top: -90px; opacity: 1;}
+    100%{left: 190px; margin-top: -75px; opacity: 0;}
 }
 /*@-webkit-keyframes p4_pen_ani{*/
     /*0%{margin-top: -70px; opacity: 1;}*/
@@ -671,7 +938,9 @@ body{
     top: 47%;
     left: 50%;
     z-index: 1;
+    transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
 }
 .p5 .c_1{
     width: 100%;
@@ -683,7 +952,9 @@ body{
     opacity: 0;
     display: block;
     margin: 80px 0;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 .p5 .c img.show{
     opacity: 1;
@@ -701,44 +972,88 @@ body{
     top: 320px;
     right: 250px;
 }
+.p5 .weishop{
+    display: block;
+    width: 90%;
+    height: 160px;
+    position: absolute;
+    top: 280px;
+    z-index: 1;
+}
 /*.p5 .c img.people.show{*/
     /*margin: 0;*/
 /*}*/
 .p5.focus .c img:nth-child(1)/*.show*/{
     /*opacity: 1;*/
     /*margin: 32px auto;*/
+    animation: p5_img_ani 0.5s linear 1 normal;
     -webkit-animation: p5_img_ani 0.5s linear 1 normal;
+    -moz-animation: p5_img_ani 0.5s linear 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(2){
+    animation: p5_img_ani 0.5s linear 0.3s 1 normal;
     -webkit-animation: p5_img_ani 0.5s linear 0.3s 1 normal;
+    -moz-animation: p5_img_ani 0.5s linear 0.3s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(3){
+    animation: p5_img_ani 0.5s linear 0.6s 1 normal;
     -webkit-animation: p5_img_ani 0.5s linear 0.6s 1 normal;
+    -moz-animation: p5_img_ani 0.5s linear 0.6s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(4){
+    animation: p5_img_ani 0.5s linear 0.9s 1 normal;
     -webkit-animation: p5_img_ani 0.5s linear 0.9s 1 normal;
+    -moz-animation: p5_img_ani 0.5s linear 0.9s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(5){
+    animation: p5_img_ani 0.5s linear 1.2s 1 normal;
     -webkit-animation: p5_img_ani 0.5s linear 1.2s 1 normal;
+    -moz-animation: p5_img_ani 0.5s linear 1.2s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(6){
+    animation: p5_img_ani 0.5s linear 1.5s 1 normal;
     -webkit-animation: p5_img_ani 0.5s linear 1.5s 1 normal;
+    -moz-animation: p5_img_ani 0.5s linear 1.5s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(7){
+    animation: p5_peo_ani 0.5s linear 1.8s 1 normal;
     -webkit-animation: p5_peo_ani 0.5s linear 1.8s 1 normal;
+    -moz-animation: p5_peo_ani 0.5s linear 1.8s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 .p5.focus .c img:nth-child(8){
+    animation: p5_hand_ani 0.5s linear 6.8s infinite alternate;
     -webkit-animation: p5_hand_ani 0.5s linear 6.8s infinite alternate;
+    -moz-animation: p5_hand_ani 0.5s linear 6.8s infinite alternate;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_img_ani{
+    0%{opacity: 0;  margin: 80px 0;}
+    100%{opacity: 1; margin: 24px 0;}
+}
+@keyframes p5_img_ani{
     0%{opacity: 0;  margin: 80px 0;}
     100%{opacity: 1; margin: 24px 0;}
 }
@@ -746,9 +1061,17 @@ body{
     0%{opacity: 0;  margin: 80px 0;}
     100%{opacity: 1; margin: 0;}
 }
+@keyframes p5_peo_ani{
+    0%{opacity: 0;  margin: 80px 0;}
+    100%{opacity: 1; margin: 0;}
+}
 @-webkit-keyframes p5_hand_ani{
     0%{opacity: 1; -webkit-transform: scale(0.8);}
     100%{opacity: 1; -webkit-transform: scale(1.2);}
+}
+@keyframes p5_hand_ani{
+    0%{opacity: 1; transform: scale(0.8); -moz-transform: scale(0.8);}
+    100%{opacity: 1; transform: scale(1.2);-moz-transform: scale(1.2);}
 }
 /*p5 line*/
 .p5 .line_c{
@@ -761,14 +1084,24 @@ body{
     width: 1px;
     height: 13px;
     background: url(../img-subject/p5/line.png) no-repeat;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 .p5.focus .line_c .line{
     /*width: 298px;*/
+    animation: p5_line_ani 0.8s linear 2.8s 1 normal;
     -webkit-animation: p5_line_ani 0.8s linear 2.8s 1 normal;
+    -moz-animation: p5_line_ani 0.8s linear 2.8s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_line_ani{
+    0%{width: 0;}
+    100%{width: 298px;}
+}
+@keyframes p5_line_ani{
     0%{width: 0;}
     100%{width: 298px;}
 }
@@ -782,27 +1115,44 @@ body{
     margin-top: -80px;
     background: url(../img-subject/p2/pen.png) no-repeat;
     background-size: 90px auto;
+    transition: all linear 0.8s;
     -webkit-transition: all linear 0.8s;
+    -moz-transition: all linear 0.8s;
 }
 .p5.focus .line_c .pen{
     /*left: 290px;*/
+    animation: p5_pen_ani 0.8s linear 2.8s alternate;
     -webkit-animation: p5_pen_ani 0.8s linear 2.8s alternate;
+    -moz-animation: p5_pen_ani 0.8s linear 2.8s alternate;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pen_ani{
-    0%{left:0; margin-top: -70px; opacity: 1;}
-    20%{left: 60px; margin-top: -85px; opacity: 1;}
-    40%{left:120px; margin-top: -70px; opacity: 1;}
-    60%{left:180px; margin-top: -85px; opacity: 1;}
-    80%{left:240px; margin-top: -70px; opacity: 1;}
-    98%{left: 294px; margin-top: -85px; opacity: 1;}
-    100%{left: 300px; margin-top: -70px; opacity: 0;}
+    0%{left:0; margin-top: -75px; opacity: 1;}
+    20%{left: 60px; margin-top: -90px; opacity: 1;}
+    40%{left:120px; margin-top: -75px; opacity: 1;}
+    60%{left:180px; margin-top: -90px; opacity: 1;}
+    80%{left:240px; margin-top: -75px; opacity: 1;}
+    98%{left: 294px; margin-top: -90px; opacity: 1;}
+    100%{left: 300px; margin-top: -75px; opacity: 0;}
+}
+@keyframes p5_pen_ani{
+    0%{left:0; margin-top: -75px; opacity: 1;}
+    20%{left: 60px; margin-top: -90px; opacity: 1;}
+    40%{left:120px; margin-top: -75px; opacity: 1;}
+    60%{left:180px; margin-top: -90px; opacity: 1;}
+    80%{left:240px; margin-top: -75px; opacity: 1;}
+    98%{left: 294px; margin-top: -90px; opacity: 1;}
+    100%{left: 300px; margin-top: -75px; opacity: 0;}
 }
 /*p5 product img*/
 .p5 .pro{
     position: absolute;
     z-index: 1;
+    transition: all ease 0.3s;
     -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
 }
 .p5 .pro.lf_pro{
     top: 270px;
@@ -812,10 +1162,18 @@ body{
 .p5.focus .pro.lf_pro{
     /*left: -60px;*/
     /*opacity: 1;*/
+    animation: p5_pro_1_ani 0.3s linear 3.5s 1 normal;
     -webkit-animation: p5_pro_1_ani 0.3s linear 3.5s 1 normal;
+    -moz-animation: p5_pro_1_ani 0.3s linear 3.5s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pro_1_ani{
+    0%{left: -200px; opacity: 0;}
+    100%{left: -60px; opacity: 1;}
+}
+@keyframes p5_pro_1_ani{
     0%{left: -200px; opacity: 0;}
     100%{left: -60px; opacity: 1;}
 }
@@ -827,10 +1185,18 @@ body{
 .p5.focus .pro.rt_pro{
     /*right: -55px;*/
     /*opacity: 1;*/
+    animation: p5_pro_2_ani 0.3s linear 4.5s 1 normal;
     -webkit-animation: p5_pro_2_ani 0.3s linear 4.5s 1 normal;
+    -moz-animation: p5_pro_2_ani 0.3s linear 4.5s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pro_2_ani{
+    0%{right: -200px; opacity: 0;}
+    100%{right: -55px; opacity: 1;}
+}
+@keyframes p5_pro_2_ani{
     0%{right: -200px; opacity: 0;}
     100%{right: -55px; opacity: 1;}
 }
@@ -842,10 +1208,18 @@ body{
 .p5.focus .pro.top_pro{
     /*top: 20px;*/
     /*opacity: 1;*/
+    animation: p5_pro_3_ani 0.3s linear 4s 1 normal;
     -webkit-animation: p5_pro_3_ani 0.3s linear 4s 1 normal;
+    -moz-animation: p5_pro_3_ani 0.3s linear 4s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pro_3_ani{
+    0%{top: -100px; opacity: 0;}
+    100%{top: 20px; opacity: 1;}
+}
+@keyframes p5_pro_3_ani{
     0%{top: -100px; opacity: 0;}
     100%{top: 20px; opacity: 1;}
 }
@@ -857,10 +1231,18 @@ body{
 .p5.focus .pro.btm_pro{
     /*bottom: 30px;*/
     /*opacity: 1;*/
+    animation: p5_pro_4_ani 0.3s linear 5s 1 normal;
     -webkit-animation: p5_pro_4_ani 0.3s linear 5s 1 normal;
+    -moz-animation: p5_pro_4_ani 0.3s linear 5s 1 normal;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_pro_4_ani{
+    0%{bottom: -100px; opacity: 0;}
+    100%{bottom: 30px; opacity: 1;}
+}
+@keyframes p5_pro_4_ani{
     0%{bottom: -100px; opacity: 0;}
     100%{bottom: 30px; opacity: 1;}
 }
@@ -900,6 +1282,7 @@ body{
     height: 100%;
 }
 .p6 .share_link p{
+    font-family: "microsoft yahei";
     display: inline-block;
     font-size: 30px;
     color: #000000;
@@ -907,7 +1290,7 @@ body{
     padding-top: 12px;
 }
 .p6 .share_link,.p6 .ewm{
-    width: 55%;
+    width: 360px;
     position: absolute;
 }
 .p6 .share_link{
@@ -941,4 +1324,8 @@ body{
     overflow: auto;
     color:#fff;
     text-align: center;
+}
+.p6 .sb img{
+    float: right;
+    margin-right: 50px;
 }

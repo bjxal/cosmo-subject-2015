@@ -1,4 +1,5 @@
 require("/fliza-ui");
+$(".weixin_jpg").attr("src",ImgDir('/weixin.jpg'));
 Fui.Template.IMG_DIR = ImgDir();
 var PAGE0 = Fui.Template.extend({
     config:{
@@ -128,6 +129,7 @@ var slider = new Fui.PageSlider({
                         slide:function(){
                             var gesture = slider.event.gesture;
                             var page = this.get("curPage");
+                            if(page>6) page=6;
                             $(".p3 .name img").eq(page).addClass("show").siblings().removeClass("show");
                         }
                     },
@@ -159,10 +161,46 @@ var slider = new Fui.PageSlider({
                         {
                             template:'PAGE0',
                             bg:ImgDir('/p3/list/7.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/8.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/9.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/10.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/11.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/12.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/13.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/14.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/15.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/16.jpg')
                         }
                     ]
                 });
-                setTimeout(function(){imgs.render();},1000);
+                setTimeout(function(){imgs.render();},5000);
             }
         }
         , {
