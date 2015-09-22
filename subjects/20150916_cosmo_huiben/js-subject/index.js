@@ -49,11 +49,11 @@ var PAGE0 = Fui.Template.extend({
 Fui.Template.regTpl({
     PAGE0:PAGE0
 });
-//var audio = Fui.Audio({
-//    src:ImgDir('/music.mp3'),
-//    color:"#ee257b",
-//    autoplay:false
-//});
+var audio = Fui.Audio({
+    src:ImgDir('/music.mp3'),
+    color:"#ee257b",
+    autoplay:false
+});
 var mt = false;
 var slider = new Fui.PageSlider({
     el:'#pack',
@@ -96,6 +96,7 @@ var slider = new Fui.PageSlider({
             xtpl:'p0',
             design:function(){
                 var me = this;
+                audio.play();
                 setTimeout(function(){
                     slider.set("lock",false);
                     $(".fui-arrow").css("z-index","1");
@@ -129,7 +130,7 @@ var slider = new Fui.PageSlider({
                         slide:function(){
                             var gesture = slider.event.gesture;
                             var page = this.get("curPage");
-                            if(page>6) page=6;
+                            if(page>8) page=8;
                             $(".p3 .name img").eq(page).addClass("show").siblings().removeClass("show");
                         }
                     },
@@ -182,14 +183,14 @@ var slider = new Fui.PageSlider({
                             template:'PAGE0',
                             bg:ImgDir('/p3/list/12.jpg')
                         },
-                        {
-                            template:'PAGE0',
-                            bg:ImgDir('/p3/list/13.jpg')
-                        },
-                        {
-                            template:'PAGE0',
-                            bg:ImgDir('/p3/list/14.jpg')
-                        },
+                        //{
+                        //    template:'PAGE0',
+                        //    bg:ImgDir('/p3/list/13.jpg')
+                        //},
+                        //{
+                        //    template:'PAGE0',
+                        //    bg:ImgDir('/p3/list/14.jpg')
+                        //},
                         {
                             template:'PAGE0',
                             bg:ImgDir('/p3/list/15.jpg')
@@ -197,6 +198,22 @@ var slider = new Fui.PageSlider({
                         {
                             template:'PAGE0',
                             bg:ImgDir('/p3/list/16.jpg')
+                        },
+                        //{
+                        //    template:'PAGE0',
+                        //    bg:ImgDir('/p3/list/17.jpg')
+                        //},
+                        //{
+                        //    template:'PAGE0',
+                        //    bg:ImgDir('/p3/list/18.jpg')
+                        //},
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/19.jpg')
+                        },
+                        {
+                            template:'PAGE0',
+                            bg:ImgDir('/p3/list/20.jpg')
                         }
                     ]
                 });

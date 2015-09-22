@@ -25,6 +25,36 @@ body{
     width: 100%;
     height: 1px;
 }
+/*muscis*/
+.app-music {
+    padding: 10px 10px 30px 30px;
+    position: absolute;
+    z-index: 100;
+    top: 3%;
+    right: 3%;
+}
+.app-music span {
+    position: relative;
+    display: block;
+    font-size: 26px;
+    padding: 28px;
+    background: url(../img-subject/m-icon.png) no-repeat center;
+    background-size: 100% auto;
+    border:none;
+}
+.app-music.stop b {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ee257b;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
 .fui-arrow:before, .fui-arrow:after{
     background: none;
 }
@@ -127,6 +157,7 @@ body{
     border-bottom:10px solid #000000;
     border-left:14px solid #000000;
     border-top:14px solid #000000;
+    background-color: #ffffff;
 }
 .p0 .c .c_1{
     position: absolute;
@@ -1185,9 +1216,9 @@ body{
 .p5.focus .pro.rt_pro{
     /*right: -55px;*/
     /*opacity: 1;*/
-    animation: p5_pro_2_ani 0.3s linear 4.5s 1 normal;
-    -webkit-animation: p5_pro_2_ani 0.3s linear 4.5s 1 normal;
-    -moz-animation: p5_pro_2_ani 0.3s linear 4.5s 1 normal;
+    animation: p5_pro_2_ani 0.3s linear 3.5s 1 normal;
+    -webkit-animation: p5_pro_2_ani 0.3s linear 3.5s 1 normal;
+    -moz-animation: p5_pro_2_ani 0.3s linear 3.5s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -1208,9 +1239,9 @@ body{
 .p5.focus .pro.top_pro{
     /*top: 20px;*/
     /*opacity: 1;*/
-    animation: p5_pro_3_ani 0.3s linear 4s 1 normal;
-    -webkit-animation: p5_pro_3_ani 0.3s linear 4s 1 normal;
-    -moz-animation: p5_pro_3_ani 0.3s linear 4s 1 normal;
+    animation: p5_pro_3_ani 0.3s linear 3.5s 1 normal;
+    -webkit-animation: p5_pro_3_ani 0.3s linear 3.5s 1 normal;
+    -moz-animation: p5_pro_3_ani 0.3s linear 3.5s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -1231,9 +1262,9 @@ body{
 .p5.focus .pro.btm_pro{
     /*bottom: 30px;*/
     /*opacity: 1;*/
-    animation: p5_pro_4_ani 0.3s linear 5s 1 normal;
-    -webkit-animation: p5_pro_4_ani 0.3s linear 5s 1 normal;
-    -moz-animation: p5_pro_4_ani 0.3s linear 5s 1 normal;
+    animation: p5_pro_4_ani 0.3s linear 3.5s 1 normal;
+    -webkit-animation: p5_pro_4_ani 0.3s linear 3.5s 1 normal;
+    -moz-animation: p5_pro_4_ani 0.3s linear 3.5s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -1328,4 +1359,20 @@ body{
 .p6 .sb img{
     float: right;
     margin-right: 50px;
+}
+
+@-moz-keyframes ball-climbing-dot-jump{
+    0%{-moz-transform:scale(1, 0.7);transform:scale(1, 0.7)}
+    20%{-moz-transform:scale(0.7, 1.2);transform:scale(0.7, 1.2)}
+    40%{-moz-transform:scale(1, 1);transform:scale(1, 1)}
+    50%{bottom:125%}
+    46%{-moz-transform:scale(1, 1);transform:scale(1, 1)}
+    80%{-moz-transform:scale(0.7, 1.2);transform:scale(0.7, 1.2)}
+    90%{-moz-transform:scale(0.7, 1.2);transform:scale(0.7, 1.2)}
+    100%{-moz-transform:scale(1, 0.7);transform:scale(1, 0.7)}
+}
+@-webkit-keyframes ball-fussion-ball1{
+    0%{opacity:.35}
+    50%{top:-100%;left:200%;opacity:1}
+    100%{top:50%;left:100%;z-index:2;opacity:.35}
 }
