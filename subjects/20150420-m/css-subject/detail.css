@@ -35,21 +35,24 @@
   text-align: left;
 }
 .art_content .collect{
-  width: 34px;
-  height: 34px;
+  width: 90px;
+  height: 90px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 34px;
+  background-size: 45px;
   position: absolute;
-  bottom: 14px;
-  right: 16px;
+  bottom: 0;
+  right: 0;
   z-index: 10000;
 }
 .art_content .collect.no{
-  background-image: url(../img-subject/collect/uncollect_icon.png);
+  /*background-image: url(../img-subject/collect/uncollect_icon.png);*/
+  background-image: url(../img-subject/collect/uncollect_icon1.png);
+
 }
 .art_content .collect.yes{
-  background-image: url(../img-subject/collect/collect_icon.png);
+  /*background-image: url(../img-subject/collect/collect_icon.png);*/
+  background-image: url(../img-subject/collect/collect_icon1.png);
 }
 .art_content p {
   clear: both;

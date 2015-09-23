@@ -999,6 +999,7 @@ body{
     z-index: -1;
 }
 .p5 .c img.hand{
+	opacity:0;
     position: absolute;
     top: 320px;
     right: 250px;
@@ -1006,9 +1007,9 @@ body{
 .p5 .weishop{
     display: block;
     width: 90%;
-    height: 160px;
+    height: 250px;
     position: absolute;
-    top: 280px;
+    top: 120px;
     z-index: 1;
 }
 /*.p5 .c img.people.show{*/
@@ -1048,37 +1049,45 @@ body{
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
+/*.p5.focus .c img:nth-child(5){*/
+    /*animation: p5_img_ani 0.5s linear 1.2s 1 normal;*/
+    /*-webkit-animation: p5_img_ani 0.5s linear 1.2s 1 normal;*/
+    /*-moz-animation: p5_img_ani 0.5s linear 1.2s 1 normal;*/
+    /*animation-fill-mode: forwards;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+/*}*/
+/*.p5.focus .c img:nth-child(6){*/
+    /*animation: p5_img_ani 0.5s linear 1.5s 1 normal;*/
+    /*-webkit-animation: p5_img_ani 0.5s linear 1.5s 1 normal;*/
+    /*-moz-animation: p5_img_ani 0.5s linear 1.5s 1 normal;*/
+    /*animation-fill-mode: forwards;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+/*}*/
+/*.p5.focus .c img:nth-child(7){*/
+    /*animation: p5_peo_ani 0.5s linear 1.8s 1 normal;*/
+    /*-webkit-animation: p5_peo_ani 0.5s linear 1.8s 1 normal;*/
+    /*-moz-animation: p5_peo_ani 0.5s linear 1.8s 1 normal;*/
+    /*animation-fill-mode: forwards;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+/*}*/
+/*.p5.focus .c img:nth-child(8){*/
+    /*animation: p5_hand_ani 0.5s linear 4s infinite alternate;*/
+    /*-webkit-animation: p5_hand_ani 0.5s linear 4s infinite alternate;*/
+    /*-moz-animation: p5_hand_ani 0.5s linear 4s infinite alternate;*/
+    /*animation-fill-mode: forwards;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+/*}*/
 .p5.focus .c img:nth-child(5){
-    animation: p5_img_ani 0.5s linear 1.2s 1 normal;
-    -webkit-animation: p5_img_ani 0.5s linear 1.2s 1 normal;
-    -moz-animation: p5_img_ani 0.5s linear 1.2s 1 normal;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-}
-.p5.focus .c img:nth-child(6){
-    animation: p5_img_ani 0.5s linear 1.5s 1 normal;
-    -webkit-animation: p5_img_ani 0.5s linear 1.5s 1 normal;
-    -moz-animation: p5_img_ani 0.5s linear 1.5s 1 normal;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-}
-.p5.focus .c img:nth-child(7){
-    animation: p5_peo_ani 0.5s linear 1.8s 1 normal;
-    -webkit-animation: p5_peo_ani 0.5s linear 1.8s 1 normal;
-    -moz-animation: p5_peo_ani 0.5s linear 1.8s 1 normal;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-}
-.p5.focus .c img:nth-child(8){
-    animation: p5_hand_ani 0.5s linear 6.8s infinite alternate;
-    -webkit-animation: p5_hand_ani 0.5s linear 6.8s infinite alternate;
-    -moz-animation: p5_hand_ani 0.5s linear 6.8s infinite alternate;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
+animation: p5_peo_ani 0.5s linear 1.2s 1 normal;
+-webkit-animation: p5_peo_ani 0.5s linear 1.2s 1 normal;
+-moz-animation: p5_peo_ani 0.5s linear 1.2s 1 normal;
+animation-fill-mode: forwards;
+-webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p5_img_ani{
     0%{opacity: 0;  margin: 80px 0;}
@@ -1193,9 +1202,9 @@ body{
 .p5.focus .pro.lf_pro{
     /*left: -60px;*/
     /*opacity: 1;*/
-    animation: p5_pro_1_ani 0.3s linear 3.5s 1 normal;
-    -webkit-animation: p5_pro_1_ani 0.3s linear 3.5s 1 normal;
-    -moz-animation: p5_pro_1_ani 0.3s linear 3.5s 1 normal;
+    animation: p5_pro_1_ani 0.3s linear 2s 1 normal;
+    -webkit-animation: p5_pro_1_ani 0.3s linear 2s 1 normal;
+    -moz-animation: p5_pro_1_ani 0.3s linear 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -1216,9 +1225,9 @@ body{
 .p5.focus .pro.rt_pro{
     /*right: -55px;*/
     /*opacity: 1;*/
-    animation: p5_pro_2_ani 0.3s linear 3.5s 1 normal;
-    -webkit-animation: p5_pro_2_ani 0.3s linear 3.5s 1 normal;
-    -moz-animation: p5_pro_2_ani 0.3s linear 3.5s 1 normal;
+    animation: p5_pro_2_ani 0.3s linear 2s 1 normal;
+    -webkit-animation: p5_pro_2_ani 0.3s linear 2s 1 normal;
+    -moz-animation: p5_pro_2_ani 0.3s linear 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -1239,9 +1248,9 @@ body{
 .p5.focus .pro.top_pro{
     /*top: 20px;*/
     /*opacity: 1;*/
-    animation: p5_pro_3_ani 0.3s linear 3.5s 1 normal;
-    -webkit-animation: p5_pro_3_ani 0.3s linear 3.5s 1 normal;
-    -moz-animation: p5_pro_3_ani 0.3s linear 3.5s 1 normal;
+    animation: p5_pro_3_ani 0.3s linear 2s 1 normal;
+    -webkit-animation: p5_pro_3_ani 0.3s linear 2s 1 normal;
+    -moz-animation: p5_pro_3_ani 0.3s linear 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -1262,9 +1271,9 @@ body{
 .p5.focus .pro.btm_pro{
     /*bottom: 30px;*/
     /*opacity: 1;*/
-    animation: p5_pro_4_ani 0.3s linear 3.5s 1 normal;
-    -webkit-animation: p5_pro_4_ani 0.3s linear 3.5s 1 normal;
-    -moz-animation: p5_pro_4_ani 0.3s linear 3.5s 1 normal;
+    animation: p5_pro_4_ani 0.3s linear 2s 1 normal;
+    -webkit-animation: p5_pro_4_ani 0.3s linear 2s 1 normal;
+    -moz-animation: p5_pro_4_ani 0.3s linear 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -1293,20 +1302,55 @@ body{
     opacity: 1;
 }
 .p6 .tit{
+	opacity:0;
     position: absolute;
-    top: 30%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%,0);
     -webkit-transform: translate(-50%,0);
+	-moz-transform: translate(-50%,0);
+}
+.p6.focus .tit{
+	animation: p6_tit_ani 0.4s linear 0.3s 1 normal;
+	-webkit-animation: p6_tit_ani 0.4s linear 0.3s 1 normal;
+	-moz-animation: p6_tit_ani 0.4s linear 0.3 1 normal;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes p6_tit_ani{
+    0%{top: 100%; opacity: 0;}
+    100%{top: 30%; opacity: 1;}
+}
+@keyframes p6_tit_ani{
+    0%{top: 100%; opacity: 0;}
+    100%{top: 30%; opacity: 1;}
 }
 .p6 .share{
+	opacity:0;
     width: 682px;
     position: absolute;
-    bottom: 10%;
+    bottom: -60%;
     left: 50%;
     -webkit-transform: translate(-50%,0);
     height: 351px;
     background: url(../img-subject/p6/bg_2.png) no-repeat center;
+}
+.p6.focus .share{
+	animation: p6_share_ani 0.4s linear 0.4s 1 normal;
+	-webkit-animation: p6_share_ani 0.4s linear 0.4s 1 normal;
+	-moz-animation: p6_share_ani 0.4s linear 0.4s 1 normal;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes p6_share_ani{
+    0%{bottom: -60%; opacity: 0;}
+    100%{bottom: 10%; opacity: 1;}
+}
+@keyframes p6_share_ani{
+    0%{bottom: -60%; opacity: 0;}
+    100%{bottom: 10%; opacity: 1;}
 }
 .p6 .share_link{
     padding-left: 40px;

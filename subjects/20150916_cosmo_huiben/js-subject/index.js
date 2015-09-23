@@ -130,15 +130,15 @@ var slider = new Fui.PageSlider({
                         slide:function(){
                             var gesture = slider.event.gesture;
                             var page = this.get("curPage");
-                            if(page>8) page=8;
+                            if(page>6) page=6;
                             $(".p3 .name img").eq(page).addClass("show").siblings().removeClass("show");
                         }
                     },
                     data:[
-                        {
-                            template:'PAGE0',
-                            bg:ImgDir('/p3/list/1.jpg')
-                        },
+                        //{
+                        //    template:'PAGE0',
+                        //    bg:ImgDir('/p3/list/1.jpg')
+                        //},
                         {
                             template:'PAGE0',
                             bg:ImgDir('/p3/list/2.jpg')
@@ -151,18 +151,18 @@ var slider = new Fui.PageSlider({
                             template:'PAGE0',
                             bg:ImgDir('/p3/list/4.jpg')
                         },
-                        {
-                            template:'PAGE0',
-                            bg:ImgDir('/p3/list/5.jpg')
-                        },
+                        //{
+                        //    template:'PAGE0',
+                        //    bg:ImgDir('/p3/list/5.jpg')
+                        //},
                         {
                             template:'PAGE0',
                             bg:ImgDir('/p3/list/6.jpg')
                         },
-                        {
-                            template:'PAGE0',
-                            bg:ImgDir('/p3/list/7.jpg')
-                        },
+                        //{
+                        //    template:'PAGE0',
+                        //    bg:ImgDir('/p3/list/7.jpg')
+                        //},
                         {
                             template:'PAGE0',
                             bg:ImgDir('/p3/list/8.jpg')
