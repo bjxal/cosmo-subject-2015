@@ -2,12 +2,8 @@ require("/fliza-ui");
 $(".weixin_jpg").attr("src",ImgDir('/weixin.jpg'));
 Fui.Template.IMG_DIR = ImgDir();
 var PAGE0 = Fui.Template.extend({
-    config:{
-    },
-    design:function(){
-        //$(".fui-arrow").hide();
-    }
-    ,getGestureItems:function(){
+    config:{},
+    getGestureItems:function(){
         return[
             {
                 gesture:"tap",
@@ -49,6 +45,22 @@ var PAGE0 = Fui.Template.extend({
                     var url = "http://m.cosmopolitan.com.cn/";
                     window.open(url,'_blank');
                 }
+            },{
+                gesture:"tap",
+                name:"show_video",
+                callback:function(e,$tar){
+                    audio.pause();
+                    var video_1 = $tar.data("videosrc");
+                    var v_html_1 = '<iframe height=480 width=750 src="'+video_1+'" frameborder=0 allowfullscreen></iframe>';
+                    $(".video_pop").fadeIn().find(".video_src").append(v_html_1);
+                }
+            },{
+                gesture:"tap",
+                name:"hide_video",
+                callback:function(e,$tar){
+                    audio.play();
+                    $(".video_pop").fadeOut().find(".video_src").html("");
+                }
             }
         ]
     }
@@ -61,12 +73,12 @@ var audio = Fui.Audio({
     color:"#ee257b",
     autoplay:false
 });
-var mt = false;
+var mt_3 = mt_5 = false;
 var slider = new Fui.PageSlider({
     el:'#pack',
     curPage:0,
-    lock:false,
-    iteration:false,
+    lock:true,
+    iteration:true,
     orient:'y',
     listeners:{
         slide:function(){
@@ -76,21 +88,36 @@ var slider = new Fui.PageSlider({
                 $(".p0 .fl_1,.p0 .fl_2").removeClass("show");
             }
             if(page==3){
-                if(mt==false){
-                    $(".slide_tip").fadeIn();
+                if(mt_3==false){
                     setTimeout(function(){
-                        mt=true;
-                        $(".slide_tip").fadeOut();
-                    },1500);
+                        $(".slide_tip").fadeIn();
+                        setTimeout(function(){
+                            mt_3=true;
+                            $(".slide_tip").fadeOut();
+                        },1500);
+                    },1000)
+                }
+                else $(".slide_tip").fadeOut();
+            }
+            if(page==5){
+                if(mt_5==false){
+                    setTimeout(function() {
+                        $(".slide_tip").fadeIn();
+                        setTimeout(function () {
+                            mt_5 = true;
+                            $(".slide_tip").fadeOut();
+                        }, 1500);
+                    },1000);
                 }
                 else $(".slide_tip").fadeOut();
             }
             if(page==7){
                 $(".fui-arrow").css("z-index","-1");
+                $(".share").show().addClass("focus");
             }
             else{
-
                 $(".fui-arrow").css("z-index","10000");
+                $(".share").hide().removeClass("focus");
             }
         }
     },
@@ -104,27 +131,22 @@ var slider = new Fui.PageSlider({
                 me.$el.append(new Fui.Guagua({
 //            backgroundSrc:"http://m.onlylady.com/m/zhuantiimg/2.jpg",
 //            maskSrc:"http://m.onlylady.com/m/zhuantiimg/1.jpg",
-                    backgroundSrc:ImgDir('/p0/bg.jpg'),
-                    maskSrc:ImgDir('/p0/cover.jpg'),
+                    backgroundSrc:tumo.bg,
+                    maskSrc:tumo.mask,
                     completeValue:15,
                     radius:50,
                     ontouchstart:function(){
-                        //audio.play();
+                        $(".p0 .hand,.p0 .word").fadeOut();
                     },
                     listeners:{
                         complete:function(){
                             slider.set("lock",false);
+                            $(".p0 .tit").addClass("show");
+                            $(".fui-arrow").css("z-index","1");
+                            audio.play();
                         }
                     }
                 }).$el);
-
-
-
-                //audio.play();
-                //setTimeout(function(){
-                //    slider.set("lock",false);
-                //    $(".fui-arrow").css("z-index","1");
-                //},1200);
             }
         }
         ,{
@@ -162,6 +184,11 @@ var slider = new Fui.PageSlider({
     ]
 });
 slider.render();
+//setTimeout(function(){
+//    slider.render();
+    $(".fui-arrow").css("z-index","-1");
+//    $(".loadingC").fadeOut();
+//},3500);
 var picList_3 = [
     {
         height: 750,
@@ -171,12 +198,47 @@ var picList_3 = [
     {
         height: 750,
         width: 400,
-        content: ImgDir('/p3/list/1.jpg')
+        content: ImgDir('/p3/list/2.jpg')
     },
     {
         height: 750,
         width: 400,
-        content: ImgDir('/p3/list/1.jpg')
+        content: ImgDir('/p3/list/3.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/4.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/5.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/6.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/7.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/8.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/9.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/10.jpg')
     }
 ];
 var picList_5 = [
@@ -188,12 +250,37 @@ var picList_5 = [
     {
         height: 750,
         width: 400,
-        content: ImgDir('/p5/list/1.jpg')
+        content: ImgDir('/p5/list/2.jpg')
     },
     {
         height: 750,
         width: 400,
-        content: ImgDir('/p5/list/1.jpg')
+        content: ImgDir('/p5/list/3.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p5/list/4.jpg')
+    },
+    //{
+    //    height: 750,
+    //    width: 400,
+    //    content: ImgDir('/p5/list/5.jpg')
+    //},
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p5/list/6.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p5/list/7.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p5/list/8.jpg')
     }
 ];
 var islider1 = new iSlider({
@@ -214,50 +301,48 @@ var islider2 = new iSlider({
     isLooping: true
     //isVertical: true// ÊÇ·ñ´¹Ö±¹ö¶¯
 });
-//setTimeout(function(){
-//    slider.render();
-//    $(".fui-arrow").css("z-index","-1");
-//    $(".loadingC").fadeOut();
-//},3500);
-
+$(".video_close").on("touchend",function(e){
+    audio.play();
+    $(".video_pop").fadeOut().find(".video_src").html("");
+});
 //weixin share
-//var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+String(window.location.href)+"'";
-//$.ajax({
-//    type:"POST",
-//    ansyc:false,
-//    url:wx_url,
-//    data:{},
-//    dataType:"json",
-//    success:function(data){
-//        wx.config({
-//            //debug: true,
-//            appId: data.appId,
-//            timestamp: data.timestamp,
-//            nonceStr: data.nonceStr,
-//            signature: data.signature,
-//            jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage']
-//        });
-//        wx.ready(function () {
-//            wx.onMenuShareAppMessage({
-//                title: shareData.tit,
-//                desc: shareData.desc,
-//                link: shareData.link,
-//                imgUrl: shareData.imgUrl,
-//                success: function (res) {
-//                },
-//                cancel: function (res) {
-//                }
-//            });
-//            wx.onMenuShareTimeline({
-//                title: shareData.tit,
-//                link: shareData.link,
-//                imgUrl: shareData.imgUrl,
-//                success: function (res) {
-//                },
-//                cancel: function (res) {
-//                }
-//            });
-//        });
-//    },
-//    error:function(){}
-//});
+var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+String(window.location.href)+"'";
+$.ajax({
+    type:"POST",
+    ansyc:false,
+    url:wx_url,
+    data:{},
+    dataType:"json",
+    success:function(data){
+        wx.config({
+            //debug: true,
+            appId: data.appId,
+            timestamp: data.timestamp,
+            nonceStr: data.nonceStr,
+            signature: data.signature,
+            jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage']
+        });
+        wx.ready(function () {
+            wx.onMenuShareAppMessage({
+                title: shareData.tit,
+                desc: shareData.desc,
+                link: shareData.link,
+                imgUrl: shareData.imgUrl,
+                success: function (res) {
+                },
+                cancel: function (res) {
+                }
+            });
+            wx.onMenuShareTimeline({
+                title: shareData.tit,
+                link: shareData.link,
+                imgUrl: shareData.imgUrl,
+                success: function (res) {
+                },
+                cancel: function (res) {
+                }
+            });
+        });
+    },
+    error:function(){}
+});

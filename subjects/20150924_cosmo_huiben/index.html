@@ -29,6 +29,10 @@
         <b></b>
     </span>
 </a>
+<div class="video_pop">
+    <div class="video_close"></div>
+    <div class="video_src"></div>
+</div>
 <div id="pack" class="pack"></div>
 <div class="slide_tip">左右滑动<br>查看更多精彩作品</div>
 <script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
@@ -37,6 +41,7 @@
 <script type="text/x-handlebars-template" id="p0">
     <img data-src="{{IMG_DIR}}/p0/hand.png" class="hand"/>
     <img data-src="{{IMG_DIR}}/p0/word.png" class="word"/>
+    <img data-src="{{IMG_DIR}}/p0/tit.png" class="tit"/>
 </script>
 <!-- p0 -->
 <!-- P1 -->
@@ -66,6 +71,11 @@
         <img data-src="{{IMG_DIR}}/p2/black_1.png"/>
         <img data-src="{{IMG_DIR}}/p2/black_2.png"/>
     </div>
+    <div class="icon">
+        <img data-src="{{IMG_DIR}}/p2/icon/4.png"/>
+        <img data-src="{{IMG_DIR}}/p2/icon/2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/icon/3.png"/>
+    </div>
 </script>
 <!-- p2 -->
 <!-- p3 -->
@@ -82,6 +92,18 @@
 <!-- p3 -->
 <!-- p4 -->
 <script type="text/x-handlebars-template" id="p4">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p4/tit/1.png"/>
+        <img data-src="{{IMG_DIR}}/p4/tit/3.png"/>
+    </div>
+    <!--video-->
+    <div class="video video_1">
+        <img data-src="{{IMG_DIR}}/p4/video_1.jpg" data-tap="show_video" data-videosrc="http://player.youku.com/embed/XMTM0NDcwNDU5Mg=="/>
+        <p>时尚圈百位达人手绘，“时髦笔记”绘出时髦人生</p>
+    </div>
+    <div class="video_desc">
+        <p>时尚圈百位达人秒变COSMOgirl<br>聚在一起<br>涂绘本，拼贴画，各种high<br>coco简直要被小伙伴们的热情感动哭了<br>HiCOSMO High Life</p>
+    </div>
 </script>
 <!-- p4 -->
 <!-- p5 -->
@@ -103,6 +125,7 @@
         <img data-src="{{IMG_DIR}}/p6/tit.png" class="tit"/>
         <div class="buy">
             <img data-src="{{IMG_DIR}}/p6/btn.png" data-tap="buy_link"/>
+            <div class="buy_tip"><img data-src="{{IMG_DIR}}/p6/hand.png"/></div>
             <span class="border_rt"></span>
             <span class="border_top"></span>
             <span class="border_lf"></span>
@@ -111,13 +134,13 @@
     </div>
     <!--icon-->
     <div class="icon_lf">
-        <img data-src="{{IMG_DIR}}/p6/icon/1.png"/>
-        <img data-src="{{IMG_DIR}}/p6/icon/2.png"/>
-        <img data-src="{{IMG_DIR}}/p6/icon/3.png"/>
+        <img data-src="{{IMG_DIR}}/p6/icon/1.png" class="icon_lf_1"/>
+        <img data-src="{{IMG_DIR}}/p6/icon/2.png" class="icon_lf_2"/>
+        <img data-src="{{IMG_DIR}}/p6/icon/3.png" class="icon_lf_3"/>
     </div>
     <div class="icon_rt">
-        <img data-src="{{IMG_DIR}}/p6/icon/4.png"/>
-        <img data-src="{{IMG_DIR}}/p6/icon/5.png"/>
+        <img data-src="{{IMG_DIR}}/p6/icon/4.png" class="icon_rt_1"/>
+        <img data-src="{{IMG_DIR}}/p6/icon/5.png" class="icon_rt_2"/>
     </div>
 </script>
 <!-- p6 -->
@@ -125,7 +148,7 @@
 <script type="text/x-handlebars-template" id="p7">
     <img data-src="{{IMG_DIR}}/p7/top.png" class="top"/>
     <p class="tit">如果你期待更多精彩活动<br>赶快加入COSMOgirl Club<br>在这里<br>你会认识最棒的小伙伴<br>一起秀时装，聊美妆<br>在平淡的生活中玩出新花样</p>
-    <img data-src="{{IMG_DIR}}/p7/people.jpg" class="peo"/>
+    <img data-src="{{IMG_DIR}}/p7/people.png" class="peo"/>
     <img data-src="{{IMG_DIR}}/p7/building.png" class="build"/>
     <div class="flw flw_1">
         <img data-src="{{IMG_DIR}}/p7/flower/1.png"/>
@@ -149,6 +172,8 @@
         </div>
         <div class="finger">
             <img data-src="{{IMG_DIR}}/p7/share/line.png"/>
+            <img data-src="{{IMG_DIR}}/p7/share/finger.jpg"/>
+            <img data-src="{{IMG_DIR}}/p7/share/ewm.jpg"/>
         </div>
     </div>
     <div class="share_pop" data-tap="share_pop_hide">
@@ -180,7 +205,9 @@
     };
 </script>
 <!--<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+<!--<script type="text/javascript" src="http://new-img1.cosmochina.com.cn/cosmo/feature/394/10394/352810715/js-subject/fliza.min.js"></script>-->
 <script type="text/javascript" src="js-subject/islider.js"></script>
+<script type="text/javascript" src="js-subject/bg.js"></script>
 <script type="text/javascript" src="js-subject/index@.js"></script>
 <!--统计代码-->
 <script>
