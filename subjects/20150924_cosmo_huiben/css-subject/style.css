@@ -811,7 +811,7 @@ body{
 .p6 .buy span.border_lf{
     top:0;
     left:0;
-    width: 6px;
+    width: 4px;
     height: 0;
     background: url(../img-subject/p6/line/lf.png) no-repeat right top;
 }
@@ -988,11 +988,11 @@ body{
 }
 @-webkit-keyframes p6_icon_5{
     0%{opacity: 0; top: -500px;}
-    100%{opacity: 1; top: 710px;}
+    100%{opacity: 1; top: 810px;}
 }
 @keyframes p6_icon_5{
     0%{opacity: 0; top: -500px;}
-    100%{opacity: 1; top: 710px;}
+    100%{opacity: 1; top: 810px;}
 }
 .p6.focus .tit{
     animation: p6_tit 0.3s linear 2s 1 normal;
@@ -1027,33 +1027,33 @@ body{
     100%{opacity: 1; bottom: 35px;}
 }
 .p6.focus .buy span.border_rt{
-    animation: p6_border_rt 1.5s linear 3s 1 normal;
-    -webkit-animation: p6_border_rt 1.5s linear 3s 1 normal;
-    -moz-animation: p6_border_rt 1.5s linear 3s 1 normal;
+    animation: p6_border_rt 1.5s linear 3.3s 1 normal;
+    -webkit-animation: p6_border_rt 1.5s linear 3.3s 1 normal;
+    -moz-animation: p6_border_rt 1.5s linear 3.3s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p6.focus .buy span.border_top{
-    animation: border_top 1.5s linear 3s 1 normal;
-    -webkit-animation: border_top 1.5s linear 3s 1 normal;
-    -moz-animation: border_top 1.5s linear 3s 1 normal;
+    animation: border_top 1.5s linear 3.3s 1 normal;
+    -webkit-animation: border_top 1.5s linear 3.3s 1 normal;
+    -moz-animation: border_top 1.5s linear 3.3s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p6.focus .buy span.border_lf{
-    animation: border_lf 1.5s linear 3s 1 normal;
-    -webkit-animation: border_lf 1.5s linear 3s 1 normal;
-    -moz-animation: border_lf 1.5s linear 3s 1 normal;
+    animation: border_lf 1.5s linear 3.3s 1 normal;
+    -webkit-animation: border_lf 1.5s linear 3.3s 1 normal;
+    -moz-animation: border_lf 1.5s linear 3.3s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p6.focus .buy span.border_btm{
-    animation: border_btm 1.5s linear 3s 1 normal;
-    -webkit-animation: border_btm 1.5s linear 3s 1 normal;
-    -moz-animation: border_btm 1.5s linear 3s 1 normal;
+    animation: border_btm 1.5s linear 3.3s 1 normal;
+    -webkit-animation: border_btm 1.5s linear 3.3s 1 normal;
+    -moz-animation: border_btm 1.5s linear 3.3s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;

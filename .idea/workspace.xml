@@ -5,15 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="eileen">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/bg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/1.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/1.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p4/tit/3.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p4/tit/3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/tit/3.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/tit/3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p7/share/ewm.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p7/share/ewm.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p2/tit.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p2/tit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/bg.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/btm.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/btm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/btm.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/btm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/btn.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/btn.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/hand.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/hand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/hand.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/hand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/lf.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/lf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/lf.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/lf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/rt.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/rt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/rt.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/rt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/tit.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/tit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/tit.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/tit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/top.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/top.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/top.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/top.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/js-subject/index.min.js" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/js-subject/index.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.min.js" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/css-subject/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -36,10 +46,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38261998">
+            <state vertical-scroll-proportion="-5.267857">
               <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.09673519">
+              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
               <folding>
                 <element signature="e#4327#6000#0" expanded="false" />
                 <element signature="e#6170#7133#0" expanded="false" />
@@ -65,8 +75,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.2">
-              <caret line="362" column="31" selection-start-line="362" selection-start-column="31" selection-end-line="362" selection-end-column="31" />
+            <state vertical-scroll-proportion="26.3">
+              <caret line="1034" column="39" selection-start-line="1034" selection-start-column="39" selection-end-line="1034" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -137,9 +147,9 @@
         <option value="$PROJECT_DIR$/subjects/20150810_basha_cishanye/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/fliza-style.css" />
         <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/bg.js" />
-        <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js" />
-        <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css" />
         <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html" />
+        <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css" />
+        <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js" />
       </list>
     </option>
   </component>
@@ -824,32 +834,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js">
+    <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
+        <state vertical-scroll-proportion="-5.267857">
+          <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
           <folding>
-            <element signature="e#4327#6000#0" expanded="false" />
-            <element signature="e#6170#7133#0" expanded="false" />
-            <element signature="e#7151#7931#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.2">
-          <caret line="362" column="31" selection-start-line="362" selection-start-column="31" selection-end-line="362" selection-end-column="31" />
+        <state vertical-scroll-proportion="26.3">
+          <caret line="1034" column="39" selection-start-line="1034" selection-start-column="39" selection-end-line="1034" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html">
+    <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38261998">
-          <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.09673519">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4327#6000#0" expanded="false" />
+            <element signature="e#6170#7133#0" expanded="false" />
+            <element signature="e#7151#7931#0" expanded="false" />
           </folding>
         </state>
       </provider>
