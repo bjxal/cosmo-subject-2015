@@ -87,30 +87,30 @@ var slider = new Fui.PageSlider({
             if(page==1){
                 $(".p0 .fl_1,.p0 .fl_2").removeClass("show");
             }
-            if(page==3){
-                if(mt_3==false){
-                    setTimeout(function(){
-                        $(".slide_tip").fadeIn();
-                        setTimeout(function(){
-                            mt_3=true;
-                            $(".slide_tip").fadeOut();
-                        },1500);
-                    },1000)
-                }
-                else $(".slide_tip").fadeOut();
-            }
-            if(page==5){
-                if(mt_5==false){
-                    setTimeout(function() {
-                        $(".slide_tip").fadeIn();
-                        setTimeout(function () {
-                            mt_5 = true;
-                            $(".slide_tip").fadeOut();
-                        }, 1500);
-                    },1000);
-                }
-                else $(".slide_tip").fadeOut();
-            }
+            //if(page==3){
+            //    if(mt_3==false){
+            //        setTimeout(function(){
+            //            $(".slide_tip").fadeIn();
+            //            setTimeout(function(){
+            //                mt_3=true;
+            //                $(".slide_tip").fadeOut();
+            //            },1500);
+            //        },1000)
+            //    }
+            //    else $(".slide_tip").fadeOut();
+            //}
+            //if(page==5){
+            //    if(mt_5==false){
+            //        setTimeout(function() {
+            //            $(".slide_tip").fadeIn();
+            //            setTimeout(function () {
+            //                mt_5 = true;
+            //                $(".slide_tip").fadeOut();
+            //            }, 1500);
+            //        },1000);
+            //    }
+            //    else $(".slide_tip").fadeOut();
+            //}
             if(page==7){
                 $(".fui-arrow").css("z-index","-1");
                 $(".share").show().addClass("focus");
@@ -156,7 +156,7 @@ var slider = new Fui.PageSlider({
         }
         ,{
             template:'PAGE0',
-            bg:ImgDir('/p1/bg.jpg'),
+            bg:ImgDir('/p2/bg.jpg'),
             xtpl:'p2'
         }
         , {
@@ -239,6 +239,21 @@ var picList_3 = [
         height: 750,
         width: 400,
         content: ImgDir('/p3/list/10.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/11.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/12.jpg')
+    },
+    {
+        height: 750,
+        width: 400,
+        content: ImgDir('/p3/list/13.jpg')
     }
 ];
 var picList_5 = [

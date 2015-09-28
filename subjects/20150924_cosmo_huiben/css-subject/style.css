@@ -556,6 +556,67 @@ body{
     100%{right:10px; opacity: 1;}
 }
 /*p3*/
+.p3_arr{
+    opacity: 0;
+    width: 691px;
+    height: 40px;
+    margin: 80px auto;
+    position: relative;
+}
+.focus .p3_arr{
+    animation: p3_arr 0.5s linear 1s 1 normal;
+    -webkit-animation: p3_arr 0.5s linear 1s 1 normal;
+    -moz-animation: p3_arr 0.5s linear 1s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes p3_arr{
+    0%{opacity: 0;margin: 80px auto;}
+    100%{opacity: 1;margin: 15px auto;}
+}
+@keyframes p3_arr{
+    0%{opacity: 0;margin: 80px auto;}
+    100%{opacity: 1;margin: 15px auto;}
+}
+.p3_arr p{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+}
+.arrow_lf,.arrow_rt{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+.arrow_lf{
+    left:50px;
+}
+.arrow_rt{
+    right: 50px;
+}
+.focus .arrow_lf{
+    animation: p3_arr_lf_ani 1.5s ease-in-out infinite normal;
+    -webkit-animation: p3_arr_lf_ani 1.5s ease-in-out infinite normal;
+    -moz-animation: p3_arr_lf_ani 1.5s ease-in-out infinite normal;
+}
+.focus .arrow_rt{
+    animation: p3_arr_rt_ani 1.5s ease-in-out infinite normal;
+    -webkit-animation: p3_arr_rt_ani 1.5s ease-in-out infinite normal;
+    -moz-animation: p3_arr_rt_ani 1.5s ease-in-out infinite normal;
+}
+@-webkit-keyframes p3_arr_lf_ani{
+    0%{opacity: 0; left: 50px;}
+    /*20%{opacity: 1; left: 50px;}*/
+    80%{opacity: 1; left: 20px;}
+    100%{opacity: 0; left: 0;}
+}
+@-webkit-keyframes p3_arr_rt_ani{
+    0%{opacity: 0; right: 50px;}
+    /*20%{opacity: 1; right: 50px;}*/
+    80%{opacity: 1; right: 20px;}
+    100%{opacity: 0; right: 0;}
+}
 .p3 .tit,.p4 .tit,.p5 .tit{
     position: absolute;
     top: 45px;
@@ -599,7 +660,7 @@ body{
     height: 70%;
     width: 90%;
     margin: 0 auto;
-    margin-top: 30%;
+    margin-top: 27%;
     background-size: 100%;
     overflow: hidden;
     position: relative;
@@ -780,11 +841,11 @@ body{
 }
 .p6 .buy{
     position: absolute;
-    bottom: 55px;
+    bottom: 35px;
     left: 50%;
-    transform: translate(-50%,0);
-    -webkit-transform: translate(-50%,0);
-    -moz-transform: translate(-50%,0);
+    transform: translate(-50%,0) scale(25);
+    -webkit-transform: translate(-50%,0) scale(25);
+    -moz-transform: translate(-50%,0) scale(25);
     opacity: 0;
 }
 .p6 .buy img{
@@ -828,18 +889,18 @@ body{
     right: -30px;
     width: 60px;
     top: 40px;
-    animation: p6_buy_tip 0.5s linear 5s 1 normal;
-    -webkit-animation: p6_buy_tip 0.5s linear 5s 1 normal;
-    -moz-animation: p6_buy_tip 0.5s linear 5s 1 normal;
+    animation: p6_buy_tip 0.5s linear 3.8s 1 normal;
+    -webkit-animation: p6_buy_tip 0.5s linear 3.8s 1 normal;
+    -moz-animation: p6_buy_tip 0.5s linear 3.8s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p6 .buy .buy_tip img{
     width: 100%;
-    animation: p6_tip_hand 0.5s linear 5s infinite alternate;
-    -webkit-animation: p6_tip_hand 0.5s linear 5s infinite alternate;
-    -moz-animation: p6_tip_hand 0.5s linear 5s infinite alternate;
+    animation: p6_tip_hand 0.5s linear 3.8s infinite alternate;
+    -webkit-animation: p6_tip_hand 0.5s linear 3.8s infinite alternate;
+    -moz-animation: p6_tip_hand 0.5s linear 3.8s infinite alternate;
 }
 @-webkit-keyframes p6_buy_tip{
     0%{opacity: 0;}
@@ -995,9 +1056,9 @@ body{
     100%{opacity: 1; top: 810px;}
 }
 .p6.focus .tit{
-    animation: p6_tit 0.3s linear 2s 1 normal;
-    -webkit-animation: p6_tit 0.3s linear 2s 1 normal;
-    -moz-animation: p6_tit 0.3s linear 2s 1 normal;
+    animation: p6_tit 0.3s linear 1.5s 1 normal;
+    -webkit-animation: p6_tit 0.3s linear 1.5s 1 normal;
+    -moz-animation: p6_tit 0.3s linear 1.5s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -1011,49 +1072,49 @@ body{
     100%{opacity: 1; top: 30px;}
 }
 .p6.focus .buy{
-    animation: p6_btn 0.3s linear 2.5s 1 normal;
-    -webkit-animation: p6_btn 0.3s linear 2.5s 1 normal;
-    -moz-animation: p6_btn 0.3s linear 2.5s 1 normal;
+    animation: p6_btn 0.3s ease-in 2s 1 normal;
+    -webkit-animation: p6_btn 0.3s ease-in 2s 1 normal;
+    -moz-animation: p6_btn 0.3s ease-in 2s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 @-webkit-keyframes p6_btn{
-    0%{opacity: 0; bottom: 55px;}
-    100%{opacity: 1; bottom: 35px;}
+    0%{opacity: 0; -webkit-transform: translate(-50%,0) scale(25);}
+    100%{opacity: 1; -webkit-transform: translate(-50%,0) scale(1);}
 }
 @keyframes p6_btn{
-    0%{opacity: 0; bottom: 55px;}
-    100%{opacity: 1; bottom: 35px;}
+    0%{opacity: 0; transform: translate(-50%,0) scale(4); -moz-transform: translate(-50%,0) scale(4);}
+    100%{opacity: 1; transform: translate(-50%,0) scale(1); -moz-transform: translate(-50%,0) scale(1);}
 }
 .p6.focus .buy span.border_rt{
-    animation: p6_border_rt 1.5s linear 3.3s 1 normal;
-    -webkit-animation: p6_border_rt 1.5s linear 3.3s 1 normal;
-    -moz-animation: p6_border_rt 1.5s linear 3.3s 1 normal;
+    animation: p6_border_rt 0.3s linear 3s 1 normal;
+    -webkit-animation: p6_border_rt 0.3s linear 3s 1 normal;
+    -moz-animation: p6_border_rt 0.3s linear 3s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p6.focus .buy span.border_top{
-    animation: border_top 1.5s linear 3.3s 1 normal;
-    -webkit-animation: border_top 1.5s linear 3.3s 1 normal;
-    -moz-animation: border_top 1.5s linear 3.3s 1 normal;
+    animation: border_top 0.3s linear 3s 1 normal;
+    -webkit-animation: border_top 0.3s linear 3s 1 normal;
+    -moz-animation: border_top 0.3s linear 3s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p6.focus .buy span.border_lf{
-    animation: border_lf 1.5s linear 3.3s 1 normal;
-    -webkit-animation: border_lf 1.5s linear 3.3s 1 normal;
-    -moz-animation: border_lf 1.5s linear 3.3s 1 normal;
+    animation: border_lf 0.3s linear 3s 1 normal;
+    -webkit-animation: border_lf 0.3s linear 3s 1 normal;
+    -moz-animation: border_lf 0.3s linear 3s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
 .p6.focus .buy span.border_btm{
-    animation: border_btm 1.5s linear 3.3s 1 normal;
-    -webkit-animation: border_btm 1.5s linear 3.3s 1 normal;
-    -moz-animation: border_btm 1.5s linear 3.3s 1 normal;
+    animation: border_btm 0.3s linear 3s 1 normal;
+    -webkit-animation: border_btm 0.3s linear 3s 1 normal;
+    -moz-animation: border_btm 0.3s linear 3s 1 normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;

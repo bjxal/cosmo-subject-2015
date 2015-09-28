@@ -5,25 +5,152 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb18578-9aeb-4e67-9ecc-5f76f6929b64" name="Default" comment="eileen">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/btm.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/btm.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/btm.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/btm.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/btn.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/btn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/btn.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/btn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/hand.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/hand.png" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben2.zip" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\css-subject\fliza-style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\css-subject\fliza-style1.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\css-subject\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\css-subject\style_1.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\close.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\handle.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\load\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\m-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\music.mp3" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\opt_black_50.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\opt_black_80.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\opt_black_85.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p0\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p0\cover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p0\hand.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p0\loading1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p0\loading2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p0\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p0\word.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\c\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\c\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\c\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\c\word_1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\c\word_2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\c\word_3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\quest.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p1\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p2\black_1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p2\black_2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p2\icon\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p2\icon\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p2\icon\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p2\icon\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p2\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\list\9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\tit\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\tit\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p3\tit\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p4\close.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p4\play_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p4\tit\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p4\tit\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p4\tit\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p4\video_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p4\video_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p4\video_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\list\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\list\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\list\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\list\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\list\5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\list\6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\list\7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\list\8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\tit\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\tit\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p5\tit\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\btn.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\hand.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\icon\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\icon\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\icon\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\icon\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\icon\5.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\line\btm.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\line\btm1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\line\lf.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\line\lf1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\line\rt.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\line\rt1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\line\top.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\line\top1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p6\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\bg_2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\bg_3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\building.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\building.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\flower\1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\flower\2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\flower\3.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\flower\4.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\people.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\people.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\ewm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\finger.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\hicosmo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\line.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\sina.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\wx.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\wx_share.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\wx_share1.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\share\yb.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\tit.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\tit_1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\top.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\p7\word.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\img-subject\weixin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\js-subject\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\js-subject\device.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\js-subject\handlebars-1.3.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\js-subject\index.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\js-subject\index.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\js-subject\iscroll.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\js-subject\islider.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben\js-subject\jquery-1.11.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\works\subjects\20150924_cosmo_huiben\20150924_cosmo_huiben_yuan.zip" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/1.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/1.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/10.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/10.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/2.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/2.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben.zip" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/3.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/3.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/4.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/4.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/5.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/5.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/6.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/6.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/7.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/7.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/7.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/8.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/8.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p5/list/8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/9.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p3/list/9.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p1/bg.jpg" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p1/bg.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/hand.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/hand.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/lf.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/lf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/lf.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/lf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/rt.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/rt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/rt.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/rt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/tit.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/tit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/tit.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/tit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/top.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/img-subject/p6/line/top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/top.png" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/img-subject/p6/line/top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/js-subject/index.min.js" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/js-subject/index.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.min.js" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/20150924_cosmo_huiben/css-subject/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css" afterPath="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -49,8 +176,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.267857">
-              <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -61,12 +188,10 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09673519">
-              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.6187443">
+              <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
               <folding>
-                <element signature="e#4327#6000#0" expanded="false" />
-                <element signature="e#6170#7133#0" expanded="false" />
-                <element signature="e#7151#7931#0" expanded="false" />
+                <element signature="e#7490#8270#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -75,8 +200,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="26.3">
-              <caret line="1034" column="39" selection-start-line="1034" selection-start-column="39" selection-end-line="1034" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1116" column="34" selection-start-line="1116" selection-start-column="34" selection-end-line="1116" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -140,7 +265,6 @@
         <option value="$PROJECT_DIR$/subjects/20150420-m/js-subject/detail.js" />
         <option value="$PROJECT_DIR$/subjects/20150813_cosmo_fashionweek_newYork/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150916_cosmo_huiben/js-subject/index.js" />
-        <option value="$PROJECT_DIR$/subjects/20150916_cosmo_huiben/css-subject/style.css" />
         <option value="$PROJECT_DIR$/subjects/20150916_cosmo_huiben/index.html" />
         <option value="$PROJECT_DIR$/subjects/20150420-m/css-subject/detail.css" />
         <option value="$PROJECT_DIR$/subjects/20150810_basha_cishanye/js-subject/index.js" />
@@ -148,6 +272,7 @@
         <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/fliza-style.css" />
         <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/bg.js" />
         <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html" />
+        <option value="$PROJECT_DIR$/subjects/20150916_cosmo_huiben/css-subject/style.css" />
         <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css" />
         <option value="$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js" />
       </list>
@@ -205,6 +330,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -341,7 +467,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -428,26 +553,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="312" y="110" width="1856" height="1259" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.169967" sideWeight="0.49608064" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24880838" sideWeight="0.5049505" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24113475" sideWeight="0.4950495" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24113475" sideWeight="0.4950495" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14851485" sideWeight="0.50391936" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7252252" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -769,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47952685">
           <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-27.166666">
           <caret line="781" column="1" selection-start-line="736" selection-start-column="0" selection-end-line="781" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.933332">
           <caret line="3037" column="20" selection-start-line="3037" selection-start-column="20" selection-end-line="3037" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,22 +944,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150916_cosmo_huiben/css-subject/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31116688">
-          <caret line="706" column="1" selection-start-line="706" selection-start-column="1" selection-end-line="722" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.25997582">
+          <caret line="650" column="0" selection-start-line="650" selection-start-column="0" selection-end-line="650" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.267857">
-          <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -846,20 +966,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/css-subject/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="26.3">
-          <caret line="1034" column="39" selection-start-line="1034" selection-start-column="39" selection-end-line="1034" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1116" column="34" selection-start-line="1116" selection-start-column="34" selection-end-line="1116" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subjects/20150924_cosmo_huiben/js-subject/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09673519">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.6187443">
+          <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
           <folding>
-            <element signature="e#4327#6000#0" expanded="false" />
-            <element signature="e#6170#7133#0" expanded="false" />
-            <element signature="e#7151#7931#0" expanded="false" />
+            <element signature="e#7490#8270#0" expanded="false" />
           </folding>
         </state>
       </provider>
