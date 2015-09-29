@@ -186,7 +186,7 @@ var slider = new Fui.PageSlider({
 slider.render();
 //setTimeout(function(){
 //    slider.render();
-    $(".fui-arrow").css("z-index","-1");
+$(".fui-arrow").css("z-index","-1");
 //    $(".loadingC").fadeOut();
 //},3500);
 var picList_3 = [
