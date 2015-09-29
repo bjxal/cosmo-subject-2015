@@ -53,6 +53,7 @@ section img{
     float: left;
 }
 .audio .audio_c{
+    min-width: 100px;
     width: 450px;
     height: 75px;
     border: 1px #c9c9c9 solid;

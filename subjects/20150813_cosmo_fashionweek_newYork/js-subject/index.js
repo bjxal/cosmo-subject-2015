@@ -38,6 +38,10 @@ $(document).ready(function(){
         var $tar = $(e.target);
         var $par = $tar.parents(".audio");
         var audioPlay = $par.find("audio")[0];
+        audioPlay.loop = false;
+        audioPlay.addEventListener('ended', function () {
+            $(e.target).removeClass("play");
+        }, false);
         var ifPlay = $(e.target).attr("class");
         if(ifPlay.indexOf("play")!=-1){
             audioPlay.pause();
