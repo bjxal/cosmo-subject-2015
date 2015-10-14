@@ -112,14 +112,8 @@
     </div>
     <!--list-->
     <div class="list-c">
-        <div class="list-c-lf">
-            <img data-src="{{IMG_DIR}}/p3/list/lf_1.jpg" class="cur"/>
-            <img data-src="{{IMG_DIR}}/p3/list/lf_2.jpg"/>
-        </div>
-        <div class="list-c-rt">
-            <img data-src="{{IMG_DIR}}/p3/list/rt_1.jpg" class="cur"/>
-            <img data-src="{{IMG_DIR}}/p3/list/rt_2.jpg"/>
-        </div>
+        <div class="list-c-lf"></div>
+        <div class="list-c-rt"></div>
         <div class="list-c-btn" data-tap="refresh_list"></div>
     </div>
 </script>
@@ -140,60 +134,68 @@
     </div>
     <!--list-->
     <div class="list-c">
-        <div class="c-btn">
+        <div class="c-btn" data-tap="c-btn-tap">
             <div class="btn-rotate"></div>
             <p>换一组</p>
         </div>
         <div class="list-c-item list-c-1">
-            <div class="c-avt">
-                <img data-src="{{IMG_DIR}}/p4/list/1.jpg"/>
-            </div>
-            <div class="c-info">
-                <h2>范冰冰</h2>
-                <p>电影演员，毕业于上海师范大学谢晋影视艺术学院。1996年参演电视剧《女强人》。</p>
-            </div>
-            <div class="c-line">
-                <span class="line_1"></span>
-                <span class="line_2"></span>
+            <div class="item-1-1">
+                <div class="c-avt">
+                    <img data-src="{{IMG_DIR}}/p4/list/1.jpg"/>
+                </div>
+                <div class="c-info">
+                    <h2>范冰冰</h2>
+                    <p>电影演员，毕业于上海师范大学谢晋影视艺术学院。1996年参演电视剧《女强人》。</p>
+                </div>
+                <div class="c-line">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
             </div>
         </div>
         <div class="list-c-item list-c-2">
-            <div class="c-avt">
-                <img data-src="{{IMG_DIR}}/p4/list/2.jpg"/>
-            </div>
-            <div class="c-info">
-                <h2>汤唯</h2>
-                <p>中央戏剧学院导演系本科。2007年在导演李安执导的电影《色·戒》中饰演女主角。</p>
-            </div>
-            <div class="c-line">
-                <span class="line_1"></span>
-                <span class="line_2"></span>
+            <div class="item-2-1">
+                <div class="c-avt">
+                    <img data-src="{{IMG_DIR}}/p4/list/2.jpg"/>
+                </div>
+                <div class="c-info">
+                    <h2>汤唯</h2>
+                    <p>中央戏剧学院导演系本科。2007年在导演李安执导的电影《色·戒》中饰演女主角。</p>
+                </div>
+                <div class="c-line">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
             </div>
         </div>
         <div class="list-c-item list-c-3">
-            <div class="c-avt">
-                <img data-src="{{IMG_DIR}}/p4/list/3.jpg"/>
-            </div>
-            <div class="c-info">
-                <h2>Angelababy</h2>
-                <p>1989年2月28日出生于上海，13岁时移居香港，中国影视女演员。</p>
-            </div>
-            <div class="c-line">
-                <span class="line_1"></span>
-                <span class="line_2"></span>
+            <div class="item-3-1">
+                <div class="c-avt">
+                    <img data-src="{{IMG_DIR}}/p4/list/3.jpg"/>
+                </div>
+                <div class="c-info">
+                    <h2>Angelababy</h2>
+                    <p>1989年2月28日出生于上海，13岁时移居香港，中国影视女演员。</p>
+                </div>
+                <div class="c-line">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
             </div>
         </div>
         <div class="list-c-item list-c-4">
-            <div class="c-avt">
-                <img data-src="{{IMG_DIR}}/p4/list/4.jpg"/>
-            </div>
-            <div class="c-info">
-                <h2>汤唯</h2>
-                <p>中央戏剧学院导演系本科。2007年在导演李安执导的电影《色·戒》中饰演女主角。</p>
-            </div>
-            <div class="c-line">
-                <span class="line_1"></span>
-                <span class="line_2"></span>
+            <div class="item-4-1">
+                <div class="c-avt">
+                    <img data-src="{{IMG_DIR}}/p4/list/4.jpg"/>
+                </div>
+                <div class="c-info">
+                    <h2>汤唯</h2>
+                    <p>中央戏剧学院导演系本科。2007年在导演李安执导的电影《色·戒》中饰演女主角。</p>
+                </div>
+                <div class="c-line">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -249,6 +251,7 @@
 </script>
 <!--<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
 <script type="text/javascript" src="js-subject/islider.js"></script>
+<script type="text/javascript" src="js-subject/data.js"></script>
 <script type="text/javascript" src="js-subject/index@.js"></script>
 <!--统计代码-->
 <script>

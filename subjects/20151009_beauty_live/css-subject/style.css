@@ -543,27 +543,49 @@ body{
     left: auto;
     right: 0;
 }
-.p3 .list-c .list-c-lf img,.p3 .list-c .list-c-rt img{
+.p3 .list-c .list-c-item{
     position: absolute;
     opacity: 0;
     width: 100%;
+    height: 100%;
     transition: all linear 0.5s;
     -webkit-transition: all ease-in 0.5s;
 }
-.p3 .list-c .list-c-lf img{
+.p3 .list-c .list-c-item img{
+    width: 100%;
+    height: 100%;
+    max-width: none;
+}
+.p3 .list-c .list-c-item .name{
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 210px;
+    background: url(../img-subject/p3/pop_bg.png);
+    line-height: 300px;
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-transition: all linear 0.3s;
+}
+.p3 .list-c .list-c-item.cur .name{
+    opacity: 1;
+}
+.p3 .list-c .list-c-lf .list-c-item{
     top: 100%;
 }
-.p3 .list-c .list-c-rt img{
+.p3 .list-c .list-c-rt .list-c-item{
     bottom: 100%;
 }
-.p3 .list-c .list-c-lf img.zIndex,.p3 .list-c .list-c-rt img.zIndex{
+.p3 .list-c .list-c-item.zIndex{
     z-index: 100;
 }
-.p3 .list-c .list-c-lf img.cur{
+.p3 .list-c .list-c-lf .list-c-item.cur{
     opacity: 1;
     top: 0;
 }
-.p3 .list-c .list-c-rt img.cur{
+.p3 .list-c .list-c-rt .list-c-item.cur{
     opacity: 1;
     bottom: 0;
 }
@@ -637,10 +659,14 @@ body{
     100%{-webkit-transform: rotate(360deg);}
 }
 .p4 .list-c-item{
+    opacity: 0;
     width: 100%;
     height: 250px;
     position: relative;
     margin-top: -10px;
+}
+.p4 .list-c-item.cur{
+    opacity: 1;
 }
 .p4 .list-c-2{
     margin-top: -50px;
