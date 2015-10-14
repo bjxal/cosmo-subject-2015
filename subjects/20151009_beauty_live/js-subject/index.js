@@ -1,6 +1,7 @@
 require("/fliza-ui");
 $(".weixin_jpg").attr("src",ImgDir('/weixin.jpg'));
 Fui.Template.IMG_DIR = ImgDir();
+var rf_id = 0;
 var PAGE0 = Fui.Template.extend({
     config:{},
     getGestureItems:function(){
@@ -20,6 +21,24 @@ var PAGE0 = Fui.Template.extend({
                 callback:function(e,$tar){
                     $tar.addClass("cur");
                 }
+            },
+            {
+                gesture:"tap",
+                name:"refresh_list",
+                callback:function(e,$tar){
+                    var $par_lf = $tar.parents(".p").find(".list-c-lf");
+                    var $par_rt = $tar.parents(".p").find(".list-c-rt");
+                    rf_id = ((rf_id+1)>=$par_lf.find("img").length)?0:(rf_id+1);
+                    console.log(rf_id)
+                    $par_lf.find("img").eq(rf_id).addClass("cur zIndex cur_"+rf_id);
+                    $par_rt.find("img").eq(rf_id).addClass("cur zIndex cur_"+rf_id);
+                    $par_lf.find("img.cur_"+rf_id).siblings().removeClass("zIndex");
+                    $par_rt.find("img.cur_"+rf_id).siblings().removeClass("zIndex");
+                    setTimeout(function(){
+                        $par_lf.find("img.cur_"+rf_id).siblings().removeClass("cur");
+                        $par_rt.find("img.cur_"+rf_id).siblings().removeClass("cur");
+                    },500)
+                }
             }
         ]
     }
@@ -30,7 +49,7 @@ Fui.Template.regTpl({
 var mt_3 = mt_5 = false;
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:1,
+    curPage:4,
     //lock:true,
     iteration:true,
     orient:'y',
@@ -92,19 +111,24 @@ setTimeout(function(){$(".cover").addClass("focus");},1000);
 $(".fui-arrow").removeClass("down");
 var picList_1 = [
     {
-        'height': '100%',
-        'width': '100%',
-        'content': '<div class="imgs"><img src="img-subject/p1/list/1.jpg"/><div class="word"><h2>压轴的LV女郎们酷毙了！</h2><p>搭配浪漫唯美的木耳边装饰宫廷风格衬衫，或是摩登时髦的网眼背心，如绅士般潇洒，胸口处的小面积镂空在之前的系列中也曾使用过</p></div></div>'//ImgDir('/p1/list/1.jpg')
+        'height': '710px',
+        'width': '790px',
+        'content': '<div class="imgs imgs_1"><img src="img-subject/p1/list/1.jpg"/><div class="word cur"><h2>压轴的LV女郎们酷毙了！</h2><p>搭配浪漫唯美的木耳边装饰宫廷风格衬衫，或是摩登时髦的网眼背心，如绅士般潇洒，胸口处的小面积镂空在之前的系列中也曾使用过1</p></div></div>'//ImgDir('/p1/list/1.jpg')
     },
     {
         'height': '710px',
         'width': '790px',
-        'content': '<div class="imgs"><img src="img-subject/p1/list/1.jpg"/><div class="word"><h2>压轴的LV女郎们酷毙了！</h2><p>搭配浪漫唯美的木耳边装饰宫廷风格衬衫，或是摩登时髦的网眼背心，如绅士般潇洒，胸口处的小面积镂空在之前的系列中也曾使用过；那些长度只及下胸线的短上衣与卖弄柔弱性感。</p></div></div>'//ImgDir('/p1/list/1.jpg')
+        'content': '<div class="imgs imgs_2"><img src="img-subject/p1/list/2.jpg"/><div class="word"><h2>压轴的LV女郎们酷毙了！</h2><p>搭配浪漫唯美的木耳边装饰宫廷风格衬衫，或是摩登时髦的网眼背心，如绅士般潇洒，胸口处的小面积镂空在之前的系列中也曾使用过；那些长度只及下胸2</p></div></div>'//ImgDir('/p1/list/1.jpg')
     },
     {
         'height': '710px',
         'width': '790px',
-        'content': '<div class="imgs"><img src="img-subject/p1/list/1.jpg"/><div class="word"><h2>压轴的LV女郎们酷毙了！</h2><p>搭配浪漫唯美的木耳边装饰宫廷风格衬衫，或是摩登时髦的网眼背心，如绅士般潇洒，胸口处的小面积镂空在之前的系列中也曾使用过；那些长度只及下胸线的短上衣与卖弄柔弱性感。；那些长度只及下胸线的短上衣与卖弄柔弱性感。</p></div></div>'//ImgDir('/p1/list/1.jpg')
+        'content': '<div class="imgs imgs_3"><img src="img-subject/p1/list/3.jpg"/><div class="word"><h2>压轴的LV女郎们酷毙了！</h2><p>搭配浪漫唯美的木耳边装饰宫廷风格衬衫，或是摩登时髦的网眼背心，如绅士般潇洒，胸口处的小面积镂空在之前的系列中也曾使用过；那些长度只及下胸线的短上衣与卖弄柔弱性感。；那些长度只及下胸线的短上衣与卖弄柔弱性感。3</p></div></div>'//ImgDir('/p1/list/1.jpg')
+    },
+    {
+        'height': '710px',
+        'width': '790px',
+        'content': '<div class="imgs"><img src="img-subject/p1/list/4.jpg"/><div class="word"><h2>压轴的LV女郎们酷毙了！</h2><p>搭配浪漫唯美的木耳边装饰4</p></div></div>'
     }
 ];
 var islider1 = new iSlider({
@@ -116,9 +140,48 @@ var islider1 = new iSlider({
     isAutoplay: false,
     isLooping: true,
     onslideend:function(){
-        var id = islider1.sliderIndex;
-        console.log(islider1)
-        $("#animation-effect li").eq(id).find(".word").addClass("cur").siblings().find(".word").removeClass("cur");
+        var list = $("#animation-effect li");
+        $.each(list,function(i,item){
+            var deg_v = $(item).attr("style").split("rotateY(")[1].split("deg")[0];
+            if(deg_v==0){
+                $(item).find(".word").addClass("cur");
+            }
+            else{
+                $(item).find(".word").removeClass("cur");
+            }
+        });
+    }
+    //isVertical: true// 是否垂直滚动
+});
+var picList_2 = [
+    {
+        width:520,
+        height:800,
+        content:ImgDir('/p2/list/1.jpg')
+    },
+    {
+        width:520,
+        height:800,
+        content:ImgDir('/p2/list/2.jpg')
+    },
+    {
+        width:520,
+        height:800,
+        content:ImgDir('/p2/list/3.jpg')
+    }
+];
+var islider2 = new iSlider({
+    data: picList_2,
+    //type:'dom',
+    dom: document.getElementById("animation-effect-2"),
+    duration: 3000,
+    animateType: 'flow',
+    isAutoplay: false,
+    isLooping: true,
+    onslideend:function(){
+        var id = islider2.slideIndex;
+        $(".p2 .name-list p").eq(id).addClass("cur").siblings().removeClass("cur");
+
     }
     //isVertical: true// 是否垂直滚动
 });
