@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="bjxal@139.com"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js-subject/device.js"></script>
+    <title>时尚COSMO美丽盛典就要来了！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://new-icon.cosmochina.com.cn/channel/common/img/favicon.ico" media="screen">
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body>
+<!--<img src="img-subject/weixin.jpg" style="opacity: 0; z-index: -1; position: absolute;" class="weixin_jpg"/>-->
+<div class="bg_c">
+    <div class="bg_list">
+        <div class="bg"></div>
+        <div class="bg_top"></div>
+        <div class="bg_btm"></div>
+    </div>
+    <div class="star_list">
+        <span class="star_1"></span>
+        <span class="star_2"></span>
+        <span class="star_3"></span>
+        <span class="star_4"></span>
+        <span class="star_5"></span>
+    </div>
+</div>
+<a class="app-music">
+    <span class="icon icon-music">
+        <b></b>
+    </span>
+</a>
+<div id="pack" class="pack"></div>
+<!--<div class="slide_tip">左右滑动<br>更多精彩图片呈现</div>-->
+<script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
+<!-- p0 -->
+<script type="text/x-handlebars-template" id="p0">
+    <img data-src="{{IMG_DIR}}/p0/tit_bg.png" class="tit_p0 tit_bg"/>
+    <img data-src="{{IMG_DIR}}/p0/tit.png" class="tit_p0"/>
+    <img data-src="{{IMG_DIR}}/p0/cup.png" class="cup"/>
+</script>
+<!-- p0 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p1">
+</script>
+<!-- P1 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p2">
+    <img data-src="{{IMG_DIR}}/p2/tit.png" class="tit"/>
+    <div class="list-c">
+        <img data-src="{{IMG_DIR}}/p2/c_1.png" class="item c_1"/>
+        <img data-src="{{IMG_DIR}}/p2/c_2.png" class="item c_2"/>
+        <img data-src="{{IMG_DIR}}/p2/c_3.png" class="item c_3"/>
+        <img data-src="{{IMG_DIR}}/p2/c_4.png" class="item c_4"/>
+    </div>
+</script>
+<!-- p2 -->
+<!-- p3 -->
+<script type="text/x-handlebars-template" id="p3">
+    <img data-src="{{IMG_DIR}}/p3/tit.png" class="tit"/>
+    <div class="list-c">
+        <img data-src="{{IMG_DIR}}/p3/c_1.png" class="item c_1"/>
+        <img data-src="{{IMG_DIR}}/p3/line.png" class="item c_2"/>
+        <img data-src="{{IMG_DIR}}/p3/c_2.png" class="item c_3"/>
+        <img data-src="{{IMG_DIR}}/p3/line.png" class="item c_4"/>
+        <img data-src="{{IMG_DIR}}/p3/c_3.png" class="item c_5"/>
+        <img data-src="{{IMG_DIR}}/p3/line.png" class="item c_6"/>
+        <img data-src="{{IMG_DIR}}/p3/c_4.png" class="item c_7"/>
+    </div>
+</script>
+<!-- p3 -->
+<!-- p4 -->
+<script type="text/x-handlebars-template" id="p4">
+    <img data-src="{{IMG_DIR}}/p4/tit.png" class="tit"/>
+    <div class="list-c">
+        <div class="item c_1">
+            <img data-src="{{IMG_DIR}}/p4/c_1.png"/>
+            <span class="num_1"></span>
+        </div>
+        <div class="item c_2">
+            <img data-src="{{IMG_DIR}}/p4/c_2.png"/>
+        </div>
+        <div class="item c_3">
+            <img data-src="{{IMG_DIR}}/p4/c_3.png"/>
+            <span class="num_2"></span>
+        </div>
+        <div class="item c_4">
+            <img data-src="{{IMG_DIR}}/p4/c_4.png"/>
+        </div>
+        <div class="item c_5">
+            <img data-src="{{IMG_DIR}}/p4/c_5.png"/>
+            <span class="num_3"></span>
+        </div>
+        <div class="item c_6">
+            <img data-src="{{IMG_DIR}}/p4/c_6.png"/>
+            <span class="num_4"></span>
+        </div>
+    </div>
+</script>
+<!-- p4 -->
+<!-- p5 -->
+<script type="text/x-handlebars-template" id="p5">
+    <div class="name-list">
+        <span class="tit_0 cur"></span>
+        <span class="tit_1"></span>
+        <span class="tit_2"></span>
+        <span class="tit_3"></span>
+    </div>
+    <div id="iSlider-effect-wrapper">
+        <div id="animation-effect" class="iSlider-effect"></div>
+    </div>
+</script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p6">
+    <div class="list-c">
+        <img data-src="{{IMG_DIR}}/p6/c_1.png" class="item c_1"/>
+        <img data-src="{{IMG_DIR}}/p6/c_2.png" class="item c_2"/>
+        <img data-src="{{IMG_DIR}}/p6/c_3.png" class="item c_3"/>
+        <img data-src="{{IMG_DIR}}/p6/c_4.png" class="item c_4"/>
+        <img data-src="{{IMG_DIR}}/p6/c_5.png" class="item c_5"/>
+        <img data-src="{{IMG_DIR}}/p6/c_6.png" class="item c_6"/>
+        <img data-src="{{IMG_DIR}}/p6/c_7.png" class="item c_7"/>
+    </div>
+</script>
+<!-- p6 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p7">
+    <img data-src="{{IMG_DIR}}/p7/tit.png" class="top_tip"/>
+    <!--title-->
+    <div class="top">
+        <div class="tit-p7">
+            <img data-src="{{IMG_DIR}}/p7/tit_1.png" class="tit_1"/>
+            <img data-src="{{IMG_DIR}}/p7/tit_2.png" class="tit_2"/>
+        </div>
+        <div class="share">
+            <div>分享到：</div>
+            <img data-src="{{IMG_DIR}}/p7/wx.png" data-tap="share_pop_show"/>
+            <img data-src="{{IMG_DIR}}/p7/sina.png" data-tap="share_sina"/>
+        </div>
+    </div>
+    <div class="share_pop" data-tap="share_pop_hide" style="display:none;">
+        <img data-src="{{IMG_DIR}}/p7/wx_share.gif" data-tap="share_pop_hide"/></div>
+    </div>
+</script>
+<!-- p7 -->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"时尚COSMO美丽盛典就要来了！",
+        desc:"2015时尚COSMO美丽盛典 邀你见证美丽无界",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<!--<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+<script type="text/javascript" src="js-subject/islider.js"></script>
+<script type="text/javascript" src="js-subject/index@.js"></script>
+<!--统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58044097-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

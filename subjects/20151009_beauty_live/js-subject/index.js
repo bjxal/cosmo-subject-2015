@@ -46,19 +46,17 @@ LIST.prototype = {
     set_guests_list:function(){
         var me = this;
         /*lf*/
-        $.each(guests_list_lf,function(i,item){
+        $.each(guests_list,function(i,item){
+            var id = i%2+1;
             var lf_html = me.guests_html(item,i);
-            $(".p3 .list-c-lf").append(lf_html);
-        });
-        /*rt*/
-        $.each(guests_list_rt,function(i,item){
-            var rt_html = me.guests_html(item,i);
-            $(".p3 .list-c-rt").append(rt_html);
+            $(".p3 .list-c-"+id).append(lf_html);
         });
     },
     guests_html:function(obj,i){
         var c = document.createElement("div");
-        c.className = (i==0)?"list-c-item cur":"list-c-item";
+        var cname = (i<2)?"cur":"";
+        //c.className = (i==0)?"list-c-item cur":"list-c-item";
+        c.className = "list-c-item item-"+Math.floor(i/2)+" "+cname;
 
         var c_img = document.createElement("img");
         c_img.src = obj.imgUrl;
@@ -72,16 +70,16 @@ LIST.prototype = {
     },
     set_icon_list:function(){
         var me = this;
-        $.each(icon_list_lf,function(i,item){
+        $.each(icon_list,function(i,item){
             var id = i%4+1;
             var icon_html = me.icon_html(item,i);
-            $(".list-c-"+id).append(icon_html);
+            $(".p4 .list-c-"+id).append(icon_html);
         });
     },
     icon_html:function(obj,i){
-        var id = i%4;
+        var cname = (i<4)?"cur":"";
         var c = document.createElement("div");
-        c.className = "item-"+id+"-"+(id%4);
+        c.className = "item-c item-"+Math.floor(i/4)+" "+cname;
 
         var c_avt = document.createElement("div");
         c_avt.className = "c-avt";
@@ -101,15 +99,72 @@ LIST.prototype = {
         return c;
 
     },
-    set_moment_list:function(){},
-    set_team_list:function(){}
+    set_moment_list:function(){
+        var me = this;
+        $.each(moment_list,function(i,item){
+            var id = i%5+1;
+            var moment_html = me.moment_html(item,i);
+            $(".p5 .list-c-"+id).append(moment_html);
+        });
+    },
+    moment_html:function(obj,i){
+        var cname = (i<5)?"cur":"";
+        var c = document.createElement("img");
+        c.src = obj.imgUrl;
+        c.className = "item-c item-"+Math.floor(i/5)+" "+cname;
+
+        return c;
+    },
+    set_team_list:function(){
+        var me = this;
+        $.each(team_list,function(i,item){
+            var id = i%12+1;
+            var team_html = me.team_html(item,i);
+            $(".p6 .list-c-"+id).append(team_html);
+        });
+    },
+    team_html:function(obj,i){
+        /*
+        *  <div class="list-item item-1">
+         <img data-src="{{IMG_DIR}}/p6/list/11.jpg"/>
+         <div class="name"><p><span>Aaria arredondo</span></p></div>
+         </div>
+         */
+        var cname = (i<12)?"cur":"";
+        var c = document.createElement("div");
+        c.className = "list-item item-"+Math.floor(i/12)+" "+cname;
+        c.innerHTML = '<img src="'+obj.imgUrl+'"/><div class="name"><p><span>'+obj.name+'</span></p></div>';
+
+        return c;
+    }
 };
 Fui.Template.IMG_DIR = ImgDir();
-var rf_id = 0;
+var p3_id = 0,
+    p4_id = 0,
+    p5_id = 0,
+    p6_id = 0;
 var PAGE0 = Fui.Template.extend({
     config:{},
     getGestureItems:function(){
         return[
+            {
+                gesture:"tap",
+                name:"share_pop_show",
+                callback:function(e,$tar){
+                    $(".share_pop").fadeIn();
+                    $(".app-music").css("z-index","-1");
+                    slider.set("lock","true");
+                }
+            },
+            {
+                gesture:"tap",
+                name:"share_pop_hide",
+                callback:function(e,$tar){
+                    $(".share_pop").fadeOut();
+                    $(".app-music").css("z-index","101");
+                    slider.set("lock","false");
+                }
+            },
             {
                 gesture:"tap",
                 name:"share_sina",
@@ -128,25 +183,42 @@ var PAGE0 = Fui.Template.extend({
             },
             {
                 gesture:"tap",
-                name:"refresh_list",
+                name:"c-btn-tap-3",
                 callback:function(e,$tar){
-                    var $par_lf = $tar.parents(".p").find(".list-c-lf");
-                    var $par_rt = $tar.parents(".p").find(".list-c-rt");
-                    rf_id = ((rf_id+1)>=$par_lf.find(".list-c-item").length)?0:(rf_id+1);
-                    $par_lf.find(".list-c-item").eq(rf_id).addClass("cur zIndex cur_"+rf_id);
-                    $par_rt.find(".list-c-item").eq(rf_id).addClass("cur zIndex cur_"+rf_id);
-                    $par_lf.find(".list-c-item.cur_"+rf_id).siblings().removeClass("zIndex");
-                    $par_rt.find(".list-c-item.cur_"+rf_id).siblings().removeClass("zIndex");
+                    var num = (guests_list.length)/2;
+                    p3_id = ((p3_id+1)<num)?(p3_id+1):0;
+                    $tar.parents(".p").find(".item-"+p3_id).addClass("cur zIndex cur_"+p3_id);
+                    $tar.parents(".p").find(".list-c-item.cur_"+p3_id).siblings().removeClass("zIndex");
                     setTimeout(function(){
-                        $par_lf.find(".list-c-item.cur_"+rf_id).siblings().removeClass("cur");
-                        $par_rt.find(".list-c-item.cur_"+rf_id).siblings().removeClass("cur");
-                    },500)
+                        $tar.parents(".p").find(".list-c-item.cur_"+p3_id).siblings().removeClass("cur");
+                    },500);
                 }
             },
             {
                 gesture:"tap",
-                name:"c-btn-tap",
+                name:"c-btn-tap-4",
                 callback:function(e,$tar){
+                    var num = (icon_list.length)/4;
+                    p4_id = ((p4_id+1)<num)?(p4_id+1):0;
+                    $tar.parents(".p").find(".item-"+p4_id).addClass("cur").siblings().removeClass("cur");
+                }
+            },
+            {
+                gesture:"tap",
+                name:"c-btn-tap-5",
+                callback:function(e,$tar){
+                    var num = (moment_list.length)/5;
+                    p5_id = ((p5_id+1)<num)?(p5_id+1):0;
+                    $tar.parents(".p").find(".item-"+p5_id).addClass("cur").siblings().removeClass("cur");
+                }
+            },
+            {
+                gesture:"tap",
+                name:"c-btn-tap-6",
+                callback:function(e,$tar){
+                    var num = (team_list.length)/12;
+                    p6_id = ((p6_id+1)<num)?(p6_id+1):0;
+                    $tar.parents(".p").find(".item-"+p6_id).addClass("cur").siblings().removeClass("cur");
                 }
             }
         ]
@@ -158,9 +230,9 @@ Fui.Template.regTpl({
 var mt_3 = mt_5 = false;
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:4,
+    curPage:6,
     //lock:true,
-    iteration:true,
+    iteration:false,
     orient:'y',
     listeners:{
         slide:function(){
@@ -168,14 +240,17 @@ var slider = new Fui.PageSlider({
             var page = this.get("curPage");
             if(page==0){
                 $(".cover").fadeIn().addClass("focus");
+                $(".bg_lf").removeClass("width_308");
             }
-            if(page==7){
+            if(page==8){
                 $(".fui-arrow").css("z-index","-1");
+                $(".bg_lf").removeClass("width_308");
                 $(".share").show().addClass("focus");
             }
             else{
                 $(".fui-arrow").css("z-index","10000");
                 $(".share").hide().removeClass("focus");
+                $(".bg_lf").addClass("width_308");
             }
         }
     },
@@ -213,6 +288,10 @@ var slider = new Fui.PageSlider({
             template: 'PAGE0',
             xtpl: 'p7'
         }
+        ,{
+            template: 'PAGE0',
+            xtpl: 'p8'
+        }
     ]
 });
 slider.render();
@@ -227,11 +306,16 @@ list_fun.set_star_list();
 list_fun.set_guests_list();
 /*set icon_list*/
 list_fun.set_icon_list();
+/*set moment_list*/
+list_fun.set_moment_list();
+/*set team_list*/
+list_fun.set_team_list();
 //list_fun
 $(".cover_scanning").on("touchend",function(e){
     $(e.target).addClass("cur").find(".scan_line").hide();
     setTimeout(function(){
-        slider.slide(1);
+        slider.next();
+        $(".bg_lf").addClass("width_308");
         $(".cover").fadeOut(500);
     },1000);
 });

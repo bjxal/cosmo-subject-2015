@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="bjxal@139.com"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js-subject/device.js"></script>
+    <title>致美丽的小芒果</title>
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body>
+<!--<img src="img-subject/weixin.jpg" style="opacity: 0; z-index: -1; position: absolute;" class="weixin_jpg"/>-->
+<div class="video_pop">
+    <div class="close"></div>
+    <div class="video_if"></div>
+</div>
+<a class="app-music">
+    <span class="icon icon-music">
+        <b></b>
+    </span>
+</a>
+<div id="pack" class="pack"></div>
+<!--<div class="slide_tip">左右滑动<br>更多精彩图片呈现</div>-->
+<script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
+<!-- p0 -->
+<script type="text/x-handlebars-template" id="p0">
+    <div class="cover">
+        <div class="cover_load"></div>
+    </div>
+    <div class="cover_2">
+        <div class="la">
+            <!--<img data-src="{{IMG_DIR}}/p0/la_1.png"/>-->
+            <img data-src="{{IMG_DIR}}/p0/la_2.png" class="rotate_la"/>
+        </div>
+        <div class="hard_list">
+            <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+        </div>
+        <img data-src="{{IMG_DIR}}/p0/birth.png" class="birth"/>
+    </div>
+</script>
+<!-- p0 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p1">
+    <img data-src="{{IMG_DIR}}/p1/word.png" class="word"/>
+    <div class="bg"></div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+</script>
+<!-- P1 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p2">
+    <div class="bg"></div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+</script>
+<!-- P1 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p3">
+    <img data-src="{{IMG_DIR}}/p1_2/word.png" class="word rt"/>
+    <div class="bg"></div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+</script>
+<!-- P1 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p4">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p2/word1.png"/>
+        <img data-src="{{IMG_DIR}}/p2/word2.png"/>
+        <img data-src="{{IMG_DIR}}/p2/1.jpg" class=""/>
+        <span class="tip"></span>
+    </div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+</script>
+<!-- p2 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p5">
+    <img data-src="{{IMG_DIR}}/p2_1/word.png" class="word"/>
+    <div class="bg"></div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+</script>
+<!-- p2 -->
+<!-- p3 -->
+<script type="text/x-handlebars-template" id="p6">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p3/word1.png"/>
+        <img data-src="{{IMG_DIR}}/p3/word2.png"/>
+        <img data-src="{{IMG_DIR}}/p3/1.jpg"/>
+    </div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+</script>
+<!-- p3 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p7">
+    <img data-src="{{IMG_DIR}}/p3_1/word.png" class="word rt"/>
+    <div class="bg"></div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+</script>
+<!-- P1 -->
+<!-- p4 -->
+<script type="text/x-handlebars-template" id="p8">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p4/word1.png"/>
+        <img data-src="{{IMG_DIR}}/p4/word2.png"/>
+        <img data-src="{{IMG_DIR}}/p4/1.jpg"/>
+    </div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p4/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p4/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p4/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p4/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p4/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p4/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p4/hard/1.png"/>
+    </div>
+    <!--&lt;!&ndash;list&ndash;&gt;-->
+    <!--<div id="iSlider-effect-wrapper-3">-->
+        <!--<div id="animation-effect-3" class="iSlider-effect"></div>-->
+    <!--</div>-->
+</script>
+<!-- p4 -->
+<!-- p5 -->
+<script type="text/x-handlebars-template" id="p9">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p5/word1.png"/>
+        <img data-src="{{IMG_DIR}}/p5/word2.png"/>
+        <div class="big_img">
+            <img data-src="{{IMG_DIR}}/p5/1.jpg"/>
+        </div>
+    </div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+</script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p10">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p6/word1.png"/>
+        <img data-src="{{IMG_DIR}}/p6/word2.png"/>
+        <img data-src="{{IMG_DIR}}/p6/1.jpg"/>
+        <span class="hard"></span>
+    </div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+        <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+    </div>
+    <div class="video">
+        <img data-src="{{IMG_DIR}}/p6/video.jpg" class="video_c" data-tap="video_pop" data-id="p6" data-videosrc="http://player.youku.com/embed/XMTM1OTcxNzg5Ng=="/>
+    </div>
+</script>
+<!-- p6 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p11">
+    <div class="djs">
+        <img data-gif="{{IMG_DIR}}/p7/djs.gif"/>
+    </div>
+    <div class="djs-c">
+        <div class="hard_list">
+            <img data-src="{{IMG_DIR}}/p0/hard/1.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/2.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/3.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/4.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/5.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/6.png"/>
+            <img data-src="{{IMG_DIR}}/p0/hard/7.png"/>
+        </div>
+        <div class="video">
+            <img data-src="{{IMG_DIR}}/p7/video.jpg" class="video_c" data-tap="video_pop" data-videosrc="http://player.youku.com/embed/XMTM1OTcyNTg3Ng=="/>
+        </div>
+        <img data-src="{{IMG_DIR}}/p7/1.jpg" class="c-img"/>
+    </div>
+</script>
+<!-- p7 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p12">
+    <div class="bg">
+        <img data-src="{{IMG_DIR}}/p9/tit.png" class="word"/>
+    </div>
+    <div class="hard_list">
+        <img data-src="{{IMG_DIR}}/p9/hard/1.png"/>
+        <img data-src="{{IMG_DIR}}/p9/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p9/hard/3.png"/>
+        <img data-src="{{IMG_DIR}}/p9/hard/4.png"/>
+        <img data-src="{{IMG_DIR}}/p9/hard/5.png"/>
+        <img data-src="{{IMG_DIR}}/p9/hard/2.png"/>
+        <img data-src="{{IMG_DIR}}/p9/hard/1.png"/>
+    </div>
+</script>
+<!-- p7 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p13">
+    <div class="bg">
+        <img data-src="{{IMG_DIR}}/p9/tit.png" class="word"/>
+    </div>
+</script>
+<!-- p7 -->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"致美丽的小芒果",
+        desc:"10月15日小芒果生日快乐",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<!--<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+<script type="text/javascript" src="js-subject/islider.js"></script>
+<script type="text/javascript" src="js-subject/index@.js"></script>
+</body>
+</html>

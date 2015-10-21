@@ -18,7 +18,7 @@
 <!--<img src="img-subject/weixin.jpg" style="opacity: 0; z-index: -1; position: absolute;" class="weixin_jpg"/>-->
 <div class="bg_c">
     <img src="img-subject/bg.jpg" class="bg"/>
-    <img src="img-subject/p1/bg_1.png" class="bg_lf"/>
+    <img src="img-subject/p0/bg_lf.png" class="bg_lf"/>
 </div>
 <div class="cover" style="display: none;">
     <div class="cover_bg">
@@ -112,9 +112,9 @@
     </div>
     <!--list-->
     <div class="list-c">
-        <div class="list-c-lf"></div>
-        <div class="list-c-rt"></div>
-        <div class="list-c-btn" data-tap="refresh_list"></div>
+        <div class="list-c-1"></div>
+        <div class="list-c-2"></div>
+        <div class="list-c-btn" data-tap="c-btn-tap-3"></div>
     </div>
 </script>
 <!-- p3 -->
@@ -134,70 +134,14 @@
     </div>
     <!--list-->
     <div class="list-c">
-        <div class="c-btn" data-tap="c-btn-tap">
-            <div class="btn-rotate"></div>
-            <p>换一组</p>
+        <div class="c-btn">
+            <div class="btn-rotate" data-tap="c-btn-tap-4"></div>
+            <p data-tap="c-btn-tap-4">换一组</p>
         </div>
-        <div class="list-c-item list-c-1">
-            <div class="item-1-1">
-                <div class="c-avt">
-                    <img data-src="{{IMG_DIR}}/p4/list/1.jpg"/>
-                </div>
-                <div class="c-info">
-                    <h2>范冰冰</h2>
-                    <p>电影演员，毕业于上海师范大学谢晋影视艺术学院。1996年参演电视剧《女强人》。</p>
-                </div>
-                <div class="c-line">
-                    <span class="line_1"></span>
-                    <span class="line_2"></span>
-                </div>
-            </div>
-        </div>
-        <div class="list-c-item list-c-2">
-            <div class="item-2-1">
-                <div class="c-avt">
-                    <img data-src="{{IMG_DIR}}/p4/list/2.jpg"/>
-                </div>
-                <div class="c-info">
-                    <h2>汤唯</h2>
-                    <p>中央戏剧学院导演系本科。2007年在导演李安执导的电影《色·戒》中饰演女主角。</p>
-                </div>
-                <div class="c-line">
-                    <span class="line_1"></span>
-                    <span class="line_2"></span>
-                </div>
-            </div>
-        </div>
-        <div class="list-c-item list-c-3">
-            <div class="item-3-1">
-                <div class="c-avt">
-                    <img data-src="{{IMG_DIR}}/p4/list/3.jpg"/>
-                </div>
-                <div class="c-info">
-                    <h2>Angelababy</h2>
-                    <p>1989年2月28日出生于上海，13岁时移居香港，中国影视女演员。</p>
-                </div>
-                <div class="c-line">
-                    <span class="line_1"></span>
-                    <span class="line_2"></span>
-                </div>
-            </div>
-        </div>
-        <div class="list-c-item list-c-4">
-            <div class="item-4-1">
-                <div class="c-avt">
-                    <img data-src="{{IMG_DIR}}/p4/list/4.jpg"/>
-                </div>
-                <div class="c-info">
-                    <h2>汤唯</h2>
-                    <p>中央戏剧学院导演系本科。2007年在导演李安执导的电影《色·戒》中饰演女主角。</p>
-                </div>
-                <div class="c-line">
-                    <span class="line_1"></span>
-                    <span class="line_2"></span>
-                </div>
-            </div>
-        </div>
+        <div class="list-c-item list-c-1"></div>
+        <div class="list-c-item list-c-2"></div>
+        <div class="list-c-item list-c-3"></div>
+        <div class="list-c-item list-c-4"></div>
     </div>
 </script>
 <!-- p4 -->
@@ -216,16 +160,105 @@
         </div>
     </div>
     <!--list-->
+    <div class="list-c">
+        <div class="c-btn" data-tap="c-btn-tap-5">
+            <div class="btn-rotate" data-tap="c-btn-tap-5"></div>
+        </div>
+        <div class="list-c-item list-c-1">
+            <img data-src="{{IMG_DIR}}/p5/list/1.jpg" class="item-c cur"/>
+        </div>
+        <div class="list-c-item list-c-2">
+            <img data-src="{{IMG_DIR}}/p5/list/2.jpg" class="item-c cur"/>
+        </div>
+        <div class="list-c-item list-c-3">
+            <img data-src="{{IMG_DIR}}/p5/list/3.jpg" class="item-c cur"/>
+        </div>
+        <div class="list-c-item list-c-4">
+            <img data-src="{{IMG_DIR}}/p5/list/4.jpg" class="item-c cur"/>
+        </div>
+        <div class="list-c-item list-c-5">
+            <img data-src="{{IMG_DIR}}/p5/list/5.jpg" class="item-c cur"/>
+        </div>
+    </div>
 </script>
 <!-- p5 -->
 <!-- p6 -->
 <script type="text/x-handlebars-template" id="p6">
+    <!--title-->
+    <div class="top">
+        <div class="tit">
+            <img data-src="{{IMG_DIR}}/p6/tit_1.png" class="tit_1"/>
+            <img data-src="{{IMG_DIR}}/p6/tit_2.png" class="tit_2"/>
+        </div>
+        <div class="tit_s">
+            <img data-src="{{IMG_DIR}}/p1/tit_s/1.png" class="tit_s_1"/>
+            <img data-src="{{IMG_DIR}}/p1/tit_s/2.png" class="tit_s_2"/>
+            <img data-src="{{IMG_DIR}}/p1/tit_s/3.png" class="tit_s_3"/>
+        </div>
+    </div>
+    <!--list-->
+    <div class="list-c">
+        <div class="c-btn" data-tap="c-btn-tap-6">
+            <div class="btn-rotate" data-tap="c-btn-tap-6"></div>
+            <p data-tap="c-btn-tap-4">换一组</p>
+        </div>
+        <div class="list-c-item list-c-1"></div>
+        <div class="list-c-item list-c-2"></div>
+        <div class="list-c-item list-c-3"></div>
+        <div class="list-c-item list-c-4"></div>
+        <div class="list-c-item list-c-5"></div>
+        <div class="list-c-item list-c-6"></div>
+        <div class="list-c-item list-c-7"></div>
+        <div class="list-c-item list-c-8"></div>
+        <div class="list-c-item list-c-9"></div>
+        <div class="list-c-item list-c-10"></div>
+        <div class="list-c-item list-c-11"></div>
+        <div class="list-c-item list-c-12"></div>
+    </div>
 </script>
 <!-- p6 -->
 <!-- p7 -->
 <script type="text/x-handlebars-template" id="p7">
+    <!--title-->
+    <div class="top">
+        <div class="tit">
+            <img data-src="{{IMG_DIR}}/p7/tit_1.png" class="tit_1"/>
+            <img data-src="{{IMG_DIR}}/p7/tit_2.png" class="tit_2"/>
+        </div>
+        <div class="tit_s">
+            <img data-src="{{IMG_DIR}}/p1/tit_s/1.png" class="tit_s_1"/>
+            <img data-src="{{IMG_DIR}}/p1/tit_s/2.png" class="tit_s_2"/>
+            <img data-src="{{IMG_DIR}}/p1/tit_s/3.png" class="tit_s_3"/>
+        </div>
+    </div>
+    <!--list-->
+    <div class="list-c">
+        <img data-src="{{IMG_DIR}}/p7/coop_1.png" class="list-c-1"/>
+        <img data-src="{{IMG_DIR}}/p7/coop_2.png" class="list-c-2"/>
+        <img data-src="{{IMG_DIR}}/p7/coop_3.png" class="list-c-3"/>
+    </div>
 </script>
 <!-- p7 -->
+<!-- p8 -->
+<script type="text/x-handlebars-template" id="p8">
+    <img data-src="{{IMG_DIR}}/p8/tit.png" class="top_tip"/>
+    <!--title-->
+    <div class="top">
+        <div class="tit">
+            <img data-src="{{IMG_DIR}}/p8/tit_1.png" class="tit_1"/>
+            <img data-src="{{IMG_DIR}}/p8/tit_2.png" class="tit_2"/>
+        </div>
+        <div class="share">
+            <div>分享到：</div>
+            <img data-src="{{IMG_DIR}}/p8/wx.png" data-tap="share_pop_show"/>
+            <img data-src="{{IMG_DIR}}/p8/sina.png" data-tap="share_sina"/>
+        </div>
+    </div>
+    <div class="share_pop" data-tap="share_pop_hide" style="display:none;">
+        <img data-src="{{IMG_DIR}}/p8/wx_share.gif" data-tap="share_pop_hide"/></div>
+    </div>
+</script>
+<!-- p8 -->
 <script type="text/javascript">
     var _dir = (function (){
         var href = $('#css').attr('href').toString();
