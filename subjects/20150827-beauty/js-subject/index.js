@@ -4,6 +4,9 @@ if(isIE = navigator.userAgent.indexOf("MSIE")!=-1) {
     $(".nav_right").css("top",ht+"px");
 }
 $(document).ready(function(){
+    setTimeout(function(){
+        $(".end_tip").fadeOut();
+    },2000);
     /*float nav*/
     var $win  = $(window),$sidebars = $('.nav_right .nav_item');
     var sTop = 0;
@@ -118,17 +121,17 @@ $(document).ready(function(){
         //pro.get_info(data);
     });
     /*vote*/
-    $(".vote_btn,.vote_icon").on("click",function(e){
-        var $tar = $(e.target);
-        vote.init($tar);
-        //test
-        vote._pro_vote();
-        //test end
-
-        //var id = $tar.parents(".p").find(".vote_btn").data("proid");
-        //var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"zan"};
-        //vote.set_vote(data);
-    });
+    //$(".vote_btn,.vote_icon").on("click",function(e){
+    //    var $tar = $(e.target);
+    //    vote.init($tar);
+    //    //test
+    //    vote._pro_vote();
+    //    //test end
+    //
+    //    //var id = $tar.parents(".p").find(".vote_btn").data("proid");
+    //    //var data = {c:"ArticleHelps",a:"AddPicExp",type:1,document_id:id,extinfo:"zan"};
+    //    //vote.set_vote(data);
+    //});
 });
 var PRO =  function(){};
 PRO.prototype = {

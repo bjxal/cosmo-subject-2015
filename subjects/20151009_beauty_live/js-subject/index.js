@@ -230,7 +230,7 @@ Fui.Template.regTpl({
 var mt_3 = mt_5 = false;
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:6,
+    curPage:0,
     //lock:true,
     iteration:false,
     orient:'y',
@@ -242,13 +242,13 @@ var slider = new Fui.PageSlider({
                 $(".cover").fadeIn().addClass("focus");
                 $(".bg_lf").removeClass("width_308");
             }
-            if(page==8){
-                $(".fui-arrow").css("z-index","-1");
+            else if(page==8){
+                $(".fui-arrow").removeClass("down");
                 $(".bg_lf").removeClass("width_308");
                 $(".share").show().addClass("focus");
             }
             else{
-                $(".fui-arrow").css("z-index","10000");
+                $(".fui-arrow").addClass("down");
                 $(".share").hide().removeClass("focus");
                 $(".bg_lf").addClass("width_308");
             }
