@@ -1,143 +1,5 @@
 require("/fliza-ui");
-$(".weixin_jpg").attr("src",ImgDir('/weixin.jpg'));
-LIST = function(){}
-LIST.prototype = {
-    set_watch_list:function(){
-        var islider1 = new iSlider({
-            data: watch_list,
-            type:"dom",
-            dom: document.getElementById("animation-effect"),
-            duration: 3000,
-            animateType: 'rotate',
-            isAutoplay: false,
-            isLooping: true,
-            onslideend:function(){
-                var list = $("#animation-effect li");
-                $.each(list,function(i,item){
-                    var deg_v = $(item).attr("style").split("rotateY(")[1].split("deg")[0];
-                    if(deg_v==0){
-                        $(item).find(".word").addClass("cur");
-                    }
-                    else{
-                        $(item).find(".word").removeClass("cur");
-                    }
-                });
-            }
-            //isVertical: true// 是否垂直滚动
-        });
-    },
-    set_star_list:function(){
-        var islider2 = new iSlider({
-            data: star_list,
-            //type:'dom',
-            dom: document.getElementById("animation-effect-2"),
-            duration: 3000,
-            animateType: 'flow',
-            isAutoplay: false,
-            isLooping: true,
-            onslideend:function(){
-                var id = islider2.slideIndex;
-                $(".p2 .name-list p").eq(id).addClass("cur").siblings().removeClass("cur");
-
-            }
-            //isVertical: true// 是否垂直滚动
-        });
-    },
-    set_guests_list:function(){
-        var me = this;
-        /*lf*/
-        $.each(guests_list,function(i,item){
-            var id = i%2+1;
-            var lf_html = me.guests_html(item,i);
-            $(".p3 .list-c-"+id).append(lf_html);
-        });
-    },
-    guests_html:function(obj,i){
-        var c = document.createElement("div");
-        var cname = (i<2)?"cur":"";
-        //c.className = (i==0)?"list-c-item cur":"list-c-item";
-        c.className = "list-c-item item-"+Math.floor(i/2)+" "+cname;
-
-        var c_img = document.createElement("img");
-        c_img.src = obj.imgUrl;
-        c.appendChild(c_img);
-
-        var c_name = document.createElement("div");
-        c_name.innerHTML = obj.name;
-        c.appendChild(c_name);
-
-        return c;
-    },
-    set_icon_list:function(){
-        var me = this;
-        $.each(icon_list,function(i,item){
-            var id = i%4+1;
-            var icon_html = me.icon_html(item,i);
-            $(".p4 .list-c-"+id).append(icon_html);
-        });
-    },
-    icon_html:function(obj,i){
-        var cname = (i<4)?"cur":"";
-        var c = document.createElement("div");
-        c.className = "item-c item-"+Math.floor(i/4)+" "+cname;
-
-        var c_avt = document.createElement("div");
-        c_avt.className = "c-avt";
-        c_avt.innerHTML = '<img src="'+obj.imgUrl+'"/>';
-        c.appendChild(c_avt);
-
-        var c_info = document.createElement("div");
-        c_info.className = "c-info";
-        c_info.innerHTML = '<h2>'+obj.name+'</h2><p>'+obj.info+'</p>';
-        c.appendChild(c_info);
-
-        var c_line = document.createElement("div");
-        c_line.className = "c-line";
-        c_line.innerHTML = '<span class="line_1"></span><span class="line_2"></span>';
-        c.appendChild(c_line);
-
-        return c;
-
-    },
-    set_moment_list:function(){
-        var me = this;
-        $.each(moment_list,function(i,item){
-            var id = i%5+1;
-            var moment_html = me.moment_html(item,i);
-            $(".p5 .list-c-"+id).append(moment_html);
-        });
-    },
-    moment_html:function(obj,i){
-        var cname = (i<5)?"cur":"";
-        var c = document.createElement("img");
-        c.src = obj.imgUrl;
-        c.className = "item-c item-"+Math.floor(i/5)+" "+cname;
-
-        return c;
-    },
-    set_team_list:function(){
-        var me = this;
-        $.each(team_list,function(i,item){
-            var id = i%12+1;
-            var team_html = me.team_html(item,i);
-            $(".p6 .list-c-"+id).append(team_html);
-        });
-    },
-    team_html:function(obj,i){
-        /*
-        *  <div class="list-item item-1">
-         <img data-src="{{IMG_DIR}}/p6/list/11.jpg"/>
-         <div class="name"><p><span>Aaria arredondo</span></p></div>
-         </div>
-         */
-        var cname = (i<12)?"cur":"";
-        var c = document.createElement("div");
-        c.className = "list-item item-"+Math.floor(i/12)+" "+cname;
-        c.innerHTML = '<img src="'+obj.imgUrl+'"/><div class="name"><p><span>'+obj.name+'</span></p></div>';
-
-        return c;
-    }
-};
+$(".weixin_jpg").attr("src",ImgDir('/weixin.png'));
 Fui.Template.IMG_DIR = ImgDir();
 var p3_id = 0,
     p4_id = 0,
@@ -185,7 +47,7 @@ var PAGE0 = Fui.Template.extend({
                 gesture:"tap",
                 name:"c-btn-tap-3",
                 callback:function(e,$tar){
-                    var num = (guests_list.length)/2;
+                    var num = (guest_list.length)/2;
                     p3_id = ((p3_id+1)<num)?(p3_id+1):0;
                     $tar.parents(".p").find(".item-"+p3_id).addClass("cur zIndex cur_"+p3_id);
                     $tar.parents(".p").find(".list-c-item.cur_"+p3_id).siblings().removeClass("zIndex");
@@ -230,7 +92,7 @@ Fui.Template.regTpl({
 var mt_3 = mt_5 = false;
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:0,
+    curPage:7,
     //lock:true,
     iteration:false,
     orient:'y',
@@ -297,20 +159,6 @@ var slider = new Fui.PageSlider({
 slider.render();
 setTimeout(function(){$(".cover").addClass("focus");},1000);
 $(".fui-arrow").removeClass("down");
-var list_fun = new LIST();
-/*set watch_list*/
-list_fun.set_watch_list();
-/*set star_list*/
-list_fun.set_star_list();
-/*set guests_list*/
-list_fun.set_guests_list();
-/*set icon_list*/
-list_fun.set_icon_list();
-/*set moment_list*/
-list_fun.set_moment_list();
-/*set team_list*/
-list_fun.set_team_list();
-//list_fun
 $(".cover_scanning").on("touchend",function(e){
     $(e.target).addClass("cur").find(".scan_line").hide();
     setTimeout(function(){
@@ -318,7 +166,30 @@ $(".cover_scanning").on("touchend",function(e){
         $(".bg_lf").addClass("width_308");
         $(".cover").fadeOut(500);
     },1000);
+    setTimeout(function(){
+        $(e.target).removeClass("cur").find(".scan_line").show();
+    },2000);
 });
+
+
+/*set data*/
+var list = new LIST();
+/*bendi*/
+list.set_watch_list();
+list.set_star_list();
+list.set_guests_list();
+list.set_icon_list();
+list.set_moment_list();
+list.set_team_list();
+
+/*xianshang*/
+//ajax_url(613,live_fun);
+//ajax_url(614,star_fun);
+//ajax_url(615,guest_fun);
+//ajax_url(616,icon_fun);
+//ajax_url(617,moment_fun);
+//ajax_url(618,team_fun);
+
 //weixin share
 //var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+String(window.location.href)+"'";
 //$.ajax({

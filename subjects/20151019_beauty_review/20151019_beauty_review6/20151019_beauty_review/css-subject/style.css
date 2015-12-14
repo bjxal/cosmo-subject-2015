@@ -1,0 +1,633 @@
+@import "fliza-style.css";
+p,div{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+a,p,span{
+    outline: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Microsoft yahei", Helvetica, Arial, Verdana, sans-serif;
+    background: url(../img-subject/bg.jpg) repeat center;
+    background-size:cover;
+    background-color:#000000;
+}
+.mrg{
+    width: 100%;
+    height: 1px;
+}
+/*muscis*/
+.app-music {
+    padding: 10px 10px 30px 30px;
+    position: absolute;
+    z-index: 100;
+    top: 3%;
+    right: 3%;
+}
+.app-music span {
+    position: relative;
+    display: block;
+    font-size: 26px;
+    padding: 28px;
+    background: url(../img-subject/m-icon.png) no-repeat center;
+    background-size: 100% auto;
+    border:none;
+}
+.app-music.stop b {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #de5a7f;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+/*slide tip*/
+.fui-arrow:before, .fui-arrow:after{
+    background: none;
+}
+.fui-arrow.down {
+    width: 173px;
+    height: 77px;
+    bottom: 40px;
+    background: url(../img-subject/arrow.png) no-repeat center;
+    left: 50%;
+    margin-left: -87px;
+    -webkit-animation: fui-arrow-up 2s linear infinite;
+    -moz-animation: fui-arrow-up 2s linear infinite;
+    -ms-animation: fui-arrow-up 2s linear infinite;
+    -o-animation: fui-arrow-up 2s linear infinite;
+    animation: fui-arrow-up 2s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.bg_c{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    /*background: url(../img-subject/bg.jpg) no-repeat center;*/
+}
+.bg_list{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg_c .bg{
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1500px;
+    height: 1500px;
+    background: url(../img-subject/bg.jpg) no-repeat center;
+    background-size:cover;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    animation: bg_c_ani 150s linear infinite normal;
+    -webkit-animation: bg_c_ani 150s linear infinite normal;
+}
+@keyframes bg_c_ani
+{
+    from  { transform: translate(-50%,-50%) rotate(0deg);-webkit-transform: translate(-50%,-50%) rotate(0deg);}
+    to { transform: translate(-50%,-50%) rotate(360deg);-webkit-transform: translate(-50%,-50%) rotate(360deg);}
+}
+@-webkit-keyframes bg_c_ani /* Safari ºÍ Chrome */
+{
+    from  { transform: translate(-50%,-50%) rotate(0deg);-webkit-transform: translate(-50%,-50%) rotate(0deg);}
+    to { transform: translate(-50%,-50%) rotate(360deg);-webkit-transform: translate(-50%,-50%) rotate(360deg);}
+}
+.bg_c .bg_top{
+    opacity: 0;
+    position: absolute;
+    top: -150px;
+    width: 598px;
+    height: 151px;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    z-index:1;
+    background: url(../img-subject/bg_top.png) no-repeat center;
+    background-size: 100% auto;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+}
+.bg_c .bg_top.show{
+    top: 0;
+    opacity: 1;
+}
+.bg_c .bg_btm{
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    width: 100%;
+    height: 645px;
+    left: 0;
+    z-index:1;
+    background: url(../img-subject/bg_btm.png) no-repeat center;
+    background-size: 100% auto;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+.bg_c .bg_btm.hide{
+    bottom: -650px;
+    opacity: 0;
+}
+.star_list{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.star_list span{
+    display: block;
+    width: 283px;
+    height: 150px;
+    position: absolute;
+    background: url(../img-subject/p0/star.png) no-repeat center;
+    background-size: cover;
+}
+.star_list span.star_1{
+    top: 2%;
+    left: 5%;
+    animation: star_ani 1s linear 0.1s infinite alternate;
+    -webkit-animation: star_ani 1s linear 0.1s infinite alternate;
+}
+.star_list span.star_2{
+    right: -8%;
+    top: 20%;
+    width: 240px;
+    animation: star_ani 1s linear 0.3s infinite alternate;
+    -webkit-animation: star_ani 1s linear 0.3s infinite alternate;
+}
+.star_list span.star_3{
+    right: 0%;
+    top: 60%;
+    width: 250px;
+    animation: star_ani 1s linear 0.6s infinite alternate;
+    -webkit-animation: star_ani 1s linear 0.6s infinite alternate;
+}
+.star_list span.star_4{
+    right: 20%;
+    top: 35%;
+    width: 200px;
+    animation: star_ani 1s linear 1s infinite alternate;
+    -webkit-animation: star_ani 1s linear 1s infinite alternate;
+}
+.star_list span.star_5{
+    left: 0%;
+    top: 42%;
+    width: 250px;
+    animation: star_ani 1s linear 1.5s infinite alternate;
+    -webkit-animation: star_ani 1s linear 1.5s infinite alternate;
+}
+@-webkit-keyframes star_ani{
+    0%{opacity: 1;}
+    100%{opacity: 0.1}
+}
+@keyframes star_ani{
+    0%{opacity: 1;}
+    100%{opacity: 0.1}
+}
+/*p0*/
+.p0 img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+}
+.p0 .tit_p0{
+    top: 10%;
+}
+.p0 .tit_bg{
+	top: 15%;
+    opacity: 0;
+    animation: tit_bg_ani 1s linear infinite alternate;
+    -webkit-animation: tit_bg_ani 1s linear infinite alternate;
+}
+@-webkit-keyframes tit_bg_ani{
+    form{opacity: 0;}
+    to{opacity: 1;}
+}
+.p0 .cup{
+    width: 310px;
+    bottom: 0;
+    opacity: 0;
+    transform: translate(-50%,0) scale(2);
+    -webkit-transform: translate(-50%,0) scale(2);
+}
+.p0.focus .cup{
+    animation: cup_ani 0.3s linear 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation: cup_ani 0.3s linear 1 normal;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes cup_ani{
+    form{opacity: 0; -webkit-transform: translate(-50%,0) scale(2);}
+    to{opacity: 1; -webkit-transform: translate(-50%,0) scale(1);}
+}
+@keyframes cup_ani{
+    form{opacity: 0; -webkit-transform: translate(-50%,0) scale(2);}
+    to{opacity: 1; -webkit-transform: translate(-50%,0) scale(1);}
+}
+/*p1*/
+
+/*p2*/
+.tit{
+    position: absolute;
+    opacity: 0;
+    top: 15%;
+    left: 50%;
+    transform:translate(-50%,0) scale(3);
+    -webkit-transform:translate(-50%,0) scale(3);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.p3 .tit{
+    top: 7%;
+}
+.focus .tit{
+    opacity: 1;
+    transform:translate(-50%,0) scale(1);
+    -webkit-transform:translate(-50%,0) scale(1);
+}
+.list-c{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+
+}
+.p3 .list-c,.p6 .list-c{
+    top: 25%;
+}
+.p4 .list-c{
+    top: 36%;
+}
+.list-c .item{
+    display:inline-block;
+    margin: 100px auto;
+    opacity: 0;
+}
+.focus .list-c .item.c_1{
+    animation: tit_ani 0.3s linear 0.5s 1 normal;
+    -webkit-animation: tit_ani 0.3s linear 0.5s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.focus .list-c .item.c_2{
+    animation: tit_ani 0.3s linear 0.7s 1 normal;
+    -webkit-animation: tit_ani 0.3s linear 0.7s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.focus .list-c .item.c_3{
+    animation: tit_ani 0.3s linear 0.9s 1 normal;
+    -webkit-animation: tit_ani 0.3s linear 0.9s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.focus .list-c .item.c_4{
+    animation: tit_ani 0.3s linear 1.1s 1 normal;
+    -webkit-animation: tit_ani 0.3s linear 1.1s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.focus .list-c .item.c_5{
+    animation: tit_ani 0.3s linear 1.3s 1 normal;
+    -webkit-animation: tit_ani 0.3s linear 1.3s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.focus .list-c .item.c_6{
+    animation: tit_ani 0.3s linear 1.5s 1 normal;
+    -webkit-animation: tit_ani 0.3s linear 1.5s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.focus .list-c .item.c_7{
+    animation: tit_ani 0.3s linear 1.7s 1 normal;
+    -webkit-animation: tit_ani 0.3s linear 1.7s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes tit_ani{
+    form{opacity: 0; margin: 100px auto;}
+    to{opacity: 1; margin: 20px auto;}
+}
+@keyframes tit_ani{
+    form{opacity: 0; margin: 100px auto;}
+    to{opacity: 1; margin: 20px auto;}
+}
+.p4 .list-c .item{
+    position: relative;
+}
+.p4 .list-c span{
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    color: #ed207b;
+    font-size: 68px;
+    top: -25px;
+    opacity: 0;
+    -webkit-transform: scale(2);
+}
+.p4 .list-c span.num_1{
+    width: 117px;
+    height: 55px;
+    left: 205px;
+    top: -5px;
+    background-image: url(../img-subject/p4/num_1.png);
+}
+.p4 .list-c span.num_2{
+    width: 86px;
+    height: 82px;
+    left: 160px;
+    font-size: 85px;
+    top: -25px;
+    background-image: url(../img-subject/p4/num_2.png);
+}
+.p4 .list-c span.num_3{
+    width: 92px;
+    height: 83px;
+    left: 105px;
+    top: -20px;
+    background-image: url(../img-subject/p4/num_3.png);
+}
+.p4 .list-c span.num_4{
+    width: 272px;
+    height: 128px;
+    left: 50%;
+    top: 60px;
+    background-image: url(../img-subject/p4/num_4.png);
+    -webkit-transform: translate(-50%,0) scale(5);
+}
+.p4.focus .list-c span.num_1{
+    animation: p4_span_ani 0.3s linear 2s 1 normal;
+    -webkit-animation: p4_span_ani 0.3s linear 2s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.p4.focus .list-c span.num_2{
+    animation: p4_span_ani 0.3s linear 2.2s 1 normal;
+    -webkit-animation: p4_span_ani 0.3s linear 2.2s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.p4.focus .list-c span.num_3{
+    animation: p4_span_ani 0.3s linear 2.4s 1 normal;
+    -webkit-animation: p4_span_ani 0.3s linear 2.4s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+.p4.focus .list-c span.num_4{
+    animation: p4_span_ani2 0.3s linear 2.6s 1 normal;
+    -webkit-animation: p4_span_ani2 0.3s linear 2.6s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes p4_span_ani{
+    form{-webkit-transform: scale(2); opacity: 0;}
+    to{-webkit-transform: scale(1); opacity: 1;}
+}
+@keyframes p4_span_ani{
+    form{-webkit-transform: scale(2); opacity: 0;}
+    to{-webkit-transform: scale(1); opacity: 1;}
+}
+@-webkit-keyframes p4_span_ani2{
+    form{transform: translate(-50%,0) scale(5);-webkit-transform: translate(-50%,0) scale(5); opacity: 0;}
+    to{transform: translate(-50%,0) scale(1);-webkit-transform: translate(-50%,0) scale(1); opacity: 1;}
+}
+@keyframes p4_span_ani2{
+    form{transform: translate(-50%,0) scale(5);-webkit-transform: translate(-50%,0) scale(5); opacity: 0;}
+    to{transform: translate(-50%,0) scale(1);-webkit-transform: translate(-50%,0) scale(1); opacity: 1;}
+}
+/*p5*/
+.name-list{
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    z-index: 1;
+}
+.name-list span{
+    display: block;
+    width: 250px;
+    height: 52px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+.name-list span.cur{
+    opacity: 1;
+}
+.name-list span.tit_0{
+    background-image: url(../img-subject/p5/date/1.png);
+}
+.name-list span.tit_1{
+    background-image: url(../img-subject/p5/date/2.png);
+}
+.name-list span.tit_2{
+    background-image: url(../img-subject/p5/date/3.png);
+}
+.name-list span.tit_3{
+    background-image: url(../img-subject/p5/date/4.png);
+}
+#iSlider-effect-wrapper{
+    /*opacity: 0;*/
+    height: 870px;
+    width: 750px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-42%);
+    -webkit-transform: translate(-50%,-42%);
+}
+.iSlider-effect {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.iSlider-effect ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.iSlider-effect li {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    box-pack: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-align: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    list-style: none;
+    text-align: center;
+}
+.iSlider-effect ul li img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.iSlider-effect li p{
+    font-size: 22px;
+    color: #fff;
+    padding: 15px;
+    line-height: 37px;
+    width: 640px;
+    position: absolute;
+    bottom: -100%;
+    opacity: 0;
+    left: 50%;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    background: url(../img-subject/opt_black_85.png);
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    text-align: left;
+}
+.iSlider-effect li p.cur{
+    bottom:0;
+    opacity: 1;
+}
+/*p7*/
+.p7 .top_tip{
+    opacity: 0;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+}
+.p7.focus .top_tip{
+    animation: top_tip 0.5s linear 1s 1 normal;
+    -webkit-animation: top_tip 0.5s linear 1s 1 normal;
+    -moz-animation: top_tip 0.5s linear 1s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes top_tip{
+    0%{opacity: 0; top: -50%;}
+    100%{opacity: 1; top: 0;}
+}
+@keyframes top_tip{
+    0%{opacity: 0; top: -50%;}
+    100%{opacity: 1; top: 0;}
+}
+.p7 .top{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: 50%;
+    -webkit-transform: translate(0,-45%);
+    text-align: center;
+}
+.p7 .tit-p7 img{
+    display: block;
+    margin: 100px auto;
+    opacity: 0;
+}
+.p7.focus .tit-p7 img.tit_1{
+    animation: p7_brand 0.3s linear 0.4s 1 normal;
+    -webkit-animation: p7_brand 0.3s linear 0.4s 1 normal;
+    -moz-animation: p7_brand 0.3s linear 0.4s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+.p7.focus .tit-p7 img.tit_2{
+    animation: p7_brand 0.3s linear 0.6s 1 normal;
+    -webkit-animation: p7_brand 0.3s linear 0.6s 1 normal;
+    -moz-animation: p7_brand 0.3s linear 0.6s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+@-webkit-keyframes p7_brand{
+    0%{opacity: 0; margin: 100px auto;}
+    100%{opacity: 1; margin: 20px auto;}
+}
+@keyframes p7_brand{
+    0%{opacity: 0; margin: 100px auto;}
+    100%{opacity: 1; margin: 20px auto;}
+}
+.p7 .share{
+    opacity: 0;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+.p7 .share div{
+    display: inline;
+    font-size: 30px;
+    color: #fff;
+}
+.p7 .share img{
+    display: inline-block;
+    margin: 0 20px;
+}
+.p7.focus .share{
+    animation: p7_brand 0.3s linear 0.8s 1 normal;
+    -webkit-animation: p7_brand 0.3s linear 0.8s 1 normal;
+    -moz-animation: p7_brand 0.3s linear 0.8s 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+.p7 .share_pop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000;
+    overflow: auto;
+    color: #fff;
+    text-align: center;
+}

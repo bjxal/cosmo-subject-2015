@@ -10,17 +10,29 @@
     <meta name="apple-touch-fullscreen" content="yes" />
     <meta name="format-detection" content="telephone=no" />
     <script src="js-subject/device.js"></script>
-    <title>美容大奖现场直播</title>
+    <script type="text/javascript">
+        var links =  window.location.href.split("?");
+        if(links.length>1){
+            window.location.href =window.location.href.split("?")[0];
+        }
+    </script>
+    <title>2015时尚COSMO美丽盛典</title>
     <link rel="shortcut icon" type="image/x-icon" href="http://new-icon.cosmochina.com.cn/channel/common/img/favicon.ico" media="screen">
     <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
 </head>
 <body>
+<div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a"></div>
+</div>
 <!--<img src="img-subject/weixin.jpg" style="opacity: 0; z-index: -1; position: absolute;" class="weixin_jpg"/>-->
 <div class="bg_c">
-    <img src="img-subject/bg.jpg" class="bg"/>
+    <div class="bg"></div>
     <img src="img-subject/p0/bg_lf.png" class="bg_lf"/>
 </div>
-<div class="cover">
+<div class="cover" style="display:none;">
     <div class="cover_bg">
         <img src="img-subject/p0/star.png" class="star_1"/>
         <img src="img-subject/p0/star.png" class="star_2"/>
@@ -58,6 +70,7 @@
         <div class="tit_s">
             <img data-src="{{IMG_DIR}}/p1/tit_s/1.png" class="tit_s_1"/>
             <img data-src="{{IMG_DIR}}/p1/tit_s/2.png" class="tit_s_2"/>
+
             <img data-src="{{IMG_DIR}}/p1/tit_s/3.png" class="tit_s_3"/>
         </div>
     </div>
@@ -88,11 +101,7 @@
         <div id="animation-effect-2" class="iSlider-effect"></div>
         <img data-src="{{IMG_DIR}}/list_arr_lf.png" class="list_arr_lf"/>
         <img data-src="{{IMG_DIR}}/list_arr_rt.png" class="list_arr_rt"/>
-        <div class="name-list">
-            <p class="cur">妮可·基德曼</p>
-            <p>李冰冰</p>
-            <p>范冰冰</p>
-        </div>
+        <div class="name-list"></div>
     </div>
 </script>
 <!-- p2 -->
@@ -164,21 +173,11 @@
         <div class="c-btn" data-tap="c-btn-tap-5">
             <div class="btn-rotate" data-tap="c-btn-tap-5"></div>
         </div>
-        <div class="list-c-item list-c-1">
-            <img data-src="{{IMG_DIR}}/p5/list/1.jpg" class="item-c cur"/>
-        </div>
-        <div class="list-c-item list-c-2">
-            <img data-src="{{IMG_DIR}}/p5/list/2.jpg" class="item-c cur"/>
-        </div>
-        <div class="list-c-item list-c-3">
-            <img data-src="{{IMG_DIR}}/p5/list/3.jpg" class="item-c cur"/>
-        </div>
-        <div class="list-c-item list-c-4">
-            <img data-src="{{IMG_DIR}}/p5/list/4.jpg" class="item-c cur"/>
-        </div>
-        <div class="list-c-item list-c-5">
-            <img data-src="{{IMG_DIR}}/p5/list/5.jpg" class="item-c cur"/>
-        </div>
+        <div class="list-c-item list-c-1"></div>
+        <div class="list-c-item list-c-2"></div>
+        <div class="list-c-item list-c-3"></div>
+        <div class="list-c-item list-c-4"></div>
+        <div class="list-c-item list-c-5"></div>
     </div>
 </script>
 <!-- p5 -->
@@ -200,7 +199,7 @@
     <div class="list-c">
         <div class="c-btn" data-tap="c-btn-tap-6">
             <div class="btn-rotate" data-tap="c-btn-tap-6"></div>
-            <p data-tap="c-btn-tap-4">换一组</p>
+            <p data-tap="c-btn-tap-6">换一组</p>
         </div>
         <div class="list-c-item list-c-1"></div>
         <div class="list-c-item list-c-2"></div>
@@ -236,6 +235,7 @@
         <img data-src="{{IMG_DIR}}/p7/coop_1.png" class="list-c-1"/>
         <img data-src="{{IMG_DIR}}/p7/coop_2.png" class="list-c-2"/>
         <img data-src="{{IMG_DIR}}/p7/coop_3.png" class="list-c-3"/>
+        <img data-src="{{IMG_DIR}}/p7/coop_4.png" class="list-c-4"/>
     </div>
 </script>
 <!-- p7 -->
@@ -276,15 +276,15 @@
 </script>
 <script type="text/javascript">
     var shareData = {
-        tit:"现场直播",
-        desc:"现场直播",
+        tit:"2015时尚COSMO美丽盛典",
+        desc:"时尚COSMO美丽盛典22周年，为你开启一场奇幻美丽之旅",
         link:String(window.location.href),
-        imgUrl:ImgDir('/weixin.jpg')
+        imgUrl:ImgDir('/weixin.png')
     };
 </script>
 <!--<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
 <script type="text/javascript" src="js-subject/islider.js"></script>
-<script type="text/javascript" src="js-subject/data.js"></script>
+<script type="text/javascript" src="js-subject/data_old.js"></script>
 <script type="text/javascript" src="js-subject/index@.js"></script>
 <!--统计代码-->
 <script>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>图库-COSMO</title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-title" content="COSMO">
+	<link rel="stylesheet" href="./css/common.css"/>
+	<link rel="stylesheet" href="./css/mobile.css" />
+	<!--<link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/pad.css" />-->
+	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+	<script type="application/javascript" src="./js/iscroll.js"></script>
+	<style type="text/css">
+		#picDiv,#scroller,#photoAll{height:100%;}
+	</style>
+	<script>_recommend =[{"title":"\u8fd0\u52a8\u6d41\u884c\u98ce \u4e94\u5957\u590f\u5b63\u65f6\u5c1a\u5973\u5f0f\u8fd0\u52a8\u9020\u578b","img":"http:\/\/new-img2.ol-img.com\/210x280\/119\/150\/liU7PTZR2XJc.jpg","url":"http:\/\/pic.onlylady.com\/2014\/0519\/3468528.shtml"},{"title":"\u6625\u590f\u5fc5\u5907 \u4ee4\u4f60\u7231\u4e0d\u91ca\u811a\u7684\u51c9\u978b \u4e3a\u53cc\u8db3\u89e3\u538b","img":"http:\/\/new-img2.ol-img.com\/210x280\/118\/871\/licJTyGZjBJNY.jpg","url":"http:\/\/pic.onlylady.com\/2014\/0422\/3454167.shtml"},{"title":"\u5c34\u5c2c\u7684\u79cb\u5b63\u5982\u4f55\u642d \u7a7f\u51fa\u6700\u5b8c\u7f8e\u7684\u8eab\u6750","img":"http:\/\/new-img2.ol-img.com\/210x280\/114\/889\/liXP2JCZnXYQ.jpg","url":"http:\/\/pic.onlylady.com\/2013\/0930\/3236786.shtml"},{"title":"\u8857\u5934\u6f6e\u4eba\u6c14\u573a\u8db3 \u8f7b\u677e\u9a7e\u9a6d\u4f18\u96c5\u5957\u88c5","img":"http:\/\/new-img2.ol-img.com\/210x280\/116\/475\/liwChJR0TNkEk.jpg","url":"http:\/\/pic.onlylady.com\/2013\/1209\/3335129.shtml"}]</script>
+</head>
+<body>
+<div class="topbar" id="topbar">
+	<div class="topbar_inner">
+		<a href="index.html" class="title"></a>
+		<a href="javascript:void(0);" id="nav_btn" class="bar_btn nav_btn"></a>
+		<a href="javascript:void(0);" id="search" class="bar_btn search_btn"></a>
+	</div>
+	<div class="topsearch" id="topsearch">
+		<a href="javascript:void(0);" class="close_btn" id="close_btn"></a>
+		<div class="search">
+			<form><input type="search" placeholder="搜索"></form>
+			<!--<a class="submit_btn" href="javascript:void(0);">搜索</a>-->
+		</div>
+		<div class="tips">
+			<a href="#" target="_blank">谈情说爱</a>
+			<a href="#" target="_blank">古董喇叭裤</a>
+			<a href="#" target="_blank">实用贴</a>
+			<a href="#" target="_blank">通勤发型</a>
+		</div>
+		<ul class="s_list">
+			<li><span></span><a href="#" target="_blank">帽女郎心机？带帽美人也要靠化妆</a></li>
+			<li><span></span><a href="#" target="_blank">旅途也要凹造型 如何让登机装舒适又起范儿</a></li>
+		</ul>
+	</div>
+</div>
+<div class="channel" id="nav">
+	<div id="wrapper_nav">
+		<div id="scroller_nav">
+			<ul id="thelist">
+				<li><a href="#" title="封面人物">封面人物</a></li>
+				<li><a href="#" title="大片">大片</a></li>
+				<li><a href="#" title="街拍">街拍</a></li>
+				<li><a href="#" title="秀场">秀场</a></li>
+				<li><a href="#" title="美妆">美妆</a></li>
+				<li><a href="#" title="靓发">靓发</a></li>
+				<li><a href="#" title="国内">国内</a></li>
+				<li><a href="#" title="国外">国外</a></li>
+				<li><a href="#" title="美食">美食</a></li>
+				<li><a href="#" title="旅行">旅行</a></li>
+				<li><a href="#" title="酷玩">酷玩</a></li>
+				<li><a href="#" title="摄影">摄影</a></li>
+				<li><a href="#" title="萌宠">萌宠</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="content" id="content">
+	<div class="conLeft" id="conLeft">
+		<div class="cb height104"></div>
+		<div class="photoMHD">
+			<div class="photoNews" id="imgBox">
+				<div id="picDiv" style="display:block;">
+					<div class="pic" id="wrapper1">
+						<div id="scroller">
+							<ul id="photoAll"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="photo_save hidden" id="photoSave"><span>已保存到"照片"</span></div>
+			</div>
+			<div class="mask" id="download_tips" style=" display: none; ">
+				<img src="http://new-icon.ol-img.com/channel/suibiankankan/detail/images/downimg.png" width="180" />
+			</div>
+			<script>_listdata =[{ "title":"\u666e\u901a\u725b\u4ed4\u5982\u4f55\u53d8\u8eab\u4e2a\u6027\u65f6\u88c5\uff1f\u53ea\u9700\u7a7f\u4e0a\u62fc\u8d34\u4e39\u5b81","desc":"Vintage\u725b\u4ed4\u3001Boyfriend\u725b\u4ed4\u98ce\u3001\u9614\u817f\u5587\u53ed\u88e4\u3001\u4e0d\u5f97\u4e0d\u627f\u8ba4\uff0c\u8fd1\u51e0\u5e74\u725b\u4ed4\u5728\u6f6e\u6d41\u7a7f\u642d\u91cc\u6709\u7740\u4e0d\u5c0f\u7684\u5b58\u5728\u611f\uff0c\u53ef\u6ee1\u5927\u8857\u7c7b\u4f3c\u7684\u5355\u5b81\u725b\u4ed4\u662f\u5426\u8ba9\u4f60\u611f\u5230\u4e86\u649e\u886b\u7684\u5371\u673a\uff1f\u4e5f\u8bb8\u4f60\u771f\u8be5\u8bd5\u8bd5\u4e2a\u6027\u7684\u62fc\u8d34\u725b\u4ed4\u4e86\uff01","listimg":"http:\/\/new-img2.ol-img.com\/90x64\/124\/453\/liyJPSPJSFaMA.jpg","img":"http:\/\/new-img2.ol-img.com\/985x695\/124\/453\/liyJPSPJSFaMA.jpg","morelink":"http:\/\/new-img2.ol-img.com\/985x695\/124\/453\/liyJPSPJSFaMA.jpg" },{ "title":"\u666e\u901a\u725b\u4ed4\u5982\u4f55\u53d8\u8eab\u4e2a\u6027\u65f6\u88c5\uff1f\u53ea\u9700\u7a7f\u4e0a\u62fc\u8d34\u4e39\u5b81","desc":"\u5982\u679c\u8bf4\u628a\u725b\u4ed4\u7a7f\u6210\u4e86\u8def\u4eba\u7532\uff0c\u90a3\u4e48\u4e00\u5b9a\u662f\u4f60\u4e0d\u4f1a\u7a7f\uff0c\u770b\u770b\u8857\u62cd\u8fbe\u4eba\u4eec\uff0c\u662f\u5982\u4f55\u7528\u62fc\u8d34\u725b\u4ed4\u641e\u5b9a\u65e5\u5e38\u7a7f\u642d\u7684\u3002VOGUE\u7684\u914d\u9970\u603b\u76d1Virginia Smith\u90fd\u7528\u7d20\u8272\u536b\u8863\u642d\u914d\u62fc\u5e03\u725b\u4ed4\u53bb\u770b\u79c0\uff0c\u4f60\u8fd8\u6709\u4ec0\u4e48\u7406\u7531\u8ba9\u57fa\u672c\u6b3e\u5728\u5bb6\u91cc\u7761\u5927\u89c9\uff1f","listimg":"http:\/\/new-img2.ol-img.com\/90x64\/124\/460\/linQYRc671wI.jpg","img":"http:\/\/new-img2.ol-img.com\/985x695\/124\/460\/linQYRc671wI.jpg","morelink":"http:\/\/new-img2.ol-img.com\/985x695\/124\/460\/linQYRc671wI.jpg" },{ "title":"\u666e\u901a\u725b\u4ed4\u5982\u4f55\u53d8\u8eab\u4e2a\u6027\u65f6\u88c5\uff1f\u53ea\u9700\u7a7f\u4e0a\u62fc\u8d34\u4e39\u5b81","desc":"\u3010\u7834\u6d1e\u4e0d\u591f\uff0c\u62fc\u8d34\u6765\u51d1\u3011\r\n<br\/>\r\n\u7a7f\u7740\u53db\u9006\u7684\u7834\u6d1e\u725b\u4ed4\u65f6\uff0c\u603b\u662f\u88ab\u5bb6\u957f\u6279\u5224\u7a7f\u4e86\u6761\u201c\u7834\u88e4\u5b50\u201d\u3002\u597d\u5427\uff0c\u65e2\u7136\u5df2\u7ecf\u662f\u53db\u9006\u4e86\uff0c\u4f55\u4e0d\u53db\u9006\u5230\u5e95\uff0c\u62fc\u8d34\u4e9b\u56fe\u6848\uff0c\u8ba9\u642d\u914d\u591a\u4e9b\u4e2a\u6027\u6807\u7b7e\u3002\u5f53\u5bbd\u6a90\u5e3d\u78b0\u4e0a\u6ce2\u5170\u7684\u65b0\u9510\u54c1\u724cMISBHV\u62fc\u5e03\u670d\u9970\uff0c\u4f60\u8fd8\u80fd\u8bf4\u5bbd\u6a90\u5e3d\u53ea\u662f\u4f18\u96c5\u7684\u4ee3\u540d\u8bcd\uff1f\u65f6\u88c5\u7cbeTiffany Hsu\u7528\u767d\u886c\u886b\u642d\u914d\u62fc\u8d34\u725b\u4ed4\uff0cboyfriend\u5bbd\u677e\u7684\u886c\u886b\u624e\u5728\u8170\u4e0a\uff0c\u5982\u679c\u60f3\u8981\u5728\u53db\u9006\u4e2d\u52a0\u70b9\u5973\u4eba\u5473\uff0c\u6b64\u5904\u5e94\u6709\u4e00\u53cc\u6068\u5929\u9ad8\uff01","listimg":"http:\/\/new-img2.ol-img.com\/90x64\/124\/461\/lig3q5hOCCYbU.jpg","img":"http:\/\/new-img2.ol-img.com\/985x695\/124\/461\/lig3q5hOCCYbU.jpg","morelink":"http:\/\/new-img2.ol-img.com\/985x695\/124\/461\/lig3q5hOCCYbU.jpg" },{ "title":"\u666e\u901a\u725b\u4ed4\u5982\u4f55\u53d8\u8eab\u4e2a\u6027\u65f6\u88c5\uff1f\u53ea\u9700\u7a7f\u4e0a\u62fc\u8d34\u4e39\u5b81","desc":"\u3010\u7834\u6d1e\u4e0d\u591f\uff0c\u62fc\u8d34\u6765\u51d1\u3011\r\n<br\/>\r\n\u7a7f\u7740\u53db\u9006\u7684\u7834\u6d1e\u725b\u4ed4\u65f6\uff0c\u603b\u662f\u88ab\u5bb6\u957f\u6279\u5224\u7a7f\u4e86\u6761\u201c\u7834\u88e4\u5b50\u201d\u3002\u597d\u5427\uff0c\u65e2\u7136\u5df2\u7ecf\u662f\u53db\u9006\u4e86\uff0c\u4f55\u4e0d\u53db\u9006\u5230\u5e95\uff0c\u62fc\u8d34\u4e9b\u56fe\u6848\uff0c\u8ba9\u642d\u914d\u591a\u4e9b\u4e2a\u6027\u6807\u7b7e\u3002\u5f53\u5bbd\u6a90\u5e3d\u78b0\u4e0a\u6ce2\u5170\u7684\u65b0\u9510\u54c1\u724cMISBHV\u62fc\u5e03\u670d\u9970\uff0c\u4f60\u8fd8\u80fd\u8bf4\u5bbd\u6a90\u5e3d\u53ea\u662f\u4f18\u96c5\u7684\u4ee3\u540d\u8bcd\uff1f\u65f6\u88c5\u7cbeTiffany Hsu\u7528\u767d\u886c\u886b\u642d\u914d\u62fc\u8d34\u725b\u4ed4\uff0cboyfriend\u5bbd\u677e\u7684\u886c\u886b\u624e\u5728\u8170\u4e0a\uff0c\u5982\u679c\u60f3\u8981\u5728\u53db\u9006\u4e2d\u52a0\u70b9\u5973\u4eba\u5473\uff0c\u6b64\u5904\u5e94\u6709\u4e00\u53cc\u6068\u5929\u9ad8\uff01","listimg":"http:\/\/new-img2.ol-img.com\/90x64\/124\/462\/litxbWb1ExjA.jpg","img":"http:\/\/new-img2.ol-img.com\/985x695\/124\/462\/litxbWb1ExjA.jpg","morelink":"http:\/\/new-img2.ol-img.com\/985x695\/124\/462\/litxbWb1ExjA.jpg" }];</script><script type="text/javascript">var ol_artId="3695374";</script>
+
+		</div>
+	</div>
+</div>
+
+<!--<script type="text/javascript" src="./js-subject/common.js"></script>-->
+<script type="application/javascript" src="./js/nav.js"></script>
+</body>
+</html>
