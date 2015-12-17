@@ -1,40 +1,125 @@
 require("/fliza-ui");
 $(".weixin_jpg").attr("src",ImgDir('/weixin.jpg'));
 Fui.Template.IMG_DIR = ImgDir();
-var p3_id = 0,
-    p4_id = 0,
-    p5_id = 0,
-    p6_id = 0;
 var p1List = [
     {
-        "width":"750px",
-        "height":"870px",
-        "content":'<img src="'+ImgDir('/p5/list/1.jpg')+'"/><p class="cur">携手韩国版、香港版《COSMOPOLITAN》杂志三地合力呈现“亚洲美容盛典”。</p>'
+        width:750,
+        height:1206,
+        content:ImgDir('/p7/list/1.jpg')
     },
     {
-        "width":"750px",
-        "height":"870px",
-        "content":'<img src="'+ImgDir('/p5/list/2.jpg')+'"/><p>《时尚COSMO》美容大奖首办美容艺术展，时尚跨界艺术，使枯燥重复的生活迸发出新的色彩。</p>'
+        width:750,
+        height:1206,
+        content:ImgDir('/p7/list/2.jpg')
     },
     {
-        "width":"750px",
-        "height":"870px",
-        "content":'<img src="'+ImgDir('/p5/list/3.jpg')+'"/><p>“美丽成就梦想”从追梦人到筑梦者，美丽盛典现场电影回顾《时尚COSMO》20年美丽历程。</p>'
+        width:750,
+        height:1206,
+        content:ImgDir('/p7/list/3.jpg')
     },
     {
-        "width":"750px",
-        "height":"870px",
-        "content":'<img src="'+ImgDir('/p5/list/4.jpg')+'"/><p>美丽盛典 FOEVER YOUNG 加入台湾版本，由大陆，香港，韩国，台湾四地联合评选，以年轻态度引领时尚。</p>'
+        width:750,
+        height:1206,
+        content:ImgDir('/p7/list/4.jpg')
+    },
+    {
+        width:750,
+        height:1206,
+        content:ImgDir('/p7/list/5.jpg')
     }
+];
+var p2_1 = [
+    ImgDir('/p2/pop/img/1/1.jpg'),
+    ImgDir('/p2/pop/img/1/2.jpg'),
+    ImgDir('/p2/pop/img/1/3.jpg'),
+    ImgDir('/p2/pop/img/1/4.jpg')
+];
+var p2_2 = [
+    ImgDir('/p2/pop/img/2/1.jpg'),
+    ImgDir('/p2/pop/img/2/2.jpg'),
+    ImgDir('/p2/pop/img/2/3.jpg'),
+    ImgDir('/p2/pop/img/2/4.jpg')
+];
+var p2_3 = [
+    ImgDir('/p2/pop/img/3/1.jpg'),
+    ImgDir('/p2/pop/img/3/2.jpg')
+];
+var p2_4 = [
+    ImgDir('/p2/pop/img/4/1.jpg'),
+    ImgDir('/p2/pop/img/4/2.jpg')
+];
+var p2_5 = [
+    ImgDir('/p2/pop/img/5/1.jpg'),
+    ImgDir('/p2/pop/img/5/2.jpg'),
+    ImgDir('/p2/pop/img/5/3.jpg'),
+    ImgDir('/p2/pop/img/5/4.jpg'),
+    ImgDir('/p2/pop/img/5/5.jpg')
+];
+var p5 = [
+    ImgDir('/p5/pop/1.png'),
+    ImgDir('/p5/pop/2.png'),
+    ImgDir('/p5/pop/3.png'),
+    ImgDir('/p5/pop/4.png'),
+    ImgDir('/p5/pop/5.png')
 ];
 var PAGE0 = Fui.Template.extend({
     config:{},
     getGestureItems:function(){
         return[
             {
+                gesture:"rightSwipe",
+                name:"unlock",
+                callback:function(e,$tar){
+                    $(".p1 .lock_pop").fadeOut();
+                    $(".p1 .unlock").addClass("lock");
+                }
+            },
+            {
                 gesture:"tap",
                 name:"pop_show",
                 callback:function(e,$tar){
+                    slider.set("lock",true);
+                    var popid = $tar.data("popid");
+                    setImgList(popid);
+                    $(".pop_p2").addClass("show");
+                    myScroll = new iScroll('wrapper',{
+                        snap: true,
+                        hScrollbar: false
+                    });
+                }
+            },
+            {
+                gesture:"tap",
+                name:"show_step",
+                callback:function(e,$tar){
+                    var id = $tar.data("id");
+                    $tar.parents(".p").find(".stepC").removeClass("round");
+                    $tar.parents(".p").find(".popC").fadeIn().find(".pop_"+id).show().siblings(".s_pop").hide();
+                }
+            },
+            {
+                gesture:"tap",
+                name:"hide_step",
+                callback:function(e,$tar){
+                    $(".p4 .popC").fadeOut();
+                    $tar.parents(".p").find(".stepC").addClass("round");
+                }
+            },
+            {
+                gesture:"tap",
+                name:"show_pro",
+                callback:function(e,$tar){
+                    var id = $tar.data("popid");
+                    console.log(id);
+                    $(".p5_pop").addClass("show");
+                    var arr = $(".p5_pop").find("li").length;
+                    $("#scroller_p5").css("width",arr*600+"px");
+                    myScroll2 = new iScroll('wrapper_p5', {
+                        snap: true,
+                        momentum: false,
+                        hScrollbar: false
+                    });
+                    myScroll2.scrollToElement('li:nth-child('+id+')', 100)
                 }
             },
             {
@@ -63,53 +148,6 @@ var PAGE0 = Fui.Template.extend({
                     tourl = tourl.replace('$title',shareData.tit).replace('$content',shareData.tit+"！  "+shareData.desc).replace('$pic',shareData.imgUrl).replace('$url',shareData.link).replace('$back',shareData.link);
                     window.open(tourl,'_blank');
                 }
-            },
-            {
-                gesture:"tap",
-                name:"check_in",
-                callback:function(e,$tar){
-                    $tar.addClass("cur");
-                }
-            },
-            {
-                gesture:"tap",
-                name:"c-btn-tap-3",
-                callback:function(e,$tar){
-                    var num = (guests_list.length)/2;
-                    p3_id = ((p3_id+1)<num)?(p3_id+1):0;
-                    $tar.parents(".p").find(".item-"+p3_id).addClass("cur zIndex cur_"+p3_id);
-                    $tar.parents(".p").find(".list-c-item.cur_"+p3_id).siblings().removeClass("zIndex");
-                    setTimeout(function(){
-                        $tar.parents(".p").find(".list-c-item.cur_"+p3_id).siblings().removeClass("cur");
-                    },500);
-                }
-            },
-            {
-                gesture:"tap",
-                name:"c-btn-tap-4",
-                callback:function(e,$tar){
-                    var num = (icon_list.length)/4;
-                    p4_id = ((p4_id+1)<num)?(p4_id+1):0;
-                    $tar.parents(".p").find(".item-"+p4_id).addClass("cur").siblings().removeClass("cur");
-                }
-            },
-            {
-                gesture:"tap",
-                name:"c-btn-tap-5",
-                callback:function(e,$tar){
-                    var num = (moment_list.length)/5;
-                    p5_id = ((p5_id+1)<num)?(p5_id+1):0;
-                    $tar.parents(".p").find(".item-"+p5_id).addClass("cur").siblings().removeClass("cur");
-                }
-            },
-            {
-                gesture:"tap",
-                name:"c-btn-tap-6",
-                callback:function(e,$tar){
-                    var num = (team_list.length)/12;
-                    p6_id = ((p6_id+1)<num)?(p6_id+1):0;
-                    $tar.parents(".p").find(".item-"+p6_id).addClass("cur").siblings().removeClass("cur");
-                }
             }
         ]
     }
@@ -123,9 +161,10 @@ var audio = Fui.Audio({
     color:"#de5a7f",
     autoplay:false
 });
+var num_p = 0;
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:0,
+    curPage:6,
     //lock:true,
     iteration:false,
     orient:'y',
@@ -133,72 +172,102 @@ var slider = new Fui.PageSlider({
         slide:function(){
             var gesture = slider.event.gesture;
             var page = this.get("curPage");
-            if(page==0){
-                $(".bg_top").removeClass("show");
-                $(".cover").fadeIn().addClass("focus");
+            if(page==3){
+                $(".p3_quest").addClass("show");
+                myScroll1 = new iScroll('wrapper_p3', {
+                    checkDOMChanges: true,
+                    scrollbarClass: 'myScrollbar',
+                    onScrollEnd:function(){
+                        if(myScroll1.y<=myScroll1.maxScrollY){
+                            if(num_p>0){
+                                $(".p3_quest").addClass("hide");
+                                slider.next();
+                                num_p = 0;
+                                myScroll1.destroy();
+                            }
+                            else{
+                                num_p=1;
+                            }
+                        }
+                    }
+                });
+                $("#wrapper_p3").show();
             }
-            else{
-                $(".bg_top").addClass("show");
+            if(page==4 || page==2){
+                $(".p3_quest").removeClass("show hide");
             }
-            if(page==7){
+            if(page==4){
+                setTimeout(function(){
+                    $(".p4 .stepC").addClass("round");
+                },1000);
+            }
+
+            if(page==9){
                 $(".fui-arrow").css("z-index","-1");
-                $(".share").show().addClass("focus");
-                $(".bg_btm").addClass("hide");
             }
             else{
                 $(".fui-arrow").css("z-index","10000");
-                $(".share").hide().removeClass("focus");
-                $(".bg_btm").removeClass("hide");
             }
         }
     },
     data:[
         {
             template:'PAGE0',
+            bg:ImgDir('/p0/bg.jpg'),
             xtpl:'p0',
             design:function(){}
         }
         ,{
             template:'PAGE0',
-            bg:ImgDir('/p1/1.jpg'),
+            bg:ImgDir('/p1/bg.jpg'),
             xtpl:'p1'
         }
         ,{
             template:'PAGE0',
+            bg:ImgDir('/p1/bg.jpg'),
             xtpl:'p2'
         }
         , {
             template: 'PAGE0',
+            bg:ImgDir('/p3/bg.jpg'),
             xtpl: 'p3'
         }
         , {
             template: 'PAGE0',
+            bg:ImgDir('/p4/bg.jpg'),
             xtpl: 'p4'
         }
         ,{
             template: 'PAGE0',
+            bg:ImgDir('/p5/bg.jpg'),
             xtpl: 'p5'
         }
         ,{
             template: 'PAGE0',
+            bg:ImgDir('/p6/bg.jpg'),
             xtpl: 'p6'
         }
         ,{
             template: 'PAGE0',
-            bg:ImgDir('/p7/bg.png'),
             xtpl: 'p7'
+        }
+        ,{
+            template: 'PAGE0',
+            bg:ImgDir('/p8/bg.jpg'),
+            xtpl: 'p8'
+        }
+        ,{
+            template: 'PAGE0',
+            bg:ImgDir('/p9/bg.jpg'),
+            xtpl: 'p9'
         }
     ]
 });
 slider.render();
-setTimeout(function(){
-    $(".cover").addClass("focus");
-    audio.play();
-},1000);
 /*p5*/
 var islider1 = new iSlider({
     data: p1List,
-    type: "dom",
+    //type: "image",
     dom: document.getElementById("animation-effect"),
     duration: 3000,
     animateType: 'default',
@@ -208,20 +277,52 @@ var islider1 = new iSlider({
         var list = $("#animation-effect li");
         $.each(list, function (i, item) {
             var id = islider1.sliderIndex;
-            $(".name-list span").eq(id).addClass("cur").siblings().removeClass("cur");
-            console.log(id)
-            var deg_v = $(item).attr("style").split("translateX(")[1].split("px")[0];
-            if (deg_v == 0) {
-                $(item).find("p").addClass("cur");
-            }
-            else {
-                $(item).find("p").removeClass("cur");
-            }
         });
     }
 });
+$(".p2 .close").bind("touchend",function(e){
+    var tar = e.target;
+    removeImgList(myScroll);
+    slider.set("lock",false);
+    $(tar).parent().removeClass("show");
+});
+$(".p5_pop .close").bind("touchend",function(e){
+    var tar = e.target;
+    $(tar).parent().removeClass("show");
+});
+
+function removeImgList(myScroll){
+    myScroll.destroy();
+    $("#thelist").empty();
+}
+function setImgList(id){
+    var arr = p1List;
+    switch (id){
+        case 1:
+            arr = p2_1;
+            break;
+        case 2:
+            arr = p2_2;
+            break;
+        case 3:
+            arr = p2_3;
+            break;
+        case 4:
+            arr = p2_4;
+            break;
+        case 5:
+            arr = p2_5;
+            break;
+    }
+    $.each(arr,function(i,item){
+        var li1 = '<li><img src="'+item+'"/></li>';
+        $("#thelist").append(li1);
+    });
+    $(".pop_p2 .p_t").find("img").attr("src",ImgDir('/p2/pop/tit/'+id+'.png'));
+    $("#scroller").css("width",arr.length*630+"px");
+}
 //weixin share
-var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+String(window.location.href)+"'";
+//var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+String(window.location.href)+"'";
 $.ajax({
     type:"POST",
     ansyc:false,
