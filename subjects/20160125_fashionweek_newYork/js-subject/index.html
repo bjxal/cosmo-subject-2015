@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="bjxal@139.com"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js-subject/device.js"></script>
+    <title>2016时装周</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://new-icon.cosmochina.com.cn/channel/common/img/favicon.ico" media="screen">
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body class="bg_0">
+<div id="pack" class="pack"></div>
+<!--<div class="slide_tip">左右滑动<br>更多精彩图片呈现</div>-->
+<script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
+<!-- p0 -->
+<script type="text/x-handlebars-template" id="p0">
+    <!--bg-->
+    <div class="bg"></div>
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p0/tit.png" class="p0_tit"/>
+    <!--city-->
+    <div class="city">
+        <a href="javascript:void(0);" class="cur">纽约</a>
+        <a href="javascript:void(0);" class="">伦敦</a>
+        <a href="javascript:void(0);" class="">米兰</a>
+        <a href="javascript:void(0);" class="">巴黎</a>
+    </div>
+</script>
+<!-- p0 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p1">
+    <!--左侧导航-->
+    <div class="left_nav">
+        <span class="cur"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="cur"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</script>
+<!-- P1 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p2">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--list-->
+    <div id="iSlider-wrapper-news" class="news_c"></div>
+</script>
+<!-- p2 -->
+<!-- p3 -->
+<script type="text/x-handlebars-template" id="p3">
+</script>
+<!-- p3 -->
+<!-- p4 -->
+<script type="text/x-handlebars-template" id="p4">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--list-->
+    <div id="iSlider-wrapper-runway" class="news_c"></div>
+</script>
+<!-- p4 -->
+<!-- p5 -->
+<script type="text/x-handlebars-template" id="p5">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--list-->
+    <div class="pop_c">
+        <!--<div class="item item_1 item_330">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/1.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_2 item_310">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/2.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_3 item_285">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/3.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_4 item_350">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/4.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_5 item_330">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/1.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_6 item_310">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/2.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_7 item_285">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/3.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_8 item_350">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/4.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_9 item_330">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/1.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="item item_10 item_285">-->
+            <!--<div class="avt_c">-->
+                <!--<img data-src="{{IMG_DIR}}/p5/2.jpg"/>-->
+                <!--<div class="name">Ermenegildo Zegna </div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <!--pop-->
+    <div class="pop_img show">
+        <div class="img_c">
+            <img class="cur" data-src="{{IMG_DIR}}/p5/1.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/2.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/3.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/4.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/1.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/2.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/3.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/4.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/1.jpg"/>
+            <img data-src="{{IMG_DIR}}/p5/2.jpg"/>
+        </div>
+        <div class="p5_close"></div>
+    </div>
+</script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p6">
+</script>
+<!-- p6 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p7">
+</script>
+<!-- p7 -->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"2016时装周",
+        desc:"",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<!--<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+<!--<script type="text/javascript" src="http://new-img1.cosmochina.com.cn/cosmo/feature/394/10394/352810715/js-subject/fliza.min.js"></script>-->
+<script type="text/javascript" src="js-subject/iSlider.js"></script>
+<script type="text/javascript" src="js-subject/iSlider.animate.js"></script>
+<script type="text/javascript" src="js-subject/data.js"></script>
+<script type="text/javascript" src="js-subject/index@.js"></script>
+<!--统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58044097-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -42,6 +42,12 @@ var PAGE0 = Fui.Template.extend({
                     var url = "http://m.cosmopolitan.com.cn/";
                     window.open(url,'_blank');
                 }
+            },{
+                gesture:"tap",
+                name:"video_btn",
+                callback:function(e,$tar){
+                    alert("1111")
+                }
             }
         ]
     }
@@ -69,6 +75,9 @@ var slider = new Fui.PageSlider({
                 $(".p0 .fl_1,.p0 .fl_2").removeClass("show");
             }
             if(page==3){
+                $("#img-pack").find(".focus").on("click",function(e){
+                    alert("111")
+                })
                 if(mt==false){
                     $(".slide_tip").fadeIn();
                     setTimeout(function(){
@@ -242,6 +251,7 @@ setTimeout(function(){
     $(".fui-arrow").css("z-index","-1");
     $(".loadingC").fadeOut();
 },3500);
+
 
 //weixin share
 var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+String(window.location.href)+"'";

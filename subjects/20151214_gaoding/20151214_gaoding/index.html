@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=gbk"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="bjxal@139.com"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js-subject/device.js"></script>
+    <title>名媛只是外界给我的称呼 我是美丽独立的COSMO girl</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://new-icon.cosmochina.com.cn/channel/common/img/favicon.ico" media="screen">
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body>
+<img src="img-subject/weixin.jpg" style="opacity: 0; z-index: -1; position: absolute;" class="weixin_jpg"/>
+<!--music-->
+<a class="app-music" style="display:none;">
+    <span class="icon icon-music">
+        <b></b>
+    </span>
+</a>
+<!--slide tips-->
+<div class="slide_tips">
+    <img src="img-subject/p1/hand.png" class="tip_hand"/>
+    <p>左右滑动查看更多图片</p>
+</div>
+<!--p2 pop-->
+<div class="pop_p2">
+    <div class="p_t">
+        <img/>
+    </div>
+    <div class="close"></div>
+    <div id="wrapper" class="wrapper">
+        <div id="scroller" class="scroller">
+            <ul id="thelist" class="thelist"></ul>
+        </div>
+    </div>
+</div>
+<!--p3 question-->
+<div class="p3_quest">
+    <div id="wrapper_p3" class="quest">
+        <div id="scroller_p3">
+            <div class="word_c">
+                <p class="quest_1">你如何看待外界用名媛这个称呼来形容你？</p>
+                <p><span>LuLu： </span>这也就是个称呼，这么称呼我可能不太准确。大家因为不知道你是谁，不知道你的背景，只觉得你在上流社会的场合出现了，就叫你名媛，有这样头衔的很多，大家愿意这么称呼我也没意见。我自己是一个有梦想，能让自己有能力生活得比较优越，能够满足自己，这样的一个非常独立的女孩。</p>
+
+                <p class="quest_1">可以和大家分享一下你买高订礼服的原因吗？</p>
+                <p><span>LuLu： </span>原因就是很简单，就是我从小就很爱漂亮的衣服，在我心里对美的追求一直没有变过。所以当我看到真实的美的高定的时候，没有理由我一定是要收藏它的。</p>
+
+                <p class="quest_1">高定看秀期间你的妆都是自己画的，你最注重妆容的哪个部分？</p>
+                <p><span>LuLu： </span>化妆的部分最重视眼妆，那是最能吸引人的部分。</p>
+
+                <p class="quest_1">可以和我们分享一下你的生活态度吗？</p>
+                <p><span>LuLu： </span>我生活态度就是要真实要诚恳，要实事求是的面对。对待朋友一定要诚恳要用心，我不喜欢戴着面具去和别人交流，如果需要戴着面具的话大家就不要做朋友。</p>
+
+                <p class="quest_1">你心目中的COSMO GIRL是什么样的？</p>
+                <p><span>LuLu： </span>我觉得独立是首要的，你独立才可以有平等的话语权。我喜欢又独立又浪漫又有女生情怀的女人。我觉得女人应该有她的柔软，能够兼备现代女性的独立坚强，又有温柔优雅的一面是最棒的。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--p5 pro pop-->
+<div class="p5_pop">
+    <div class="close" data-tap="hide_pro"></div>
+    <div id="wrapper_p5">
+        <div id="scroller_p5">
+            <ul class="">
+                <li><img src="img-subject/p5/pop/1.png"/></li>
+                <li><img src="img-subject/p5/pop/2.png"/></li>
+                <li><img src="img-subject/p5/pop/3.png"/></li>
+                <li><img src="img-subject/p5/pop/4.png"/></li>
+                <li><img src="img-subject/p5/pop/5.png"/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="arrow arr_lf" data-tap="pro_prev"></div>
+    <div class="arrow arr_rt" data-tap="pro_next"></div>
+</div>
+<div id="pack" class="pack"></div>
+<script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
+<!-- p0 -->
+<script type="text/x-handlebars-template" id="p0">
+    <div class="tit_p1">
+        <img data-src="{{IMG_DIR}}/p0/tit_1.png" class="tit_1"/>
+        <img data-src="{{IMG_DIR}}/p0/tit_2.png" class="tit_2"/>
+        <!--<img data-src="{{IMG_DIR}}/p0/tit_3.png"/>-->
+        <p class="tit_3">如果把设计师比作一个天才造梦者，那高定是还原时装最精致的记忆。当名媛与高定产生化学反应时，这份奢美也被纳入囊中。你以为她只是童话里的公主吗？她却用生活中的千姿百态，为我们演绎了一段美丽的人生赢家。</p>
+    </div>
+</script>
+<!-- p0 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p1">
+    <div class="lock_pop">
+        <div class="hand">
+            <img data-src="{{IMG_DIR}}/p1/hand.png" class="hand_icon" data-rightSwipe="unlock" data-leftSwipe="unlock"/>
+            <img data-src="{{IMG_DIR}}/p1/oneTouch.png" class="oneTouch"/>
+        </div>
+    </div>
+    <div class="unlock">
+        <div class="ball ball_1"></div>
+        <div class="ball ball_2"></div>
+        <div class="ball ball_3"></div>
+        <div class="ball ball_4"></div>
+        <div class="ball ball_5"></div>
+    </div>
+</script>
+<!-- P1 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p2">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p2/tit.png"/>
+    </div>
+    <div class="desktop">
+        <div class="poker poker_1" data-popid="1" data-tap="pop_show"></div>
+        <div class="poker poker_2" data-popid="5" data-tap="pop_show"></div>
+        <div class="poker poker_3" data-popid="9" data-tap="pop_show"></div>
+        <div class="poker poker_4" data-popid="11" data-tap="pop_show"></div>
+        <div class="poker poker_5" data-popid="13" data-tap="pop_show"></div>
+        <div class="tips" data-popid="1" data-tap="pop_show"></div>
+    </div>
+</script>
+<!-- p2 -->
+<!-- p3 -->
+<script type="text/x-handlebars-template" id="p3">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p3/tit.png"/>
+    </div>
+</script>
+<!-- p3 -->
+<!-- p4 -->
+<script type="text/x-handlebars-template" id="p4">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p4/tit.png"/>
+    </div>
+    <div class="stepC">
+        <div class="step step_1">
+            <img data-src="{{IMG_DIR}}/p4/tap_1.png" data-tap="show_step" data-id="1"/>
+        </div>
+        <div class="step step_2">
+            <img data-src="{{IMG_DIR}}/p4/tap_2.png" data-tap="show_step" data-id="2"/>
+        </div>
+        <div class="step step_3">
+            <img data-src="{{IMG_DIR}}/p4/tap_3.png" data-tap="show_step" data-id="3"/>
+        </div>
+    </div>
+    <div class="popC">
+        <div class="close" data-tap="hide_step"></div>
+        <div class="s_pop pop_1" data-id="1">
+            <h2>水嫩美肌重保湿</h2>
+            <p>想要好皮肤就要有好的护肤习惯，我本身皮肤比较干，补水是我日常的必修课。睡前彻底卸妆是非常重要的步骤，一张干净的脸才能吃进营养。</p>
+        </div>
+        <div class="s_pop pop_2" data-id="2">
+            <h2>女神彩妆三步曲</h2>
+            <p>无暇清透的底妆，即使面对媒体闪光灯也不会让肌肤显得油亮。肌肤状况一定要保持好，上妆的时候用刷子将粉底涂抹均匀。</p><br>
+            <p>眼妆使用大地色系的眼影强化轮廓;下眼皮利用浅金色提亮卧蚕，营造出芭比娃娃的妆效。</p><br>
+            <p>选择橘红色系的唇膏，除了让唇形看起来更美，也具有衬托肌肤的效果哟!</p>
+        </div>
+        <div class="s_pop pop_3" data-id="3">
+            <h2>天蝎座的修身课堂</h2>
+            <p>对于天蝎座来说，节食减肥是一件很痛苦的事。我的修身法则是运动，不仅可以塑造身体曲线，还能提升气质。平时的饮食很清淡，比较注重维生素的营养搭配。</p>
+        </div>
+    </div>
+</script>
+<!-- p4 -->
+<!-- p5 -->
+<script type="text/x-handlebars-template" id="p5">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p5/tit.png"/>
+    </div>
+    <div class="proC">
+        <div class="proList">
+            <div class="pro_l pro_1">
+                <div class="pop_tips">
+                    <div class="pop_tips1" data-tap="show_pro" data-popid="1"></div>
+                </div>
+                <img data-src="{{IMG_DIR}}/p5/pro/1.png" data-tap="show_pro" data-popid="1"/>
+            </div>
+            <div class="pro_l pro_2">
+                <div class="pop_tips">
+                    <div class="pop_tips1" data-tap="show_pro" data-popid="2"></div>
+                </div>
+                <img data-src="{{IMG_DIR}}/p5/pro/2.png" data-tap="show_pro" data-popid="2"/>
+            </div>
+            <div class="pro_l pro_3">
+                <div class="pop_tips">
+                    <div class="pop_tips1" data-tap="show_pro" data-popid="3"></div>
+                </div>
+                <img data-src="{{IMG_DIR}}/p5/pro/3.png" data-tap="show_pro" data-popid="3"/>
+            </div>
+            <div class="pro_l pro_4">
+                <div class="pop_tips">
+                    <div class="pop_tips1" data-tap="show_pro" data-popid="4"></div>
+                </div>
+                <img data-src="{{IMG_DIR}}/p5/pro/4.png" data-tap="show_pro" data-popid="4"/>
+            </div>
+            <div class="pro_l pro_5">
+                <div class="pop_tips">
+                    <div class="pop_tips1" data-tap="show_pro" data-popid="5"></div>
+                </div>
+                <img data-src="{{IMG_DIR}}/p5/pro/5.png" data-tap="show_pro" data-popid="5"/>
+            </div>
+        </div>
+        <img data-src="{{IMG_DIR}}/p5/bag.png" class="bag"/>
+    </div>
+</script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p6">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p6/tit.png"/>
+    </div>
+    <div class="deck">
+        <img data-src="{{IMG_DIR}}/p6/pro/1.png" class="deck_1"/>
+        <img data-src="{{IMG_DIR}}/p6/pro/2.png" class="deck_2"/>
+        <img data-src="{{IMG_DIR}}/p6/pro/3.png" class="deck_3"/>
+        <img data-src="{{IMG_DIR}}/p6/pro/4.png" class="deck_4"/>
+        <img data-src="{{IMG_DIR}}/p6/pro/5.png" class="deck_5"/>
+        <img data-src="{{IMG_DIR}}/p6/pro/6.png" class="deck_6"/>
+    </div>
+    <p class="word">派对上大家都希望被关注，重点是要突出自己的优点。年末派对的服饰选择不用太过夸张，小黑裙是不二之选。可以用设计特别，有创意的配饰来提亮整体搭配。</p>
+</script>
+<!-- p6 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p7">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p7/tit.png"/>
+    </div>
+    <!--list-->
+    <div id="iSlider-effect-wrapper">
+        <div id="animation-effect" class="iSlider-effect"></div>
+        <div class="arrow arr_lf"></div>
+        <div class="arrow arr_rt"></div>
+    </div>
+</script>
+<!-- p7 -->
+<!-- p8 -->
+<script type="text/x-handlebars-template" id="p8">
+    <div class="tit">
+        <img data-src="{{IMG_DIR}}/p8/tit.png"/>
+    </div>
+    <div class="word">
+        <img data-src="{{IMG_DIR}}/p8/word.png" class="word"/>
+        <p>当这位精致的女孩出现在我面前时，我想这大概就是公主的模样吧！在她的身上，没有女大十八变的华丽转身，也没有丑小鸭变天鹅的励志童话，一切都太顺理成章。采访中陆陆很真诚地聊起她对时装的执着，和在高定上给自己化妆的趣事。这样闪着光环又接地气的女孩，让人如何不爱呢！除了美以外，她带给我更多的是睿智和自信。</p>
+    </div>
+</script>
+<!-- p8 -->
+<!-- p9 -->
+<script type="text/x-handlebars-template" id="p9">
+    <img data-src="{{IMG_DIR}}/p9/top.png" class="top"/>
+    <img data-src="{{IMG_DIR}}/p9/tit.png" class="tit"/>
+    <div class="share">
+        <div class="share_link">
+            <div class="st">
+                <p>分享到：&nbsp;</p>
+                <img data-src="{{IMG_DIR}}/p9/share/wx.png" class="share-icon" data-tap="share_pop_show"/>
+                <img data-src="{{IMG_DIR}}/p9/share/sina.png" class="share-icon" data-tap="share_sina"/>
+            </div>
+            <div class="line"></div>
+            <div class="sb">
+                <p>扫一扫&nbsp;约吧</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img data-src="{{IMG_DIR}}/p9/share/hicosmo.png" data-tap="m_link"/>
+            </div>
+        </div>
+        <!--<div class="ewm">-->
+        <!--<img data-src="{{IMG_DIR}}/p9/share/ewm.jpg"/>-->
+        <!--</div>-->
+    </div>
+    <div class="share_pop" data-tap="share_pop_hide">
+        <img data-src="{{IMG_DIR}}/p9/share/wx_word.png" data-tap="share_pop_hide"/></div>
+    </div>
+</script>
+<!-- p9 -->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"名媛只是外界给我的称呼 我是美丽独立的COSMO girl",
+        desc:"当名媛与高定产生化学反应时，这份奢美也被纳入囊中。你以为这是公主病？她只是一段美丽赢家成长史。",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js-subject/islider.js"></script>
+<script type="text/javascript" src="js-subject/iscroll.js"></script>
+<script type="text/javascript" src="js-subject/index.min.js"></script>
+<!--统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58044097-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

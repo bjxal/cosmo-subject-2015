@@ -1,0 +1,92 @@
+@import "fliza-style.css";
+p,div{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+a,p,span{
+    outline: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Microsoft yahei", Helvetica, Arial, Verdana, sans-serif;
+    background: url(../img-subject/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.mrg{
+    width: 100%;
+    height: 1px;
+}
+/*muscis*/
+.app-music {
+    padding: 10px 10px 30px 30px;
+    position: absolute;
+    z-index: 100;
+    top: 3%;
+    right: 3%;
+}
+.app-music span {
+    position: relative;
+    display: block;
+    font-size: 26px;
+    padding: 28px;
+    background: url(../img-subject/m-icon.png) no-repeat center;
+    background-size: 100% auto;
+    border:none;
+}
+.app-music.stop b {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #de5a7f;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+/*slide tip*/
+.fui-arrow:before, .fui-arrow:after{
+    background: none;
+}
+.fui-arrow.down {
+    width: 113px;
+    height: 52px;
+    bottom: 40px;
+    background: url(../img-subject/arrow.png) no-repeat center;
+    left: 50%;
+    margin-left: -57px;
+    -webkit-animation: fui-arrow-up 2s linear infinite;
+    -moz-animation: fui-arrow-up 2s linear infinite;
+    -ms-animation: fui-arrow-up 2s linear infinite;
+    -o-animation: fui-arrow-up 2s linear infinite;
+    animation: fui-arrow-up 2s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.p0 img{
+    position: absolute;
+    overflow: hidden;
+    width: 750px;
+    height: 1206px;
+    top: 0px;
+    left: 0px;
+    right: auto;
+    z-index: 0;
+}

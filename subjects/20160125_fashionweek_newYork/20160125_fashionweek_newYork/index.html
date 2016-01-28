@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=gbk"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="bjxal@139.com"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js-subject/device.js"></script>
+    <title>2016时装周</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://new-icon.cosmochina.com.cn/channel/common/img/favicon.ico" media="screen">
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body class="bg_0">
+<div class="loadingBg">
+    <span class="bg_0"></span>
+    <span class="bg_1"></span>
+    <span class="bg_2"></span>
+    <span class="bg_3"></span>
+    <span class="bg_4"></span>
+    <span class="bg_5"></span>
+    <span class="bg_6"></span>
+    <span class="bg_7"></span>
+    <span class="bg_8"></span>
+</div>
+<!--video pop-->
+<div class="video_pop">
+    <div class="close"></div>
+    <div class="video"></div>
+</div>
+<div id="pack" class="pack"></div>
+<!--<div class="slide_tip">左右滑动<br>更多精彩图片呈现</div>-->
+<script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
+<!-- p0 -->
+<script type="text/x-handlebars-template" id="p0">
+    <!--bg-->
+    <div class="bg"></div>
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p0/tit.png" class="p0_tit center"/>
+    <!--city-->
+    <div class="city">
+        <a href="javascript:void(0);" class="cur">纽约</a>
+        <a href="javascript:void(0);" class="">伦敦</a>
+        <a href="javascript:void(0);" class="">米兰</a>
+        <a href="javascript:void(0);" class="">巴黎</a>
+    </div>
+</script>
+<!-- p0 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p1">
+    <!--左侧导航-->
+    <div class="left_nav middle">
+        <span class="cur"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--导航-->
+    <div class="nav middle">
+        <div class="cur" data-id="2" data-tap="toPage"></div>
+        <div data-id="3" data-tap="toPage"></div>
+        <div data-id="4" data-tap="toPage"></div>
+        <div data-id="5" data-tap="toPage"></div>
+        <div data-id="6" data-tap="toPage"></div>
+        <div data-id="7" data-tap="toPage"></div>
+    </div>
+</script>
+<!-- P1 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p2">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--list-->
+    <div id="iSlider-wrapper-news" class="news_c core"></div>
+</script>
+<!-- p2 -->
+<!-- p3 -->
+<script type="text/x-handlebars-template" id="p3">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--list-->
+    <div id="iSlider-wrapper-cele" class="news_c core"></div>
+</script>
+<!-- p3 -->
+<!-- p4 -->
+<script type="text/x-handlebars-template" id="p4">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--list-->
+    <div id="iSlider-wrapper-runway" class="news_c core"></div>
+</script>
+<!-- p4 -->
+<!-- p5 -->
+<script type="text/x-handlebars-template" id="p5">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--list-->
+    <!--<div class="pop_c middle"></div>-->
+    <div class="pop_c middle">
+        <div class="item item_1 item_330">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="0"></div>
+        </div>
+        <div class="item item_2 item_310">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="1"></div>
+        </div>
+        <div class="item item_3 item_285">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="2"></div>
+        </div>
+        <div class="item item_4 item_350">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="3"></div>
+        </div>
+        <div class="item item_5 item_330">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="4"></div>
+        </div>
+        <div class="item item_6 item_310">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="5"></div>
+        </div>
+        <div class="item item_7 item_285">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="6"></div>
+        </div>
+        <div class="item item_8 item_350">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="7"></div>
+        </div>
+        <div class="item item_9 item_330">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="8"></div>
+        </div>
+        <div class="item item_10 item_310">
+            <div class="avt_c"></div>
+            <div class="tap_c" data-tap="p5_pop" data-id="9"></div>
+        </div>
+    </div>
+    <!--pop-->
+    <div class="pop_img">
+        <div class="img_c"></div>
+        <div class="p5_close" data-tap="p5_pop_hide"></div>
+    </div>
+</script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p6">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--list-->
+    <div class="list-c core">
+        <div class="list-c-1"></div>
+        <div class="list-c-2"></div>
+        <div class="list-c-btn core">
+            <div class="btn-bg" data-tap="c-btn-tap-3"></div>
+            <div class="btn-w"></div>
+        </div>
+    </div>
+</script>
+<!-- p6 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p7">
+    <!--tit-->
+    <div class="tit"></div>
+    <!--video-->
+    <div class="list core">
+        <div class="video_tit">
+            <h2 class="cur">杜嘉班纳女郎自拍玩到秀场上</h2>
+            <h2>杜嘉班纳女郎自拍玩到秀场上</h2>
+            <h2>杜嘉班纳女郎自拍玩到秀场上</h2>
+        </div>
+        <div class="cover_l">
+            <div class="cover_img">
+                <img src="" class="cur"/>
+                <img src="" class=""/>
+                <img src="" class=""/>
+            </div>
+            <div class="play core" data-id="0" data-tap="video_pop"></div>
+        </div>
+        <div class="thumb">
+            <div class="item item_1">
+                <img src=""/>
+                <div class="pop cur" data-id="0" data-tap="video_pop"></div>
+            </div>
+            <div class="item item_2">
+                <img src=""/>
+                <div class="pop" data-id="1" data-tap="video_pop"></div>
+            </div>
+            <div class="item item_3">
+                <img src=""/>
+                <div class="pop" data-id="2" data-tap="video_pop"></div>
+            </div>
+        </div>
+    </div>
+</script>
+<!-- p7 -->
+<!-- p8 -->
+<script type="text/x-handlebars-template" id="p8">
+    <!--top-->
+    <img data-src="{{IMG_DIR}}/p8/top.png" class="top center"/>
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p8/tit.png" class="p8_tit center"/>
+    <!--city-->
+    <div class="city">
+        <a href="javascript:void(0);" class="cur">纽约</a>
+        <a href="javascript:void(0);" class="">伦敦</a>
+        <a href="javascript:void(0);" class="">米兰</a>
+        <a href="javascript:void(0);" class="">巴黎</a>
+    </div>
+    <!--share-->
+    <div class="share center">
+        <a class="wx" href="javascript:void(0);" data-tap="share_pop_show"></a>
+        <a class="sina" href="javascript:void(0);" data-tap="share_sina"></a>
+    </div>
+    <div class="share_pop" data-tap="share_pop_hide"></div>
+</script>
+<!-- p8 -->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"2016时装周",
+        desc:"",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<!--<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+<!--<script type="text/javascript" src="http://new-img1.cosmochina.com.cn/cosmo/feature/394/10394/352810715/js-subject/fliza.min.js"></script>-->
+<script type="text/javascript" src="js-subject/iSlider.js"></script>
+<script type="text/javascript" src="js-subject/iSlider.animate.js"></script>
+<script type="text/javascript" src="js-subject/youku_api.js"></script>
+<script type="text/javascript" src="js-subject/data.js"></script>
+<script type="text/javascript" src="js-subject/index.min.js"></script>
+<!--统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58044097-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

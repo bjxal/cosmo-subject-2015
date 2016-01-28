@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<title>HUAWEI WATCH 智芯·致永恒</title>
+<script src="./js-subject/device.js"></script>
+<link id="css" rel="stylesheet" href="./css-subject/style.css" media="screen">
+<body>
+<!--cover-->
+<div class="cover all">
+	<!--<img src="img-subject/cover/watch.png" class="cover_img center"/>-->
+	<img src="img-subject/cover/1.jpg" class="cover_img center"/>
+</div>
+<!--page1-->
+<div class="page1 all">
+	<!--weixin-->
+	<div class="wx_tip all">
+		<img src="img-subject/page1/wx.png" class="center"/>
+	</div>
+	<!--logo-->
+	<div class="logo left_center">
+		<!--huawei logo-->
+		<img src="img-subject/page1/hua_logo.png" data-url='http://m.huawei.com/cnmobile/consumer/wearables/detail/watch-cn.htm?cid=23541449460072&sid=23541449460100' class="hua_logo lf_rt_center"/>
+		<!--dakaxiu logo-->
+		<img src="img-subject/page1/dkx_logo.png" class="dkx_logo lf_rt_center"/>
+		<!--video cover img-->
+		<img src="img-subject/page1/video_cover.png" class="cover_img lf_rt_center"/>
+	</div>
+	<!--video cover-->
+	<div class="video_cover center" data-video="http://player.youku.com/embed/XMTQzMTc0NDg5Mg"></div>
+	<!--tips icon-->
+	<div class="icons">
+		<!--icon-->
+		<div class="icon_share">
+			<div class="share_btn"></div>
+			<div class="share_pop">
+				<div class="item"></div>
+				<div class="item wx"></div>
+				<div class="item qq">
+					<a href="javascript:void(0);"></a>
+				</div>
+				<div class="item sina">
+					<a href="javascript:void(0);"></a>
+				</div>
+			</div>
+		</div>
+		<div class="icon_more">
+			<div class="more_btn"></div>
+			<div class="more_tip"></div>
+		</div>
+	</div>
+</div>
+<!--more pop-->
+<div class="more_pop">
+	<div class="pop_c">
+		<div class="tit">往期回顾</div>
+		<div class="item" data-video="http://player.youku.com/embed/XMTQzMTc0NDg5Mg">芭莎大咖秀 第二季：朱亚文遭粉丝百般刁难 06</div>
+		<div class="item" data-video="">敬请期待</div>
+		<div class="item" data-video="">敬请期待</div>
+		<div class="item" data-video="">敬请期待</div>
+		<div class="item" data-video="">敬请期待</div>
+		<div class="item" data-video="">敬请期待</div>
+	</div>
+</div>
+<!--video pop-->
+<div class="video_pop">
+	<div class="close"></div>
+	<div class="video">
+		<iframe id="ifame_id" height=500 width=750 src="http://player.youku.com/embed/XMTQyMjk4ODM2NA" frameborder=0 allowfullscreen style="z-index:10; position: absolute;"></iframe>
+	</div>
+</div>
+<script type="text/javascript" src="http://new-img1.cosmochina.com.cn/cosmo/feature/588/88588/5110111228/js-subject/jquery-1.11.1.min.js"></script>
+<script>
+	var _dir = (function (){
+		var href = $('#css').attr('href').toString();
+		if(!/^http/.test(href)){
+			href = location.href;
+		}else{
+			href = href.substring(0,href.lastIndexOf('\/'));
+		}
+		return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+	})();
+	var ImgDir = function(p){
+		p = p||'';
+		return _dir + p;
+	};
+	/*wx*/
+	var shareData = {
+		tit:"HUAWEI WATCH 智芯·致永恒 X芭莎大咖秀",
+		desc:"且看众大咖如何演绎经典与科技",
+		link:String(window.location.href),
+		imgUrl:ImgDir('/weixin.jpg')
+	};
+</script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="./js-subject/youku_api.js"></script>
+<script src="./js-subject/index.js"></script>
+</body>
+</html>

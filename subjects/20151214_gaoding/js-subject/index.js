@@ -28,33 +28,49 @@ var p1List = [
         content:ImgDir('/p7/list/5.jpg')
     }
 ];
+//var p2_1 = [
+//    ImgDir('/p2/pop/img/1/1.jpg'),
+//    ImgDir('/p2/pop/img/1/2.jpg'),
+//    ImgDir('/p2/pop/img/1/3.jpg'),
+//    ImgDir('/p2/pop/img/1/4.jpg'),
+//    ImgDir('/p2/pop/img/2/1.jpg'),
+//    ImgDir('/p2/pop/img/2/2.jpg'),
+//    ImgDir('/p2/pop/img/2/3.jpg'),
+//    ImgDir('/p2/pop/img/2/4.jpg'),
+//    ImgDir('/p2/pop/img/3/1.jpg'),
+//    ImgDir('/p2/pop/img/3/2.jpg'),
+//    ImgDir('/p2/pop/img/4/1.jpg'),
+//    ImgDir('/p2/pop/img/4/2.jpg'),
+//    ImgDir('/p2/pop/img/5/1.jpg'),
+//    ImgDir('/p2/pop/img/5/2.jpg'),
+//    ImgDir('/p2/pop/img/5/3.jpg'),
+//    ImgDir('/p2/pop/img/5/4.jpg'),
+//    ImgDir('/p2/pop/img/5/5.jpg')
+//];
 var p2_1 = [
-    ImgDir('/p2/pop/img/1/1.jpg'),
-    ImgDir('/p2/pop/img/1/2.jpg'),
-    ImgDir('/p2/pop/img/1/3.jpg'),
-    ImgDir('/p2/pop/img/1/4.jpg')
+    ImgDir('/p2/pop2/1.jpg'),
+    ImgDir('/p2/pop2/2.jpg'),
+    ImgDir('/p2/pop2/3.jpg'),
+    ImgDir('/p2/pop2/4.jpg'),
+    ImgDir('/p2/pop2/5.jpg'),
+    ImgDir('/p2/pop2/6.jpg'),
+    ImgDir('/p2/pop2/7.jpg'),
+    ImgDir('/p2/pop2/8.jpg'),
+    ImgDir('/p2/pop2/9.jpg'),
+    ImgDir('/p2/pop2/10.jpg'),
+    ImgDir('/p2/pop2/11.jpg'),
+    ImgDir('/p2/pop2/12.jpg'),
+    ImgDir('/p2/pop2/13.jpg'),
+    ImgDir('/p2/pop2/14.jpg'),
+    ImgDir('/p2/pop2/15.jpg'),
+    ImgDir('/p2/pop2/16.jpg'),
+    ImgDir('/p2/pop2/17.jpg'),
+    ImgDir('/p2/pop2/18.jpg')
 ];
-var p2_2 = [
-    ImgDir('/p2/pop/img/2/1.jpg'),
-    ImgDir('/p2/pop/img/2/2.jpg'),
-    ImgDir('/p2/pop/img/2/3.jpg'),
-    ImgDir('/p2/pop/img/2/4.jpg')
-];
-var p2_3 = [
-    ImgDir('/p2/pop/img/3/1.jpg'),
-    ImgDir('/p2/pop/img/3/2.jpg')
-];
-var p2_4 = [
-    ImgDir('/p2/pop/img/4/1.jpg'),
-    ImgDir('/p2/pop/img/4/2.jpg')
-];
-var p2_5 = [
-    ImgDir('/p2/pop/img/5/1.jpg'),
-    ImgDir('/p2/pop/img/5/2.jpg'),
-    ImgDir('/p2/pop/img/5/3.jpg'),
-    ImgDir('/p2/pop/img/5/4.jpg'),
-    ImgDir('/p2/pop/img/5/5.jpg')
-];
+var p2_2 = [];
+var p2_3 = [];
+var p2_4 = [];
+var p2_5 = [];
 var p5 = [
     ImgDir('/p5/pop/1.png'),
     ImgDir('/p5/pop/2.png'),
@@ -72,6 +88,8 @@ var PAGE0 = Fui.Template.extend({
                 callback:function(e,$tar){
                     $(".p1 .lock_pop").fadeOut();
                     $(".p1 .unlock").addClass("lock");
+                    slider.set("lock",false);
+                    setTimeout(function(){slider.toPage(2);},3000)
                 }
             },
             {
@@ -86,6 +104,7 @@ var PAGE0 = Fui.Template.extend({
                         snap: true,
                         hScrollbar: false
                     });
+                    myScroll.scrollToElement('li:nth-child('+popid+')',10)
                 }
             },
             {
@@ -110,16 +129,31 @@ var PAGE0 = Fui.Template.extend({
                 name:"show_pro",
                 callback:function(e,$tar){
                     var id = $tar.data("popid");
-                    console.log(id);
                     $(".p5_pop").addClass("show");
                     var arr = $(".p5_pop").find("li").length;
                     $("#scroller_p5").css("width",arr*600+"px");
                     myScroll2 = new iScroll('wrapper_p5', {
                         snap: true,
                         momentum: false,
-                        hScrollbar: false
+                        vScrollbar: false
                     });
-                    myScroll2.scrollToElement('li:nth-child('+id+')', 100)
+                    myScroll2.scrollToElement('li:nth-child('+id+')', 100);
+                }
+            },
+            {
+                gesture:"tap",
+                name:"pro_prev",
+                callback:function(e,$tar){
+                    myScroll2.scrollToPage('prev', 0);
+                    return false;
+                }
+            },
+            {
+                gesture:"tap",
+                name:"pro_next",
+                callback:function(e,$tar){
+                    myScroll2.scrollToPage('next', 0);
+                    return false;
                 }
             },
             {
@@ -162,9 +196,12 @@ var audio = Fui.Audio({
     autoplay:false
 });
 var num_p = 0;
+var p1_num = 0;
+var p2_num = 0;
+var p7_num = 0;
 var slider = new Fui.PageSlider({
     el:'#pack',
-    curPage:6,
+    curPage:0,
     //lock:true,
     iteration:false,
     orient:'y',
@@ -172,6 +209,9 @@ var slider = new Fui.PageSlider({
         slide:function(){
             var gesture = slider.event.gesture;
             var page = this.get("curPage");
+            if(page==1 && p1_num==0){
+                slider.set("lock",true);
+            }
             if(page==3){
                 $(".p3_quest").addClass("show");
                 myScroll1 = new iScroll('wrapper_p3', {
@@ -197,16 +237,25 @@ var slider = new Fui.PageSlider({
                 $(".p3_quest").removeClass("show hide");
             }
             if(page==4){
-                setTimeout(function(){
-                    $(".p4 .stepC").addClass("round");
-                },1000);
+                $(".p4 .stepC").addClass("round");
             }
-
+            if(page==7 && p7_num ==0){
+                $(".slide_tips").fadeIn();
+                p7_num = 1;
+                setTimeout(function(){$(".slide_tips").fadeOut();},1500);
+            }
             if(page==9){
                 $(".fui-arrow").css("z-index","-1");
             }
             else{
-                $(".fui-arrow").css("z-index","10000");
+                if(page==1 && p1_num==0){
+                    $(".fui-arrow").css("z-index","-1");
+                    p1_num=1;
+                }
+                else{
+                    $(".fui-arrow").css("z-index","10000");
+                }
+
             }
         }
     },
@@ -264,6 +313,7 @@ var slider = new Fui.PageSlider({
     ]
 });
 slider.render();
+setTimeout(function(){audio.play();},1000);
 /*p5*/
 var islider1 = new iSlider({
     data: p1List,
@@ -280,7 +330,17 @@ var islider1 = new iSlider({
         });
     }
 });
-$(".p2 .close").bind("touchend",function(e){
+$(".p1 .hand").on("touchend",function(e){
+    $(".p1 .lock_pop").fadeOut();
+
+    $(".p1 .unlock").addClass("lock");
+    setTimeout(function(){
+        slider.set("lock",false);
+        slider.next();
+        $(".fui-arrow").css("z-index","10000");
+    },1500);
+});
+$(".pop_p2 .close").bind("touchend",function(e){
     var tar = e.target;
     removeImgList(myScroll);
     slider.set("lock",false);
@@ -295,34 +355,21 @@ function removeImgList(myScroll){
     myScroll.destroy();
     $("#thelist").empty();
 }
-function setImgList(id){
-    var arr = p1List;
-    switch (id){
-        case 1:
-            arr = p2_1;
-            break;
-        case 2:
-            arr = p2_2;
-            break;
-        case 3:
-            arr = p2_3;
-            break;
-        case 4:
-            arr = p2_4;
-            break;
-        case 5:
-            arr = p2_5;
-            break;
+function setImgList(){
+    if(p2_num==0){
+        p2_num = 1;
+        $(".slide_tips").fadeIn();
+        setTimeout(function(){$(".slide_tips").fadeOut();},1500);
     }
-    $.each(arr,function(i,item){
+    $.each(p2_1,function(i,item){
         var li1 = '<li><img src="'+item+'"/></li>';
         $("#thelist").append(li1);
     });
-    $(".pop_p2 .p_t").find("img").attr("src",ImgDir('/p2/pop/tit/'+id+'.png'));
-    $("#scroller").css("width",arr.length*630+"px");
+    //$(".pop_p2 .p_t").find("img").attr("src",ImgDir('/p2/pop/tit/'+id+'.png'));
+    $("#scroller").css("width",p2_1.length*630+"px");
 }
 //weixin share
-//var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+String(window.location.href)+"'";
+var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+encodeURIComponent(window.location.href)+"'";
 $.ajax({
     type:"POST",
     ansyc:false,
