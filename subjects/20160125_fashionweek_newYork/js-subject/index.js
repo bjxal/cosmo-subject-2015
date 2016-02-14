@@ -1,11 +1,4 @@
 require("/fliza-ui");
-var content = encodeURIComponent('2016纽约时装周'),
-    title  = '',
-    pic   = ImgDir('/weixin.jpg'),
-    url   = '';//encodeURIComponent('http://m.durex.com.cn/qr/1N'),
-    back  = encodeURIComponent('http://m.cosmopolitan.com.cn/');
-    tourl = '';
-//var url = "http://m.onlylady.com/files/eventapi.php?c=EventNew&a=ZST&indexsId=618";
 move_m = false;
 grade = 0;
 var p6_id = 0;
@@ -23,8 +16,10 @@ var PAGE0 = Fui.Template.extend({
                 name:"toPage",
                 callback:function(e,$tar){
                     e.preventDefault();
-                    var id = $tar.data("id")||1;
-                    slider.toPage(id);
+                    var id = $tar.data("id")||2;
+                    $(".nav div").eq(id-2).addClass("cur").siblings().removeClass("cur");
+                    $(".left_nav span").eq(id-2).addClass("cur").siblings().removeClass("cur");
+                    setTimeout(function(){slider.toPage(id);},500)
                 }
             },
             {
@@ -82,7 +77,7 @@ var PAGE0 = Fui.Template.extend({
                 callback:function(e,$tar){
                     e.preventDefault();
                     tourl = 'http://service.weibo.com/share/mobile.php?title=$content&url=$url&pic=$pic&backurl=$back';
-                    tourl = tourl.replace('$title',title).replace('$content',content).replace('$pic',pic).replace('$url',url).replace('$back',back);
+                    tourl = tourl.replace('$title',shareData.tit).replace('$content',shareData.desc).replace('$pic',shareData.imgUrl).replace('$url',shareData.link).replace('$back',shareData.link);
                     window.open(tourl,'_blank');
                 }
             },{
@@ -94,18 +89,28 @@ var PAGE0 = Fui.Template.extend({
                 }
             },{
                 gesture:"tap",
-                name:"video_pop",
+                name:"video_change",
                 callback:function(e,$tar){
                     var id = $tar.data("id");
-                    //var videoUrl = $tar.data("url");
-                    var videoUrl = video_list[id]['video'];
-                    var ifr_video = '<iframe width="750" height="400" src="'+videoUrl+'" frameborder="0" allowfullscreen=""></iframe>';
-                    $(".video_pop .video").html(ifr_video);
-                    $(".video_pop").show();
                     $(".play").data("id",id);
                     $(".video_tit h2").eq(id).show().siblings().hide();
                     $(".cover_img img").eq(id).addClass("cur").siblings().removeClass("cur");
                     $(".thumb .pop").eq(id).addClass("cur").parents().siblings().find(".pop").removeClass("cur");
+                }
+            },{
+                gesture:"tap",
+                name:"video_pop",
+                callback:function(e,$tar){
+                    var id = $tar.data("id");
+                    //var videoUrl = $tar.data("url");
+                    var videoUrl = video_list[id]['url'];
+                    var ifr_video = '<iframe width="750" height="400" src="'+videoUrl+'" frameborder="0" allowfullscreen=""></iframe>';
+                    $(".video_pop .video").html(ifr_video);
+                    $(".video_pop").show();
+                    //$(".play").data("id",id);
+                    //$(".video_tit h2").eq(id).show().siblings().hide();
+                    //$(".cover_img img").eq(id).addClass("cur").siblings().removeClass("cur");
+                    //$(".thumb .pop").eq(id).addClass("cur").parents().siblings().find(".pop").removeClass("cur");
                 }
             }
         ]
@@ -114,12 +119,14 @@ var PAGE0 = Fui.Template.extend({
 Fui.Template.regTpl({
     PAGE0:PAGE0
 });
-var p3_one = 0;
+var p2_one = 0, p3_one = 0, p4_one = 0, p5_one = 0, p6_one = 0, p7_one = 0;
+var tips = [2,3,4];
+var tips_2 = [];
 var slider = new Fui.PageSlider({
     el:'#pack',
     curPage:0,
     lock:false,
-    iteration:false,
+    iteration:true,
     orient:'y',
     listeners:{
         slide:function(){
@@ -129,22 +136,40 @@ var slider = new Fui.PageSlider({
             var page = this.get("curPage");
             $(".p"+page).addClass("focus");
             $("body").attr("class","bg_"+page);
-            if(page==1){
+            // 每个提示显示一遍 start
+            if(tips.indexOf(page)!=-1){
+                if(tips_2.indexOf(page)==-1){
+                    $(".slide_tips").fadeIn();
+                    setTimeout(function(){$(".slide_tips").fadeOut();},900);
+                    tips_2.push(page);
+                }
+                else{
+                    $(".slide_tips").fadeOut();
+                }
+                // 每个提示显示一遍 end
+            }
+            if(page==2 && p2_one ==0){
+                p2_one = 1;
                 list.set_news_list();
             }
-            if(page==2){
+            if(page==3 && p3_one ==0){
+                p3_one = 1;
                 list.set_cele_list();
             }
-            if(page==3){
+            if(page==4 && p4_one ==0){
+                p4_one = 1;
                 list.set_runway_list();
             }
-            if(page==4){
-                list.set_street_list();
-            }
-            if(page==5){
+            if(page==5 && p5_one ==0){
+                p5_one = 1;
                 list.set_backstage_list();
             }
-            if(page==6){
+            if(page==6 && p6_one ==0){
+                p6_one = 1;
+                list.set_street_list();
+            }
+            if(page==7 && p7_one ==0){
+                p7_one = 1;
                 list.set_video_list();
             }
             if(page==8){
@@ -202,4 +227,45 @@ var list = new LIST();
 /*video*/
 $(".video_pop .close").bind("touchend",function(e){
     $(".video_pop").fadeOut().find("iframe").remove();
+});
+//weixin share
+var wx_url = "http://m.cosmopolitan.com.cn/files/eventapi.php?c=Cosmom_Jssdk&type=json&url='"+encodeURIComponent(window.location.href)+"'";
+$.ajax({
+    type:"POST",
+    ansyc:false,
+    url:wx_url,
+    data:{},
+    dataType:"json",
+    success:function(data){
+        wx.config({
+            //debug: true,
+            appId: data.appId,
+            timestamp: data.timestamp,
+            nonceStr: data.nonceStr,
+            signature: data.signature,
+            jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage']
+        });
+        wx.ready(function () {
+            wx.onMenuShareAppMessage({
+                title: shareData.tit,
+                desc: shareData.desc,
+                link: shareData.link,
+                imgUrl: shareData.imgUrl,
+                success: function (res) {
+                },
+                cancel: function (res) {
+                }
+            });
+            wx.onMenuShareTimeline({
+                title: shareData.tit,
+                link: shareData.link,
+                imgUrl: shareData.imgUrl,
+                success: function (res) {
+                },
+                cancel: function (res) {
+                }
+            });
+        });
+    },
+    error:function(){}
 });

@@ -1,43 +1,3 @@
-/*news*/
-var news_list_1 = [{"title":"GUCCI虎头帽让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p2\/1.jpg")},{"title":"GUCCI虎头帽让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p2\/2.jpg")},{"title":"GUCCI虎头帽让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p2\/3.jpg")},{"title":"GUCCI虎头帽让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p2\/4.jpg")}];
-var news_list = [];
-$.each(news_list_1,function(i,item){
-    var aa = {};
-    aa.width = "617px";
-    aa.height = "920px";
-    //var cur = (i==0)?"cur":"";
-    var cur = "";
-    aa.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
-    news_list.push(aa);
-});
-/*cele*/
-var cele_list_1 = [{"title":"虎头帽让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p3\/1.jpg")},{"title":"虎头帽让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p3\/2.jpg")},{"title":"虎头帽让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p3\/1.jpg")},{"title":"虎头帽让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p3\/2.jpg")}];
-var cele_list = [];
-$.each(cele_list_1,function(i,item){
-    var aa = {};
-    var cur = "";
-    aa.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
-    cele_list.push(aa);
-});
-/*runway*/
-var runway_list_1 = [{"title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p4\/1.jpg")},{"title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p4\/2.jpg")},{"title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p4\/3.jpg")},{"title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p4\/4.jpg")}];
-var runway_list = [];
-$.each(runway_list_1,function(i,item){
-    var aa = {};
-    var cur = "";
-    aa.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
-    runway_list.push(aa);
-});
-/*backstage*/
-var backstage_list = [{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/1.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/2.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/3.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/4.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/1.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/2.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/3.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/4.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/1.jpg")},{"name":"Ermenegildo Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p5\/2.jpg")}];
-
-
-/*street style*/
-var street_list = [{"name":"Ermenegildo","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/1.jpg")},{"name":"Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/2.jpg")},{"name":"Ermenegildo","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/1.jpg")},{"name":"Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/2.jpg")},{"name":"Ermenegildo","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/1.jpg")},{"name":"Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/2.jpg")},{"name":"Ermenegildo","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/1.jpg")},{"name":"Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/2.jpg")},{"name":"Ermenegildo","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/1.jpg")},{"name":"Zegna","title":"让这个时代充满昨日的诗意","digest":"一定是这次米兰keyword/keyword时装周最受期待的设计师这一，上任GUCCI创意总监刚刚两年的他。","pic":ImgDir("\/p6\/2.jpg")}];
-
-/*moment*/
-var video_list = [{"title":"吴亦凡亮相伦敦时装周 帅气走秀","pic":ImgDir("\/p7\/1.jpg"),"video":"http://player.youku.com/embed/XMTQ0MjgxMzU0MA"},{"title":"Pronovias婚纱|纽约时装周","pic":ImgDir("\/p7\/2.jpg"),"video":"http://player.youku.com/embed/XMTQ1NzAwOTY4OA"},{"title":"美轮美奂 · 巴黎高定时装周2015秋冬集锦","pic":ImgDir("\/p7\/3.jpg"),"video":"http://player.youku.com/embed/XMTQyMTY1MjM5Ng"}];
-
 /*set data*/
 LIST = function(){}
 LIST.prototype = {
@@ -169,3 +129,52 @@ LIST.prototype = {
         return c;
     }
 };
+/*get data*/
+var news_list = [],
+	cele_list = [],
+	runway_list = [],
+	backstage_list = [],
+	street_list = [],
+	video_list = [];
+$.ajax({
+    type: "POST",
+    url: "http://m.cosmopolitan.com.cn/cosmowww/2016fashionweek-newyork-awjson.shtml",
+    data: {},
+    dataType: 'json',
+    success: function(data){
+        var me = this;
+        cbFun(data);
+    }
+});
+/*news*/
+var list = new LIST();
+function cbFun(data){
+    /*news*/
+    $.each(data.focus,function(i,item){
+        var aa = {};
+        aa.width = "617px";
+        aa.height = "920px";
+        //var cur = (i==0)?"cur":"";
+        var cur = "";
+        aa.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
+        news_list.push(aa);
+    });
+    /*cele*/
+    $.each(data.dapai,function(i,item){
+        var bb = {};
+        var cur = "";
+        bb.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
+        cele_list.push(bb);
+    });
+
+    /*runway*/
+    $.each(data.xiuchang,function(i,item){
+        var cc = {};
+        var cur = "";
+        cc.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
+        runway_list.push(cc);
+    });
+	backstage_list = data.huaxu;
+	street_list = data.changwai;
+	video_list = data.video;
+}
