@@ -130,12 +130,8 @@ LIST.prototype = {
     }
 };
 /*get data*/
-var news_list = [],
-	cele_list = [],
-	runway_list = [],
-	backstage_list = [],
-	street_list = [],
-	video_list = [];
+var news_list_1 = cele_list_1 = runway_list_1 = backstage_list = [];
+street_list = video_list = [];
 $.ajax({
     type: "POST",
     url: "http://m.cosmopolitan.com.cn/cosmowww/2016fashionweek-newyork-awjson.shtml",
@@ -143,24 +139,35 @@ $.ajax({
     dataType: 'json',
     success: function(data){
         var me = this;
-        cbFun(data);
+        console.log(data)
+        news_list_1 = data.focus;
+        cele_list_1 = data.dapai;
+        runway_list_1 = data.xiuchang;
+        me.backstage_list = data.huaxu;
+        me.street_list = data.changwai;
+        me.video_list = data.video;
+        cbFun();
     }
 });
 /*news*/
+var news_list = [];
+var cele_list = [];
+var runway_list = [];
 var list = new LIST();
-function cbFun(data){
+function cbFun(){
     /*news*/
-    $.each(data.focus,function(i,item){
+    $.each(news_list_1,function(i,item){
         var aa = {};
         aa.width = "617px";
         aa.height = "920px";
         //var cur = (i==0)?"cur":"";
         var cur = "";
-        aa.content = '<div class="imgs"><div class="img_s"></div><a href="'+item.url+'"><img src="'+item.pic+'"/><div class="word '+cur+'"></a><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
+        aa.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
         news_list.push(aa);
     });
     /*cele*/
-    $.each(data.dapai,function(i,item){
+    console.log(cele_list_1)
+    $.each(cele_list_1,function(i,item){
         var bb = {};
         var cur = "";
         bb.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
@@ -168,13 +175,11 @@ function cbFun(data){
     });
 
     /*runway*/
-    $.each(data.xiuchang,function(i,item){
+    console.log(runway_list_1)
+    $.each(runway_list_1,function(i,item){
         var cc = {};
         var cur = "";
         cc.content = '<div class="imgs"><div class="img_s"></div><img src="'+item.pic+'"/><div class="word '+cur+'"><h2>'+item.title+'</h2><p>'+item.digest+'</p></div></div>';
         runway_list.push(cc);
     });
-	backstage_list = data.huaxu;
-	street_list = data.changwai;
-	video_list = data.video;
 }

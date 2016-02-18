@@ -1,0 +1,178 @@
+/*login*/
+.login_num,.login_pwd{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    padding-left: 30px;
+    line-height: 100px;
+    font-size: 28px;
+    position: relative;
+}
+input{
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    width: 80%;
+    height: 50%;
+    font-size: 28px;
+    border: none;
+    padding-left: 10px;
+}
+.login_num em{
+    font-size: 25px;
+    font-style: normal;
+    color: #d1d1d1;
+}
+.login_c{
+    width: 100%;
+    padding: 0 30px;
+}
+.login_btn{
+    width: 580px;
+    height: 102px;
+    background-color: #e84135;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    line-height: 102px;
+}
+.login_tip,.login_c a{
+    width: 100%;
+    height: 58px;
+    /*color: #e84135;*/
+    font-size: 28px;
+    line-height: 58px;
+}
+.login_c a{
+    display: inline-block;
+    width: auto;
+}
+.login_c a.register{
+    float: left;
+}
+.login_c a.backPwd{
+    float: right;
+}
+/*register*/
+.reg .login_num input{
+    width: 50%;
+    left: 100px;
+}
+.reg_send{
+    width: 182px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #e84135;
+    color:#ffffff;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    right: 30px;
+    top: 23px;
+}
+.pwd_tip{
+    display: block;
+    width: 100%;
+    padding-left: 30px;
+    height: 58px;
+    line-height: 58px;
+}
+.reg_tip a{
+    color:#000000;
+}
+/*set_pwd*/
+.set_pwd .login_pwd input{
+    width: 93%;
+    left: 20px;
+}
+.set_pwd .login_btn{
+    background-color: #b9b9b9;
+}
+.set_pwd .login_btn.cur{
+    background-color: #e84135;
+}
+/*userinfo*/
+.user_info{}
+.avt{
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+.avt .avt_img{
+    width: 255px;
+    height: 255px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+}
+.avt .avt_img .avt_img_bg{
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.info .item{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    line-height: 100px;
+    padding-left: 30px;
+    background-color: #ffffff;
+    border-bottom: 1px #f2f2f2 solid;
+}
+.username input{
+    text-align: right;
+    padding-right: 25px;
+}
+.user_info .reg_login_tip a{
+    left: 50%;
+    margin-left: -125px;
+}
+/*users edit*/
+.users_info{}
+.users_info .top a,.users_edit_info .top a  {
+    display: block;
+    position: absolute;
+    font-size: 26px;
+    color: #ffffff;
+    top: 0;
+    right: 30px;
+}
+.users_edit_info .login_btn{
+    margin-top: 15px;
+}
+.users_info .avt{
+    height: 360px;
+}
+.users_info .avt .avt_img{
+    height: 305px;
+}
+.users_info .avt .edit_pwd,.users_info .edit_info{
+    display: block;
+    width: 180px;
+    height: 42px;
+    color:#000000;
+    background: url(../img/login/edit_icon.png) no-repeat 0 center;
+    padding-left: 55px;
+    line-height: 42px;
+    margin: 10px auto;
+}
+.users_info .edit_info{
+    width: auto;
+    padding-left: 50px;
+    margin-left: 30px;
+    height: 55px;
+    line-height: 55px;
+}
+/*users_edit_info*/
+.users_edit_info input{
+    text-align: right;
+    padding-right: 25px;
+}
