@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta charset="gbk">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<title>时尚健康-注册</title>
+<script src="./js/device.js"></script>
+<link rel="stylesheet" href="./css/common.css" media="screen">
+<link id="css" rel="stylesheet" href="./css/login.css" media="screen">
+<body class="reg">
+<!--top-->
+<div class="top">手机绑定</div>
+<!--login-->
+<div class="login_num bg">86<input type="text" id="phoneNum" placeholder="请输入手机号"><a href="javascript:void(0);" class="reg_send">发送验证码</a> </div>
+<span class="pwd_tip">请输入XXXX收到的手机验证码</span>
+<div class="login_pwd">验证码<input type="text" id="code" placeholder="请输入验证码"></div>
+<div class="login_c">
+	<div class="login_tip red">验证码输入错误</div>
+	<div class="reg_agree cur"><span>同意</span><a href="">用户协议</a> </div>
+	<div class="login_btn noFix" data-sure="reg_info" data-nexturl="reg_1">注册</div>
+	<span class="reg_tip">遇到问题？您可以<a href="tel:12923457685">联系客服</a></span>
+</div>
+<!--tip-->
+<div class="pop trans_bg phone_tips">
+	<div class="reg_login_tip">
+		<div>手机号已注册，是否进行登录？</div>
+		<a class="login_lf cur" href="login.html">是</a>
+		<a class="login_rt close_tip">否</a>
+	</div>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

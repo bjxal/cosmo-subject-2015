@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<meta charset="gbk">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<title>时尚健康-个人信息</title>
+<script src="./js/device.js"></script>
+<link rel="stylesheet" href="./css/common.css" media="screen">
+<link rel="stylesheet" href="./css/mobiscroll.custom-2.17.1.min.css"/>
+<link id="css" rel="stylesheet" href="./css/login.css" media="screen">
+<body class="users_info users_edit_info">
+<!--top-->
+<div class="top">编辑报名者信息<a class="save" href="javascript:void(0);" data-nexturl="users_5">保存</a></div>
+<div class="con btm">
+	<div class="avt">
+		<div class="avt_img">
+			<div class="avt_img_bg">
+				<div class="avt_img_c">
+					<img id="ImgPr" src="testImg/4.jpg">
+				</div>
+				<input type="file" id="up">
+				<textarea id="result1"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="info">
+		<div class="item username">
+			<span class="lf">参赛者姓名</span>
+			<span class="rt"><input id="name" type="text" value="孙俪" readonly="readonly"></span>
+		</div>
+		<div class="item sel_item sex" data-sel="sex">
+			<span class="lf">电话</span>
+			<span class="rt"><input id="phone" type="text" value="孙俪" readonly="readonly"></span>
+		</div>
+		<div class="item sel_item sex" data-sel="sex">
+			<span class="lf">性别</span>
+			<span class="rt sel_arr"></span>
+			<span class="user_sex rt">女</span>
+		</div>
+		<div class="item birthday">
+			<span class="lf">身份证</span>
+			<span class="rt"><input id="cardNum" type="text" value="1101111991098947"></span>
+		</div>
+		<div class="item birthday">
+			<span class="lf">地址</span>
+			<span class="rt"><input id="addr" type="text" value="世贸天阶"></span>
+		</div>
+		<div class="item city">
+			<span class="lf">其他问题</span>
+			<span class="rt"><input id="other" type="text" value="无"></span>
+		</div>
+	</div>
+</div>
+<div class="bottom_btn noBg">
+	<div class="login_btn del_btn cur">删除</div>
+</div>
+<!--tip-->
+<div class="pop trans_bg tips">
+	<div class="reg_login_tip">
+		<div>是否删除报名者信息？</div>
+		<a href="javascript:void(0);" data-nexturl="users_5" class="login_lf del_info">是</a>
+		<a href="javascript:void(0);" class="login_rt close_tip cur">否</a>
+	</div>
+</div>
+<!--date-->
+<div class="btm_sel">
+	<div class="item_sel sex_sel">
+		<div id="sex-show" class="selectEnd" data-tag="sex">完成</div>
+		<select name="sex" id="sex" class="mbsc-comp dw-hsel dwtd" tabindex="-1" disabled="true">
+			<option value="1">男</option>
+			<option value="2">女</option>
+		</select>
+	</div>
+</div>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/mobiscroll.custom-2.17.1.min.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

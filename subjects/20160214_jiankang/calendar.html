@@ -9,117 +9,122 @@
 <link rel="stylesheet" href="./css/common.css" media="screen">
 <link rel="stylesheet" href="./css/jquery-ui-1.9.2.custom.css"/>
 <link id="css" rel="stylesheet" href="./css/index.css" media="screen">
-<style type="text/css">
-	.startDate, .endDate {
-		border: 1px solid #ccc;
-		height: 25px;
-		width: 40%;
-		text-align: center;
-	}
-</style>
-<body class="calendar">
+<link href="css/hDate.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<body class="calendar_c">
 <!--bottom nav-->
 <div class="nav">
-	<a href="index.html" class="item item_1 cur">首页</a><a href="information.html" class="item item_2">资讯</a><a href="calendar.html" class="item item_3">日历</a><a href="users.html" class="item item_4">个人</a>
+	<a href="index.html" class="item item_1">首页</a><a href="information.html" class="item item_2">资讯</a><a href="calendar.html" class="item item_3 cur">日历</a><a href="users.html" class="item item_4">个人</a>
 </div>
 <!--tit-->
-<div class="top">日历</div>
-<div class="ui-datepicker-css" style="display: block">
-	<div class="ui-datepicker-choose">
-		<p>自选日期</p>
-		<div class="ui-datepicker-date">
-			<input name="startDate" id="startDate" class="startDate" readonly value="2014/12/20" type="text">
-		</div>
-	</div>
-</div>
+<div class="top noBg">日历</div>
+<input id="Text2" type="text">
 <!--con-->
-<div class="con" style="display: none;">
-	<!--run-->
-	<div class="run_c item">
-		<p>RUN</p>
-		<img src="testImg/2.jpg"/>
+<div class="con btm pst">
+	<div class="date_list date_20 cur">
+		<!--run-->
+		<a href="users_2.html" class="run_c item">
+			<div class="order_c">
+				<p>RUN</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/3.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--cook-->
+		<a href="users_3.html" class="cook_c item">
+			<div class="order_c">
+				<p>COOK</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/2.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--run-->
+		<a href="users_2.html" class="run_c item">
+			<div class="order_c">
+				<p>RUN</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/3.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--cook-->
+		<a href="users_3.html" class="cook_c item">
+			<div class="order_c">
+				<p>COOK</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/2.jpg" class="width_100"/>
+			</div>
+		</a>
 	</div>
-	<!--cook-->
-	<div class="cook_c item">
-		<p>COOK</p>
-		<img src="testImg/3.jpg"/>
+	<div class="date_list date_22 cur">
+		<!--run-->
+		<a href="users_2.html" class="run_c item">
+			<div class="order_c">
+				<p>RUN</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/2.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--cook-->
+		<a href="users_3.html" class="cook_c item">
+			<div class="order_c">
+				<p>COOK</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/3.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--run-->
+		<a href="users_2.html" class="run_c item">
+			<div class="order_c">
+				<p>RUN</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/2.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--cook-->
+		<a href="users_3.html" class="cook_c item">
+			<div class="order_c">
+				<p>COOK</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/3.jpg" class="width_100"/>
+			</div>
+		</a>
+	</div>
+	<div class="date_list date_24 cur">
+		<!--run-->
+		<a href="users_2.html" class="run_c item">
+			<div class="order_c">
+				<p>RUN</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/2.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--cook-->
+		<a href="users_3.html" class="cook_c item">
+			<div class="order_c">
+				<p>COOK</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/3.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--run-->
+		<a href="users_2.html" class="run_c item">
+			<div class="order_c">
+				<p>RUN</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/2.jpg" class="width_100"/>
+			</div>
+		</a>
+		<!--cook-->
+		<a href="users_3.html" class="cook_c item">
+			<div class="order_c">
+				<p>COOK</p>
+				<span class="act_tit">粉红泡泡跑</span>
+				<img src="testImg/3.jpg" class="width_100"/>
+			</div>
+		</a>
 	</div>
 </div>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/jquery-ui-1.9.2.custom.js"></script>
-<!--<script src="http://www.17sucai.com/preview/13678/2015-06-25/date-new/js/share.js"></script>-->
-<script type="text/javascript">
-
-	(function($){
-		$.setStartTime = function(){
-			$('.startDate').datepicker({
-				dateFormat: "yy/mm/dd",
-				maxDate: "+d",
-				onClose : function(dateText, inst) {
-					$( "#endDate" ).datepicker( "show" );
-				},
-				onSelect:function(dateText, inst) {
-					$( "#endDate" ).datepicker( "option","minDate",dateText );
-				},
-
-			});
-		};
-		$.setEndTime = function(){
-			$(".endDate").datepicker({
-				dateFormat: "yy/mm/dd",
-				maxDate: "+d",
-				defaultDate : new Date(),
-				onClose : function(dateText, inst) {
-					if (dateText < $("input[name=startDate]").val()){
-						$( "#endDate" ).datepicker( "show" );
-						alert("缁撴潫鏃ユ湡涓嶈兘灏忎簬寮€濮嬫棩鏈燂紒");
-						//$("#endDate").val(newdate)
-					}
-				}
-			});
-		};
-		$.date = function(){
-			$('.date').datepicker(
-					$.extend({showMonthAfterYear:true}, $.datepicker.regional['zh-CN'],
-							{'showAnim':'','dateFormat':'yy/mm/dd','changeMonth':'true','changeYear':'true',
-								'showButtonPanel':'true'}
-					));
-		};
-		$.datepickerjQ = function(){
-			$(".ui-datepicker-time").on("click",function(){
-				$(".ui-datepicker-css").css("display","block")
-			});
-			$(".ui-kydtype li").on("click",function(){
-				$(".ui-kydtype li").removeClass("on").filter($(this)).addClass("on");
-//            getAppCondtion();
-			});
-			$(".ui-datepicker-quick input").on("click",function(){
-				var thisAlt = $(this).attr("alt");
-				var dateList = timeConfig(thisAlt);
-				$(".ui-datepicker-time").val(dateList);
-				$(".ui-datepicker-css").css("display","none");
-				$("#ui-datepicker-div").css("display","none")
-//            getAppCondtion()
-			});
-			$(".ui-close-date").on("click",function(){
-				$(".ui-datepicker-css").css("display","none")
-				$("#ui-datepicker-div").css("display","none")
-				//inst.dpDiv.css({"display":"none"})
-			});
-			$(".startDate").on("click",function(){
-				$(".endDate").attr("disabled",false);
-			});
-
-		}
-
-	})(jQuery);
-
-	$(function(){
-		$.setStartTime();
-		$.setEndTime();
-		$.datepickerjQ();
-
-	});
-</script>
+<script type="text/javascript" src="js/hDate.js"></script>
+<script type="text/javascript" src="./js/calendar.js"></script>
 </body>
 </html>

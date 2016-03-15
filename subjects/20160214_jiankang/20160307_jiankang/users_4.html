@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<meta charset="gbk">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<title>时尚健康-个人信息</title>
+<script src="./js/device.js"></script>
+<link rel="stylesheet" href="./css/common.css" media="screen">
+<link rel="stylesheet" href="./css/mobiscroll.custom-2.17.1.min.css"/>
+<!--<link rel="stylesheet" href="./css/ajaxfileupload.css"/>-->
+<link id="css" rel="stylesheet" href="./css/login.css" media="screen">
+<body class="users_info">
+<!--top-->
+<div class="top">个人信息<a href="users.html" target="_self">保存</a></div>
+<div class="con btm">
+	<div class="avt avt_360">
+		<div class="avt_img">
+			<div class="avt_img_bg">
+				<div class="avt_img_c">
+					<img id="ImgPr" src="img/login/avt_women.png"/>
+				</div>
+				<input type="file" id="up" />
+				<textarea id="result1"></textarea>
+			</div>
+			<a href="reg_4.html" class="edit_pwd">修改密码</a>
+		</div>
+	</div>
+	<div class="info">
+		<div class="item username">
+			<span class="lf">昵称</span>
+			<span class="rt">孙俪</span>
+		</div>
+		<div class="item sel_item sex" data-sel="sex">
+			<span class="lf">性别</span>
+			<span class="rt sel_arr"></span>
+			<span class="user_sex rt">女</span>
+		</div>
+		<div class="item sel_item birthday" data-sel="birthday">
+			<span class="lf">生日</span>
+			<span class="rt sel_arr"></span>
+			<span class="user_birthday rt"></span>
+		</div>
+		<div class="item sel_item city" data-sel="city">
+			<span class="lf">城市</span>
+			<span class="rt sel_arr"></span>
+			<span class="user_city rt"></span>
+		</div>
+	</div>
+	<a href="users_5.html" class="edit_info">修改报名者信息</a>
+</div>
+<div class="bottom_btn">
+	<div class="login_btn cur" data-nexturl="index">退出登录</div>
+</div>
+<!--date-->
+<div class="btm_sel">
+	<div class="item_sel sex_sel">
+		<div id="sex-show" class="selectEnd" data-tag="sex">完成</div>
+		<select name="sex" id="sex" class="mbsc-comp dw-hsel dwtd" tabindex="-1" disabled="true">
+			<option value="1">男</option>
+			<option value="2">女</option>
+		</select>
+	</div>
+	<div class="item_sel birthday_sel">
+		<div class="demo-wrapper demo-wrapper-datetimeDate">
+			<div id="datetimeDate-show" class="selectEnd" data-tag="birthday">完成</div>
+			<input id="datetimeDate-demo" placeholder="Please Select ..." style="display: none;"/>
+		</div>
+	</div>
+	<div class="item_sel city_sel">
+		<div id="city-show" class="selectEnd" data-tag="city">完成</div>
+		<select id="city"></select>
+	</div>
+</div>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/mobiscroll.custom-2.17.1.min.js"></script>
+<script src="./js/city.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

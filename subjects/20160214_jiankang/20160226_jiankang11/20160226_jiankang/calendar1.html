@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>日历选择器</title>
+
+    <script src="./js/device.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/hDate.js"></script>
+
+    <link rel="stylesheet" href="./css/common.css" media="screen">
+    <link href="css/hDate.css" rel="stylesheet">
+</head>
+<body>
+
+<div style="width:520px;margin:40px auto 0 auto;">
+    带事件<input id="Text2" type="text">
+</div>
+
+<script type="text/javascript">
+//    $("#Text2").click(function (e) {
+        var ths = $("#Text2")[0];
+        calendar.show({
+            id: $("#Text2")[0], ok: function () {
+//                alert(ths.value);
+            }
+        });
+//    });
+</script>
+
+
+</body></html>

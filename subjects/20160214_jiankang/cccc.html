@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<meta charset="gbk">
+<title>时尚健康</title>
+<script src="./js/device.js"></script>
+<link rel="stylesheet" href="./css/common.css" media="screen">
+<link id="css" rel="stylesheet" href="./css/index.css" media="screen">
+<body class="index_1">
+<!--bottom nav-->
+<div class="nav">
+	<a href="index.html" class="item item_1 cur">活动</a><a href="information.html" class="item item_2">资讯</a><a href="calendar.html" class="item item_3">日历</a><a href="users.html" class="item item_4">个人</a>
+</div>
+<!--tit-->
+<div class="tit">活动主页</div>
+<!--focus-->
+<div class="focus">
+	<div id="iSlider-wrapper-news" class="news_c"></div>
+	<div class="focus_circle"><a href="javascript:void(0);" class="cur"></a><a href="javascript:void(0);"></a><a href="javascript:void(0);"></a></div>
+</div>
+<!--index nav-->
+<div class="index_nav">
+	<a href="calendar_2.html" class="item item_1">运动</a><a href="calendar_2.html" class="item item_2">烹饪</a><a href="calendar_2.html" class="item item_3">福利社</a><a href="calendar_2.html" class="item item_4">线上</a><a href="calendar_2.html" class="item item_5">线下</a>
+</div>
+<!--con-->
+<div class="con btm">
+	<!--run-->
+	<a href="information_3.html" class="run_c">
+		<div class="order_c">
+			<p>RUN</p>
+			<span class="act_tit">粉红泡泡跑</span>
+			<img src="testImg/2.jpg" class="width_100">
+		</div>
+	</a>
+	<!--cook-->
+	<a href="#" class="cook_c">
+		<div class="order_c">
+			<p>COOK</p>
+			<span class="act_tit">粉红泡泡跑</span>
+			<img src="testImg/3.jpg" class="width_100">
+		</div>
+	</a>
+	<!--run-->
+	<a href="information_3.html" class="run_c">
+		<div class="order_c">
+			<p>RUN</p>
+			<span class="act_tit">粉红泡泡跑</span>
+			<img src="testImg/2.jpg" class="width_100">
+		</div>
+	</a>
+	<!--cook-->
+	<a href="#" class="cook_c">
+		<div class="order_c">
+			<p>COOK</p>
+			<span class="act_tit">粉红泡泡跑</span>
+			<img src="testImg/3.jpg" class="width_100">
+		</div>
+	</a>
+</div>
+<script type="text/javascript">
+	var focus_list = [
+		{
+			content: '<a href="activity_2.html"><div class="act_top_c"><p class="act_top_c_1">粉红泡泡跑</p><p>2015-09-11</p><p>中国.深圳</p></div><img src="./testImg/1.jpg"/></a>'
+		},
+		{
+			content: '<a href="activity_2.html"><div class="act_top_c"><p class="act_top_c_1">粉红泡泡跑</p><p>2015-09-11</p><p>中国.深圳</p></div><img src="./testImg/1.jpg"/></a>'
+		},
+		{
+			content: '<a href="activity_2.html"><div class="act_top_c"><p class="act_top_c_1">粉红泡泡跑</p><p>2015-09-11</p><p>中国.深圳</p></div><img src="./testImg/1.jpg"/></a>'
+		}
+	];
+</script>
+<script src="./js/jquery.min.js"></script>
+<script type="text/javascript">
+	//下拉加载
+	var flag = true;
+	window.addEventListener('scroll',function(e){
+		if(!flag) return false;
+		var winHeight = $(window).height();
+		var scrollNum = $(window).scrollTop();
+		var bdHeight = $(document.body).height();
+
+		if((winHeight + scrollNum) >= bdHeight){
+			flag = false;
+			//$(".loading").css('display','block');
+//			var nextpage = parseInt($("#nextpage").text());
+			flag = true;
+		};
+
+	});
+</script>
+<script src="./js/iSlider.animate.js"></script>
+<script src="./js/iSlider.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

@@ -17,9 +17,9 @@
         calendar.config.ishotel = false;
     },
     _setDay: function (m, y, d) {
-        var currDay = d;
-        var currMon = m;
-        var currYear = y;
+        //var currDay = d;
+        //var currMon = m;
+        //var currYear = y;
 
         var setMon = new Date().getMonth() + 1;
         var setYear = new Date().getFullYear();
@@ -39,23 +39,37 @@
                     else {
                         var f = calendar.festivals(m, _d);
                         var _dx = (y + "-" + m + "-" + _d);
-                        if (m == currMon && currDay == _d && currYear == y) {
-                            calDay.push("<td date='" + _dx + "' class='_selDay'>" + _d + "</td>");
+                        if (m == currMon && currDay == _d && currYea == y) {
+                            if(dateList.indexOf(_dx+",")!=-1){
+                                console.log("aaa")
+                                console.log(_dx)
+                                calDay.push("<td date='" + _dx + "'><div class='_curDay'>" + _d + "<span class='_act'></span></div></td>");
+                            }
+                            else{
+                                calDay.push("<td date='" + _dx + "'><div class='_curDay'>" + _d + "<span></span></div></td>");
+                            }
+                            //calDay.push("<td date='" + _dx + "'><div class='_curDay'>" + _d + "<span></span></div></td>");
                         }
                         else if (m == setMon && setDay == _d && setYear == y) {
-                            calDay.push("<td date='" + _dx + "' title='" + _d + "号' class='_sday'>今天</td>");
+                            calDay.push("<td date='" + _dx + "' title='" + _d + "号' class='_sday'><div>"+ _d +"<span></span></div></td>");
                         }
                         else if (f !== "") {
-                            calDay.push("<td date='" + _dx + "' class='festival'>" + f + "</td>");
+                            calDay.push("<td date='" + _dx + "' class='festival'><div>" + f + "<span></span></div></td>");
                         }
                         else if (calendar.config.minDay != null && new Date(calendar.config.minDay.replace(/[年月日-]/g, "\/")) > new Date(_dx.replace(/[-]/g, "\/"))) {
-                            calDay.push("<td date='' class='disDay'>" + _d + "</td>");
+                            calDay.push("<td date='' class='disDay'><div>" + _d + "<span></span></div></td>");
                         }
                         else if (calendar.config.maxDay != null && new Date(calendar.config.maxDay.replace(/[年月日-]/g, "\/")) < new Date(_dx.replace(/[-]/g, "\/"))) {
-                            calDay.push("<td date='' class='disDay'>" + _d + "</td>");
+                            calDay.push("<td date='' class='disDay'><div>" + _d + "<span></span></div></td>");
                         }
                         else {
-                            calDay.push("<td date='" + _dx + "'>" + _d + "</td>");
+                            if(dateList.indexOf(_dx+",")!=-1){
+                                calDay.push("<td date='" + _dx + "'><div>" + _d + "<span class='_act'></span></div></td>");
+                            }
+                            else{
+                                calDay.push("<td date='" + _dx + "'><div>" + _d + "<span></span></div></td>");
+                            }
+                            //calDay.push("<td date='" + _dx + "'><div>" + _d + "<span></span></div></td>");
                         }
                         _d++;
                     }
@@ -64,27 +78,39 @@
                     if (_d <= lastDay) {
                         var f = calendar.festivals(m, _d);
                         var _dx = (y + "-" + m + "-" + _d);
-                        if (m == currMon && currDay == _d && currYear == y) {
-                            calDay.push("<td date='" + _dx + "' class='_selDay'>" + _d + "</td>");
+                        if (m == currMon && currDay == _d && currYea == y) {
+                            if(dateList.indexOf(_dx+",")!=-1){
+                                calDay.push("<td date='" + _dx + "'><div class='_curDay'>" + _d + "<span class='_act'></span></div></td>");
+                            }
+                            else{
+                                calDay.push("<td date='" + _dx + "'><div class='_curDay'>" + _d + "<span></span></div></td>");
+                            }
                         }
                         else if (m == setMon && setDay == _d && setYear == y) {
-                            calDay.push("<td date='" + _dx + "' title='" + _d + "号' class='_sday'>今天</td>");
+                            calDay.push("<td date='" + _dx + "' title='" + _d + "号' class='_sday'><div>"+_d+"<span></span></div></td>");
                         }
                         else if (f !== "") {
-                            calDay.push("<td date='" + _dx + "' title='" + m + "-" + _d + "' class='festival'>" + f + "</td>");
+                            calDay.push("<td date='" + _dx + "' title='" + m + "-" + _d + "' class='festival'><div>" + f + "<span></span></div></td>");
                         }
                         else if (calendar.config.minDay != null && new Date(calendar.config.minDay.replace(/[年月日-]/g, "\/")) > new Date(_dx.replace(/[-]/g, "\/"))) {
-                            calDay.push("<td date='' class='disDay'>" + _d + "</td>");
+                            calDay.push("<td date='' class='disDay'><div>" + _d + "<span></span></div></td>");
                         }
                         else if (calendar.config.maxDay != null && new Date(calendar.config.maxDay.replace(/[年月日-]/g, "\/")) < new Date(_dx.replace(/[-]/g, "\/"))) {
-                            calDay.push("<td date='' class='disDay'>" + _d + "</td>");
+                            calDay.push("<td date='' class='disDay'><div>" + _d + "<span></span></div></td>");
                         }
                         else {
-                            calDay.push("<td date='" + _dx + "'>" + _d + "</td>");
+                            if(dateList.indexOf(_dx+",")!=-1){
+                                calDay.push("<td date='" + _dx + "'><div>" + _d + "<span class='_act'></span></div></td>");
+                            }
+                            else{
+                                calDay.push("<td date='" + _dx + "'><div>" + _d + "<span></span></div></td>");
+                            }
                         }
                         _d++;
                     }
-                    else calDay.push("<td date=''>&nbsp;</td>");
+                    else{
+                        calDay.push("<td date=''>&nbsp;</td>");
+                    }
                 }
             }
             calDay.push("</tr>");
@@ -100,10 +126,10 @@
         return t
     },
     colse: function () {
-        if (document.getElementById("_calendar")) {
-            document.body.removeChild(document.getElementById("_calendar"));
-            $(".calendar").remove();
-        }
+        //if (document.getElementById("_calendar")) {
+        //    document.body.removeChild(document.getElementById("_calendar"));
+        //    $(".calendar").remove();
+        //}
     },
     show: function () {
         calendar.colse();
@@ -122,15 +148,16 @@
         return f;
     },
     init: function (s) {
-
         var obj = s;
         var oDay = s.value.replace(/[年月]/g, "-").replace(/[日]/g, "");
         if ($(s).attr("date") != "" && $(s).attr("date") != undefined) {
             oDay = $(s).attr("date");
         }
-        var currMon = new Date().getMonth() + 1;
-        var currYea = new Date().getFullYear();
-        var currDay = new Date().getDate();
+        currMon = new Date().getMonth() + 1;
+        currYea = new Date().getFullYear();
+        currDay = new Date().getDate();
+        dotlist = "2016-3-2,2016-2-16,2016-1-18,2016-1-15,2016-1-14";
+        dateList = dotlist.replace(/-0/g,"-")+",";
         var reg = /^(\d{4})-(\d{2})-(\d{2})$/;
         if (oDay != "" && reg.test(oDay)) {
             currMon = parseInt(oDay.split('-')[1]);
@@ -153,17 +180,19 @@
 
         var _c = [];
         var t = s.offsetHeight;
-        _c.push("<div id='calendar_head' class='calendar_head'><em class='calendaremL'>«</em><input id='_calyear' type='text' value='" + currYea + "' /><input id='_calmod' type='text' value='" + currMon + "' /><em class='calendaremR'>»</em>");
+        _c.push("<div id='calendar_head' class='calendar_head'><div id='_calyear' class='_calyear'>" + currYea + "</div><div id='_calmod' class='_calmod'><em class='calendaremL'></em><span>" + currMon + "月</span><em class='calendaremR'></em></div>");
         _c.push(_yers.join(""));
         _c.push("<table style='display:none;' id='calMonth' class='calMonth'><tr><td>1月</td><td>2月</td><td>3月</td><td>4月</td></tr><tr><td>5月</td><td>6月</td><td>7月</td><td>8月</td></tr><tr><td>9月</td><td>10月</td><td>11月</td><td>12月</td></tr></table>");
         _c.push("</div>");
-        _c.push("<div class='calendar_boy' ><i id='_bgMon'>" + currMon + "</i>");
+        //_c.push("<div class='calendar_boy' ><i id='_bgMon'>" + currMon + "</i>");
         _c.push("<table id='_tdCal' class='_caltable' border='0'><tr><td>日</td><td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td></tr>");
         _c.push("" + calendar._setDay(currMon, currYea, currDay) + "");
         _c.push("</table>");
 
-        var calTop = calendar.T(s) + t;
-        var calLeft = calendar.L(s);
+        //var calTop = calendar.T(s) + t;
+        //var calLeft = calendar.L(s);
+        var calTop = "80px";
+        var calLeft = 0;
         var bodyHith = document.body.parentNode.offsetHeight;
         var bodywidth = document.body.parentNode.offsetWidth;
         if ((calTop + 225) > bodyHith) { calTop = calendar.T(s) - 225; }
@@ -176,67 +205,52 @@
         document.getElementById("_calendar").innerHTML = _c.join("");
 
         $("#_calyear").click(function () {
-            $("#calYear").show();
-            $("#calMonth").hide();
-            $("#calYear td").click(function () {
-                $("#_calyear").val(this.innerHTML);
-                calendar._yearMon($("#_calmod").val(), this.innerHTML, s);
-                $("#calYear").hide();
-            });
         }).blur(function () {
-            calendar._yearMon($("#_calmod").val(), this.value, s);
+            calendar._yearMon($("#_calmod").html(), this.value, s);
         }).keyup(function () {
             $("#calYear").hide();
             $("#calMonth").hide();
             this.value = this.value.replace(/[^\d]/g, "");
         });
-        $("#_calmod").click(function () {
-            $("#calYear").hide();
-            $("#calMonth").show();
-            $("#calMonth td").click(function () {
-                $("#_calmod").val(this.innerHTML.replace(/[月]/g, ""));
-                calendar._yearMon(this.innerHTML.replace(/[月]/g, ""), $("#_calyear").val(), s);
-                $("#calMonth").hide();
-            });
-        }).blur(function () {
-            if (0 < parseInt(this.value) < 13) {
-                calendar._yearMon(this.value, $("#_calyear").val(), s);
-            }
-        }).keyup(function () {
-            $("#calYear").hide();
-            $("#calMonth").hide();
-            this.value = this.value.replace(/[^\d]/g, "");
-        });
-
+        //select date
         $("#_tdCal tr:gt(0) td[date!='']").click(function () {
             s.value = new Date($(this).attr("date").replace(/[-]/g, "/")).format(calendar.config.format);
             $(s).attr("date", new Date($(this).attr("date").replace(/[-]/g, "/")).format("yyyy-MM-dd"));
             if (calendar.config.ok != null) {
                 eval(calendar.config.ok());
             }
-            calendar.colse();
+            //calendar.colse();
         }).live("mouseover", function () {
-            $(this).css({ "color": "#fff", "background-color": "#ff9900" });
+            $("._caltable").find("div").removeClass("_selDay");
+            $(this).find("div").addClass("_selDay");
+            var dt = $(this)[0].textContent;
+            $(".con .date_list").removeClass("cur");
+            $(".con .date_"+dt).addClass("cur");
+
         }).live("mouseout", function () { $(this).removeAttr("style") });
 
 
-        $("#calendar_head em").click(function () {
+        $("#calendar_head  em").click(function () {
             if ($("#calendar_head em").index(this) == 0) {
-                calendar._nexPrv("L", $("#_calmod").val(), $("#_calyear").val(), s);
+                calendar._nexPrv("L", $("#_calmod span").html().replace("月",""), $("#_calyear").html(), currDay);
             }
             else {
-                calendar._nexPrv("R", $("#_calmod").val(), $("#_calyear").val(), s);
+                calendar._nexPrv("R", $("#_calmod span").html().replace("月",""), $("#_calyear").html(), currDay);
             }
         });
         $("#_tdCal").click(function () {
             $("#calYear").hide();
             $("#calMonth").hide();
         });
-        document.onclick = function (e) {
-            var event = e || window.event;
-            var Target = event.target || event.srcElement;
-            calendar.hide(event, Target, obj);
-        }
+
+        //current month
+        var mn = (String(currMon).length==1)?"0"+currMon:currMon;
+        calendar._getData(currYea+"-"+mn);
+        //document.onclick = function (e) {
+        //    var event = e || window.event;
+        //    var Target = event.target || event.srcElement;
+        //    calendar.hide(event, Target, obj);
+        //}
     },
     hide: function (event, Target, obj) {
         var oPare = Target.parentNode;
@@ -253,7 +267,7 @@
             }
         }
         if (!isChild) {
-            calendar.colse();
+            //calendar.colse();
         }
     },
     _selCal: function (e) {
@@ -263,20 +277,19 @@
             if (calendar.config.ok != null) {
                 eval(calendar.config.ok());
             }
-            calendar.colse();
+            //calendar.colse();
         });
     },
     _yearMon: function (m, y, s) {
         $("#_tdCal tr:gt(0)").remove();
         $("#_tdCal").append(calendar._setDay(m, y, 0));
-        $("#_bgMon").html(parseInt(m));
+        //$("#_bgMon").html(parseInt(m));
         $("#_tdCal tr:gt(0) td[date!='']").click(function () {
             s.value = new Date($(this).attr("date").replace(/[-]/g, "/")).format(calendar.config.format);
             calendar.colse();
         });
     },
     _nexPrv: function (t, m, y, s) {
-
         var ys = y;
         var ms = m;
         if (t == "L") {
@@ -298,15 +311,46 @@
             }
         }
         $("#_tdCal tr:gt(0)").remove();
-        $("#_tdCal").append(calendar._setDay(ms, ys, 0));
-        $("#_calmod").val(ms);
-        $("#_calyear").val(ys);
-        $("#_bgMon").html(ms);
+        $("#_tdCal").append(calendar._setDay(ms, ys, s));
+        $("#_calmod span").html(ms+"月");
+        $("#_calyear").html(ys);
+        //$("#_bgMon").html(ms);
         $("#_tdCal tr:gt(0) td[date!='']").click(function () {
             s.value = new Date($(this).attr("date").replace(/[-]/g, "/")).format(calendar.config.format);
             $(s).attr("date", new Date($(this).attr("date").replace(/[-]/g, "/")).format("yyyy-MM-dd"));
-            calendar.colse();
+            //calendar.colse();
         });
+        var mn = (String(ms).length==1)?"0"+ms:ms;
+        calendar._getData(ys+"-"+mn);
+    },
+    _getData:function(m){
+        var me = this;
+        var getData_m = "http://m.trends-health.com.cn/files/eventapi.php?c=Trendshealthm_calendar&a=Getlistjson";
+        $.ajax({
+            type:"POST",
+            url:getData_m,
+            data:{"yearmonth":m},
+            dataType: "json",
+            success:function(back){
+                if(back.flag==0) return;
+                calendar._setList(back.data);
+            },
+            error:function(err){}
+        });
+    },
+    _setList:function(data){
+        var date_t = "";
+        $(".con").empty();
+        $.each(data,function(i,item){
+            if(date_t.indexOf(item.datetime)!=-1) return;
+            var list_d = '<div class="date_list cur date_'+parseInt(item.datetime)+'"></div>';
+            date_t += item.datetime+",";
+            $(".con").append(list_d);
+        });
+        $.each(data,function(i,item){
+            var dom = '<a href="'+item.eventurl+'" class="run_c item"><div class="order_c"><p>'+item.type+'</p><span class="act_tit">'+item.name+'</span><img src="'+item.imgurl+'" class="width_100"></div></a>';
+            $(".date_"+parseInt(item.datetime)).append(dom);
+        })
     }
 };
 Date.prototype.format = function (format) {

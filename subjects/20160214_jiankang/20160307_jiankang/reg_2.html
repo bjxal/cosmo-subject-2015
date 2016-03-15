@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<meta charset="gbk">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<!--<meta content="telephone=no" name="format-detection">-->
+<title>时尚健康-个人信息</title>
+<script src="./js/device.js"></script>
+<link rel="stylesheet" href="./css/common.css" media="screen"/>
+<link rel="stylesheet" href="./css/mobiscroll.custom-2.17.1.min.css"/>
+<link id="css" rel="stylesheet" href="./css/login.css" media="screen"/>
+<body class="users_info">
+<!--top-->
+<div class="top">个人信息</div>
+<div class="avt">
+	<div class="avt_img">
+		<div class="avt_img_bg">
+			<div class="avt_img_c">
+				<img id="ImgPr" src="img/login/avt_women.png"/>
+			</div>
+		</div>
+		<input type="file" id="up" />
+		<textarea id="result1"></textarea>
+	</div>
+</div>
+<div class="info">
+	<div class="item username">
+		<span class="lf">昵称</span>
+		<span class="rt"><input id="name_v" type="text" placeholder="请输入昵称"></span>
+	</div>
+	<div class="item sel_item sex" data-sel="sex">
+		<span class="lf">性别</span>
+		<span class="rt sel_arr" id="sex_v" data-sel="sex"></span><span class="user_sex rt" data-sel="sex"></span>
+	</div>
+	<div class="item sel_item birthday" data-sel="birthday">
+		<span class="lf">生日</span>
+		<span class="rt sel_arr" id="birthday_v" data-sel="birthday"></span><span class="user_birthday rt"></span>
+	</div>
+	<div class="item sel_item city" data-sel="city">
+		<span class="lf">城市</span>
+		<span class="rt sel_arr" id="city_v" data-sel="city"></span>
+		<span class="user_city rt"></span>
+	</div>
+</div>
+<div class="login_c">
+	<div class="login_tip red">昵称确认后不能修改</div>
+</div>
+<!--date-->
+<div class="btm_sel">
+	<div class="item_sel sex_sel">
+		<div id="sex-show" class="selectEnd" data-tag="sex">完成</div>
+		<select name="sex" id="sex" class="mbsc-comp dw-hsel dwtd" tabindex="-1" disabled="true">
+			<option value="1">男</option>
+			<option value="2">女</option>
+		</select>
+	</div>
+	<div class="item_sel birthday_sel">
+		<div class="demo-wrapper demo-wrapper-datetimeDate">
+			<div id="datetimeDate-show" class="selectEnd" data-tag="birthday">完成</div>
+			<input id="datetimeDate-demo" placeholder="Please Select ..." style="display: none;"/>
+		</div>
+	</div>
+	<div class="item_sel city_sel">
+		<div id="city-show" class="selectEnd" data-tag="city">完成</div>
+		<select id="city"></select>
+	</div>
+</div>
+<div class="bottom_btn">
+	<div class="login_btn" data-sure="reg">完成注册</div>
+</div>
+<div class="pop trans_bg tips reg_tips">
+	<div class="reg_login_tip">
+		<div>注册成功,<span class="red">3</span>秒后返回登录前页面</div>
+		<a class="login_ct cur" href="index.html">立即返回？</a>
+	</div>
+</div>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/mobiscroll.custom-2.17.1.min.js"></script>
+<script src="./js/city.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

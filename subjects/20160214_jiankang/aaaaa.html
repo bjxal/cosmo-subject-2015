@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -29,10 +28,10 @@
 
             // Mobiscroll Date & Time initialization
             $('#datetimeDate-demo').mobiscroll().date({
-                theme: $('#theme').val(),      // Specify theme like: theme: 'ios' or omit setting to use default
-                lang: $('#language').val(),    // Specify language like: lang: 'pl' or omit setting to use default
-                display: $('#display').val(),  // Specify display mode like: display: 'bottom' or omit setting to use default
-                mode: $('#mode').val()         // More info about mode: http://docs.mobiscroll.com/2-17-1/datetime#!opt-mode
+                theme: "",      // Specify theme like: theme: 'ios' or omit setting to use default
+                lang: "zh",    // Specify language like: lang: 'pl' or omit setting to use default
+                display: "inline",  // Specify display mode like: display: 'bottom' or omit setting to use default
+                mode: "datetimeDate"         // More info about mode: http://docs.mobiscroll.com/2-17-1/datetime#!opt-mode
             });
 
             $('#datetimeDate-show').click(function(){
@@ -49,112 +48,6 @@
     </script>
 </head>
 <body>
-<div id="main">
-    <div>
-        <label for="demo">Demo</label>
-        <select name="demo" id="demo" class="settings">
-
-            <optgroup label="Datetime">
-                <option value="datetimeDate" selected>Basic usage date</option>
-                <option value="datetimeInvalid" >Datetime with invalids</option>
-                <option value="datetimeTime" >Basic usage time</option>
-                <option value="datetimeMinmax" >Date with min and max</option>
-            </optgroup>
-            <optgroup label="Select">
-                <option value="selectBasic" >Basic usage</option>
-                <option value="selectGroupselect" >Group options</option>
-                <option value="selectMultiple" >Multiple select</option>
-            </optgroup>
-            <optgroup label="Rating">
-                <option value="ratingStars" >Basic usage</option>
-                <option value="ratingGrades" >Grades</option>
-                <option value="ratingIcons" >Custom Icons</option>
-            </optgroup>
-            <optgroup label="Distance">
-                <option value="distanceDistance" >Distance</option>
-            </optgroup>
-            <optgroup label="Speed">
-                <option value="speedSpeed" >Speed</option>
-            </optgroup>
-            <optgroup label="Temperature">
-                <option value="temperatureTemperature" >Temperature</option>
-            </optgroup>
-            <optgroup label="Mass">
-                <option value="massMass" >Mass</option>
-            </optgroup>
-            <optgroup label="Force">
-                <option value="forceForce" >Force</option>
-            </optgroup>
-            <optgroup label="List">
-                <option value="listTreelist" >Basic usage</option>
-                <option value="listUnordered" >Unordered list</option>
-            </optgroup>
-            <optgroup label="Image">
-                <option value="imageText" >Image and Text</option>
-                <option value="imageBasic" >Image Only</option>
-                <option value="imageIcons" >Icon and Text</option>
-            </optgroup>
-            <optgroup label="Calendar">
-                <option value="calendarTime" >With time scroller</option>
-                <option value="calendarBasic" >Basic usage</option>
-                <option value="calendarMultiday" >Multi day select</option>
-            </optgroup>
-            <optgroup label="Timespan">
-                <option value="timespanBasic" >Basic usage</option>
-                <option value="timespanDhm" >Day/Hour/Minute span</option>
-            </optgroup>
-            <optgroup label="Timer">
-                <option value="timerCountdown" >Countdown</option>
-            </optgroup>
-            <optgroup label="Color">
-                <option value="colorHx" >Basic usage</option>
-            </optgroup>
-            <optgroup label="Range">
-                <option value="rangeBasic" >Basic usage</option>
-                <option value="rangeTime" >Time range</option>
-                <option value="rangeTwoinputs" >Two inputs</option>
-            </optgroup>
-            <optgroup label="Listview">
-                <option value="listviewUpdate" >Create, remove, update</option>
-                <option value="listviewSorthandle" >Sort handle</option>
-                <option value="listviewActionmenu" >Action menu</option>
-            </optgroup>
-            <optgroup label="Number">
-                <option value="numberDecimal" >Decimal</option>
-                <option value="numberStep" >Step</option>
-            </optgroup>
-            <optgroup label="Numpad">
-                <option value="numpadDecimal" > Decimal</option>
-                <option value="numpadCurrency" >Currency</option>
-                <option value="numpadTime" >Time</option>
-                <option value="numpadPin" >Masked Entry - PIN</option>
-            </optgroup>
-            <optgroup label="Menustrip">
-                <option value="menustripTabs" >Tab menu</option>
-            </optgroup>
-            <optgroup label="Widget">
-                <option value="widgetDialog" >Dialog</option>
-                <option value="widgetMessage" >Alert message</option>
-            </optgroup>
-            <optgroup label="Scroller">
-                <option value="scrollerCustomunits" >Custom Units</option>
-            </optgroup>
-            <optgroup label="Forms">
-                <option value="formsTextfields" >Text Fields</option>
-                <option value="formsSelect" >Select</option>
-                <option value="formsCheckbox" >Checkbox</option>
-                <option value="formsSwitch" >Switch</option>
-                <option value="formsRadiobtn" >Radio buttons</option>
-                <option value="formsButtons" >Buttons</option>
-                <option value="formsTypography" >Typography</option>
-                <option value="formsSlider" >Slider</option>
-                <option value="formsStepper" >Stepper</option>
-                <option value="formsProgress" >Progress</option>
-                <option value="formsSegmented" >Segmented</option>
-            </optgroup>
-        </select>
-    </div>
-</div>
 <!-- Demo configurator markup END -->
 <!-- ------------------------------------------------------------------ -->
 
@@ -166,9 +59,6 @@
     <button id="datetimeDate-clear">Clear</button>
     <button id="datetimeDate-show">Show</button>
 </div>
-<!-- Segmented END -->
-<!-- ------------------------------------------------------------------------------- -->
-
 </body>
 
 </html>
