@@ -12,8 +12,11 @@
 .login_num.bg{
     background-image: url(../img/login/1.jpg);
     background-repeat: no-repeat;
-    background-position: 100px center;
+    background-position: 115px center;
     background-color: #ffffff;
+}
+.login .login_num.bg{
+    background-position: 85px center;
 }
 input{
     /*position: absolute;*/

@@ -41,8 +41,6 @@
                         var _dx = (y + "-" + m + "-" + _d);
                         if (m == currMon && currDay == _d && currYea == y) {
                             if(dateList.indexOf(_dx+",")!=-1){
-                                console.log("aaa")
-                                console.log(_dx)
                                 calDay.push("<td date='" + _dx + "'><div class='_curDay'>" + _d + "<span class='_act'></span></div></td>");
                             }
                             else{
@@ -156,7 +154,7 @@
         currMon = new Date().getMonth() + 1;
         currYea = new Date().getFullYear();
         currDay = new Date().getDate();
-        dotlist = "2016-3-2,2016-2-16,2016-1-18,2016-1-15,2016-1-14";
+        var dotlist = "2016-3-2,2016-2-16,2016-1-18,2016-1-15,2016-1-14";
         dateList = dotlist.replace(/-0/g,"-")+",";
         var reg = /^(\d{4})-(\d{2})-(\d{2})$/;
         if (oDay != "" && reg.test(oDay)) {
@@ -220,12 +218,23 @@
                 eval(calendar.config.ok());
             }
             //calendar.colse();
-        }).live("mouseover", function () {
+
             $("._caltable").find("div").removeClass("_selDay");
             $(this).find("div").addClass("_selDay");
             var dt = $(this)[0].textContent;
             $(".con .date_list").removeClass("cur");
             $(".con .date_"+dt).addClass("cur");
+
+            var ym = $("#ym").val()||"";
+            var dt1 = (String(dt).length==1)?"0"+dt:dt;
+            calendar._getData(ym+"-"+dt1);
+
+        }).live("mouseover", function () {
+            //$("._caltable").find("div").removeClass("_selDay");
+            //$(this).find("div").addClass("_selDay");
+            //var dt = $(this)[0].textContent;
+            //$(".con .date_list").removeClass("cur");
+            //$(".con .date_"+dt).addClass("cur");
 
         }).live("mouseout", function () { $(this).removeAttr("style") });
 
@@ -321,6 +330,8 @@
             //calendar.colse();
         });
         var mn = (String(ms).length==1)?"0"+ms:ms;
+        if($("#page").length>0) $("#page").val(1);
+        if($("#ym").length>0) $("#ym").val(ys+"-"+mn);
         calendar._getData(ys+"-"+mn);
     },
     _getData:function(m){
@@ -329,7 +340,7 @@
         $.ajax({
             type:"POST",
             url:getData_m,
-            data:{"yearmonth":m},
+            data:{"yearmonth":m,"page":1},
             dataType: "json",
             success:function(back){
                 if(back.flag==0) return;
@@ -343,7 +354,7 @@
         $(".con").empty();
         $.each(data,function(i,item){
             if(date_t.indexOf(item.datetime)!=-1) return;
-            var list_d = '<div class="date_list cur date_'+parseInt(item.datetime)+'"></div>';
+            var list_d = '<div class="date_list cur date_'+ (item.datetime)+'"></div>';
             date_t += item.datetime+",";
             $(".con").append(list_d);
         });

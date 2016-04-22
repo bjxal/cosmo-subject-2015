@@ -1,9 +1,11 @@
 /*index*/
 /*focus*/
 .focus{
-    width: 100%;
+    width: 640px;
     height: 390px;
     position: relative;
+    overflow: hidden;
+    border:1px red solid;
 }
 .activity_result .focus{
     height: 275px;
@@ -74,7 +76,8 @@
 }
 .index_nav a.item{
     display: inline-block;
-    width: 19%;
+    /*width: 19%;*/
+    width: 100%;
     height: 100%;
     /*float: left;*/
     background-image: url(../img/index_nav.png);
@@ -101,8 +104,24 @@
 .index_nav a.item_5{
     background-position: center -560px;
 }
+.index_nav a.item_6{
+    background-position: center -700px;
+}
+.index_nav a.item_7{
+    background-position: center -840px;
+}
+.index_nav a.item_8{
+    background-position: center -980px;
+}
+.index_nav a.item_9{
+    background-position: center -1120px;
+}
+.index_nav a.item_10{
+    background-position: center -1260px;
+}
 .con.btm{
-    padding-bottom: 100px;
+    padding-bottom: 10px;
+    /*padding-bottom: 100px;*/
 }
 /*content run*/
 .run_c,.cook_c{
@@ -336,10 +355,10 @@
     margin-top: 20px;
 }
 .activity_result .con .item{
-    width: 46%;
-    margin: 0 10px;
+    width: 50%;
+    padding: 0 10px;
     float: left;
-    padding: 0;
+    /*padding: 0;*/
 }
 .activity_result .con h2{
     font-weight: normal;
@@ -525,6 +544,11 @@
 /*}*/
 .activity_apply .con .apply_1 span,.activity_apply .con .apply_1 a{
     text-align: center;
+}
+.activity_apply .con .apply_1 a.tel{
+    text-align: left;
+    display:inline;
+    line-height: 100px;
 }
 .activity_apply .con .item_2{
     text-align: left;
@@ -878,6 +902,9 @@ input{
     width: 30%;
     right: 170px;
 }
+.activity_pay .apply_2 input.rt{
+    right: 30px;
+}
 /*tips*/
 .tips_1 .focus{
     height: 390px;
@@ -928,4 +955,12 @@ input{
     width: 100%;
     text-indent:2em;
     padding: 20px 30px;
+}
+.activity_result .top a.top_nav_menu, .activity_list .tit a.top_nav_menu, .activity_detail .top a.top_nav_menu{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 100px;
+    height: 100%;
+    background: url(../img/top_nav_icon.png) no-repeat right center;
 }

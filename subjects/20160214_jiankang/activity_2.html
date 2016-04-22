@@ -10,8 +10,14 @@
 <link id="css" rel="stylesheet" href="./css/index.css" media="screen">
 <body class="activity_apply activity_detail">
 <!--tit-->
-<!--tit-->
-<div class="top">活动详情<a href="javascript:void(0);" class="share_icon"></a></div>
+<div class="top">活动详情<a href="javascript:void(0);" class="top_nav_menu"></a></div>
+<!--top nav-->
+<div class="top_nav height_0">
+    <a href="index.html">首页</a>
+    <a href="calendar.html">日历</a>
+    <a href="javascript:void(0);" class="toShare">分享</a>
+    <a href="http://weibo.com/p/1002061193525177/home?from=page_100206&mod=TAB#place">讨论</a>
+</div>
 <!--focus-->
 <div class="focus">
     <div id="iSlider-wrapper-news" class="news_c"></div>
@@ -30,7 +36,7 @@
             <div class="pro pro_2"><span></span><p>活动开始</p></div>
             <div class="pro pro_3"><span></span><p>活动结束</p></div>
         </div>
-        <div class="item item_2 phone">联系客服</div>
+        <div class="item item_2 phone"><a class="tel" href="tel:15801262506">联系客服</a></div>
         <div class="item item_4 height_460">
             <img src="testImg/2.jpg"/>
             <p>袁姗姗 继2015粉红泡泡跑后继续粉红公益，化身粉红大使登上《时尚健康》10月号封面。从被黑女王到励志女神，“勇敢地挺过去，10月号封面。从被黑女王到励志女神，“勇敢地挺过去。</p>
@@ -91,13 +97,25 @@
     </div>
 </div>
 <!--share-->
-<div class="share_act trans_bg">
+<div class="share_act trans_bg share_box">
     <div class="share_c">
-        <a href="#" class="sina">微博登录</a>
+        <a href="http://service.weibo.com/share/mobile.php?title=活动名称&url=&pic=&backurl=" class="sina">微博登录</a>
         <a href="#" class="weixin">微信登录</a>
-        <a href="#" class="qq">QQ登录</a>
+        <a href="http://v.t.qq.com/share/share.php?url=&title=活动名称&pic=&backurl=" class="qq">QQ登录</a>
         <a href="#" class="copy">复制</a>
     </div>
+</div>
+<!--share pop-->
+<div class="share_act trans_bg share_pop">
+    <div class="pop_ct middle_center">
+        <p class="bt">长按住并复制下面链接地址，分享给你的好友，一起为健康加油吧！</p>
+        <p class="path">http://m.cosmopolitan.com.cn/cosmofashion/2016/0222/109645.shtml</p>
+    </div>
+</div>
+<!--icp-->
+<div class="icp_c">
+    <p>@2016 trends-heath.com.cn</p>
+    <p>京ICP备03038</p>
 </div>
 <script type="text/javascript">
     var focus_list = [

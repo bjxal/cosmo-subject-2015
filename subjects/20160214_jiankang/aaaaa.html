@@ -1,64 +1,29 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-    <title>Mobiscroll</title>
-
-    <!-- jQuery Include -->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-
-    <!-- Bootstrap Include -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- Mobiscroll JS and CSS Includes -->
-    <link href="http://www.17sucai.com/preview/5404/2016-01-21/mobiscroll-v2.17_.1_/css/mobiscroll.custom-2.17.1.min.css" rel="stylesheet" type="text/css" />
-    <script src="http://www.17sucai.com/preview/5404/2016-01-21/mobiscroll-v2.17_.1_/js/mobiscroll.custom-2.17.1.min.js" type="text/javascript"></script>
-
-    <script>
-        // -------------------------------------------------------------------
-        // Demo page code START, you can ignore this in your implementation
-        $(function(){
-            var demo = "datetimeDate";
-            var demoContainer = $('.demo-wrapper-'+demo);
-            demoContainer.show();
-        });
-        $(function () {
-
-            // Mobiscroll Date & Time initialization
-            $('#datetimeDate-demo').mobiscroll().date({
-                theme: "",      // Specify theme like: theme: 'ios' or omit setting to use default
-                lang: "zh",    // Specify language like: lang: 'pl' or omit setting to use default
-                display: "inline",  // Specify display mode like: display: 'bottom' or omit setting to use default
-                mode: "datetimeDate"         // More info about mode: http://docs.mobiscroll.com/2-17-1/datetime#!opt-mode
-            });
-
-            $('#datetimeDate-show').click(function(){
-                $('#datetimeDate-demo').mobiscroll('show');
-                return false;
-            });
-
-            $('#datetimeDate-clear').click(function () {
-                $('#datetimeDate-demo').mobiscroll('clear');
-                return false;
-            });
-
-        });
-    </script>
+<script src="./js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-<!-- Demo configurator markup END -->
-<!-- ------------------------------------------------------------------ -->
+<style>
+input:type["text"]{
+	width: 200px;
+}
+</style>
+<th>用户ID：</th>
+	<td><input name="data[uid]" size="50" req="请填写用户ID" id="imgdomain" type="text" value=""><span id="tips" style="color:red; margin-left: 10px;"></span></td>
+	<tr>
+		<td colspan="2" align="center"><input id="submits" value=" 保 存 " type="submit" >&nbsp;<input value=" 重 置 " type="reset"></td>
+	</tr>
 
-<!-- ------------------------------------------------------------------------------- -->
-<!-- Basic usage date START -->
-<div class="demo-wrapper demo-wrapper-datetimeDate">
-    <input id="datetimeDate-demo" placeholder="Please Select ..." />
-
-    <button id="datetimeDate-clear">Clear</button>
-    <button id="datetimeDate-show">Show</button>
-</div>
+	<script>
+	$("#submits").click(function(e){
+		var val = $("#imgdomain").val();
+		if(val==null || val == ""){
+			$("#tips").html("请填写用户ID");
+			return;
+		}
+		$("#tips").html("");
+		alert("继续执行")
+	});
+	</script>
 </body>
-
 </html>

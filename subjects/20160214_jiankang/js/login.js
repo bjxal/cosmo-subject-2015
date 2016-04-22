@@ -45,61 +45,60 @@ $(document).ready(function(e){
     });
     //F1-2 用户协议
     $(".reg_agree").on("click",function(e){
-        $(e.target).toggleClass("cur");
+        var $tar = $(e.target);
+        $tar.toggleClass("cur");
+        var cname = $tar.data("class");
+        if(cname.indexOf("cur")!=-1 && number_p == true && code_p == true){
+            agree_p = true;
+            $(".login_btn").addClass("cur");
+        }
+        else{
+            agree_p = false;
+            $(".login_btn").removeClass("cur");
+        }
     });
     //F1-2 手机号验证
     $("#phoneNum").on("blur",function(e){
         var $tar = $(e.target);
         var phone = $tar.val();
-        if(!myreg.test(phone)){
+        if(!myreg.test(phone) || code_p == false || agree_p == false){
+            number_p = false;
             $(".login_tip").html("请填写正确的手机号码").addClass("show");
             $(".reg_send").removeClass("cur");
             $(".pwd_tip").html("请输入XXXX收到的手机验证码");
             return;
         }
+        number_p = true;
+        $(".reg_send,.login").addClass("cur");
+        $(".pwd_tip").html("请输入 "+phone+" 收到的手机验证码");
+    });
+    $("#phoneNum").on("input",function(e){
+        var $tar = $(e.target);
+        var phone = $tar.val();
+        if(!myreg.test(phone)) return;
+        number_p = true;
         $(".reg_send,.login").addClass("cur");
         $(".pwd_tip").html("请输入 "+phone+" 收到的手机验证码");
     });
     //F1-2 发送验证码
     $(".reg_send").on("click",function(e){
         var $tar = $(e.target);
-        if($tar.attr("class").indexOf("cur")==-1) return;
-        var tm = 10;
-        $tar.removeClass("cur").html(tm+"s");
-        var st = setInterval(function(){
-            if(tm==0){
-                clearInterval(st);
-                $tar.addClass("cur").html("发送验证码");
-                return;
-            }
-            --tm;
-            $tar.html(tm+"s");
-        },1000);
+        var cname = $tar.attr("class");
+        if(cname.indexOf("cur")==-1) return;
+        docheckPhone($tar);
     });
     //F1-2 手机绑定
     $("#code").on("blur",function(e){
         var $tar = $(e.target);
-        if($tar.val()==""){
+        if($tar.val()==""  || number_p == false || agree_p == false){
+            code_p = false;
             $(".login_tip").html("请填写收到的验证码").addClass("show");
             $(".login_btn").removeClass("cur");
             return;
         }
+        code_p = true;
         $(".login_tip").html("").removeClass("show");
         $(".login_btn").addClass("cur");
-        //ajax 注册验证
-        $.ajax({
-            type:"POST",
-            url:code_url,
-            data:{"phone":$("#phoneNum").val(),"code":$tar.val()},
-            dataType: "json",
-            success:function(data){
-                //data:{err:0,msg:""}
-                if(data.err==0){
-                    //跳转页面
-                }
-            },
-            error:function(err){}
-        });
     });
     //F1-3 设定密码
     $("#pwd_sure").on("blur",function(e){

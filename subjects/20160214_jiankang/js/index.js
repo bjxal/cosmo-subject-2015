@@ -9,10 +9,18 @@ $(document).ready(function(){
         if($tar[0].nodeName.toLowerCase()=="a") return;
         history.back(-1);
     });
+    //nav
+    if($("#wrapper").length>0){
+        var len = parseInt($("#wrapper li").length)||1;
+        $("#scroller").css("width",(121*len+40)+"px");
+        setTimeout(function(){
+            var myScroll = new iScroll('wrapper',{snap: true,hScrollbar: false});
+        },1000);
+    }
     var cname = $("body").attr("class");
     if(cname.indexOf("order_detail_users")!=-1){
         var stringTime = "2016-02-26 16:28:0";
-        //var end = Date.parse(new Date(stringTime)) / 1000 + 30*60;
+        //var end = Date.parse(new Date(stringTime.replace(/-/g,"/"))) / 1000 + 30*60;
         var end = Date.parse(new Date()) / 1000 + 30*60;
         var int = setInterval(function(){
             var now = Date.parse(new Date()) / 1000;
@@ -24,8 +32,8 @@ $(document).ready(function(){
                 $(".order_detail_users .login_btn").removeClass("cur");
                 return;
             }
-            m = (String(m).length<2)?"0"+m:m;
-            s = (String(s).length<2)?"0"+s:s;
+            m = (String(m).length<2)?"0"+String(m):String(m);
+            s = (String(s).length<2)?"0"+String(s):String(s);
             $(".order_detail_users .login_btn span").html(m+":"+s);
         },1000);
     }
@@ -119,18 +127,29 @@ $(document).ready(function(){
         var $par = $tar.parents("body");
         $par.find(".pop").fadeOut();
     });
+    /*top nav menu*/
+    $(".top_nav_menu").on("click",function(){
+        $(".top_nav").toggleClass("height_0");
+        return;
+    });
     /*分享*/
     $(".share_mine").on("touchend",function(e){
         $(".share_mine").fadeOut();
     });
-    $(".share_icon").on("click",function(e){
-        $(".share_act").fadeIn().find(".share_c").addClass("show")
+    $(".share_icon,.toShare").on("click",function(e){
+        $(".share_box").fadeIn().find(".share_c").addClass("show");
+        if($(".top_nav").length>0){
+            $(".top_nav").addClass("height_0");
+        }
     });
-    $(".share_act").on("click",function(e){
+    $(".share_box").on("click",function(e){
         var $tar = $(e.target);
         if($tar[0].nodeName.toLowerCase()!="a"){
             $(this).find(".share_c").removeClass("show").parent().fadeOut();
         }
+    });
+    $(".share_pop").on("click",function(e){
+        $(this).fadeOut();
     });
     /*照片弹层*/
     $(".activity_result_live .item img,.activity_result .item img").on("click",function(e){
@@ -143,6 +162,12 @@ $(document).ready(function(){
         $(".share_mine p").html(word);
         $(".share_mine").fadeIn();
     });
+
+    //分享活动
+    $(".copy,.weixin").on("click",function(e){
+        $(".share_pop").fadeIn();
+    });
+
     //上传图片
     if($("#up").length==0) return;
     var input = document.getElementById("up");
@@ -150,16 +175,16 @@ $(document).ready(function(){
     //var img_area = document.getElementById("img_area");
     //F5-3活动结果
     $(".bottom_btn").on("click",function(e){
-        if($.cookie("trends_health_auth")==undefined){
-            $(".tips").fadeIn();
-        }
+        //if($.cookie("trends_health_auth")==undefined){
+        //    $(".tips").fadeIn();
+        //}
     });
     if ( typeof(FileReader) === 'undefined' ){
         input.setAttribute( 'disabled','disabled' );
     }
     else {
         if($.cookie("trends_health_auth")==undefined){
-            $("#up").hide();
+            //$("#up").hide();
         }
         input.addEventListener('change',function(){
             var me = this;
@@ -168,10 +193,47 @@ $(document).ready(function(){
             var file = me.files[0];
             var result= document.getElementById("result1");
             //var img_area = document.getElementById("ImgPr");
+
             var reader = new FileReader();
             reader.readAsDataURL(file);
             reader.onload = function(e){
-                result.innerHTML = this.result;
+                var result = this.result;
+                var img = new Image();
+
+                img.src="http://new-img1.trendshealth.net/trendshealth/user/0/56f4e899eb143_398.jpg"
+
+                var exif;
+                img.onload = function() {
+                    var orientation = exif ? exif.Orientation : 1;
+                    // 判断拍照设备持有方向调整照片角度
+                    switch(orientation) {
+                        case 3:
+                            imgRotation = 180;
+                            break;
+                        case 6:
+                            imgRotation = 90;
+                            break;
+                        case 8:
+                            imgRotation = 270;
+                            break;
+                    }
+                };
+
+                // 转换二进制数据
+                var base64 = result.replace(/^.*?,/,'');
+                var binary = atob(base64);
+                var binaryData = new BinaryFile(binary);
+
+                // 获取exif信息
+                exif = EXIF.readFromBinaryFile(binaryData);
+
+                img.src = result;
+
+                //var binary = new BinaryFile(this.result);
+                //var exif = EXIF.readFromBinaryFile(binary);
+                //var rot = exif.Orientation;
+                //console.log(rot)
+                /*result.innerHTML = this.result;
                 //img_area.src = this.result;
                 var pic = $("#result1").html();
                 if(cname=="ajax_up"){
@@ -186,12 +248,12 @@ $(document).ready(function(){
                             $.cookie("commentid",data.commentid);
                             $.cookie("picurl",data.picurl);
                             setTimeout(function(){
-                                window.location.href=$(".ajax_up").data("nexturl");
+                                //window.location.href=$(".ajax_up").data("nexturl");
                             },500);
                         },
                         error:function(err){}
                     });
-                }
+                }*/
             }
 
         },false );
