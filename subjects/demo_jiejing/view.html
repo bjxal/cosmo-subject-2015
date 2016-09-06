@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head lang="en">
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>全景故宫</title>
+    <meta name="description" content="">
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #album_container{
+            position: absolute;
+            z-index: 1000;
+            width: 100%;
+            height: 113px;
+            bottom: 0px;
+            background-color: rgba(0,0,0,0.75);
+        }
+
+        .select {
+            background-color: #2c9dff;
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/style.min.css">
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://3gimg.qq.com/jiejingweb/lib/zepto/zepto.min.js"></script>
+    <script src="http://3gimg.qq.com/jiejingweb/TPano/v1.2.1/TPano.js"></script>
+    <script src="http://3gimg.qq.com/jiejingweb/lib/iscroll/iscroll-lite.js"></script>
+    <script type="text/javascript" src="http://3gimg.qq.com/jiejingweb/TPano/v1.2.1/mods/flash.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=53430594" charset="UTF-8"></script>
+</head>
+
+<body>
+<div id="introCon" class="intro_con" style="display: block;">
+    <div id="intro" class="intro">
+        <div id="intrologo" class="intrologo"></div>
+    </div>
+</div>
+
+<div id="nn" class="nn" style="display: block;"></div>
+<div id="voice" class="voice">
+    <div id="voilogo" class="voilogo" onclick="audio_manager();" ></div>
+    <audio id="music" src="" autoplay="autoplay" loop="loop" style="width: 0px;height: 0px;"></audio>
+</div>
+
+<div id="nt" class="nt" style="display: block;"  onclick="nextPoint();"></div>
+
+
+<div style="width:100%;height:100%" id="pano_holder">
+</div>
+
+<div id="album_container">
+    <div id="albumTitle">
+        <div id="albumTitleBody" style="width: 291px; transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); transform: translate(0px, 0px) translateZ(0px);">
+        </div>
+    </div>
+    <div id="albumView" style="">
+        <div id="albumViewBody" style="width: 1040px; transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); transform: translate(0px, 0px) translateZ(0px);">
+        </div>
+    </div>
+</div>
+<!--<script src="tween.js"></script>-->
+<!--<script src="src/swipe.js"></script>-->
+
+
+
+
+<script src="js/pano.min.js?ab=cd"></script>
+<div style="height: 246px; width: 299px; position: absolute; right: 10px; top: 48px; z-index: 1001; visibility: hidden; background-color: rgba(0, 0, 0, 0.74902);"><div id="introduce" style="overflow: hidden; line-height: 21px; font-family: STHeiti, 华文黑体; font-size: 13px; color: rgb(255, 255, 255); margin: 13px 19px; height: 220px; width: 261px;"><div id="msg" style="text-indent: 2em; transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); transform: translate(0px, 0px) translateZ(0px);"><p>长城是中华民族攀登的缩影，也是中华民族文明的象征。万里长城是世界建筑奇迹之一。它东、西、南、北纵横交错绵延起伏于中国辽阔的土地上。东西相距长达5000多公里，因此被称之为万里长城，是月球上“唯一能看得见的人工工程”，也是中国第一名胜和中国旅游点的代表，被联合国教科文组织列入《世界文化遗产名录》。</p><p>长城修筑的历史悠久，工程雄伟浩大，是世界少有的奇迹。长城东西南北交错，绵延于我们伟大祖国辽阔的土地上。她好像一条巨龙，翻越巍巍群山，穿过茫茫草原，跨过浩瀚的沙漠，奔向苍茫的大海。根据历史文献记载，有20多个诸侯国家和封建王朝修筑过长城，若把各个时代修筑的长城加起来，大约有10万公里以上。其中秦、汉、明3个朝代所修长城的长度都超过了1万里。现在我国新疆、甘肃、宁夏、陕西、内蒙古、山西、河北、北京、天津、辽宁、吉林、黑龙江、河南、山东、湖北、湖南等省、市、自治区都有古长城、烽火台的遗迹。</p></div></div></div>
+<!--<script id="tt" src="src/test/test.js" action="update" data="src/test.js"></script>-->
+<!--统计代码-->
+<!--<script type="text/javascript" src="http://pingjs.qq.com/tcss.ping.js"></script>-->
+<!--<script type="text/javascript">if(typeof(pgvMain) == 'function') pgvMain();</script>-->
+<script type="text/javascript">
+    //分享
+    var _title= document.title;
+    var _des = window._des || "故宫博物院！";
+    var _pic = "http://3gimg.qq.com/jiejingweb/cooperate/TeSchool/theme/logo.jpg";
+    var _url = document.location.href;
+    function audio_manager()
+    {
+        var audio = document.getElementById('music');
+        var audio_style = document.getElementById('voilogo');
+        if(!audio.paused)
+        {
+            audio_style.setAttribute("class","sound-stop");
+            audio.pause();// 这个就是暂停
+        }
+        else
+        {
+            audio_style.setAttribute("class","voilogo");
+            audio.play();// 这个就是播放
+        }
+    }
+    //跳转到下一景点
+    function nextPoint()
+    {
+        //alert($.cookie("v_index"));
+        var index = getCookieValue("v_index");
+        var dataS = [{"index":"0","name":"世贸天阶","data":"74b501c15025a865ff58d8e920e1a1c9","bg_text":"images/bg_text/bg_text_1.png","bg_text_big":"images/bg_text/bg_text_big_1.png","thumbnail":"data/photo/img0006[126PX] (3).jpg","thumbnail_indicator":"data/poi/taihemen_indicator.png","point_image":"data/poi/taihemen_point.png","x_wap_ration":"0.5","y_wap_ration":"0.79067460317460314","region_image":"data/poi/taihemen_region.png","region_image_width":"192","region_image_height":"128","x_region_wap_ration":"0.34375","y_region_wap_ration":"0.66567460317460314","x_pc_ration":"0.50099800399201599","y_pc_ration":"0.94074074074074077","x_region_pc_ration":"0.44311377245508982","y_region_pc_ration":"0.78703703703703709"},{"index":"1","name":"太和门","data":"06e162c4505e2484616d3a6b1053f97a","bg_text":"images/bg_text/bg_text_2.png","bg_text_big":"images/bg_text/bg_text_big_2.png","thumbnail":"data/photo/img0055[126PX].jpg","thumbnail_indicator":"data/poi/taihemen_indicator.png","point_image":"data/poi/taihemen_point.png","x_wap_ration":"0.5","y_wap_ration":"0.67559523809523814","region_image":"data/poi/taihemen_region.png","region_image_width":"192","region_image_height":"128","x_region_wap_ration":"0.34375","y_region_wap_ration":"0.66567460317460314","x_pc_ration":"0.50099800399201599","y_pc_ration":"0.80925925925925923","x_region_pc_ration":"0.44311377245508982","y_region_pc_ration":"0.78703703703703709"},{"index":"1","name":"太和门","data":"06e162c4505e2484616d3a6b1053f97a","bg_text":"images/bg_text/bg_text_2.png","bg_text_big":"images/bg_text/bg_text_big_2.png","thumbnail":"data/photo/img0055[126PX].jpg","thumbnail_indicator":"data/poi/taihemen_indicator.png","point_image":"data/poi/taihemen_point.png","x_wap_ration":"0.5","y_wap_ration":"0.67559523809523814","region_image":"data/poi/taihemen_region.png","region_image_width":"192","region_image_height":"128","x_region_wap_ration":"0.34375","y_region_wap_ration":"0.66567460317460314","x_pc_ration":"0.50099800399201599","y_pc_ration":"0.80925925925925923","x_region_pc_ration":"0.44311377245508982","y_region_pc_ration":"0.78703703703703709"}];
+        index =(index == 46)?0:parseInt(index)+1;
+        window.location.href= "index.html?region="+dataS[index].data+"&v_index="+index;
+    }
+
+</script>
+
+<script src="js/share.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var v_index = getQueryString("v_index") || "0";
+        getShareInfo(window.document.location.href);
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)
+                return unescape(r[2]);
+            return null;
+        }
+        var v_index = getQueryString("v_index") || "0";
+        var region = getQueryString("region") || "0";
+        setCookie("v_index",v_index);
+        setCookie("region",region);
+    });
+
+</script>
+
+</body></html>

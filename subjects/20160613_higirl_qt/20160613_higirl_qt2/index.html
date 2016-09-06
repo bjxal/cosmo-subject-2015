@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=gbk"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="bjxal@139.com"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js-subject/device.js"></script>
+    <title>你是多动症达人么？</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://new-icon.cosmochina.com.cn/channel/common/img/favicon.ico" media="screen">
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body>
+<div class="loading"></div>
+<!--music-->
+<a class="app-music" style="display:none;">
+    <span class="icon icon-music">
+        <b></b>
+    </span>
+</a>
+<!--cover-->
+<div class="cover">
+    <!--tit-->
+    <div class="tit">
+        <img src="img-subject/cover/tit_1.png" class="tit_1"/>
+        <img src="img-subject/cover/tit_2.png" class="tit_2"/>
+    </div>
+    <!--circle-->
+    <div class="cir"></div>
+    <!--women-->
+    <div class="girl">
+        <img src="img-subject/cover/tit_3.png" class="tit_3"/>
+    </div>
+    <img src="img-subject/cover/logo.png" class="logo"/>
+    <div class="start"></div>
+</div>
+<!--question number-->
+<div class="qst">
+    <span class="num_1"></span>
+</div>
+<!--tips-->
+<div class="tips">
+    <div class="tips_c"></div>
+</div>
+<!--pop-->
+<div class="pop">
+    <div class="pop_bg">
+        <div class="pop_c">
+            <div class="c_move"></div>
+        </div>
+        <div class="step"></div>
+    </div>
+</div>
+<div id="pack" class="pack"></div>
+<script type="text/javascript" src="./js-subject/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js-subject/handlebars-1.3.0.min.js"></script>
+<!-- p0 -->
+<script type="text/x-handlebars-template" id="p0">
+    <!--bg-->
+    <div class="bg1"></div>
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p0/tit.png" class="qt_tit"/>
+    <!--move-->
+    <div class="move">
+        <img data-src="{{IMG_DIR}}/p0/qt_mark.png" class="qt_mark"/>
+        <img data-src="{{IMG_DIR}}/p0/women.png" class="qt_women"/>
+        <img data-src="{{IMG_DIR}}/p0/men.png" class="qt_men"/>
+    </div>
+    <!--select-->
+    <div class="sel">
+        <div data-sel="a" data-val="1" data-tap="pop_show" class="sel_a"></div>
+        <div data-sel="b" data-val="0" data-tap="pop_show" class="sel_b"></div>
+        <div data-sel="c" data-val="0" data-tap="pop_show" class="sel_c"></div>
+    </div>
+    <!--next-->
+    <div class="next" data-qt="1" data-pop="" data-tap="next_step">
+        <img data-src="{{IMG_DIR}}/next_fire.png"/>
+    </div>
+</script>
+<!-- p0 -->
+<!-- P1 -->
+<script type="text/x-handlebars-template" id="p1">
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p1/tit.png" class="qt_tit"/>
+    <!--move-->
+    <div class="move">
+        <img data-src="{{IMG_DIR}}/p1/women.png" class="qt_women"/>
+        <img data-src="{{IMG_DIR}}/p1/cake.png" class="qt_cake"/>
+    </div>
+    <!--select-->
+    <div class="sel">
+        <div data-sel="a" data-val="1" data-tap="pop_show" class="sel_a"></div>
+        <div data-sel="b" data-val="0" data-tap="pop_show" class="sel_b"></div>
+        <div data-sel="c" data-val="0" data-tap="pop_show" class="sel_c"></div>
+    </div>
+    <!--next-->
+    <div class="next" data-qt="2" data-pop="" data-tap="next_step">
+        <img data-src="{{IMG_DIR}}/next_fire.png"/>
+    </div>
+</script>
+<!-- P1 -->
+<!-- p2 -->
+<script type="text/x-handlebars-template" id="p2">
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p2/tit.png" class="qt_tit"/>
+    <!--move-->
+    <div class="move">
+        <img data-src="{{IMG_DIR}}/p2/men.png" class="qt_women"/>
+    </div>
+    <!--select-->
+    <div class="sel">
+        <div data-sel="a" data-val="1" data-tap="pop_show" class="sel_a"></div>
+        <div data-sel="b" data-val="0" data-tap="pop_show" class="sel_b"></div>
+        <div data-sel="c" data-val="0" data-tap="pop_show" class="sel_c"></div>
+    </div>
+    <!--next-->
+    <div class="next" data-qt="3" data-pop="" data-tap="next_step">
+        <img data-src="{{IMG_DIR}}/next_fire.png"/>
+    </div>
+</script>
+<!-- p2 -->
+<!-- p3 -->
+<script type="text/x-handlebars-template" id="p3">
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p3/tit.png" class="qt_tit"/>
+    <!--move-->
+    <div class="move">
+        <img data-src="{{IMG_DIR}}/p3/dog_w.png" class="qt_women"/>
+        <img data-src="{{IMG_DIR}}/p3/dog.png" class="qt_dog"/>
+    </div>
+    <!--select-->
+    <div class="sel">
+        <div data-sel="a" data-val="1" data-tap="pop_show" class="sel_a"></div>
+        <div data-sel="b" data-val="0" data-tap="pop_show" class="sel_b"></div>
+        <div data-sel="c" data-val="0" data-tap="pop_show" class="sel_c"></div>
+    </div>
+    <!--next-->
+    <div class="next" data-qt="4" data-pop="" data-tap="next_step">
+        <img data-src="{{IMG_DIR}}/next_fire.png"/>
+    </div>
+</script>
+<!-- p3 -->
+<!-- p4 -->
+<script type="text/x-handlebars-template" id="p4">
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p4/tit.png" class="qt_tit"/>
+    <!--move-->
+    <div class="move">
+        <img data-src="{{IMG_DIR}}/p4/lion.png" class="qt_lion"/>
+        <img data-src="{{IMG_DIR}}/p4/heart.png" class="qt_women"/>
+    </div>
+    <!--select-->
+    <div class="sel">
+        <div data-sel="a" data-val="0" data-tap="pop_show" class="sel_a"></div>
+        <div data-sel="b" data-val="1" data-tap="pop_show" class="sel_b"></div>
+        <div data-sel="c" data-val="0" data-tap="pop_show" class="sel_c"></div>
+    </div>
+    <!--next-->
+    <div class="next" data-qt="5" data-pop="" data-tap="next_step">
+        <img data-src="{{IMG_DIR}}/next_fire.png"/>
+    </div>
+</script>
+<!-- p4 -->
+<!-- p5 -->
+<script type="text/x-handlebars-template" id="p5">
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p5/tit.png" class="qt_tit"/>
+    <!--move-->
+    <div class="move">
+        <img data-src="{{IMG_DIR}}/p5/women.png" class="qt_women"/>
+        <img data-src="{{IMG_DIR}}/p5/which.png" class="qt_w"/>
+        <img data-src="{{IMG_DIR}}/p5/wq.png" class="qt_l"/>
+    </div>
+    <!--select-->
+    <div class="sel">
+        <div data-sel="a" data-val="1" data-tap="pop_show" class="sel_a"></div>
+        <div data-sel="b" data-val="0" data-tap="pop_show" class="sel_b"></div>
+        <div data-sel="c" data-val="0" data-tap="pop_show" class="sel_c"></div>
+    </div>
+    <!--next-->
+    <div class="next" data-qt="6" data-pop="" data-tap="next_step">
+        <img data-src="{{IMG_DIR}}/next_fire.png"/>
+    </div>
+</script>
+<!-- p5 -->
+<!-- p6 -->
+<script type="text/x-handlebars-template" id="p6">
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p6/tit.png" class="qt_tit"/>
+    <!--move-->
+    <div class="move">
+        <img data-src="{{IMG_DIR}}/p6/medi.png" class="qt_medi"/>
+        <img data-src="{{IMG_DIR}}/p6/tea.png" class="qt_t1"/>
+        <img data-src="{{IMG_DIR}}/p6/tea2.png" class="qt_t2"/>
+    </div>
+    <!--select-->
+    <div class="sel">
+        <div data-sel="a" data-val="0" data-tap="pop_show" class="sel_a"></div>
+        <div data-sel="b" data-val="0" data-tap="pop_show" class="sel_b"></div>
+        <div data-sel="c" data-val="1" data-tap="pop_show" class="sel_c"></div>
+    </div>
+    <!--next-->
+    <div class="next" data-qt="7" data-pop="" data-tap="next_step">
+        <img data-src="{{IMG_DIR}}/next_fire.png"/>
+    </div>
+</script>
+<!-- p6 -->
+<!-- p7 -->
+<script type="text/x-handlebars-template" id="p7">
+    <!--tit-->
+    <img data-src="{{IMG_DIR}}/p7/tit.png" class="qt_tit"/>
+    <!--move-->
+    <div class="move">
+        <img data-src="{{IMG_DIR}}/p7/women.png" class="qt_women"/>
+        <img data-src="{{IMG_DIR}}/p7/tan.png" class="qt_t"/>
+    </div>
+    <!--select-->
+    <div class="sel">
+        <div data-sel="a" data-val="0" data-tap="pop_show" class="sel_a"></div>
+        <div data-sel="b" data-val="0" data-tap="pop_show" class="sel_b"></div>
+        <div data-sel="c" data-val="1" data-tap="pop_show" class="sel_c"></div>
+    </div>
+    <!--next-->
+    <div class="next" data-qt="8" data-pop="" data-tap="next_step">
+        <img data-src="{{IMG_DIR}}/next_fire.png"/>
+    </div>
+</script>
+<!-- p7 -->
+<!-- p8 -->
+<script type="text/x-handlebars-template" id="p8">
+    <div class="grade_c">
+        <!--grade-->
+        <div class="grade">
+            <div class="grade_num"></div>
+        </div>
+        <!--tit-->
+        <div class="tit"></div>
+        <!--img-->
+        <div class="img">
+            <div class="img_ani"></div>
+        </div>
+        <!--btn-->
+        <div class="btn">
+            <a href="javascript:void(0);" class="share" data-tap="share"></a>
+            <a href="javascript:void(0);" class="more" data-tap="more_app"></a>
+        </div>
+    </div>
+    <!--share pop-->
+    <div class="share_pop" data-tap="close"></div>
+    <!--app pop-->
+    <div class="app_pop" data-tap="close"><div class="app_c" data-tap="close"></div></div>
+</script>
+<!-- p8 -->
+<script type="text/javascript">
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"你是多动症达人么？",
+        desc:"都市女性身材现状报告，你是高瘦美还是土肥圆测了就知道！",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<script id="DS_PRE_JS" type="text/javascript" src="http://cdn.datastory.com.cn/js/pre-ds-min.js?dsTid=d83085d8-1427-4c1b-90f4-152b9e0911e4"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js-subject/index.min.js"></script>
+<!--统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?1c2a0fd05b35089e6884225550f9861b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58044097-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

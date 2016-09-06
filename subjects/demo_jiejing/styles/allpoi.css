@@ -1,0 +1,227 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: monospace;
+  font-size: 18px;
+  background: #111;
+  color: #666;
+  margin: 0;
+  height: 100%;
+}
+
+.main-bg{
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -ms-touch-action: none;
+}
+
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: ubuntu, helvetica, arial;
+    overflow: hidden;
+    /* this is important to prevent the whole page to bounce */
+}
+img {
+  width: auto;
+}
+
+#viewport {
+    position: relative;
+    width: 50px;
+    height: 112px;
+    margin: 0 auto;
+    top: -112px;
+    /*  background: #444;
+overflow: hidden; */
+}
+#viewLink {
+  position: relative;
+  width: 50px;
+  height: 112px;
+  margin: 0 auto;
+  top: -224px;
+  z-index: 10;
+}
+#viewLink a {
+  width: 50px;
+  height: 112px;
+  display: inline-block;
+}
+#scroller_bg {
+  position:absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  margin: 0 auto;
+}
+#scroller_bg img{
+  width: 100%;
+}
+
+#wrapper {
+    width: 100%;
+    height: 112px;
+    margin: 0 auto;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 3300%;
+    height: 112px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.slide {
+    width: 50px;
+    height: 112px;
+    float: left;
+    text-align: center;
+    vertical-align: bottom;
+}
+.slideword{
+  text-align: center;
+  width: 30px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.slideword.current{
+  font-size: 24px;
+}
+.painting {
+    width: 50px;
+    height: 112px;
+    margin: -20px auto 0 auto;
+}
+.painting img{
+    width: 100%;
+}
+.hide-wrap {
+  margin: 0 20px;
+}
+.point-area, .region-area, .important-detail{
+  position: absolute;
+  display: none;
+  z-index: 3;
+}
+.important-detail {
+  z-index: 4;
+}
+.important-area {
+  position: absolute;
+  z-index: 2;
+}
+.point-area img, .important-area img {
+  margin-left: -8px;
+  margin-top: -15px;
+}
+.important-detail img  {
+  width: 22px;
+  margin-left: -12px;
+  margin-top: -82px;
+}
+.region {
+  position: relative;
+}
+.thumbnail-wrap {
+  position: absolute;
+  top: -95%;
+  z-index: 5;
+}
+.thumbnail-wrap img{
+  border-radius: 70px;
+}
+.indicator-wrap {
+  position: absolute;
+  top: -10px;
+  left: 17%;
+}
+.point-area {
+  z-index: 9;
+}
+.toppic{
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+#viewport{
+  background:url(../images/bg_text/bg_text_line.png) repeat-x;
+}
+#scroller_bg_line {
+    position: absolute;
+    width: 100%;
+    height: 112px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    margin: 0 auto;
+    background-size: 65% 100%;
+}
+
+#scroller_bg_line div {
+    position: absolute;
+    width: 50%;
+    height: 112px;
+}
+
+#scroller_bg_line .scroller_bg_line_left,#scroller_bg_line .scroller_bg_line_right{
+    left: 0;
+    background: url(../images/bg_text/bg_text_line.png) repeat-x 0 2px;
+    background-size: 65% 100%;
+}
+#scroller_bg_line .scroller_bg_line_right {
+    left: auto;
+    right: 0;
+    /*background: url(../images/bg_text/scroller_bg_right.png) repeat-x left top;*/
+    /*background-size: 62.5% 125%;*/
+}
+.loading-warp{
+    background: url(../img/loading.gif) center center;
+    background-color: #efdcbb;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+}

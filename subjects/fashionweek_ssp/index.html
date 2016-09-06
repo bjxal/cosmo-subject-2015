@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=gbk" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <meta HTTP-EQUIV="expires" CONTENT="0">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="pragram" content="no-cache" />
+    <title>朵唯525自拍日</title>
+    <link id="css" rel="stylesheet" href="css-subject/style.css" media="screen" />
+</head>
+<body>
+<!--导语-->
+<div class="cover" style="display: none;">
+    <div class="cover_top"></div>
+    <!--<div class="cover_btm"></div>-->
+</div>
+<!--p1-->
+<div class="p1" style="display: block;">
+    <div class="p1_1">
+        <span class="flow flow_1"></span>
+        <span class="flow flow_2"></span>
+        <span class="flow flow_3"></span>
+        <span class="flow flow_4"></span>
+        <span class="flow flow_5"></span>
+        <span class="flow flow_6"></span>
+        <span class="flow flow_7"></span>
+        <span class="flow flow_8"></span>
+        <span class="flow flow_9"></span>
+        <span class="flow flow_10"></span>
+        <span class="flow flow_11"></span>
+        <span class="flow flow_12"></span>
+    </div>
+    <div class="p1_2">
+        <div class="camera_bg">
+            <div class="icon">
+                <input type="file" accept="image/*;capture=camera" id="touchInput">
+            </div>
+        </div>
+        <div class="adv">
+            <img src="img-subject/adv_1.png"/>
+            <img src="img-subject/adv_2.png"/>
+        </div>
+    </div>
+    <div class="p1_3">
+        <img src="img-subject/logo.png"/>
+        <span class="logo_bg"></span>
+    </div>
+    <!--<a href="http://www.onlylady.com/files/eventapi.php?c=Event&a=Fw&action=list" class="view"></a>-->
+</div>
+<!--p2-->
+<div class="p2" style="display: none;">
+    <div class="camera">
+        <!--mb-->
+        <div class="mbList">
+            <img class="mb mb_1" src="img-subject/mb/1.png" data-index="1"/>
+        </div>
+        <!--loading-->
+        <div class="loading"></div>
+        <!--canvas-->
+        <canvas id="canvas" width="320" height="420" style="width: 50%; height: 100%;"></canvas>
+        <img src="" style="display: none" id="result"/>
+    </div>
+    <div class="step_1" style="display: block;">
+        <div class="wrapper" id="wrapper">
+            <div class="scroller" id="scroller">
+                <ul id="iscroll_ul">
+                    <li class="cur">
+                        <img src="img-subject/thumb/1.png"/>
+                        <span>纽约</span>
+                    </li>
+                    <li>
+                        <img src="img-subject/thumb/2.png"/>
+                        <span>伦敦</span>
+                    </li>
+                    <li>
+                        <img src="img-subject/thumb/3.png"/>
+                        <span>米兰</span>
+                    </li>
+                    <li>
+                        <img src="img-subject/thumb/4.png"/>
+                        <span>巴黎</span>
+                    </li>
+                    <li>
+                        <img src="img-subject/thumb/5.png"/>
+                        <span>大街</span>
+                    </li>
+                    <li>
+                        <img src="img-subject/thumb/6.png"/>
+                        <span>巴西</span>
+                    </li>
+                    <li class="cur">
+                        <img src="img-subject/thumb/7.png"/>
+                        <span>小岛</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="reset">重拍</div>
+            <div class="ok">完成</div>
+            <input type="hidden" id="mb_id" value="1">
+        </div>
+    </div>
+    <div class="step_2" style="display: none;">
+        <span class="face"></span>
+        <p><img src="img-subject/word_1.png" style="width: 100%;"/></p>
+        <span class="lottery_btn">立即报名抽奖</span>
+    </div>
+    <div class="step_3" style="display: none;">
+        <div class="step_3_1">
+            <h3 class="tit">填写信息赢大奖！</h3>
+            <div class="info">
+                <div class="nickname">
+                    <span>昵称</span>
+                    <input type="text" id="nickname" value="">
+                </div>
+                <div class="name">
+                    <span>姓名</span>
+                    <input type="text" id="name" value="">
+                </div>
+                <div class="mobile">
+                    <span>电话</span>
+                    <input type="text" id="mobile" value="">
+                </div>
+            </div>
+            <p class="tips" style="display: none;">出错啦! 你的信息填的不对哦~</p>
+            <div class="commit"></div>
+            <input type="hidden" id="photoUrl" value=""/>
+        </div>
+        <div class="step_3_2" style="display: none">
+            <p><img src="img-subject/word_2.png" style="width: 100%;"/></p>
+            <!--<p class="p_3">让小伙伴们快来帮你点赞吧！</p>-->
+        </div>
+    </div>
+</div>
+<!--page-->
+<div class="page">
+    <div class="wd">Step</div>
+    <div class="step_num">
+        <span class="pageNum page_1 cur"></span>
+        <span class="pageNum page_2"></span>
+        <span class="pageNum page_3"></span>
+        <span class="pageNum page_4"></span>
+    </div>
+</div>
+<script type="text/javascript" src="http://new-icon.ol-img.com/statics/common/js/jquery-1.11.1.min.js"></script>
+<script>
+    var _dir = (function (){
+        var href = $('#css').attr('href').toString();
+        if(!/^http/.test(href)){
+            href = location.href;
+        }else{
+            href = href.substring(0,href.lastIndexOf('\/'));
+        }
+        return href.substring(0,href.lastIndexOf('\/'))+'/img-subject';
+    })();
+    var ImgDir = function(p){
+        p = p||'';
+        return _dir + p;
+    };
+</script>
+<script type="text/javascript">
+    var shareData = {
+        tit:"朵唯525自拍日",
+        desc:"朵唯xOnlylady525自拍日，秀出谁是天后盛典现场自拍，赢取朵唯L3手机",
+        link:String(window.location.href),
+        imgUrl:ImgDir('/weixin.jpg')
+    };
+</script>
+<script type="text/javascript" src="js-subject/iscroll.js"></script>
+<script type="text/javascript" src="js-subject/megapix-image.js"></script>
+<script type="text/javascript" src="js-subject/exif.js"></script>
+<script type="text/javascript" src="js-subject/binaryajax.js"></script>
+<script type="text/javascript" src="js-subject/uuid.js"></script>
+<script type="text/javascript" src="js-subject/camera.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js-subject/index.js"></script>
+</body>
+</html>

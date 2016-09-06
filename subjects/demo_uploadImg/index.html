@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="css/head.css">
+<script src="js/jquery.js"></script>
+<script src="js/tools.min.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload.js"></script>
+<script type="text/javascript" src="js/uploadPreview.js"></script>
+<script type="text/javascript" src="js/pop.js"></script>
+</head>
+<body>
+<form id="form" method ="post" enctype ="multipart/form-data">
+        <div class="lf">
+            <div class="bigImg">
+                <img width="208px" height="225px" id="ImgPr"/>
+            </div>
+            <div class="upload_btn">
+                <div class="upload">
+                    <input type="file" class="upload_hid" id="uploadBtn_1" name="imgfile[]"/>
+                    <input type="file" class="upload_hid" id="uploadBtn_2" name="imgfile[]"/>
+                    <input type="file" class="upload_hid" id="uploadBtn_3" name="imgfile[]"/>
+                    <input type="file" class="upload_hid" id="uploadBtn_4" name="imgfile[]"/>
+                    <input type="file" class="upload_hid" id="uploadBtn_5" name="imgfile[]"/>
+                </div>
+                <div class="reset"><input type="button" class="reset_hid" id="resetBtn"/></div>
+            </div>
+            <div class="thumbList">
+                <div class="thumb thumb_1" data-index="0">
+                    <img src="" class="thumb_img img_none" width="61px" height="61px"/>
+                    <span class="thumb_del" style="display:none;"></span>
+                </div>
+                <div class="thumb thumb_2" data-index="1">
+                    <img src="" class="thumb_img img_none" width="61px" height="61px"/>
+                    <span class="thumb_del" style="display:none;"></span>
+                </div>
+                <div class="thumb thumb_3" data-index="2">
+                    <img src="" class="thumb_img img_none" width="61px" height="61px"/>
+                    <span class="thumb_del" style="display:none;"></span>
+                </div>
+                <div class="thumb thumb_4" data-index="3">
+                    <img src="" class="thumb_img img_none" width="61px" height="61px"/>
+                    <span class="thumb_del" style="display:none;"></span>
+                </div>
+                <div class="thumb thumb_5" data-index="4">
+                    <img src="" class="thumb_img img_none" width="61px" height="61px"/>
+                    <span class="thumb_del" style="display:none;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="rt">
+            <input type="button" class="sub" id="subBtn">
+        </div>
+    </form>
+</body>
+</html>

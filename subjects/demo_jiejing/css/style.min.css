@@ -1,0 +1,195 @@
+#logo, .intrologo {
+	background-repeat: no-repeat
+}
+
+#albumTitle, .PanoPhotoTitle {
+	color: #fff;
+	line-height: 21px
+}
+
+div, li, p, ul {
+	margin: 0;
+	padding: 0
+}
+
+#logo {
+	width: 125px;
+	height: 37px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 1000;
+	background-size: contain
+}
+
+.intro_con {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 47px;
+	height: 47px;
+	z-index: 1000
+}
+
+.intro, .nn, .voice,.nt {
+	z-index: 1000;
+	position: absolute;
+	right: 10px;
+	width: 37px
+}
+
+.intro, .voice,.nt {
+	height: 37px;
+	background-color: rgba(0, 0, 0, .75)
+}
+
+.nn {
+	top: 47px;
+	height: 1px;
+	background-color: rgba(0, 0, 0, .6)
+}
+
+.nt {
+	top: 108px;
+	background-color: rgba(0, 0, 0, .75);
+	background-image: url(../images/next_palace.png);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer
+}
+
+.intrologo, .voilogo ,.sound-stop {
+	background-image: url(../img/icons.png);
+	background-size: 80px 20px;
+	position: relative
+}
+
+.intro {
+	top: 10px
+}
+
+.intrologo {
+	background-position: 0 0;
+	width: 15px;
+	height: 15px;
+	margin: -7px auto 0;
+	top: 50%;
+	cursor: pointer
+}
+
+.introDis {
+	background-position: -40px 0;
+	width: 14px;
+	height: 14px;
+	margin-top: -7px
+}
+
+.voice {
+	top: 48px
+}
+
+.voilogo {
+	background-position: -19px 1px;
+	width: 17px;
+	height: 15px;
+	margin: -7px auto 0;
+	top: 50%
+}
+.sound-stop {
+	background-position: -60px 1px;
+	width: 17px;
+	height: 15px;
+	margin: -7px auto 0;
+	top: 50%
+}
+
+ul {
+	list-style: none
+}
+
+#albumTitleBody li {
+	cursor: pointer;
+	float: left;
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0 6px 0 0
+}
+
+#album_container {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 113px;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .75)
+}
+
+#albumTitle {
+	padding: 6px 5px;
+	height: 21px;
+	font-size: 11px;
+	overflow: hidden
+}
+
+#albumTitleBody {
+	height: 100%
+}
+
+#albumView {
+	overflow: hidden;
+	height: 80px;
+	margin: 0 0 0 5px
+}
+
+#albumViewBody {
+	margin-left: 0;
+	height: 80px;
+	z-index: 1
+}
+
+.PanoPhotoCell {
+	position: relative;
+	float: left;
+	width: 59px;
+	height: 80px;
+	margin-right: 6px
+}
+
+.close, .closeCon {
+	position: absolute
+}
+
+.PanoPhotoTitle {
+	width: 59px;
+	height: 21px;
+	font-family: Arial;
+	text-align: center;
+	font-size: 9px
+}
+
+.PanoPhotoCell img {
+	border: 1px solid transparent;
+	width: 57px;
+	height: 57px;
+	display: block;
+	cursor: pointer
+}
+
+.close {
+	background-image: url(../img/icons.png);
+	background-position: -40px 0;
+	background-size: 60px 20px;
+	width: 14px;
+	height: 14px;
+	top: 14px;
+	right: 18px
+}
+
+.closeCon {
+	width: 40px;
+	height: 40px;
+	top: -14px;
+	right: -18px
+}

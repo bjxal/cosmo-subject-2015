@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>全景故宫</title>
+    <!-- Behavioral Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/allpoi.css" />
+    <!-- Script -->
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="scripts/iscroll.js"></script>
+    <script type="text/javascript" src="scripts/allpoi.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('<img src="images/bg.jpg"/>').load(function() {
+                $(".loading-warp").remove();
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/share.js"></script>
+    <script type="text/javascript">
+        getShareInfo(window.document.location.href);
+    </script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=53430594" charset="UTF-8"></script>
+</head>
+
+<body>
+<div class="loading-warp"></div>
+<div id="mainContent" class="main-bg">
+    <div id="importantArea" class="hide-wrap">
+    </div>
+    <div id="importantDetailArea" class="hide-wrap">
+        <!--<div data-index="4" class="important-detail" style="left:50%; top: 54.067460317460316%">
+            <a href="view.html?region=245d4e90818922fe55a1b54c34fbc9dd"><img src="data/important_detail/taihedian.png" alt="太和殿"></a>
+        </div>
+        <div data-index="7" class="important-detail" style="left:50%; top: 48.90873015873016%">
+            <a href="view.html?region=e4003f9fd61fa7aa92cbc6b8f98a34cf"><img src="data/important_detail/zhonghedian.png" alt="中和殿"></a>
+        </div>
+        <div data-index="8" class="important-detail" style="left:50%; top: 44.24603174603175%">
+            <a href="view.html?region=6a80e4ceb1ea367f6bc3ed5b05fca58b"><img src="data/important_detail/baohedian.png" alt="保和殿"></a>
+        </div>
+        <div data-index="10" class="important-detail" style="left:50%; top: 27.281746031746028%">
+            <a href="view.html?region=a85b62c09897429ea32e262e914bd1b7"><img src="data/important_detail/qianqinggong.png" alt="乾清宫"></a>
+        </div>
+        <div data-index="11" class="important-detail" style="left:50%; top: 22.817460317460316%">
+            <a href="view.html?region=52fda74a4ac47f48f0be1cb4446a3f17"><img src="data/important_detail/jiaotaidian.png" alt="交泰殿"></a>
+        </div>
+        <div data-index="12" class="important-detail" style="left:50%; top: 19.1468253968254%">
+            <a href="view.html?region=8375a017ac39f9c6f40071cafd2130a6"><img src="data/important_detail/kunninggong.png" alt="坤宁宫"></a>
+        </div>
+        <div data-index="14" class="important-detail" style="left:50%; top: 13.293650793650794%">
+            <a href="view.html?region=369b932211b1a4d78dae7055ad98534e"><img src="data/important_detail/yuhuayuan.png" alt="御花园"></a>
+        </div>-->
+    </div>
+    <div id="pointArea" class="hide-wrap">
+    </div>
+    <div id="regionArea" class="hide-wrap">
+    </div>
+</div>
+<div id="viewport">
+    <div id="wrapper">
+        <div id="scroller">
+        </div>
+    </div>
+</div>
+<div id="viewLink">
+    <a href="javascript:;"></a>
+</div>
+<div id="scroller_bg"><img src="images/scroller_bg.png" /></div>
+<div id="scroller_bg_line">
+    <div class="scroller_bg_line_left"></div>
+    <div class="scroller_bg_line_right"></div>
+</div>
+</body>
+
+</html>

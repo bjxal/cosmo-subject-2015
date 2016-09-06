@@ -1,0 +1,237 @@
+@charset "gb2312";
+/* CSS Document */
+* {padding:0;margin:0;border:none;list-style: none;text-decoration: none;}
+select, input { vertical-align:middle; }
+table { border-collapse:collapse; }
+body {background-color: #ffffff; color:#000; font:14px/20px "Microsoft YaHei", "Arial", "SimSun", "ËÎÌו"; -webkit-text-size-adjust:none; position:relative; overflow-x:hidden;}
+iframe { border:none;}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.footer{margin-top: 25px;}
+.footer .f_r .link3 a{margin-left: 47px;}
+img{display: block;}
+/*p*/
+.p{
+    width: 100%;
+    margin: 0 auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    /*background-size: 100%;*/
+}
+.p0{
+    height: 700px;
+    width: 1080px;
+    background: url("../img-subject/p0/bg.jpg") no-repeat center top;
+    background-size: 100% auto;
+}
+.p0 a{display:block; width: 100%; height: 100%;}
+.p1{
+    height: 1223px;
+    background: url("../img-subject/p1/tit.png") no-repeat center 455px;
+}
+.p .c{
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/*p0*/
+
+/*p1*/
+.p1{
+    margin-top:-80px;
+    z-index: 10;
+    position: relative;
+}
+.p1 .cir{
+    width: 29px;
+    height: 133px;
+    background: url(../img-subject/p1/line.png) no-repeat center;
+    position: absolute;
+    top: 450px;
+    left: 51%;
+    z-index: 10;
+}
+.p1 .img_list{
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.p1 .img_list img{
+    position: absolute;
+}
+.p1 .img_list img.img_1{
+    left: 45px;
+    top: 32px;
+    z-index: 0;
+}
+.p1 .img_list img.img_2{
+    left: 390px;
+    top: 0;
+    z-index: 4;
+}
+.p1 .img_list img.img_3{
+    right: 45px;
+    top: 32px;
+    z-index: 3;
+}
+.p1 .img_list img.img_4{
+    left: 45px;
+    bottom: 32px;
+    z-index: 2;
+}
+.p1 .img_list img.img_5{
+    left: 390px;
+    bottom: 0;
+    z-index: 3;
+}
+.p1 .img_list img.img_6{
+    right: 45px;
+    bottom: 32px;
+    z-index: 0;
+}
+/*p2*/
+.p2{
+    margin-top: 120px;
+}
+.p2 .c .c_1{
+    width: 100%;
+    height: 950px;
+    position: relative;
+    margin-top: 32px;
+}
+.t4_prev, .t4_next {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 140px;
+    background-image: url(../img-subject/arr.png);
+    top: 50%;
+    margin-top: -30px;
+    z-index: 3;
+}
+.t4_prev {
+    left: 0;
+    background-position: 0 0;
+}
+.t4_next {
+    right: 0;
+    background-position: -60px 0;
+}
+.t4_prev:hover {
+    /*background-position: 0 -140px;*/
+}
+.t4_next:hover {
+    /*background-position: -60px -140px;*/
+}
+.t4,.t5 {
+    z-index: 1;
+    position: relative;
+    width: 1080px;
+    height: 950px;
+    margin: 0 auto;
+    zoom: 1;
+    overflow: hidden;
+}
+.t4 ul,.t5 ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100000px;
+    height: 950px;
+}
+.t4 li ,.t5 li{
+    float: left;
+    width: 1080px;
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+}
+/*p3*/
+.p3{
+    margin-top: 110px;
+}
+.p3 .word{
+    position: relative;
+    height: 335px;
+    padding-top: 15px;
+}
+.p3 .word img{
+    position: absolute;
+    left: 137px;
+    top: 20px;
+}
+.p3 .word .qt{
+    width: 652px;
+    position: absolute;
+    right: 24px;
+}
+.p3 .qt p{
+    margin-top: 40px;
+    width: 590px;
+    float: left;
+    font-size: 18px;
+    line-height: 30px;
+}
+.p3 .qt p.qt1,.p3 .qt p.qt2{
+    width: 60px;
+}
+.p3 .qt p.qt2{
+    clear:both;
+}
+/*p4*/
+.p4{
+    margin-bottom: 60px;
+}
+.p4 .c{
+    overflow:hidden;
+}
+.p4 .tit{
+    width: 100%;
+    height: 120px;
+    background: url(../img-subject/p4/tit.png) no-repeat center;
+}
+.p4 .c_1{
+    position: relative;
+}
+.p4 .t4 {
+    height: 560px;
+}
+.p4 .t4 ul {
+    height: 560px;
+}
+.p4 .t4 li {
+    /*float: left;*/
+    margin-left: 20px;
+    width: 950px;
+    height: 560px;
+}
+.p4 .c_2{
+    margin-top: 40px;
+}
+.p4 .t5 {
+    height: 200px;
+}
+.p4 .t5 ul {
+    width: 100000px;
+    height: 200px;
+}
+.p4 .t5 li {
+    float: left;
+    width: 1080px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+.p4 a.rosie{
+    display: block;
+    width: 465px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background: url(../img-subject/p4/scroll/2.jpg) top center no-repeat;
+    /*background-color: #005de6;*/
+}
